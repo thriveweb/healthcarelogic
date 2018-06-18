@@ -1,0 +1,40 @@
+@keyframes BgBrokenSystem {
+  from {
+    transform: translate(0, -0.5rem);
+  }
+}
+
+.BgBrokenSystem {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  animation: BgBrokenSystem 1.5s ease-in-out alternate infinite;
+}
+
+@keyframes Alert {
+  from {
+    opacity: 1;
+    transform: translate(-0.5rem, 0.5rem);
+  }
+  to {
+    /* opacity: 0.8; */
+  }
+}
+
+.BgBrokenSystem #Alert {
+  animation: Alert 1s ease-in-out alternate infinite;
+}
+
+@keyframes Alert-C {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+.BgBrokenSystem #Alert-C {
+  animation: Alert-C 0.5s ease-in-out infinite;
+}

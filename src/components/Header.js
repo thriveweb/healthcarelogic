@@ -11,7 +11,7 @@ const Header = ({ siteTitle, handleMenuToggle, menuOpen }) => {
     <header className="Header">
       <div className="container">
         <Link to="/" onClick={handleLogoClick}>
-          <img src={logo} alt={siteTitle} />
+          <img className="Header--Logo" src={logo} alt={siteTitle} />
         </Link>
         <MenuButton onClick={handleMenuToggle} close={menuOpen} />
       </div>

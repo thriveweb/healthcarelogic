@@ -7,6 +7,10 @@
   z-index: 1;
 }
 
+.Header--Logo {
+  max-height: 6rem;
+}
+
 .Header .container {
   display: flex;
   justify-content: space-between;

@@ -1,6 +1,10 @@
 import React from 'react'
 import Link from '../components/Link'
 
+import BackgroundImage from '../components/BackgroundImage'
+import BgBrokenSystem from '../components/BgBrokenSystem'
+import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
+
 const HomePage = () => (
   <main>
     <section className="section dark thick vh-100">
@@ -19,7 +23,7 @@ const HomePage = () => (
     </section>
 
     <section className="section dark thick">
-      <div className="container skinny">
+      <div className="container skinny relative">
         <div className="pull-left-skinny">
           <h2>Sick of flying blind?</h2>
           <div className="statement">
@@ -40,6 +44,8 @@ const HomePage = () => (
             A broken system
           </Link>
         </div>
+
+        <BgBrokenSystem />
       </div>
     </section>
 
@@ -77,7 +83,12 @@ const HomePage = () => (
     </section>
 
     <section className="section primary thick vh-90">
-      <div className="container skinnier">
+      <BackgroundImage
+        src={bgEmblem3d}
+        contain
+        style={{ top: '5rem', bottom: '5rem' }}
+      />
+      <div className="container skinnier relative">
         <h2>De-stressing health</h2>
         <p className="statement">
           The hardest job in the world is even harder when you don’t have the
