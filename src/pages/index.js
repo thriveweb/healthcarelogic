@@ -10,7 +10,7 @@ const HomePage = () => (
           <span>change</span>?
         </h1>
 
-        <Link to="/a-broken-system/" strong icon="page" arrow="down">
+        <Link href="#" strong icon="page" arrow="down">
           See. Change.
         </Link>
       </div>
@@ -80,14 +80,10 @@ const HomePage = () => (
           made it our mission to ensure you spend less time stressing and more
           time delivering great outcomes for your patients.
         </p>
-        <Link to="/about-us/" strong icon="page">
+        <Link to="/about/" strong icon="page">
           About us
         </Link>
       </div>
-    </section>
-
-    <section className="section light thick">
-      <div className="container">Logos</div>
     </section>
   </main>
 )

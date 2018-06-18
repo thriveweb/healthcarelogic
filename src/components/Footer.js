@@ -5,6 +5,10 @@ import './Footer.css'
 
 const Footer = ({ siteTitle }) => (
   <footer>
+    <section className="section light thick">
+      <div className="container">Logos</div>
+    </section>
+
     <section className="section white">
       <div className="container">Footer</div>
     </section>

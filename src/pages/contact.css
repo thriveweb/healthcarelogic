@@ -1,0 +1,10 @@
+.ContactPage--grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-gap: 5rem;
+}
+
+.ContactPage--item {
+  margin-top: 4rem;
+}

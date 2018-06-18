@@ -1,5 +1,6 @@
 :root {
   --primary: #69e3ff;
+  --primary-light: #c9f5ff;
   --secondary: #ffffff;
   --tertiary: #d0d0d0;
   --dark: #001b34;
@@ -101,15 +102,24 @@ h2,
 }
 h3,
 .h3 {
+  font-size: 3rem;
 }
 h4,
 .h4 {
+  font-size: 2.3rem;
+  font-family: var(--font-primary);
 }
 h5,
 .h5 {
+  font-size: 2rem;
+  font-family: var(--font-primary);
 }
 h6,
 .h6 {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: var(--font-primary);
 }
 
 pre {
@@ -206,6 +216,9 @@ blockquote {
 }
 .section.noPadding {
   padding: 0;
+}
+.section .section:last-child {
+  padding-bottom: 0;
 }
 
 .container {
