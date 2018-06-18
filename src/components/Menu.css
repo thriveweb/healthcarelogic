@@ -10,9 +10,8 @@
   position: fixed;
   justify-content: center;
   align-items: center;
-  transition: opacity 0.2s ease-in-out, transform 0.7s ease-out;
-  will-change: opacity transform;
-  transform: translate3d(-1rem, 1rem, 0);
+  transition: opacity 0.2s ease-in-out;
+  will-change: opacity;
 }
 
 .Menu-active {
@@ -28,6 +27,22 @@
   align-items: flex-start;
 }
 
+@keyframes Menu--Link {
+  from {
+    transform: translate(-1rem, 1rem);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.Menu-active .Menu--Link {
+  animation: Menu--Link 0.3s ease-out;
+  animation-fill-mode: both;
+}
+
 .Menu--Link {
   font-size: 2.4rem;
   text-decoration: none;
@@ -39,6 +54,19 @@
   transform: translate(0, 0);
   transition: all 0.2s ease-out;
   padding-right: 3rem;
+}
+
+.Menu--Link:nth-of-type(2) {
+  animation-delay: 0.1s;
+}
+.Menu--Link:nth-of-type(3) {
+  animation-delay: 0.2s;
+}
+.Menu--Link:nth-of-type(4) {
+  animation-delay: 0.3s;
+}
+.Menu--Link:nth-of-type(5) {
+  animation-delay: 0.4s;
 }
 
 .Menu--Link .Link--arrow {
