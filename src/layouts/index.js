@@ -19,7 +19,7 @@ class Layout extends React.Component {
   }
 
   updateBodyStyle = () => {
-    if (typeof window === undefined) return false
+    if (typeof window === 'undefined') return false
     document.body.style.position = this.state.menuOpen ? 'fixed' : 'initial'
   }
 
