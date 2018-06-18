@@ -1,17 +1,8 @@
 .Menu {
-  display: none;
-}
-
-.Menu .container {
-  justify-content: flex-start;
+  opacity: 0;
+  pointer-events: none;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.Menu-active {
   z-index: 1;
-  display: flex;
   height: 100vh;
   width: 100%;
   top: 0;
@@ -19,6 +10,22 @@
   position: fixed;
   justify-content: center;
   align-items: center;
+  transition: opacity 0.2s ease-in-out, transform 0.7s ease-out;
+  will-change: opacity transform;
+  transform: translate3d(-1rem, 1rem, 0);
+}
+
+.Menu-active {
+  opacity: 1;
+  pointer-events: all;
+  transform: translate3d(0, 0, 0);
+}
+
+.Menu .container {
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .Menu--Link {
