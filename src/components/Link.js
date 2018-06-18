@@ -10,13 +10,18 @@ export default ({
   children,
   icon = false,
   strong = false,
-  arrow = 'right',
+  arrow, // right down
+  className = '',
   ...props
 }) => {
   const Comp = to ? Link : A
-
+  if (!arrow && strong) arrow = 'right'
   return (
-    <Comp to={to} className={`Link ${strong ? 'Link-strong' : ''}`} {...props}>
+    <Comp
+      to={to}
+      className={`Link ${strong ? 'Link-strong' : ''} ${className}`}
+      {...props}
+    >
       {icon === 'page' && (
         <svg
           className="feather feather-file-text Link--icon"
@@ -39,7 +44,7 @@ export default ({
 
       {children}
 
-      {strong && (
+      {arrow && (
         <svg
           className={`feather feather-chevron-right Link--arrow Link--arrow-${arrow}`}
           width="24"
