@@ -1,0 +1,24 @@
+.Link-strong {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: inherit;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Link--icon {
+  height: 1em;
+  margin-right: 0.2em;
+}
+
+.Link--arrow {
+  height: 1em;
+  margin-left: 0.1em;
+}
+
+.Link--arrow-down {
+  transform: rotate(90deg);
+}

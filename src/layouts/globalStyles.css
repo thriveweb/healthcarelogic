@@ -1,0 +1,268 @@
+:root {
+  --primary: #69e3ff;
+  --secondary: #ffffff;
+  --tertiary: #d0d0d0;
+  --dark: #001b34;
+  --lightGrey: whitesmoke;
+  --midGrey: #cacaca;
+  --darkGrey: #272727;
+  --danger: #ff3d3d;
+  --font-system: system-ui; /* postcssPresetEnv */
+  --font-primary: 'Work Sans', var(--font-system), sans-serif;
+  --font-secondary: 'aleo', var(--font-system), sans-serif;
+  --borderRadius: 3px;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  min-height: 100%;
+  background: var(--lightGrey);
+}
+
+body {
+  font-family: var(--font-primary);
+  min-height: 100%;
+  position: relative;
+  background: white;
+  color: var(--dark);
+  font-size: 1.6em;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--primary);
+}
+
+.subtle {
+  text-decoration: none;
+  color: inherit;
+}
+
+.subtle:hover,
+.subtle:focus {
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: 600;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin: 0;
+  margin-bottom: 0.5em;
+  font-weight: 200;
+  font-family: var(--font-secondary);
+  line-height: 1.1;
+}
+
+h1 span,
+.h1 span,
+h2 span,
+.h2 span,
+h3 span,
+.h3 span,
+h4 span,
+.h4 span,
+h5 span,
+.h5 span,
+h6 span,
+.h6 span {
+  color: var(--primary);
+}
+
+h1,
+.h1 {
+  font-size: 5.2rem;
+  font-weight: 600;
+}
+h2,
+.h2 {
+  font-size: 3.8rem;
+}
+h3,
+.h3 {
+}
+h4,
+.h4 {
+}
+h5,
+.h5 {
+}
+h6,
+.h6 {
+}
+
+pre {
+  background: var(--lightGrey);
+  line-height: 1.45;
+  font-size: 85%;
+  border-radius: 3px;
+  padding: 16px;
+}
+
+code {
+  font-size: 85%;
+  padding: 0.15em 0;
+  background: var(--lightGrey);
+  border-radius: 3px;
+}
+code:before,
+code:after {
+  letter-spacing: -0.2em;
+  content: '\00a0';
+}
+pre code {
+  font-size: inherit;
+}
+pre code:before,
+pre code:after {
+  display: none;
+}
+blockquote {
+  margin-left: 0;
+  padding-left: 1em;
+  line-height: 1.1;
+  font-size: 1em;
+  font-style: italic;
+  border-left: 2px solid var(--primary);
+}
+
+/* Utility Classes */
+.white {
+  background-color: white;
+}
+.primary {
+  color: var(--secondary);
+  background: linear-gradient(
+    227.46deg,
+    rgba(9, 111, 206, 0.89) 0%,
+    #47b7e8 100%
+  );
+}
+.dark {
+  color: var(--secondary);
+  background: linear-gradient(65.94deg, #004678 0%, #001b34 100%);
+}
+.light {
+  background: linear-gradient(46.47deg, #fafafa 0%, #c8d2db 100%);
+}
+
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.taCenter {
+  text-align: center;
+}
+.taLeft {
+  text-align: left;
+}
+.taRight {
+  text-align: right;
+}
+
+.statement {
+  font-weight: 300;
+  font-size: 2.1rem;
+}
+
+/* Layout */
+
+.section {
+  width: 100%;
+  padding: 10rem 0;
+}
+.section.thick {
+  padding: 15rem 0;
+}
+.section.thin {
+  padding: 2.5rem 0;
+}
+.section.noPadding {
+  padding: 0;
+}
+
+.container {
+  max-width: 1300px;
+  width: 90%;
+  margin: 0 auto;
+}
+.container.skinny {
+  max-width: 888px;
+}
+.container.skinnier {
+  max-width: 573px;
+}
+
+/* Buttons */
+
+.Button {
+  background: var(--primary);
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-size: 1.4rem;
+  display: inline-block;
+  padding: 1.25rem 3rem;
+  border: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border-radius: var(--borderRadius);
+}
+.Button:hover,
+.Button:focus {
+  background: var(--primary-light);
+  outline: none;
+}
+.Button[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: progress;
+}
+.Button.Button--inverted {
+  background: white;
+  border-color: white;
+  color: var(--primary);
+}
+.Button.Button--inverted:hover,
+.Button.Button--inverted:focus {
+  background: transparent;
+  border-color: currentColor;
+  color: white;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0)),
+    linear-gradient(
+      -32deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.05) 50%,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 0)
+    );
+}
