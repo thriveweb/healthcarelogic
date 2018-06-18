@@ -1,12 +1,17 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
+import Link from './Link'
+import emblem from '../images/emblem.svg'
 import './Footer.css'
 
 const Footer = ({ siteTitle }) => (
   <footer>
     <section className="section light thick">
-      <div className="container">Logos</div>
+      <div className="container">
+        <Link to="/">
+          <img src={emblem} alt={siteTitle} />
+        </Link>
+      </div>
     </section>
 
     <section className="section white">

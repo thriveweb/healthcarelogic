@@ -1,7 +1,8 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
+import Link from './Link'
 import MenuButton from './MenuButton'
+import logo from '../images/logo.svg'
 import './Header.css'
 
 const Header = ({ siteTitle, handleMenuToggle, menuOpen }) => {
@@ -10,7 +11,7 @@ const Header = ({ siteTitle, handleMenuToggle, menuOpen }) => {
     <header className="Header">
       <div className="container">
         <Link to="/" onClick={handleLogoClick}>
-          {siteTitle}
+          <img src={logo} alt={siteTitle} />
         </Link>
         <MenuButton onClick={handleMenuToggle} close={menuOpen} />
       </div>

@@ -10,7 +10,7 @@ import Menu from '../components/Menu'
 
 class Layout extends React.Component {
   state = {
-    menuOpen: true
+    menuOpen: false
   }
 
   handleMenuToggle = e => {
