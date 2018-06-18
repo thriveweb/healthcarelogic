@@ -4,6 +4,7 @@ import Link from '../components/Link'
 import BackgroundImage from '../components/BackgroundImage'
 import BgBrokenSystem from '../components/BgBrokenSystem'
 import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
+import bgMacbook from '../images/macbook.png'
 
 const HomePage = () => (
   <main>
@@ -50,7 +51,15 @@ const HomePage = () => (
     </section>
 
     <section className="section primary thick">
-      <div className="container skinny">
+      <BackgroundImage
+        src={bgMacbook}
+        style={{
+          width: '50%',
+          top: '7rem'
+        }}
+        contain
+      />
+      <div className="container skinny relative">
         <div className="pull-right-skinny">
           <h2>A new way</h2>
           <p className="statement">
