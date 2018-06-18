@@ -246,12 +246,20 @@ blockquote {
 .container.skinnier {
   max-width: 573px;
 }
-.container--pull-right {
+.pull-right {
   margin-left: auto;
   max-width: 600px;
 }
-.container--pull-right-skinny {
+.pull-right-skinny {
   margin-left: auto;
+  max-width: 400px;
+}
+.pull-left {
+  margin-right: auto;
+  max-width: 600px;
+}
+.pull-left-skinny {
+  margin-right: auto;
   max-width: 400px;
 }
 

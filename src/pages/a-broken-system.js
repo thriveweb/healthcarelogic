@@ -5,7 +5,7 @@ const BrokenSystemPage = () => (
   <main>
     <section className="section dark thick vh-100">
       <div className="container skinny">
-        <div className="container--pull-right-skinny">
+        <div className="pull-right-skinny">
           <h1>A broken system</h1>
           <p>
             Health services across the world are paying huge money to collect

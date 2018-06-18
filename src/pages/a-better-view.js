@@ -6,7 +6,7 @@ const BetterViewPage = () => (
     <div className="section-wrap dark">
       <section className="section thick vh-100">
         <div className="container skinny">
-          <div className="container--pull-right-skinny">
+          <div className="pull-right-skinny">
             <h1>A better view</h1>
             <p>
               Amid increasing demand and rising political and patient
