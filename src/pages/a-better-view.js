@@ -3,32 +3,45 @@ import Link from '../components/Link'
 
 const BetterViewPage = () => (
   <main>
-    <section className="section dark thick">
-      <div className="container">
-        <h1>A better view</h1>
-        <p>
-          Amid increasing demand and rising political and patient expectations,
-          we have created a world where data flows automatically and is
-          beautifully presented and organising according to priorities.
-        </p>
-        <Link to="/a-broken-system/" strong icon="page" arrow="down">
-          See. Change.
-        </Link>
-      </div>
-      <div className="section">
+    <div className="section-wrap dark">
+      <section className="section thick vh-100">
+        <div className="container skinny">
+          <div className="container--pull-right-skinny">
+            <h1>A better view</h1>
+            <p>
+              Amid increasing demand and rising political and patient
+              expectations, we have created a world where data flows
+              automatically and is beautifully presented and organising
+              according to priorities.
+            </p>
+          </div>
+
+          <Link
+            to="/a-broken-system/"
+            strong
+            icon="page"
+            arrow="down"
+            scrollButton
+          >
+            See. Change.
+          </Link>
+        </div>
+      </section>
+
+      <section className="section vh-90">
         <div className="container">
           <h2>Personalised</h2>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
-    <section className="section light thick">
+    <section className="section light thick vh-90">
       <div className="container">
         <h2>Shareable</h2>
       </div>
     </section>
 
-    <section className="section primary thick">
+    <section className="section primary thick vh-90">
       <div className="container">
         <h2>More features</h2>
         <div>
@@ -69,7 +82,7 @@ const BetterViewPage = () => (
       </div>
     </section>
 
-    <section className="section dark thick">
+    <section className="section dark thick vh-90">
       <div className="container">
         <h2>The Coordination Hub</h2>
         <div className="statement">
@@ -83,7 +96,7 @@ const BetterViewPage = () => (
       </div>
     </section>
 
-    <section className="section light thick">
+    <section className="section light thick vh-90">
       <div className="container">
         <h2>We’re here to help</h2>
         <div className="statement">

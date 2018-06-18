@@ -8,20 +8,19 @@ const A = props => <a {...props} />
 export default ({
   to,
   children,
+  className = '',
   icon = false,
   strong = false,
+  scrollButton = false,
   arrow, // right down
-  className = '',
   ...props
 }) => {
   const Comp = to ? Link : A
   if (!arrow && strong) arrow = 'right'
+  if (strong) className += ' Link-strong'
+  if (scrollButton) className += ' Link-scrollButton'
   return (
-    <Comp
-      to={to}
-      className={`Link ${strong ? 'Link-strong' : ''} ${className}`}
-      {...props}
-    >
+    <Comp to={to} className={`Link ${className} `} {...props}>
       {icon === 'page' && (
         <svg
           className="feather feather-file-text Link--icon"

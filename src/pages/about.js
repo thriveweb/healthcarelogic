@@ -3,8 +3,8 @@ import Link from '../components/Link'
 
 const AboutPage = () => (
   <main>
-    <section className="section dark thick">
-      <div className="container">
+    <section className="section dark thick vh-100">
+      <div className="container skinny">
         <h1>Our story</h1>
         <div
           style={{
@@ -43,7 +43,13 @@ const AboutPage = () => (
             simpler, cheaper and better way.
           </p>
         </div>
-        <Link to="/a-broken-system/" strong icon="page" arrow="down">
+        <Link
+          to="/a-broken-system/"
+          strong
+          icon="page"
+          arrow="down"
+          scrollButton
+        >
           See. Change.
         </Link>
       </div>

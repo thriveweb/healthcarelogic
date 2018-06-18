@@ -6,7 +6,7 @@ import './contact.css'
 
 const ContactPage = () => (
   <main>
-    <section className="section primary thick">
+    <section className="section primary thick vh-90">
       <div className="container skinny">
         <h1>Contact Us</h1>
         <div className="ContactPage--grid">

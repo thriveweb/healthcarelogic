@@ -3,20 +3,22 @@ import Link from '../components/Link'
 
 const HomePage = () => (
   <main>
-    <section className="section dark thick">
+    <section className="section dark thick vh-100">
       <div className="container">
-        <h1>
-          If we could <span>see</span> the system, what would{' '}
-          <span>change</span>?
-        </h1>
+        <div className="container--pull-right">
+          <h1>
+            If we could <span>see</span> the system, what would{' '}
+            <span>change</span>?
+          </h1>
 
-        <Link href="#" strong icon="page" arrow="down">
-          See. Change.
-        </Link>
+          <Link href="#" strong icon="page" arrow="down" scrollButton>
+            See. Change.
+          </Link>
+        </div>
       </div>
     </section>
 
-    <section className="section dark thick">
+    <section className="section dark thick vh-90">
       <div className="container">
         <h2>Sick of flying blind?</h2>
         <div className="statement">
@@ -39,7 +41,7 @@ const HomePage = () => (
       </div>
     </section>
 
-    <section className="section primary thick">
+    <section className="section primary thick vh-90">
       <div className="container">
         <h2>A new way</h2>
         <p className="statement">
@@ -58,7 +60,7 @@ const HomePage = () => (
       </div>
     </section>
 
-    <section className="section light thick">
+    <section className="section light thick vh-90">
       <div className="container">
         <h2>Proven track record</h2>
         <p>
@@ -68,7 +70,7 @@ const HomePage = () => (
       </div>
     </section>
 
-    <section className="section primary thick">
+    <section className="section primary thick vh-90">
       <div className="container">
         <h2>De-stressing health</h2>
         <p className="statement">
