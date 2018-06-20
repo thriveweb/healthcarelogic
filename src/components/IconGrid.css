@@ -1,0 +1,14 @@
+.IconGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 4rem;
+  grid-row-gap: 8rem;
+}
+
+.IconGrid--Item {
+  display: flex;
+}
+
+.IconGrid--Item--Image {
+  margin-right: 3rem;
+}
