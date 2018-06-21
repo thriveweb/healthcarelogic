@@ -34,12 +34,12 @@ const HomePage = () => (
             </p>
             <p>
               “How much automated data do you have available that is designed to
-              help you improve the work of your team?
+              help you improve the work of your team?”
             </p>
           </div>
           <p>
-            We thought the answer would be “not very much”. It wasn’t.{' '}
-            <strong>The answer was: “None”.</strong>
+            We thought the answer would be “Not very much”. It wasn’t.{' '}
+            <strong>The response was: “None”.</strong>
           </p>
           <Link to="/a-broken-system/" strong icon="page">
             A broken system
@@ -62,15 +62,19 @@ const HomePage = () => (
       <div className="container skinny relative">
         <div className="pull-right-skinny">
           <h2>A new way</h2>
-          <p className="statement">
-            Our world-first software curate and automatically delivers the
-            information we need to make
+          <p className="statement">Actionable insights in six clicks or less</p>
+          <p>
+            It’s not a damn dashboard. It’s not about KPIs. It’s revolutionary
+            technology that empowers clinical and managerial leaders to
+            collaborate with clarity. With our suite of proprietary algorithms
+            visualising consistent, high-frequency, patient-level data, the best
+            decisions can be made for any given level of resource.
           </p>
           <p>
-            It's not another dashboard. It's not about KPIs. It is revolutionary
-            technology that provides consistent, high-frequency and shareable
-            data that allows you to not only predict what lies ahead but address
-            the issues at the core of the problem.
+            And we can now <em>interact</em> with the data in a completely new
+            way including setting personal thresholds for active monitoring,
+            sharing with colleagues and establishing personable discussion
+            groups.
           </p>
           <Link to="/a-better-view/" strong icon="page">
             A better view
@@ -84,9 +88,11 @@ const HomePage = () => (
         <div className="pull-left-skinny">
           <h2>Proven track record</h2>
           <p>
-            Our software is already being used in more than 50 hospitals where
-            it is optimising performance.
+            Our software is currently used in more than 50 hospitals to enhance
+            clinical team engagement and support sustainable performance
+            improvement.
           </p>
+          <h2>Testimonials</h2>
         </div>
       </div>
     </section>
@@ -104,9 +110,9 @@ const HomePage = () => (
           tools you need to make better decisions.
         </p>
         <p>
-          With decades of experience in healthcare, we feel your pain and have
-          made it our mission to ensure you spend less time stressing and more
-          time delivering great outcomes for your patients.
+          With decades of experience in healthcare, we’ve made it our mission to
+          create a world where you spend no time looking for data, less time
+          stressing and more time improving your clinical system.
         </p>
         <Link to="/about/" strong icon="page">
           About us
