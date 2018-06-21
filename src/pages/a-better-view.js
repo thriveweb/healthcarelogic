@@ -4,6 +4,7 @@ import Link from '../components/Link'
 import BackgroundImage from '../components/BackgroundImage'
 import IconGrid from '../components/IconGrid'
 import FeatureGallery from '../components/FeatureGallery'
+import VideoSection from '../components/VideoSection'
 
 import bgEmblemShape from '../images/emblem-shape.svg'
 import bgEmblem from '../images/bg-emblem-3d-white.svg'
@@ -100,7 +101,7 @@ const BetterViewPage = () => (
       </div>
     </section>
 
-    <section className="section primary thick vh-90">
+    <section className="section primary thick">
       <div className="container">
         <h2 style={{ marginBottom: '4rem' }}>More features</h2>
 
@@ -136,17 +137,18 @@ const BetterViewPage = () => (
       </div>
     </section>
 
-    <section className="section dark thick vh-90">
+    <section className="section dark thick">
       <div className="container">
-        <h2>The Coordination Hub</h2>
-        <div className="statement">
-          <p>Six clicks - endless knowledge</p>
-        </div>
-        <p>
-          SystemView allows users to create personalised, data-rich environments
-          in six clicks or less from the millions of charts it can automatically
-          generate and update.
-        </p>
+        <VideoSection videoUrl={'https://vimeo.com/252893118'}>
+          <h2>The Coordination Hub</h2>
+          <div className="statement">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <p>
+            Morbi nunc purus, feugiat a faucibus vitae, condimentum ut dui.
+            Vivamus at sagittis quam, vitae malesuada mi.
+          </p>
+        </VideoSection>
       </div>
     </section>
 
