@@ -1,7 +1,6 @@
 import React from 'react'
-import Plyr from 'react-plyr'
-import 'plyr/dist/plyr.css'
 
+import Plyr from './Plyr'
 import './VideoSection.css'
 
 export default ({ children, videoUrl }) => (
