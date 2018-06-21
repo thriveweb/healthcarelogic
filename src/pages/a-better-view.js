@@ -29,9 +29,14 @@ const BetterViewPage = () => (
             <h1>A better view</h1>
             <p>
               Amid increasing demand and rising political and patient
-              expectations, we have created a world where data flows
-              automatically and is beautifully presented and organising
-              according to priorities.
+              expectations, clinical and managerial leaders have lacked support
+              by not being given the information tools they need to do the
+              hardest job in the world.
+            </p>
+            <p>
+              We wanted to change this by creating a world were data flows
+              automatically and is beautifully presented and organised according
+              to priorities.
             </p>
           </div>
 
@@ -48,6 +53,14 @@ const BetterViewPage = () => (
       </section>
 
       <section className="section thick">
+        <div className="container skinnier" style={{ marginBottom: '5rem' }}>
+          <p>
+            By curating information into a set of consistent algorithms, we’ve
+            built a set of power functions to enable teams and staff to make
+            better decisions.
+          </p>
+        </div>
+
         <div className="container">
           <FeatureGallery
             title="Personalised"
@@ -105,12 +118,10 @@ const BetterViewPage = () => (
       <div className="container">
         <VideoSection videoUrl={'https://vimeo.com/252893118'}>
           <h2>The Coordination Hub</h2>
-          <div className="statement">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
           <p>
-            Morbi nunc purus, feugiat a faucibus vitae, condimentum ut dui.
-            Vivamus at sagittis quam, vitae malesuada mi.
+            The platform allows you to select any set of screens and send them
+            on an ‘always-on’ basis to your screens on the wall – a locally
+            configurable coordination hub in a box.
           </p>
         </VideoSection>
       </div>
@@ -162,15 +173,19 @@ const BetterViewPage = () => (
       <div className="container skinnier">
         <h2 className="color-primary">We’re here to help</h2>
         <div className="statement">
-          <p>Our investment in Customer Success includes:</p>
+          <p>
+            We know that not every hospital has the capacity and capability to
+            develop and implement an absolutely reliable, commercial-grade and
+            automated information environment. Because of this, our commitment
+            to get you up and running includes:
+          </p>
         </div>
-        Helping automate your data to the right specifications
         <ul>
+          <li>Helping automate your data to the right specifications</li>
           <li>Installing the software on your networks</li>
           <li>Providing staff with onboarding and training</li>
           <li>Training your tech teams on how to maintain back-end</li>
           <li>Help desk support</li>
-          <li>Bespoke strategic improvement sessions (additional cost)</li>
         </ul>
         <Link to="contact" icon="page" strong>
           Contact Us
