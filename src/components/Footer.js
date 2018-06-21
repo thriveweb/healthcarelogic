@@ -60,7 +60,13 @@ const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
     <section className="section thin white Footer--Lower">
       <div className="container">
         &copy; {new Date().getFullYear()} All Rights Reserved |{' '}
-        <a className="subtle" href="https://thriveweb.com.au">
+        <a
+          className="subtle"
+          href="https://thriveweb.com.au"
+          target="_blank"
+          rel="noopener"
+          title="Web Design Gold Coast"
+        >
           Built By Thrive
         </a>
       </div>
