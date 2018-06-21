@@ -52,7 +52,7 @@ const BetterViewPage = () => (
         </div>
       </section>
 
-      <section className="section thick">
+      <section className="section thick" id="scrollToTarget">
         <div className="container skinnier" style={{ marginBottom: '5rem' }}>
           <p>
             By curating information into a set of consistent algorithms, we’ve

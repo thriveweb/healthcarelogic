@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import MoveTo from 'moveto'
 
 import './Link.css'
 
@@ -19,8 +20,27 @@ export default ({
   if (!arrow && strong) arrow = 'right'
   if (strong) className += ' Link-strong'
   if (scrollButton) className += ' Link-scrollButton'
+
+  const handleClick = e => {
+    if (scrollButton) {
+      e.preventDefault()
+      const moveTo = new MoveTo({
+        tolerance: 0,
+        duration: 800,
+        easing: 'easeOutQuart'
+      })
+      const target = document.querySelector('#scrollToTarget')
+      if (target) moveTo.move(target)
+    }
+  }
+
   return (
-    <Comp to={to} className={`Link ${className} `} {...props}>
+    <Comp
+      to={to}
+      className={`Link ${className} `}
+      onClick={handleClick}
+      {...props}
+    >
       {icon === 'page' && (
         <svg
           width="14px"

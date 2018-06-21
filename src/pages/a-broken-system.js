@@ -291,7 +291,7 @@ class BrokenSystemPage extends React.Component {
             </div>
           </section>
 
-          <section className="section thick">
+          <section className="section thick" id="scrollToTarget">
             <div className="container">
               <IconGrid
                 items={iconGridItems}

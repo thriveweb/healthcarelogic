@@ -164,7 +164,7 @@ const AboutPage = () => (
       </div>
     </section>
 
-    <section className="section primary thick">
+    <section className="section primary thick" id="scrollToTarget">
       <div className="container skinny">
         <h2 style={{ marginBottom: '4rem' }}>Team</h2>
         <TeamGrid items={team} />

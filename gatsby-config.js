@@ -14,6 +14,15 @@ module.exports = {
       options: {
         postCssPlugins: [postcssPresetEnv()]
       }
+    },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `white`,
+        // Disable the loading spinner.
+        showSpinner: false
+      }
     }
   ]
 }
