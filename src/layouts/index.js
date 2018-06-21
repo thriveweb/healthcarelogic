@@ -55,7 +55,11 @@ class Layout extends React.Component {
 
         {children()}
 
-        <Footer siteTitle={data.site.siteMetadata.title} />
+        <Footer
+          siteTitle={data.site.siteMetadata.title}
+          siteEmail={data.site.siteMetadata.email}
+          sitePhone={data.site.siteMetadata.phone}
+        />
       </div>
     )
   }
@@ -68,6 +72,8 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        email
+        phone
       }
     }
   }
