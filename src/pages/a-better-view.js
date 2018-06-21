@@ -187,7 +187,7 @@ const BetterViewPage = () => (
           <li>Training your tech teams on how to maintain back-end</li>
           <li>Help desk support</li>
         </ul>
-        <Link to="contact" icon="page" strong>
+        <Link to="/contact/" icon="page" strong>
           Contact Us
         </Link>
       </div>
