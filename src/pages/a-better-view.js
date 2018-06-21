@@ -170,7 +170,7 @@ const BetterViewPage = () => (
         style={{ top: '5rem', bottom: '10vh' }}
       />
 
-      <div className="container skinnier">
+      <div className="container skinnier relative">
         <h2 className="color-primary">We’re here to help</h2>
         <div className="statement">
           <p>
