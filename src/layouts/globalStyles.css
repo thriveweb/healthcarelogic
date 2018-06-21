@@ -242,7 +242,17 @@ blockquote {
   flex-direction: column;
 }
 
-main .section.thick:first-child {
+main .section:first-child .container {
+  animation: mainFade 0.5s ease-out;
+}
+
+@keyframes mainFade {
+  from {
+    opacity: 0;
+  }
+}
+
+main .section:first-child {
   padding-top: 20rem;
 }
 
