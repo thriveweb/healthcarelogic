@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import cheet from 'cheet.js'
 import 'modern-normalize/modern-normalize.css'
 
 import './globalStyles.css'
@@ -21,6 +22,16 @@ class Layout extends React.Component {
   updateBodyStyle = () => {
     if (typeof window === 'undefined') return false
     document.body.style.position = this.state.menuOpen ? 'fixed' : 'initial'
+  }
+
+  componentDidMount() {
+    cheet('↑ ↑ ↓ ↓ ← → ← → b a', () => this.start())
+  }
+
+  start = () => {
+    this.hue = (this.hue || 0) + 1
+    document.body.style.filter = `hue-rotate(${this.hue}deg)`
+    window.requestAnimationFrame(this.start)
   }
 
   render() {
