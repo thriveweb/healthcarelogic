@@ -14,12 +14,13 @@ import teamSteven from '../images/team/steven.jpg'
 import teamNikita from '../images/team/nikita.jpg'
 import teamAndrew from '../images/team/andrew.jpg'
 
-const teamGridItems = [
+export const team = [
   {
     title: 'Professor Martin Connor',
     subtitle: 'Founder and CEO',
     image: teamMartin,
-    linkTo: '/team/martin-connor/'
+    linkTo: '/team/martin-connor/',
+    description: `This is placeholder text that our web designers put here to make sure words appear properly on your website. This text is going to be replaced once the website is completed. You are currently reading text that is written in English, not any other language. Be careful not to waste too much time reading placeholder text! This text isn’t going to remain here because it doesn't pertain to the website. This paragraph has been copied from a program that automatically generates paragraphs like this. It is useful for web designers to use placeholder text so they can easily see what different fonts look like on a realistic paragraph.`
   },
   {
     title: 'Andy Hill',
@@ -127,7 +128,7 @@ const AboutPage = () => (
     <section className="section primary thick">
       <div className="container skinny">
         <h2 style={{ marginBottom: '4rem' }}>Team</h2>
-        <TeamGrid items={teamGridItems} />
+        <TeamGrid items={team} />
       </div>
     </section>
   </main>
