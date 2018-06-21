@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "cheet.js": "^0.3.3",
     "dom-form-serializer": "^1.0.7",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
