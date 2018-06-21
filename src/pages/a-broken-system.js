@@ -6,6 +6,7 @@ import BackgroundImage from '../components/BackgroundImage'
 import IconGrid from '../components/IconGrid'
 import Popup from '../components/Popup'
 
+import bgBrokenSystem from '../images/broken-system.png'
 import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
 import bed from '../images/bed.svg'
 import emergency from '../images/emergency.svg'
@@ -263,7 +264,14 @@ class BrokenSystemPage extends React.Component {
         )}
         <div className="dark">
           <section className="section thick vh-100">
-            <div className="container skinny">
+            <div className="container skinny relative">
+              <BackgroundImage
+                src={bgBrokenSystem}
+                contain
+                style={{
+                  backgroundPosition: 'left'
+                }}
+              />
               <div className="pull-right-skinny">
                 <h1>A broken system</h1>
                 <p>
@@ -283,17 +291,17 @@ class BrokenSystemPage extends React.Component {
                   whole.
                 </p>
               </div>
-
-              <Link
-                to="/a-broken-system/"
-                strong
-                icon="page"
-                arrow="down"
-                scrollButton
-              >
-                See. Change.
-              </Link>
             </div>
+
+            <Link
+              to="/a-broken-system/"
+              strong
+              icon="page"
+              arrow="down"
+              scrollButton
+            >
+              See. Change.
+            </Link>
           </section>
 
           <section className="section thick" id="scrollToTarget">
