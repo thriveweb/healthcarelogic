@@ -101,6 +101,21 @@ const BetterViewPage = () => (
       </div>
     </section>
 
+    <section className="section dark thick">
+      <div className="container">
+        <VideoSection videoUrl={'https://vimeo.com/252893118'}>
+          <h2>The Coordination Hub</h2>
+          <div className="statement">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <p>
+            Morbi nunc purus, feugiat a faucibus vitae, condimentum ut dui.
+            Vivamus at sagittis quam, vitae malesuada mi.
+          </p>
+        </VideoSection>
+      </div>
+    </section>
+
     <section className="section primary thick">
       <div className="container">
         <h2 style={{ marginBottom: '4rem' }}>More features</h2>
@@ -134,21 +149,6 @@ const BetterViewPage = () => (
             }
           ]}
         />
-      </div>
-    </section>
-
-    <section className="section dark thick">
-      <div className="container">
-        <VideoSection videoUrl={'https://vimeo.com/252893118'}>
-          <h2>The Coordination Hub</h2>
-          <div className="statement">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-          <p>
-            Morbi nunc purus, feugiat a faucibus vitae, condimentum ut dui.
-            Vivamus at sagittis quam, vitae malesuada mi.
-          </p>
-        </VideoSection>
       </div>
     </section>
 
