@@ -9,6 +9,7 @@ import VideoSection from '../components/VideoSection'
 
 import bgEmblemShape from '../images/emblem-shape.svg'
 import bgEmblem from '../images/bg-emblem-3d-white.svg'
+import bgCirclesWhite from '../images/bg-circles-white.png'
 import click from '../images/click.svg'
 import flag from '../images/flag.svg'
 import data from '../images/data.svg'
@@ -133,6 +134,8 @@ const BetterViewPage = () => (
     </section>
 
     <section className="section primary thick">
+      <BackgroundImage src={bgCirclesWhite} contain />
+
       <div className="container">
         <h2 style={{ marginBottom: '4rem' }}>More features</h2>
 

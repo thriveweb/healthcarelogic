@@ -181,6 +181,9 @@ blockquote {
 .light {
   background: linear-gradient(225.77deg, #fafafa 0%, #c8d2db 100%);
 }
+.light-reverse {
+  background: linear-gradient(-225.77deg, #fafafa 0%, #c8d2db 100%);
+}
 .lightGrey {
   background: var(--lightGrey);
 }

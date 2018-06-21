@@ -5,6 +5,7 @@ import BackgroundImage from '../components/BackgroundImage'
 import Testimonials from '../components/Testimonials'
 import BgBrokenSystem from '../components/BgBrokenSystem'
 import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
+import bgCircles from '../images/bg-circles.png'
 import bgMacbook from '../images/macbook.png'
 
 const HomePage = () => (
@@ -84,7 +85,8 @@ const HomePage = () => (
       </div>
     </section>
 
-    <section className="section light thick">
+    <section className="section light-reverse thick">
+      <BackgroundImage src={bgCircles} contain />
       <div className="container skinny">
         <div className="pull-left-skinny">
           <h2>Proven track record</h2>
