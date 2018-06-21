@@ -3,6 +3,30 @@
   padding-top: 7rem;
 }
 
+.Testimonials--Button {
+  position: absolute;
+  top: calc(50% + 3.5rem);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  height: 2.2rem;
+  width: 2.2rem;
+}
+
+.Testimonials--Button:hover {
+  height: 2.6rem;
+  width: 2.6rem;
+}
+
+.Testimonials--Button.prev {
+  transform: translate(0, -50%);
+  left: -7rem;
+}
+
+.Testimonials--Button.next {
+  transform: translate(0, -50%);
+  right: -7rem;
+}
+
 .Testimonials--Item {
   background: #f6f6f6;
   box-shadow: 5px -5px 25px 2px rgba(26, 31, 37, 0.14);
@@ -15,7 +39,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: all 0.4s ease-out;
+  transition: all 0.6s var(--ease-out-cubic);
 }
 
 .Testimonials--Item--Logo {
@@ -31,7 +55,8 @@
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -25%);
+  transition: all 0.8s var(--ease-out-cubic);
   opacity: 0;
 }
 
@@ -71,6 +96,7 @@
 
 .Testimonials--Item.active .Testimonials--Item--Logo {
   opacity: 1;
+  transform: translate(-50%, -50%);
 }
 
 .Testimonials--Item.active .Testimonials--Item--Inner {

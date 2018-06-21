@@ -1,4 +1,6 @@
 import React from 'react'
+import ChevronRight from 'react-feather/dist/icons/chevron-right'
+import ChevronLeft from 'react-feather/dist/icons/chevron-left'
 
 import BackgroundImage from '../components/BackgroundImage'
 import gchf from '../images/logos/gchf.png'
@@ -7,7 +9,8 @@ import './Testimonials.css'
 
 export default class Testimonials extends React.Component {
   static defaultProps = {
-    autoplay: 3000,
+    autoplay: 5000,
+    autoplayResume: 3000,
     testimonials: [
       {
         content: `I absolutely rely on this system to tell me what I need to keep an eye on.`,
@@ -33,6 +36,7 @@ export default class Testimonials extends React.Component {
   }
 
   timer = null
+  resumeTimer = null
   slideEls = []
 
   state = {
@@ -40,20 +44,38 @@ export default class Testimonials extends React.Component {
   }
 
   componentDidMount() {
-    if (this.props.autoplay) {
-      window.setInterval(this.progressSlide, this.props.autoplay)
-    }
     this.calculateHeights()
+    this.startAutoplay()
   }
 
   componentWillUnmount() {
-    if (this.timer) window.clearInterval(this.timer)
+    this.stopAutoplay()
   }
 
-  progressSlide = () =>
+  startAutoplay = () => {
+    if (this.props.autoplay) {
+      this.timer = window.setInterval(this.progressSlide, this.props.autoplay)
+    }
+  }
+
+  stopAutoplay = () => {
+    if (this.timer) window.clearInterval(this.timer)
+    if (this.resumeTimer) window.clearTimeout(this.resumeTimer)
+  }
+
+  progressSlide = (increment = 1) =>
     this.setState({
-      activeSlide: this.state.activeSlide + 1
+      activeSlide: this.state.activeSlide + increment
     })
+
+  handleClick = increment => {
+    this.stopAutoplay()
+    this.progressSlide(increment)
+    this.resumeTimer = window.setTimeout(
+      this.startAutoplay,
+      this.props.autoplayResume
+    )
+  }
 
   calculateHeights = () => {
     let height = Math.max(...this.slideEls.map(el => el.offsetHeight))
@@ -70,10 +92,16 @@ export default class Testimonials extends React.Component {
         className="Testimonials"
         style={{ height: `calc(${slideElHeight}px + 7rem)` || 'auto' }}
       >
+        <ChevronLeft
+          className="Testimonials--Button prev"
+          onClick={() => this.handleClick(-1)}
+        />
+
         {testimonials.map((testimonial, index) => {
-          const active = activeSlide % testimonials.length === index
-          const prev = (activeSlide - 1) % testimonials.length === index
-          const next = (activeSlide + 1) % testimonials.length === index
+          let activeSlideBuffer = activeSlide + testimonials.length * 1000
+          const active = activeSlideBuffer % testimonials.length === index
+          const prev = (activeSlideBuffer - 1) % testimonials.length === index
+          const next = (activeSlideBuffer + 1) % testimonials.length === index
           let className = `Testimonials--Item`
           if (active) className += ' active'
           if (prev) className += ' prev'
@@ -104,6 +132,11 @@ export default class Testimonials extends React.Component {
             </div>
           )
         })}
+
+        <ChevronRight
+          className="Testimonials--Button next"
+          onClick={() => this.handleClick(1)}
+        />
       </div>
     )
   }
