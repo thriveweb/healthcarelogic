@@ -3,6 +3,7 @@ import React from 'react'
 import Link from '../components/Link'
 import BackgroundImage from '../components/BackgroundImage'
 import IconGrid from '../components/IconGrid'
+import FeatureGallery from '../components/FeatureGallery'
 
 import bgEmblemShape from '../images/emblem-shape.svg'
 import bgEmblem from '../images/bg-emblem-3d-white.svg'
@@ -10,6 +11,8 @@ import click from '../images/click.svg'
 import flag from '../images/flag.svg'
 import data from '../images/data.svg'
 import safe from '../images/safe.svg'
+
+import screens from '../images/screens.png'
 
 const BetterViewPage = () => (
   <main>
@@ -43,9 +46,31 @@ const BetterViewPage = () => (
         </div>
       </section>
 
-      <section className="section vh-90">
+      <section className="section thick">
         <div className="container">
-          <h2>Personalised</h2>
+          <FeatureGallery
+            title="Personalised"
+            items={[
+              {
+                title: 'Watch any chart and its automatic updates',
+                image: screens
+              },
+              {
+                title:
+                  'Draw improvement trajectories and monitor against them automatically',
+                image: screens
+              },
+              {
+                title: 'Set and automatically monitor personalised standards',
+                image: screens
+              },
+              {
+                title:
+                  'Receive push notifications for improvements or standards outside thresholds',
+                image: screens
+              }
+            ]}
+          />
         </div>
       </section>
     </div>
