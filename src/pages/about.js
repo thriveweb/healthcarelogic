@@ -1,9 +1,78 @@
 import React from 'react'
+
 import Link from '../components/Link'
+import BackgroundImage from '../components/BackgroundImage'
+import TeamGrid from '../components/TeamGrid'
+
+import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
+import teamMartin from '../images/team/martin.jpg'
+import teamDragan from '../images/team/dragan.jpg'
+import teamFaye from '../images/team/faye.jpg'
+import teamLeigh from '../images/team/leigh.jpg'
+import teamLisa from '../images/team/lisa.jpg'
+import teamSteven from '../images/team/steven.jpg'
+import teamNikita from '../images/team/nikita.jpg'
+import teamAndrew from '../images/team/andrew.jpg'
+
+const teamGridItems = [
+  {
+    title: 'Professor Martin Connor',
+    subtitle: 'Founder and CEO',
+    image: teamMartin,
+    linkTo: '/team/martin-connor/'
+  },
+  {
+    title: 'Andy Hill',
+    subtitle: 'BOARD CHAIR',
+    image: teamMartin
+  },
+  {
+    title: 'Andrew Ge-Hall',
+    subtitle: 'DATABASE ARCHITECTURE CONSULTANT',
+    image: teamMartin
+  },
+  {
+    title: 'Nikita Nadezhdin',
+    subtitle: 'SENIOR DATA ENGINEER',
+    image: teamNikita
+  },
+  {
+    title: 'Dragan Romic',
+    subtitle: 'SENIOR DATA ENGINEER',
+    image: teamDragan
+  },
+  {
+    title: 'Lisa Symons',
+    subtitle: 'TEST ENGINEER',
+    image: teamLisa
+  },
+  {
+    title: 'Professor Steven Stern',
+    subtitle: 'PREDICTIVE ANALYTIC LEAD',
+    image: teamSteven
+  },
+  {
+    title: 'Leigh Platt',
+    subtitle: 'BUSINESS MANAGER',
+    image: teamLeigh
+  },
+  {
+    title: 'Faye Kennedy',
+    subtitle: 'PLATFORM BUILD LEAD',
+    image: teamFaye
+  }
+]
 
 const AboutPage = () => (
   <main>
-    <section className="section dark thick vh-100">
+    <section className="section dark thick vh-90">
+      <BackgroundImage
+        src={bgEmblem3d}
+        contain
+        opacity={0.4}
+        style={{ top: '20rem', bottom: '20rem' }}
+      />
+
       <div className="container skinny">
         <h1>Our story</h1>
         <div
@@ -56,8 +125,9 @@ const AboutPage = () => (
     </section>
 
     <section className="section primary thick">
-      <div className="container">
-        <h2>Team</h2>
+      <div className="container skinny">
+        <h2 style={{ marginBottom: '4rem' }}>Team</h2>
+        <TeamGrid items={teamGridItems} />
       </div>
     </section>
   </main>
