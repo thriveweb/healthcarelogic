@@ -5,6 +5,7 @@ import './FeatureGallery.scss'
 
 export default class FeatureGallery extends React.Component {
   static defaultProps = {
+    flip: false,
     autoplay: 4000,
     slides: [
       {
@@ -51,11 +52,11 @@ export default class FeatureGallery extends React.Component {
   }
 
   render() {
-    const { title, autoplay, slides, items } = this.props
+    const { title, autoplay, slides, items, flip } = this.props
     const { selectedSlide } = this.state
 
     return (
-      <div className="FeatureGallery">
+      <div className={`FeatureGallery ${flip ? 'FeatureGallery-flip' : ''}`}>
         <div className="FeatureGallery--Sidebar">
           {title && <h2 className="FeatureGallery--Title">{title}</h2>}
           {(items || slides).map((slide, index) => {

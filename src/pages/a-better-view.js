@@ -75,9 +75,28 @@ const BetterViewPage = () => (
       </section>
     </div>
 
-    <section className="section light thick vh-90">
+    <section className="section light thick">
       <div className="container">
-        <h2>Shareable</h2>
+        <FeatureGallery
+          title="Shareable"
+          flip
+          items={[
+            {
+              title:
+                'Create groups of charts into projects and watch as they automatically update',
+              image: screens
+            },
+            {
+              title:
+                'Create discussion groups with colleagues over charts or projects',
+              image: screens
+            },
+            {
+              title: 'Export charts automatically into PowerPoint',
+              image: screens
+            }
+          ]}
+        />
       </div>
     </section>
 
