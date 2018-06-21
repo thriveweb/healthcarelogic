@@ -12,6 +12,7 @@
     "modern-normalize": "^0.4.0",
     "postcss-preset-env": "^5.1.0",
     "qs": "^6.5.2",
+    "react-feather": "^1.1.0",
     "react-helmet": "^5.2.0"
   },
   "keywords": [

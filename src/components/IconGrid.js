@@ -3,17 +3,22 @@ import React from 'react'
 import Link from './Link'
 import './IconGrid.css'
 
-export default ({ items = [] }) => (
+export default ({ items = [], handleClick }) => (
   <div className="IconGrid">
-    {items.map(({ image, title, description, linkTo }) => (
-      <div className="IconGrid--Item" key={`IconGrid--${title}`}>
+    {items.map(item => (
+      <div className="IconGrid--Item" key={`IconGrid--${item.title}`}>
         <div className="IconGrid--Item--Image">
-          <img src={image} alt={title} />
+          <img src={item.image} alt={item.title} />
         </div>
         <div>
-          <h3>{title}</h3>
-          <p className="statement">{description}</p>
-          <Link to={linkTo} strong icon="page">
+          <h3>{item.title}</h3>
+          <p className="statement">{item.description}</p>
+          <Link
+            to={item.linkTo}
+            strong
+            icon="page"
+            onClick={e => handleClick({ e, item })}
+          >
             More Questions
           </Link>
         </div>
