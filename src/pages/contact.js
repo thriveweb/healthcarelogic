@@ -1,13 +1,21 @@
 import React from 'react'
-import Link from '../components/Link'
 
+import Link from '../components/Link'
 import EnquiryFormSimpleAjax from '../components/EnquiryFormSimpleAjax'
+import BackgroundImage from '../components/BackgroundImage'
+import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
 import './contact.css'
 
 const ContactPage = () => (
   <main>
     <section className="section primary thick vh-90">
-      <div className="container skinny">
+      <BackgroundImage
+        src={bgEmblem3d}
+        contain
+        opacity="0.3"
+        style={{ top: '15rem', bottom: '5rem' }}
+      />
+      <div className="container skinny relative">
         <h1>Contact Us</h1>
         <div className="ContactPage--grid">
           <div className="ContactPage--grid--column">
