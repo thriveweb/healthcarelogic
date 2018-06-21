@@ -1,7 +1,12 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 
 export default () => (
   <main>
+    <Helmet>
+      <title>Privacy Policy</title>
+    </Helmet>
+
     <section className="section dark thick">
       <div className="container skinny relative">
         <h1>Privacy Policy</h1>

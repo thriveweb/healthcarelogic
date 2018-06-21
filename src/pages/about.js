@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 
 import Link from '../components/Link'
 import BackgroundImage from '../components/BackgroundImage'
@@ -105,6 +106,10 @@ export const team = [
 
 const AboutPage = () => (
   <main>
+    <Helmet>
+      <title>Our story</title>
+    </Helmet>
+
     <section className="section dark thick vh-90">
       <BackgroundImage
         src={bgEmblem3d}

@@ -1,12 +1,16 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 
 import Link from '../../components/Link'
-
 import { team } from '../about'
 const member = team[0]
 
 const TeamMember = () => (
   <main>
+    <Helmet>
+      <title>{member.title}</title>
+    </Helmet>
+
     <section className="section dark thick vh-90">
       <div className="container skinny">
         <div style={{ display: 'flex', alignItems: 'flex-start' }}>

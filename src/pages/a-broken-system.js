@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 
 import Link from '../components/Link'
 import BackgroundImage from '../components/BackgroundImage'
@@ -251,6 +252,10 @@ class BrokenSystemPage extends React.Component {
 
     return (
       <main>
+        <Helmet>
+          <title>A broken system</title>
+        </Helmet>
+
         {popupContent && (
           <Popup onClose={() => this.setState({ popupContent: null })}>
             {popupContent}

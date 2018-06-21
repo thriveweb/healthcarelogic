@@ -32,11 +32,8 @@ class Layout extends React.Component {
     return (
       <div>
         <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' }
-          ]}
+          defaultTitle={data.site.siteMetadata.title}
+          titleTemplate={`%s | ${data.site.siteMetadata.title}`}
         >
           <link
             href="https://fonts.googleapis.com/css?family=Work+Sans:300,400"

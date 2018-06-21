@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import _get from 'lodash/get'
 
 import Link from '../components/Link'
@@ -11,6 +12,10 @@ const ContactPage = ({ data }) => {
   const site = _get(data, 'site.siteMetadata')
   return (
     <main>
+      <Helmet>
+        <title>Contact Us</title>
+      </Helmet>
+
       <section className="section primary thick vh-90">
         <BackgroundImage
           src={bgEmblem3d}

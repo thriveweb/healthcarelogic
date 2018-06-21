@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 
 import Link from '../components/Link'
 import BackgroundImage from '../components/BackgroundImage'
@@ -17,6 +18,10 @@ import screens from '../images/screens.png'
 
 const BetterViewPage = () => (
   <main>
+    <Helmet>
+      <title>A better view</title>
+    </Helmet>
+
     <div className="section-wrap dark">
       <section className="section thick vh-100">
         <BackgroundImage
