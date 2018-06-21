@@ -168,18 +168,14 @@ blockquote {
 }
 .primary {
   color: var(--secondary);
-  background: linear-gradient(
-    135.98deg,
-    rgba(9, 111, 206, 0.89) 0%,
-    #47b7e8 100%
-  );
+  background: linear-gradient(425deg, hsla(216, 100%, 32%, 1) 0%, #44c6ff 100%);
 }
 .dark {
   color: var(--secondary);
   background: linear-gradient(65.94deg, #004678 0%, #001b34 100%);
 }
 .light {
-  background: linear-gradient(225.77deg, #fafafa 0%, #c8d2db 100%);
+  background: linear-gradient(225.77deg, #fafafa 0%, #a7b0ba 100%);
 }
 .light-reverse {
   background: linear-gradient(-225.77deg, #fafafa 0%, #c8d2db 100%);
