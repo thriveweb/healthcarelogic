@@ -2,6 +2,7 @@ import React from 'react'
 import Link from '../components/Link'
 
 import BackgroundImage from '../components/BackgroundImage'
+import Testimonials from '../components/Testimonials'
 import BgBrokenSystem from '../components/BgBrokenSystem'
 import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
 import bgMacbook from '../images/macbook.png'
@@ -92,15 +93,10 @@ const HomePage = () => (
             clinical team engagement and support sustainable performance
             improvement.
           </p>
-          <h2>Testimonials</h2>
-          {/*
-            Healthcare Logic - Testimonials
-            I absolutely rely on this system to tell me what I need to keep an eye on. – Co-ordinator, Children’s Health Queensland Hospital and Health Service
-            This system saves us so much time and replaces a lot of the manual entry we used to do. We now have more time to find solutions. – A/NUM Specialist Outpatients, Metro South Hospital and Health Service
-            Prior to having access to SystemView, my role was very frustrating due to the lack of meaningful waiting lists that were regularly updated ... having data on tap has made meaningful inroads into my ability to work with clinical departments as we strive to ensure appropriate service for patients. - Clinical Director, Gold Coast Hospital and Health Service
-            In my personal opinion, SystemView is without doubt the most advanced technology used to inform the delivery of healthcare services. - Relationship Manager, Queensland Department of Health
-          */}
         </div>
+      </div>
+      <div className="container skinnier">
+        <Testimonials />
       </div>
     </section>
 
