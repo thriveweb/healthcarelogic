@@ -6,7 +6,7 @@ import './Footer.css'
 
 const Footer = ({ siteTitle }) => (
   <footer>
-    <section className="section light thick">
+    <section className="section lightGrey thick">
       <div className="container">
         <Link to="/">
           <img src={emblem} alt={siteTitle} />

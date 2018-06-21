@@ -1,10 +1,25 @@
 import React from 'react'
+
 import Link from '../components/Link'
+import BackgroundImage from '../components/BackgroundImage'
+import IconGrid from '../components/IconGrid'
+
+import bgEmblemShape from '../images/emblem-shape.svg'
+import bgEmblem from '../images/bg-emblem-3d-white.svg'
+import click from '../images/click.svg'
+import flag from '../images/flag.svg'
+import data from '../images/data.svg'
+import safe from '../images/safe.svg'
 
 const BetterViewPage = () => (
   <main>
     <div className="section-wrap dark">
       <section className="section thick vh-100">
+        <BackgroundImage
+          src={bgEmblemShape}
+          contain
+          style={{ top: '5rem', bottom: '10vh' }}
+        />
         <div className="container skinny">
           <div className="pull-right-skinny">
             <h1>A better view</h1>
@@ -43,42 +58,37 @@ const BetterViewPage = () => (
 
     <section className="section primary thick vh-90">
       <div className="container">
-        <h2>More features</h2>
-        <div>
-          <h4>Six clicks - endless knowledge</h4>
-          <p>
-            SystemView allows users to create personalised, data-rich
-            environments in six clicks or less from the millions of charts it
-            can automatically generate and update.
-          </p>
-        </div>
-        <div>
-          <h4>Here and now</h4>
-          <p>
-            There is nothing worse than juggling waitlists, schedules and sick
-            patients - and being handed data that tells you nothing about the
-            here and now. We are committed to delivering relevant, up-to-date
-            information because that is the only data that can drive change.
-          </p>
-        </div>
-        <div>
-          <h4>Existing data</h4>
-          <p>
-            None of our analysis requires new collections of data. Our software
-            collates huge arrays of routinely collected data that every hospital
-            is already sourcing. What we do that no one has ever done is
-            automate the management of the information so no one needs to
-            manually compile it.
-          </p>
-        </div>
-        <div>
-          <h4>Accessible and safe</h4>
-          <p>
-            We have created a visualisation framework that any authorised user
-            can log on to. Housed within a hospital’s firewall, it is fully
-            secure.
-          </p>
-        </div>
+        <h2 style={{ marginBottom: '4rem' }}>More features</h2>
+
+        <IconGrid
+          fontSizeSmall
+          items={[
+            {
+              title: 'Six clicks - endless knowledge',
+              image: click,
+              description:
+                'SystemView allows users to create personalised, data-rich environments in six clicks or less from the millions of charts it can automatically generate and update.'
+            },
+            {
+              title: 'Here and now',
+              image: flag,
+              description:
+                'There is nothing worse than juggling waitlists, schedules and sick patients - and being handed data that tells you nothing about the here and now. We are committed to delivering relevant, up-to-date information because that is the only data that can drive change.'
+            },
+            {
+              title: 'Existing data',
+              image: data,
+              description:
+                'None of our analysis requires new collections of data. Our software collates huge arrays of routinely collected data that every hospital is already sourcing. What we do that no one has ever done is automate the management of the information so no one needs to manually compile it.'
+            },
+            {
+              title: 'Accessible and safe',
+              image: safe,
+              description:
+                'We have created a visualisation framework that any authorised user can log on to. Housed within a hospital’s firewall, it is fully secure.'
+            }
+          ]}
+        />
       </div>
     </section>
 
@@ -97,8 +107,14 @@ const BetterViewPage = () => (
     </section>
 
     <section className="section light thick vh-90">
-      <div className="container">
-        <h2>We’re here to help</h2>
+      <BackgroundImage
+        src={bgEmblem}
+        contain
+        style={{ top: '5rem', bottom: '10vh' }}
+      />
+
+      <div className="container skinnier">
+        <h2 className="color-primary">We’re here to help</h2>
         <div className="statement">
           <p>Our investment in Customer Success includes:</p>
         </div>

@@ -1,5 +1,5 @@
 :root {
-  --primary: #69e3ff;
+  --primary: #47b7e8;
   --primary-light: #c9f5ff;
   --secondary: #ffffff;
   --tertiary: #d0d0d0;
@@ -175,7 +175,14 @@ blockquote {
   background: linear-gradient(65.94deg, #004678 0%, #001b34 100%);
 }
 .light {
-  background: linear-gradient(46.47deg, #fafafa 0%, #c8d2db 100%);
+  background: linear-gradient(225.77deg, #fafafa 0%, #c8d2db 100%);
+}
+.lightGrey {
+  background: var(--lightGrey);
+}
+
+.color-primary {
+  color: var(--primary);
 }
 
 .relative {

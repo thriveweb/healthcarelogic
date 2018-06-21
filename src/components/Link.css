@@ -22,7 +22,8 @@
 
 .Link--icon {
   height: 1em;
-  margin-right: 0.4em;
+  margin-right: 0.7em;
+  color: var(--primary);
 }
 
 .Link--arrow {
