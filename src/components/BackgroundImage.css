@@ -9,6 +9,10 @@
   transition: filter 0.3s ease-in-out;
   overflow: hidden;
   background-repeat: no-repeat;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
 .BackgroundImage-lazy {
@@ -17,4 +21,9 @@
 
 .BackgroundImage-lazy-loaded {
   filter: blur(0);
+}
+@keyframes BackgroundImage--animation {
+  from {
+    transform: translateY(10px);
+  }
 }

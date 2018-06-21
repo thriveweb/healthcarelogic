@@ -268,6 +268,7 @@ class BrokenSystemPage extends React.Component {
               <BackgroundImage
                 src={bgBrokenSystem}
                 contain
+                animate
                 style={{
                   backgroundPosition: 'left'
                 }}

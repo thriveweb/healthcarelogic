@@ -106,6 +106,7 @@ const HomePage = () => (
       <BackgroundImage
         src={bgEmblem3d}
         contain
+        animate
         style={{ top: '5rem', bottom: '5rem' }}
       />
       <div className="container skinnier relative">

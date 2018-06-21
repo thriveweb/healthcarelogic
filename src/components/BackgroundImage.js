@@ -8,15 +8,23 @@ export default ({
   imageSize,
   contain = false,
   opacity = 1,
+  animate = false,
+  size = null,
   style
-}) => (
-  <div
-    className={`BackgroundImage absolute ${className}`}
-    style={{
-      backgroundImage: `url(${encodeURI(src)})`,
-      backgroundSize: contain ? 'contain' : 'cover',
-      opacity: opacity,
-      ...style
-    }}
-  />
-)
+}) => {
+  let backgroundSize = 'cover'
+  if (contain) backgroundSize = 'contain'
+  if (size) backgroundSize = size
+  return (
+    <div
+      className={`BackgroundImage absolute ${className}`}
+      style={{
+        backgroundImage: `url(${encodeURI(src)})`,
+        backgroundSize,
+        opacity: opacity,
+        animationName: animate ? 'BackgroundImage--animation' : '',
+        ...style
+      }}
+    />
+  )
+}

@@ -25,11 +25,7 @@ const BetterViewPage = () => (
 
     <div className="section-wrap dark">
       <section className="section thick vh-100">
-        <BackgroundImage
-          src={bgEmblemShape}
-          contain
-          style={{ top: '5rem', bottom: '10vh' }}
-        />
+        <BackgroundImage src={bgEmblemShape} animate size={'800px'} />
         <div className="container skinny">
           <div className="pull-right-skinny">
             <h1>A better view</h1>
@@ -175,6 +171,7 @@ const BetterViewPage = () => (
       <BackgroundImage
         src={bgEmblem}
         contain
+        animate
         style={{ top: '5rem', bottom: '10vh' }}
       />
 

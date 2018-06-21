@@ -110,10 +110,11 @@ const AboutPage = () => (
       <title>Our story</title>
     </Helmet>
 
-    <section className="section dark thick vh-90">
+    <section className="section dark thick vh-100">
       <BackgroundImage
         src={bgEmblem3d}
         contain
+        animate
         opacity={0.4}
         style={{ top: '20rem', bottom: '20rem' }}
       />

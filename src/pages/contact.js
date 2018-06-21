@@ -20,6 +20,7 @@ const ContactPage = ({ data }) => {
         <BackgroundImage
           src={bgEmblem3d}
           contain
+          animate
           opacity="0.3"
           style={{ top: '15rem', bottom: '5rem' }}
         />
