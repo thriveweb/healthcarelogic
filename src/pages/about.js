@@ -134,16 +134,16 @@ const AboutPage = () => (
             operationally manage a hospital.
           </p>
           <p>
-            Indeed, when setting out on this mission, we undertook research that
-            included asking a wide array of senior clinicians how much automated
-            data they had access to that was designed to help improve their
-            teams’ performances. The collective response shocked even us – none.
-          </p>
-          <p>
             Our software has changed that and is already being used in more than
             50 hospitals where it is optimising performance in areas such as
             Outpatients, Surgery and Theatres, Endoscopy, Emergency and
             Inpatient Bed Management.
+          </p>
+          <p>
+            Too much hospital reporting is not interesting, let alone important.
+            The question we constantly ask ourselves is - can we get an action
+            out of the data we are producing? If the answer is no, we throw it
+            out. If it is yes, we keep it and get ready to take action.
           </p>
           <p>
             In search of a solution to many of the global challenges facing
