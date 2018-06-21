@@ -9,7 +9,7 @@ export default ({ onClick, close = false }) => {
   }
 
   return (
-    <a href="#" onClick={onClick} className="MenuButton">
+    <a href="#" onClick={handleClick} className="MenuButton">
       {close ? (
         <svg
           width="24"
