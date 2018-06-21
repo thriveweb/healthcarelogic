@@ -1,7 +1,7 @@
 .Footer {
 }
 
-.Footer--lower {
+.Footer--Lower {
   font-size: 1.2rem;
   text-transform: uppercase;
   text-align: center;
@@ -22,4 +22,24 @@
 .Footer h6,
 .Footer .h6 {
   margin-bottom: 1.5rem;
+}
+
+.Footer--Logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Footer--Logo {
+  height: 5rem;
+}
+
+.Footer--Logo + .Footer--Logo {
+  margin-left: 5rem;
+}
+
+.Footer--Logo img {
+  max-height: 100%;
+  max-width: 100%;
 }

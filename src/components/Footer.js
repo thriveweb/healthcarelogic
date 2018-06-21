@@ -2,12 +2,30 @@ import React from 'react'
 
 import Link from './Link'
 import emblem from '../images/emblem.svg'
+import logoBupa from '../images/logos/bupa-logo.png'
+import logoHca from '../images/logos/hca-logo.png'
+import logoDepHealth from '../images/logos/logo-gov-dep-health.png'
+import logoSand from '../images/logos/logo-sandringham.png'
+
 import './Footer.css'
+
+const Logo = ({ src, href, title }) => (
+  <a href={href} target="_blank" className="Footer--Logo">
+    <img src={src} alt={title} />
+  </a>
+)
 
 const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
   <footer className="Footer">
     <section className="section lightGrey thick">
-      <div className="container" />
+      <div className="container">
+        <div className="Footer--Logos">
+          <Logo src={logoDepHealth} href="/" />
+          <Logo src={logoHca} href="/" />
+          <Logo src={logoBupa} href="/" />
+          <Logo src={logoSand} href="/" />
+        </div>
+      </div>
     </section>
 
     <section className="section white">
@@ -39,7 +57,7 @@ const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
         </div>
       </div>
     </section>
-    <section className="section thin white Footer--lower">
+    <section className="section thin white Footer--Lower">
       <div className="container">
         &copy; {new Date().getFullYear()} All Rights Reserved |{' '}
         <a className="subtle" href="https://thriveweb.com.au">
