@@ -462,11 +462,11 @@ export default class HeroScene extends React.Component {
       const r = clock.getElapsedTime()
       const tock = Math.round(r / tickFreq) / tickFreq
       // camera
-      const cameraPan = 0 //Math.sin(r * 0.4) * 0.1 - 0.025
+      const cameraPan = Math.sin(r * 0.4) * 0.1 - 0.025
       camera.position.x +=
-        (-(mouseX * 0.0009) - camera.position.x) * 0.05 + cameraPan
+        (-(mouseX * 0.006) - camera.position.x) * 0.05 + cameraPan
       camera.position.y +=
-        (mouseY * 0.0009 - camera.position.y) * 0.05 + cameraPan
+        (mouseY * 0.006 - camera.position.y) * 0.05 + cameraPan
       camera.position.z += Math.sin(r * 1) / 300
       cameraLookVector.copy(scene.position)
 
