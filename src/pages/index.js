@@ -2,6 +2,7 @@ import React from 'react'
 import Link from '../components/Link'
 
 import BackgroundImage from '../components/BackgroundImage'
+import ScrollNav from '../components/ScrollNav'
 import Testimonials from '../components/Testimonials'
 import BgBrokenSystem from '../components/BgBrokenSystem'
 import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
@@ -10,7 +11,7 @@ import bgMacbook from '../images/macbook.png'
 
 const HomePage = () => (
   <main>
-    <section className="section dark thick vh-100">
+    <section className="section dark thick vh-100 layer-none">
       <div className="container">
         <div className="pull-right">
           <h1>
@@ -25,7 +26,11 @@ const HomePage = () => (
       </div>
     </section>
 
-    <section className="section dark thick" id="scrollToTarget">
+    <section
+      className="section dark thick"
+      id="the-problem"
+      data-scrollToTarget
+    >
       <div className="container skinny relative">
         <div className="pull-left-skinny">
           <h2>Sick of flying blind?</h2>
@@ -52,7 +57,7 @@ const HomePage = () => (
       </div>
     </section>
 
-    <section className="section primary thick">
+    <section className="section primary thick layer-dark" id="our-solution">
       <BackgroundImage
         src={bgMacbook}
         style={{
@@ -85,7 +90,10 @@ const HomePage = () => (
       </div>
     </section>
 
-    <section className="section light-reverse thick">
+    <section
+      className="section light-reverse thick layer-dark"
+      id="track-record"
+    >
       <BackgroundImage src={bgCircles} contain />
       <div className="container skinny">
         <div className="pull-left-skinny">
@@ -102,7 +110,7 @@ const HomePage = () => (
       </div>
     </section>
 
-    <section className="section primary thick vh-90">
+    <section className="section primary thick vh-90 layer-light" id="about-us">
       <BackgroundImage
         src={bgEmblem3d}
         contain
@@ -125,6 +133,8 @@ const HomePage = () => (
         </Link>
       </div>
     </section>
+
+    <ScrollNav />
   </main>
 )
 

@@ -29,7 +29,7 @@ export default ({
         duration: 800,
         easing: 'easeOutQuart'
       })
-      const target = document.querySelector('#scrollToTarget')
+      const target = document.querySelector('[data-scrollToTarget]')
       if (target) moveTo.move(target)
     }
   }
