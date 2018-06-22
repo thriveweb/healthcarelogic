@@ -10,11 +10,15 @@ export default class HeroScene extends React.Component {
     this.initThree()
   }
 
+  componentWillUnmount() {
+    if (this.removeListeners) this.removeListeners()
+  }
+
   initThree() {
     let windowHalfX = window.innerWidth / 2
     let windowHalfY = window.innerHeight / 2
     let vmin = Math.min(windowHalfX, windowHalfY)
-    let partCount = THREE.Math.clamp(windowHalfX * 1.5, 50, 800)
+    let partCount = THREE.Math.clamp(windowHalfX * 1.5, 50, 600)
     let yScroll = window.scrollY
     let mouseX = 0
     let mouseY = 0
@@ -41,12 +45,11 @@ export default class HeroScene extends React.Component {
     const renderer = new THREE.WebGLRenderer({
       antialias: true,
       alpha: true,
-      preserveDrawingBuffer: true,
+      preserveDrawingBuffer: false,
       canvas: this.canvas
     })
     renderer.autoClearColor = true
 
-    window.addEventListener('resize', onWindowResize, false)
     function onWindowResize() {
       camera.aspect = window.innerWidth / window.innerHeight
       camera.updateProjectionMatrix()
@@ -72,8 +75,14 @@ export default class HeroScene extends React.Component {
     renderer.setSize(window.innerWidth, window.innerHeight)
 
     document.addEventListener('mousemove', onMouseMove, false)
-    document.addEventListener('scroll', onScroll, false)
+    window.addEventListener('resize', onWindowResize)
 
+    this.removeListeners = () => {
+      document.removeEventListener('mousemove', onMouseMove)
+      window.removeEventListener('resize', onWindowResize)
+    }
+
+    console.log(this)
     // logo
     const logoGroup = new THREE.Object3D()
     let text = new THREE.MeshStandardMaterial({
@@ -569,10 +578,6 @@ export default class HeroScene extends React.Component {
     function onMouseMove(e) {
       mouseX = e.clientX - windowHalfX
       mouseY = e.clientY - windowHalfY
-    }
-
-    function onScroll() {
-      yScroll = document.body.scrollTop
     }
 
     sceneRender()
