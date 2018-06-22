@@ -1,7 +1,10 @@
 import React from 'react'
 import _map from 'lodash/map'
 import _startCase from 'lodash/startCase'
+import _throttle from 'lodash/throttle'
 import MoveTo from 'moveto'
+import inView from 'in-view'
+inView.threshold(0.5)
 
 import './ScrollNav.css'
 
@@ -58,11 +61,17 @@ const ScrollDot = () => (
 
 export default class ScrollNav extends React.Component {
   state = {
-    items: []
+    items: [],
+    visibleItems: []
   }
 
   componentDidMount() {
     this.queryItems()
+    this.watchScroll()
+  }
+
+  componentWillUnmount() {
+    this.removeWatchScroll()
   }
 
   queryItems = () => {
@@ -71,6 +80,22 @@ export default class ScrollNav extends React.Component {
     this.setState({
       items
     })
+  }
+
+  checkInView = () => {
+    if (!this.state.items.length) return false
+    const visibleItems = this.state.items.filter(id =>
+      inView.is(document.querySelector(`#${id}`))
+    )
+    this.setState({ visibleItems })
+  }
+
+  watchScroll = () => {
+    window.addEventListener('scroll', this.checkInView, 1000)
+  }
+
+  removeWatchScroll = () => {
+    window.removeEventListener('scroll', this.checkInView, 1000)
   }
 
   handleClick = ({ e, targetId }) => {
@@ -86,17 +111,18 @@ export default class ScrollNav extends React.Component {
   }
 
   render() {
-    const { items } = this.state
+    const { items, visibleItems } = this.state
 
     const Group = ({ layer = 'dark' }) => (
       <div className={`ScrollNav layer-${layer}`}>
         {items.map(item => {
           const title = _startCase(item)
           const targetId = `#${item}`
+          const active = visibleItems.indexOf(item) === 0
           return (
             <a
               key={targetId}
-              className="ScrollNav--Item active"
+              className={`ScrollNav--Item ${active ? 'active' : ''}`}
               href={targetId}
               onClick={e => this.handleClick({ e, targetId })}
             >
