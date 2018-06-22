@@ -87,7 +87,8 @@ export default class ScrollNav extends React.Component {
     const visibleItems = this.state.items.filter(id =>
       inView.is(document.querySelector(`#${id}`))
     )
-    this.setState({ visibleItems })
+    const active = !inView.is(document.querySelector(`main .section`))
+    this.setState({ visibleItems, active })
   }
 
   watchScroll = () => {
@@ -111,10 +112,10 @@ export default class ScrollNav extends React.Component {
   }
 
   render() {
-    const { items, visibleItems } = this.state
+    const { items, visibleItems, active } = this.state
 
     const Group = ({ layer = 'dark' }) => (
-      <div className={`ScrollNav layer-${layer}`}>
+      <div className={`ScrollNav layer-${layer} ${active ? 'active' : ''}`}>
         {items.map(item => {
           const title = _startCase(item)
           const targetId = `#${item}`
@@ -134,10 +135,6 @@ export default class ScrollNav extends React.Component {
       </div>
     )
 
-    return (
-      <div>
-        <Group layer="dark" />
-      </div>
-    )
+    return <Group layer="dark" />
   }
 }

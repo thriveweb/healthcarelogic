@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import Link from '../components/Link'
+import ScrollNav from '../components/ScrollNav'
 import BackgroundImage from '../components/BackgroundImage'
 import IconGrid from '../components/IconGrid'
 import FeatureGallery from '../components/FeatureGallery'
@@ -25,7 +26,7 @@ const BetterViewPage = () => (
 
     <div className="section-wrap dark">
       <section className="section thick vh-100">
-        <BackgroundImage src={bgEmblemShape} animate size={'800px'} />
+        <BackgroundImage src={bgEmblemShape} animate size={'650px'} />
         <div className="container skinny">
           <div className="pull-right-skinny">
             <h1>A better view</h1>
@@ -54,7 +55,7 @@ const BetterViewPage = () => (
         </div>
       </section>
 
-      <section className="section thick" id="scrollToTarget">
+      <section className="section thick" data-scrollToTarget id="personalised">
         <div className="container skinnier" style={{ marginBottom: '5rem' }}>
           <p>
             By curating information into a set of consistent algorithms, we’ve
@@ -91,7 +92,7 @@ const BetterViewPage = () => (
       </section>
     </div>
 
-    <section className="section light thick">
+    <section className="section light thick" id="shareable">
       <div className="container">
         <FeatureGallery
           title="Shareable"
@@ -116,7 +117,7 @@ const BetterViewPage = () => (
       </div>
     </section>
 
-    <section className="section dark thick">
+    <section className="section dark thick" id="the-coordination-hub">
       <div className="container">
         <VideoSection videoUrl={'https://vimeo.com/252893118'}>
           <h2>The Coordination Hub</h2>
@@ -129,7 +130,7 @@ const BetterViewPage = () => (
       </div>
     </section>
 
-    <section className="section primary thick">
+    <section className="section primary thick" id="more-features">
       <BackgroundImage src={bgCirclesWhite} contain />
 
       <div className="container">
@@ -167,7 +168,7 @@ const BetterViewPage = () => (
       </div>
     </section>
 
-    <section className="section light thick vh-90">
+    <section className="section light thick vh-90" id="here-to-help">
       <BackgroundImage
         src={bgEmblem}
         contain
@@ -197,6 +198,8 @@ const BetterViewPage = () => (
         </Link>
       </div>
     </section>
+
+    <ScrollNav />
   </main>
 )
 

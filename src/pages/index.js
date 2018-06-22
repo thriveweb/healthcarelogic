@@ -11,7 +11,7 @@ import bgMacbook from '../images/macbook.png'
 
 const HomePage = () => (
   <main>
-    <section className="section dark thick vh-100 layer-none">
+    <section className="section dark thick vh-100">
       <div className="container">
         <div className="pull-right">
           <h1>

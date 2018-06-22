@@ -5,6 +5,7 @@ import Link from '../components/Link'
 import BackgroundImage from '../components/BackgroundImage'
 import IconGrid from '../components/IconGrid'
 import Popup from '../components/Popup'
+import ScrollNav from '../components/ScrollNav'
 
 import bgBrokenSystem from '../images/broken-system.png'
 import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
@@ -262,6 +263,7 @@ class BrokenSystemPage extends React.Component {
             {popupContent}
           </Popup>
         )}
+
         <div className="dark">
           <section className="section thick vh-100">
             <div className="container skinny relative">
@@ -305,7 +307,11 @@ class BrokenSystemPage extends React.Component {
             </Link>
           </section>
 
-          <section className="section thick" id="scrollToTarget">
+          <section
+            className="section thick"
+            data-scrollToTarget
+            id="questions-faced"
+          >
             <div className="container">
               <IconGrid
                 items={iconGridItems}
@@ -318,7 +324,7 @@ class BrokenSystemPage extends React.Component {
           </section>
         </div>
 
-        <section className="section primary thick vh-90">
+        <section className="section primary thick vh-90" id="answers-provided">
           <BackgroundImage
             src={bgEmblem3d}
             contain
@@ -338,6 +344,8 @@ class BrokenSystemPage extends React.Component {
             </Link>
           </div>
         </section>
+
+        <ScrollNav />
       </main>
     )
   }
