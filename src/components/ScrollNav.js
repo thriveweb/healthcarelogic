@@ -4,7 +4,6 @@ import _startCase from 'lodash/startCase'
 import _throttle from 'lodash/throttle'
 import MoveTo from 'moveto'
 import inView from 'in-view'
-inView.threshold(0.5)
 
 import './ScrollNav.css'
 
@@ -92,6 +91,7 @@ export default class ScrollNav extends React.Component {
   }
 
   watchScroll = () => {
+    inView.threshold(0.5)
     window.addEventListener('scroll', this.checkInView, 1000)
   }
 
