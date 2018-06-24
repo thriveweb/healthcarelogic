@@ -2,10 +2,6 @@ import React from 'react'
 
 import Link from './Link'
 import emblem from '../images/emblem.svg'
-import logoBupa from '../images/logos/bupa-logo.png'
-import logoHca from '../images/logos/hca-logo.png'
-import logoDepHealth from '../images/logos/logo-gov-dep-health.png'
-import logoSand from '../images/logos/logo-sandringham.png'
 
 import './Footer.css'
 
@@ -17,17 +13,6 @@ const Logo = ({ src, href, title }) => (
 
 const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
   <footer className="Footer">
-    <section className="section lightGrey thick">
-      <div className="container">
-        <div className="Footer--Logos">
-          <Logo src={logoDepHealth} href="/" />
-          <Logo src={logoHca} href="/" />
-          <Logo src={logoBupa} href="/" />
-          <Logo src={logoSand} href="/" />
-        </div>
-      </div>
-    </section>
-
     <section className="section white">
       <div className="container Footer--Container">
         <div className="Footer--Column">
