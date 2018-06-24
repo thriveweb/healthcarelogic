@@ -140,16 +140,16 @@ const BetterViewPage = () => (
           fontSizeSmall
           items={[
             {
-              title: 'Six clicks - endless knowledge',
+              title: 'Six clicks or less to actionable insights',
               image: click,
               description:
-                'SystemView allows users to create personalised, data-rich environments in six clicks or less from the millions of charts it can automatically generate and update.'
+                'SystemView allows users drill to patient- and/ or Doctor-level data within 6 clicks or less. It’s not about being able to choose anything but via SystemView’s fixed logic be guided to only the actionable information.'
             },
             {
               title: 'Here and now',
               image: flag,
               description:
-                'There is nothing worse than juggling waitlists, schedules and sick patients - and being handed data that tells you nothing about the here and now. We are committed to delivering relevant, up-to-date information because that is the only data that can drive change.'
+                'We’re calling an end of monthly performance reporting (this is often 6 weeks of out date anyway). We are committed to delivering only the relevant information at the frequency that the decisions need to be made.'
             },
             {
               title: 'Existing data',
