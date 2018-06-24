@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import MoveTo from 'moveto'
 
-import './Link.css'
+import './Link.scss'
 
 const A = props => <a {...props} />
 

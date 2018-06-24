@@ -11,6 +11,13 @@
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
+
+  &:hover,
+  &:focus {
+    .Link--arrow {
+      transform: translateX(20%);
+    }
+  }
 }
 
 .Link-scrollButton {
