@@ -26,12 +26,12 @@ export default class Testimonials extends React.Component {
         logo: metroSouth
       },
       {
-        content: `Prior to having access to SystemView, my role was very frustrating due to the lack of meaningful waiting lists that were regularly updated ... having data on tap has made meaningful inroads into my ability to work with clinical departments as we strive to ensure appropriate service for patients.`,
+        content: `Prior to having access, my role was very frustrating due to the lack of meaningful waiting lists that were regularly updated ... having data on tap has made meaningful inroads into my ability to work with clinical departments as we strive to ensure appropriate service for patients.`,
         title: `Clinical Director, Gold Coast Hospital and Health Service`,
         logo: gchf
       },
       {
-        content: `In my personal opinion, SystemView is without doubt the most advanced technology used to inform the delivery of healthcare services.`,
+        content: `In my personal opinion, this is without doubt the most advanced technology used to inform the delivery of healthcare services.`,
         title: `Relationship Manager, Queensland Department of Health`,
         logo: qldHealth
       }
