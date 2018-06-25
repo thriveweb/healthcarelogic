@@ -38,13 +38,25 @@ class HomePage extends React.Component {
           </div>
         </section>
 
+        <ScrollNav />
+
         <section
           className="section dark thick"
           id="the-problem"
           data-scrollToTarget
         >
           <div className="container skinny relative">
-            <div className="pull-left-skinny">
+            <BackgroundImage
+              src={bgGraphicHome}
+              contain
+              animate
+              style={{
+                backgroundPosition: 'right',
+                top: '-5rem',
+                bottom: '-5rem'
+              }}
+            />
+            <div className="pull-left-skinny relative">
               <h2>Sick of flying blind?</h2>
               <div className="statement">
                 <p>
@@ -63,16 +75,6 @@ class HomePage extends React.Component {
                 A broken system
               </Link>
             </div>
-            <BackgroundImage
-              src={bgGraphicHome}
-              contain
-              animate
-              style={{
-                backgroundPosition: 'right',
-                top: '-5rem',
-                bottom: '-5rem'
-              }}
-            />
           </div>
         </section>
 
@@ -152,8 +154,6 @@ class HomePage extends React.Component {
             </Link>
           </div>
         </section>
-
-        <ScrollNav />
       </main>
     )
   }
