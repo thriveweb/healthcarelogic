@@ -16,7 +16,7 @@ export default ({ style, ...props }) => (
       className="MacBook--Video"
       src="/display_screen_c.mp4"
       autoPlay
-      playsinline
+      playsInline
       muted
       loop
     />
