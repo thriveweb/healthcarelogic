@@ -34,7 +34,7 @@ const ScrollDot = () => (
             <g id="Group-4" transform="translate(151)">
               <circle
                 id="glow"
-                fill="#FFF"
+                fill="currentColor"
                 opacity="0.392"
                 filter="url(#filter-1)"
                 cx="11"
@@ -43,13 +43,13 @@ const ScrollDot = () => (
               />
               <circle
                 id="outer-ring"
-                stroke="#FFF"
+                stroke="currentColor"
                 strokeWidth="0.25"
                 cx="11"
                 cy="11"
                 r="11"
               />
-              <circle id="Oval-3" fill="#FFF" cx="11" cy="11" r="3" />
+              <circle id="Oval-3" fill="currentColor" cx="11" cy="11" r="3" />
             </g>
           </g>
         </g>
@@ -61,7 +61,8 @@ const ScrollDot = () => (
 export default class ScrollNav extends React.Component {
   state = {
     items: [],
-    visibleItems: []
+    visibleItems: [],
+    invertColor: false
   }
 
   componentDidMount() {
@@ -83,11 +84,18 @@ export default class ScrollNav extends React.Component {
 
   checkInView = () => {
     if (!this.state.items.length) return false
-    const visibleItems = this.state.items.filter(id =>
-      inView.is(document.querySelector(`#${id}`))
-    )
+    let invertColor = false
+    const visibleItems = this.state.items.filter(id => {
+      const visible = inView.is(document.querySelector(`#${id}`))
+      if (visible)
+        invertColor = document
+          .querySelector(`#${id}`)
+          .classList.contains('light')
+      return visible
+    })
     const active = !inView.is(document.querySelector(`main .section`))
-    this.setState({ visibleItems, active })
+
+    this.setState({ visibleItems, active, invertColor })
   }
 
   watchScroll = () => {
@@ -112,10 +120,14 @@ export default class ScrollNav extends React.Component {
   }
 
   render() {
-    const { items, visibleItems, active } = this.state
+    const { items, visibleItems, active, invertColor } = this.state
 
     const Group = ({ layer = 'dark' }) => (
-      <div className={`ScrollNav layer-${layer} ${active ? 'active' : ''}`}>
+      <div
+        className={`ScrollNav layer-${layer} ${active ? 'active' : ''} ${
+          invertColor ? 'invertColor' : ''
+        }`}
+      >
         {items.map(item => {
           const title = _startCase(item)
           const targetId = `#${item}`

@@ -18,6 +18,10 @@
   pointer-events: none;
 }
 
+.ScrollNav.invertColor {
+  color: var(--primary);
+}
+
 .ScrollNav--Item {
   color: inherit;
   text-decoration: none;
