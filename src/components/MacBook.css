@@ -1,0 +1,27 @@
+.MacBook {
+  position: absolute;
+  right: 50%;
+  left: -10%;
+  max-width: 1000px;
+}
+
+@media (min-width: 1600px) {
+  .MacBook {
+    left: auto;
+  }
+}
+
+.MacBook--Image {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.MacBook--Video {
+  position: absolute;
+  left: 50%;
+  top: 33.5%;
+  width: 77%;
+  height: auto;
+  transform: translate(-50%, -50%);
+}

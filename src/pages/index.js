@@ -5,10 +5,10 @@ import HeroScene from '../components/HeroScene'
 import BackgroundImage from '../components/BackgroundImage'
 import ScrollNav from '../components/ScrollNav'
 import Testimonials from '../components/Testimonials'
+import MacBook from '../components/MacBook'
 import BgBrokenSystem from '../components/BgBrokenSystem'
 import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
 import bgCircles from '../images/bg-circles.png'
-import bgMacbook from '../images/macbook.png'
 
 class HomePage extends React.Component {
   state = {
@@ -70,15 +70,8 @@ class HomePage extends React.Component {
         </section>
 
         <section className="section primary thick layer-dark" id="our-solution">
-          <BackgroundImage
-            src={bgMacbook}
-            style={{
-              width: '50%',
-              top: '7rem'
-            }}
-            contain
-          />
-          <div className="container skinny relative">
+          <MacBook />
+          <div className="container skinny relative flex">
             <div className="pull-right-skinny">
               <h2>A new way</h2>
               <p className="statement">
