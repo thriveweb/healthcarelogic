@@ -86,11 +86,12 @@ export default class ScrollNav extends React.Component {
     if (!this.state.items.length) return false
     let invertColor = false
     const visibleItems = this.state.items.filter(id => {
-      const visible = inView.is(document.querySelector(`#${id}`))
+      const el = document.querySelector(`#${id}`)
+      const visible = inView.is(el)
       if (visible)
-        invertColor = document
-          .querySelector(`#${id}`)
-          .classList.contains('light')
+        invertColor =
+          el.classList.contains('light') ||
+          el.classList.contains('light-reverse')
       return visible
     })
     const active = !inView.is(document.querySelector(`main .section`))
@@ -99,7 +100,7 @@ export default class ScrollNav extends React.Component {
   }
 
   watchScroll = () => {
-    inView.threshold(0.5)
+    inView.threshold(0.4)
     window.addEventListener('scroll', this.checkInView, 1000)
   }
 
@@ -123,9 +124,9 @@ export default class ScrollNav extends React.Component {
     const { items, visibleItems, active, invertColor } = this.state
     const Group = ({ layer = 'dark' }) => (
       <div
-        className={`ScrollNav layer-${layer} ${
-          active && visibleItems.length ? 'active' : ''
-        } ${invertColor ? 'invertColor' : ''}`}
+        className={`ScrollNav layer-${layer} ${active ? 'active' : ''} ${
+          invertColor ? 'invertColor' : ''
+        }`}
       >
         {items.map(item => {
           const title = _startCase(item)
