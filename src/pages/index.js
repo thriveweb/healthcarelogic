@@ -48,8 +48,7 @@ class HomePage extends React.Component {
               <h2>Sick of flying blind?</h2>
               <div className="statement">
                 <p>
-                  We undertook a research exercise in late 2013 and asked a wide
-                  array of senior clinicians the following question:
+                  We asked a wide array of clinicians the following question:
                 </p>
                 <p>
                   “How much automated data do you have available that is
