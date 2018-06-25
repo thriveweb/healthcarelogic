@@ -142,8 +142,8 @@ const AboutPage = () => (
           <p>
             Our software has changed that and is already being used in more than
             50 hospitals where it is optimising performance in areas such as
-            Outpatients, Surgery and Theatres, Endoscopy, Emergency and
-            Inpatient Bed Management.
+            Outpatients, Surgery and Theatres, Endoscopy, Emergency Departments
+            and Inpatient Bed Management.
           </p>
           <p>
             Too much hospital reporting is not interesting, let alone important.
