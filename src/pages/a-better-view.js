@@ -24,6 +24,8 @@ const BetterViewPage = () => (
       <title>A better view</title>
     </Helmet>
 
+    <ScrollNav />
+
     <div className="section-wrap dark">
       <section className="section thick vh-100">
         <BackgroundImage src={bgEmblemShape} animate size={'650px'} />
@@ -198,8 +200,6 @@ const BetterViewPage = () => (
         </Link>
       </div>
     </section>
-
-    <ScrollNav />
   </main>
 )
 

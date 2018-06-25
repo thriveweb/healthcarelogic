@@ -128,22 +128,24 @@ export default class ScrollNav extends React.Component {
           invertColor ? 'invertColor' : ''
         }`}
       >
-        {items.map(item => {
-          const title = _startCase(item)
-          const targetId = `#${item}`
-          const active = visibleItems.indexOf(item) === 0
-          return (
-            <a
-              key={targetId}
-              className={`ScrollNav--Item ${active ? 'active' : ''}`}
-              href={targetId}
-              onClick={e => this.handleClick({ e, targetId })}
-            >
-              {title}
-              <ScrollDot />
-            </a>
-          )
-        })}
+        <div className="container">
+          {items.map(item => {
+            const title = _startCase(item)
+            const targetId = `#${item}`
+            const active = visibleItems.indexOf(item) === 0
+            return (
+              <a
+                key={targetId}
+                className={`ScrollNav--Item ${active ? 'active' : ''}`}
+                href={targetId}
+                onClick={e => this.handleClick({ e, targetId })}
+              >
+                {title}
+                <ScrollDot />
+              </a>
+            )
+          })}
+        </div>
       </div>
     )
 

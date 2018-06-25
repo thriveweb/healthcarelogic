@@ -279,13 +279,15 @@ class BrokenSystemPage extends React.Component {
           <title>A broken system</title>
         </Helmet>
 
+        <ScrollNav />
+
         {popupContent && (
           <Popup onClose={() => this.setState({ popupContent: null })}>
             {popupContent}
           </Popup>
         )}
 
-        <div className="dark">
+        <div className="dark section-wrap">
           <section className="section thick vh-100">
             <div className="container skinny relative">
               <BackgroundImage
@@ -365,8 +367,6 @@ class BrokenSystemPage extends React.Component {
             </Link>
           </div>
         </section>
-
-        <ScrollNav />
       </main>
     )
   }

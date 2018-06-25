@@ -3,15 +3,16 @@
   right: 0;
   top: 50%;
   color: white;
-  display: flex;
   flex-direction: column;
-  right: 1rem;
   font-size: 1rem;
   align-items: stretch;
   transition: all 0.3s ease-in-out;
   opacity: 1;
   transform: translateY(-50%);
   z-index: 1;
+  display: none;
+  width: 100%;
+  pointer-events: none;
 }
 
 .ScrollNav:not(.active) {
@@ -34,6 +35,9 @@
   align-items: center;
   justify-content: flex-end;
   position: relative;
+  max-width: 14rem;
+  margin-left: auto;
+  pointer-events: all;
 }
 
 .ScrollNav--Item:after {
@@ -60,6 +64,10 @@
   opacity: 0;
 }
 
+.ScrollDot {
+  flex-shrink: 0;
+}
+
 .ScrollNav--Item.active {
   opacity: 1;
 }
@@ -76,3 +84,17 @@
 .layer-light {
   z-index: 1;
 } */
+
+.ScrollNav ~ .section {
+  /* padding-right: 10rem; */
+}
+
+@media (min-width: 1100px) {
+  .ScrollNav {
+    display: flex;
+  }
+  .ScrollNav ~ .section .container:not(.skinny, .skinnier),
+  .ScrollNav ~ .section-wrap .container:not(.skinny, .skinnier) {
+    padding-right: 15rem;
+  }
+}
