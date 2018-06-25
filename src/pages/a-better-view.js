@@ -143,13 +143,13 @@ const BetterViewPage = () => (
               title: 'Six clicks or less to actionable insights',
               image: click,
               description:
-                'SystemView allows users drill to patient- and/ or Doctor-level data within 6 clicks or less. It’s not about being able to choose anything but via SystemView’s fixed logic be guided to only the actionable information.'
+                'SystemView allows users to drill to patient- and/or doctor-level data in six clicks or less. It’s not about being able to choose anything. Rather, via SystemView’s fixed logic, it’s about being guided to only the actionable information.'
             },
             {
               title: 'Here and now',
               image: flag,
               description:
-                'We’re calling an end of monthly performance reporting (this is often 6 weeks of out date anyway). We are committed to delivering only the relevant information at the frequency that the decisions need to be made.'
+                'We’re calling an end to monthly performance reporting. After all, this is often six weeks out of date anyway. We are committed to delivering only the relevant information at the frequency that the decisions need to be made.'
             },
             {
               title: 'Existing data',
