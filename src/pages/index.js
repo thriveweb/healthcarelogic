@@ -6,9 +6,9 @@ import BackgroundImage from '../components/BackgroundImage'
 import ScrollNav from '../components/ScrollNav'
 import Testimonials from '../components/Testimonials'
 import MacBook from '../components/MacBook'
-import BgBrokenSystem from '../components/BgBrokenSystem'
 import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
 import bgCircles from '../images/bg-circles.png'
+import bgGraphicHome from '../images/graphic-home.svg'
 
 class HomePage extends React.Component {
   state = {
@@ -63,8 +63,16 @@ class HomePage extends React.Component {
                 A broken system
               </Link>
             </div>
-
-            <BgBrokenSystem />
+            <BackgroundImage
+              src={bgGraphicHome}
+              contain
+              animate
+              style={{
+                backgroundPosition: 'right',
+                top: '-5rem',
+                bottom: '-5rem'
+              }}
+            />
           </div>
         </section>
 
