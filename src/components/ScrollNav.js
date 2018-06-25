@@ -121,12 +121,11 @@ export default class ScrollNav extends React.Component {
 
   render() {
     const { items, visibleItems, active, invertColor } = this.state
-
     const Group = ({ layer = 'dark' }) => (
       <div
-        className={`ScrollNav layer-${layer} ${active ? 'active' : ''} ${
-          invertColor ? 'invertColor' : ''
-        }`}
+        className={`ScrollNav layer-${layer} ${
+          active && visibleItems.length ? 'active' : ''
+        } ${invertColor ? 'invertColor' : ''}`}
       >
         {items.map(item => {
           const title = _startCase(item)
