@@ -86,10 +86,10 @@ class HomePage extends React.Component {
                 level of resource.
               </p>
               <p>
-                And we can now <em>interact</em> with the data in a completely
-                new way including setting personal thresholds for active
-                monitoring, sharing with colleagues and establishing personable
-                discussion groups.
+                And now we <em>interact</em> with the data in a completely new
+                way including setting personal thresholds for active monitoring,
+                sharing with colleagues and establishing personable discussion
+                groups.
               </p>
               <Link to="/a-better-view/" strong icon="page">
                 A better view
