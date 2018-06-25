@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import Link from '../../components/Link'
-import { team } from '../about'
+import team from '../../util/team'
 const member = team[0]
 
 const TeamMember = () => (
