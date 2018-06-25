@@ -17,6 +17,9 @@
     .Link--arrow {
       transform: translateX(20%);
     }
+    .Link--arrow-down {
+      transform: rotate(90deg) translateX(20%);
+    }
   }
 }
 
