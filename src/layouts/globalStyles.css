@@ -161,6 +161,26 @@ blockquote {
   border-left: 2px solid var(--primary);
 }
 
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  position: relative;
+  padding-left: 1.25em;
+}
+
+li:before {
+  content: '•';
+  font-size: 1.7em;
+  line-height: 1em;
+  color: var(--primary);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 /* Utility Classes */
 .white {
   background-color: white;
