@@ -5,7 +5,14 @@
   top: 0;
   bottom: 0;
   z-index: 2;
-  padding: 6vw;
+  padding: 7.5rem;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+}
+
+.Popup--Wrap .container {
+  margin: auto;
 }
 
 .Popup {
@@ -14,7 +21,7 @@
   z-index: 1;
   background: white;
   position: relative;
-  padding: 6vw;
+  padding: 7.5rem;
 }
 
 .Popup--Overlay {
