@@ -24,7 +24,7 @@ class BrokenSystemPage extends React.Component {
       {
         title: 'Emergency Department',
         description:
-          'Do you know the length of stay required in each of your treatment areas for the ED system to have flow? And is this updated every 5 min based on the today’s variation in demand?',
+          'Do you know the length of stay required in each of your treatment areas for the ED system to have flow? And is this updated every five minutes based on today’s variation in demand?',
         image: emergency,
         linkTo: '#',
         popupContent: (
@@ -34,7 +34,7 @@ class BrokenSystemPage extends React.Component {
               <li>
                 Do you know the length of stay required in each of your
                 treatment areas for the ED system to have flow? And is this
-                updated every 5 min based on the today’s variation in demand?
+                updated every five minutes based on today’s variation in demand?
               </li>
               <li>
                 Do you know which patients have exceeded the required length of
@@ -158,7 +158,7 @@ class BrokenSystemPage extends React.Component {
                 many or not enough capacity?
               </li>
               <li>
-                Do you know which patients need to booked today to avoid long
+                Do you know which patients need to be booked today to avoid long
                 waits?
               </li>
               <li>
