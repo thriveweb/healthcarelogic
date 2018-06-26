@@ -283,8 +283,10 @@ main .section:first-child .container {
   }
 }
 
-main .section:first-child {
-  padding-top: 20rem;
+@media (min-width: 600px) {
+  main .section:first-child {
+    padding-top: 20rem;
+  }
 }
 
 .container {
@@ -313,6 +315,16 @@ main .section:first-child {
 .pull-left-skinny {
   margin-right: auto;
   max-width: 400px;
+}
+
+@media (max-width: 600px) {
+  .pull-left,
+  .pull-right,
+  .pull-left-skinny,
+  .pull-right-skinny {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .flex {

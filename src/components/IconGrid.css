@@ -1,14 +1,35 @@
 .IconGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 4rem;
-  grid-row-gap: 8rem;
 }
 
 .IconGrid--Item {
   display: flex;
+  margin-bottom: 6rem;
 }
 
 .IconGrid--Item--Image {
   margin-right: 3rem;
+  width: 4rem;
+  flex-shrink: 0;
+}
+
+.IconGrid--Item--Image img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 970px) {
+  .IconGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4rem;
+    grid-row-gap: 8rem;
+  }
+
+  .IconGrid--Item {
+    margin-bottom: auto;
+  }
+
+  .IconGrid--Item--Image {
+    width: 8rem;
+  }
 }
