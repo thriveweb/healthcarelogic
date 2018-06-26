@@ -52,7 +52,7 @@ const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
           rel="noopener"
           title="Web Design Gold Coast"
         >
-          Built By Thrive
+          Website By Thrive
         </a>
       </div>
     </section>
