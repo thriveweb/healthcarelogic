@@ -16,3 +16,13 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@media (max-width: 600px) {
+  .Header {
+    padding: 2rem 0;
+  }
+
+  .Header--Logo {
+    max-height: 4rem;
+  }
+}
