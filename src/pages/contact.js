@@ -16,7 +16,7 @@ const ContactPage = ({ data }) => {
         <title>Contact Us</title>
       </Helmet>
 
-      <section className="section primary thick vh-90">
+      <section className="section primary thick vh-100">
         <BackgroundImage
           src={bgEmblem3d}
           contain
