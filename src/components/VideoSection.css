@@ -15,3 +15,12 @@
 
 .VideoSection--Video {
 }
+
+@media (max-width: 700px) {
+  .VideoSection {
+    display: block;
+  }
+  .VideoSection--Content {
+    margin: 0 auto 3rem;
+  }
+}
