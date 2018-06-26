@@ -2,6 +2,7 @@ import React from 'react'
 const THREE = require('three')
 const { MeshLine, MeshLineMaterial } = require('three.meshline')
 const SimplexNoise = require('simplex-noise')
+const Stats = require('stats.js')
 
 export default class HeroScene extends React.Component {
   canvas = null
@@ -26,6 +27,10 @@ export default class HeroScene extends React.Component {
     let range = 8 // random position range
     let xRange = 25
     let simplex = new SimplexNoise('saxonisacheeno')
+
+    var stats = new Stats()
+    stats.showPanel(2) // 0: fps, 1: ms, 2: mb, 3+: custom
+    // document.body.appendChild(stats.dom)
 
     const colorParticle = 'rgb(227, 130, 115)'
     const colorParticleCaptured = 'rgb(145, 220, 255)'
@@ -466,9 +471,10 @@ export default class HeroScene extends React.Component {
     let cameraLookVector = new THREE.Vector3()
 
     function sceneRender() {
+      stats.begin()
       const delta = clock.getDelta()
       const r = clock.getElapsedTime()
-      const tock = Math.round(r / tickFreq) / tickFreq
+
       // camera
       const cameraPan = Math.sin(r * 0.4) * 0.1 - 0.025
       camera.position.x +=
@@ -502,10 +508,10 @@ export default class HeroScene extends React.Component {
         dataLine.update(r)
       })
 
-      requestAnimationFrame(sceneRender)
       renderer.render(scene, camera)
+      stats.end()
 
-      tick = tock
+      requestAnimationFrame(sceneRender)
     }
 
     const dataLines = []
