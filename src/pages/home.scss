@@ -29,6 +29,10 @@
     right: calc(52.5% + 1.5rem);
     left: -10%;
 
+    @media (min-width: 1000px) {
+      transform: translateY(15%);
+    }
+
     @media (min-width: 1600px) {
       left: auto;
     }

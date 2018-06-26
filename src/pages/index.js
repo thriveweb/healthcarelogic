@@ -43,7 +43,7 @@ class HomePage extends React.Component {
         <ScrollNav />
 
         <section
-          className="section dark thick Home--TheProblem"
+          className="section dark thick vh-100 Home--TheProblem"
           id="the-problem"
           data-scrollToTarget
         >
@@ -72,7 +72,7 @@ class HomePage extends React.Component {
         </section>
 
         <section
-          className="section primary thick layer-dark Home--OurSolution"
+          className="section primary thick layer-dark vh-100 Home--OurSolution"
           id="our-solution"
         >
           <MacBook />
@@ -104,7 +104,7 @@ class HomePage extends React.Component {
         </section>
 
         <section
-          className="section light-reverse thick layer-dark Home--TrackRecord"
+          className="section light-reverse thick layer-dark vh-100 Home--TrackRecord"
           id="track-record"
         >
           <BackgroundImage src={bgCircles} contain />
@@ -124,7 +124,7 @@ class HomePage extends React.Component {
         </section>
 
         <section
-          className="section primary thick vh-90 layer-light"
+          className="section primary thick vh-100 layer-light"
           id="about-us"
         >
           <BackgroundImage
