@@ -1,8 +1,20 @@
 .ContactPage--grid {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr;
   grid-gap: 5rem;
+}
+
+@media (min-width: 1000px) {
+  .ContactPage--grid {
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
+
+@media (min-width: 800px) {
+  .ContactPage--grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .ContactPage--item {
