@@ -1,8 +1,14 @@
 .TeamGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 3.5rem;
   grid-row-gap: 5rem;
+}
+
+@media (min-width: 600px) {
+  .TeamGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .TeamGrid--Item {

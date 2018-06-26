@@ -6,6 +6,7 @@ import Link from '../components/Link'
 import BackgroundImage from '../components/BackgroundImage'
 import TeamGrid from '../components/TeamGrid'
 import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
+import './about.css'
 
 const AboutPage = ({ data }) => {
   const team = _get(data, 'team.edges').map(edge => edge.node)
@@ -27,12 +28,7 @@ const AboutPage = ({ data }) => {
 
         <div className="container skinny">
           <h1>Our story</h1>
-          <div
-            style={{
-              columns: '2',
-              columnGap: '5rem'
-            }}
-          >
+          <div className="About--Intro">
             <p className="statement">
               Healthcare Logic is committed to developing software that helps
               clinical and managerial leaders improve the performance of their
