@@ -77,7 +77,7 @@ const AboutPage = ({ data }) => {
         </div>
       </section>
 
-      <section className="section primary thick" data-scrollToTarget>
+      <section className="section primary thick" data-scrollToTarget id="team">
         <div className="container skinny">
           <h2 style={{ marginBottom: '4rem' }}>Team</h2>
           <TeamGrid team={team} />

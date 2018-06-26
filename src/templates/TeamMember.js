@@ -29,7 +29,12 @@ const TeamMember = ({ data }) => {
             <img className="TeamMember--Image" src={image} alt={title} />
           </div>
           <div className="flex">
-            <Link to="/about/" strong icon="page" arrow="right">
+            <Link
+              to={{ pathname: '/about/', hash: '#team' }}
+              strong
+              icon="page"
+              arrow="right"
+            >
               Back
             </Link>
           </div>
