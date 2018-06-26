@@ -347,7 +347,7 @@ class BrokenSystemPage extends React.Component {
           </section>
         </div>
 
-        <section className="section primary thick vh-90" id="answers-provided">
+        <section className="section primary thick vh-100" id="answers-provided">
           <BackgroundImage
             src={bgEmblem3d}
             contain
