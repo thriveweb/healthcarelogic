@@ -82,7 +82,6 @@ export default class HeroScene extends React.Component {
       window.removeEventListener('resize', onWindowResize)
     }
 
-    console.log(this)
     // logo
     const logoGroup = new THREE.Object3D()
     let text = new THREE.MeshStandardMaterial({
