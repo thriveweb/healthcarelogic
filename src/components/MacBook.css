@@ -1,14 +1,6 @@
 .MacBook {
   position: absolute;
-  right: 50%;
-  left: -10%;
   max-width: 1000px;
-}
-
-@media (min-width: 1600px) {
-  .MacBook {
-    left: auto;
-  }
 }
 
 .MacBook--Image {

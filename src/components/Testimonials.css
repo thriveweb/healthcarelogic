@@ -104,7 +104,20 @@
   opacity: 1;
 }
 
-@keyframes fromRight {
-  from {
+@media (max-width: 800px) {
+  .Testimonials--Item {
+    padding: 4rem 3rem 2rem;
+  }
+  .Testimonials--Item.prev {
+    transform: translateX(0px) scale(0.85);
+  }
+  .Testimonials--Item.next {
+    transform: translateX(0px) scale(0.85);
+  }
+  .Testimonials--Button.prev {
+    left: -2.5rem;
+  }
+  .Testimonials--Button.next {
+    right: -2.5rem;
   }
 }

@@ -10,6 +10,8 @@ import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
 import bgCircles from '../images/bg-circles.png'
 import bgGraphicHome from '../images/graphic-home.svg'
 
+import './home.scss'
+
 class HomePage extends React.Component {
   state = {
     loaded: false
@@ -21,7 +23,7 @@ class HomePage extends React.Component {
 
   render() {
     return (
-      <main>
+      <main className="Home">
         <section className="section dark thick vh-100">
           {this.state.loaded && <HeroScene />}
           <div className="container">
@@ -41,21 +43,12 @@ class HomePage extends React.Component {
         <ScrollNav />
 
         <section
-          className="section dark thick"
+          className="section dark thick Home--TheProblem"
           id="the-problem"
           data-scrollToTarget
         >
           <div className="container skinny relative">
-            <BackgroundImage
-              src={bgGraphicHome}
-              contain
-              animate
-              style={{
-                backgroundPosition: 'right',
-                top: '-5rem',
-                bottom: '-5rem'
-              }}
-            />
+            <BackgroundImage src={bgGraphicHome} contain animate />
             <div className="pull-left-skinny relative">
               <h2>Sick of flying blind?</h2>
               <div className="statement">
@@ -78,7 +71,10 @@ class HomePage extends React.Component {
           </div>
         </section>
 
-        <section className="section primary thick layer-dark" id="our-solution">
+        <section
+          className="section primary thick layer-dark Home--OurSolution"
+          id="our-solution"
+        >
           <MacBook />
           <div className="container skinny relative flex">
             <div className="pull-right-skinny">
@@ -108,7 +104,7 @@ class HomePage extends React.Component {
         </section>
 
         <section
-          className="section light-reverse thick layer-dark"
+          className="section light-reverse thick layer-dark Home--TrackRecord"
           id="track-record"
         >
           <BackgroundImage src={bgCircles} contain />
