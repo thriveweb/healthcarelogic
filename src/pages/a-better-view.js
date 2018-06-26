@@ -121,7 +121,7 @@ const BetterViewPage = () => (
 
     <section className="section dark thick" id="the-coordination-hub">
       <div className="container">
-        <VideoSection videoUrl={'https://vimeo.com/252893118'}>
+        <VideoSection videoUrl={'https://vimeo.com/261768328/fb3b2982f2'}>
           <h2>The Coordination Hub</h2>
           <p>
             The platform allows you to select any set of screens and send them
