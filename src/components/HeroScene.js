@@ -6,6 +6,8 @@ const Stats = require('stats.js')
 
 export default class HeroScene extends React.Component {
   canvas = null
+  // we will cancel the requestAnimationFrame call using the frameId
+  frameId = null
 
   componentDidMount() {
     this.initThree()
@@ -15,7 +17,8 @@ export default class HeroScene extends React.Component {
     if (this.removeListeners) this.removeListeners()
   }
 
-  initThree() {
+  initThree = () => {
+    // begin mess and chaos
     let windowHalfX = window.innerWidth / 2
     let windowHalfY = window.innerHeight / 2
     let vmin = Math.min(windowHalfX, windowHalfY)
@@ -85,6 +88,7 @@ export default class HeroScene extends React.Component {
     this.removeListeners = () => {
       document.removeEventListener('mousemove', onMouseMove)
       window.removeEventListener('resize', onWindowResize)
+      cancelAnimationFrame(this.frameId)
     }
 
     // logo
@@ -470,7 +474,9 @@ export default class HeroScene extends React.Component {
     // Render
     let cameraLookVector = new THREE.Vector3()
 
-    function sceneRender() {
+    console.log(this)
+
+    const sceneRender = () => {
       stats.begin()
       const delta = clock.getDelta()
       const r = clock.getElapsedTime()
@@ -511,7 +517,7 @@ export default class HeroScene extends React.Component {
       renderer.render(scene, camera)
       stats.end()
 
-      requestAnimationFrame(sceneRender)
+      this.frameId = requestAnimationFrame(sceneRender)
     }
 
     const dataLines = []
