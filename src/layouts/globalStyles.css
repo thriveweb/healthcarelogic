@@ -249,6 +249,15 @@ li:before {
   padding: 0;
 }
 
+@media (max-width: 600px) {
+  .section {
+    padding: 5rem 0;
+  }
+  .section.thick {
+    padding: 10rem 0;
+  }
+}
+
 .vh-100 {
   min-height: 100vh;
   display: flex;
