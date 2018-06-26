@@ -68,7 +68,7 @@ class HomePage extends React.Component {
                 </p>
               </div>
               <p>
-                We thought the answer would be “Not very much”. It wasn’t.{' '}
+                We thought the answer would be: “Not very much.” It wasn’t.{' '}
                 <strong>The response was: “None”.</strong>
               </p>
               <Link to="/a-broken-system/" strong icon="page">
