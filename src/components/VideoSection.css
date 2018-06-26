@@ -24,3 +24,7 @@
     margin: 0 auto 3rem;
   }
 }
+
+.VideoSection--Video:not(.touched) .plyr__controls {
+  opacity: 0;
+}
