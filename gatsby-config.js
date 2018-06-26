@@ -8,7 +8,15 @@ module.exports = {
     address: '1263 Mission Street, Floor 3, Brisbane 94103'
   },
   plugins: [
-    'gatsby-plugin-react-helmet', // css
+    'gatsby-plugin-react-helmet',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/content/`,
+        name: `content`
+      }
+    },
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-postcss-sass`,
       options: {

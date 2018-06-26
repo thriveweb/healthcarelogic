@@ -16,6 +16,10 @@
   display: block;
   margin-bottom: 3rem;
   transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: 0.8;
 }
 
 .TeamGrid--Item--Title {
@@ -40,7 +44,9 @@
 .TeamGrid--Item:focus .TeamGrid--Item--Hover {
   opacity: 1;
 }
+
 .TeamGrid--Item:hover .TeamGrid--Item--Image,
 .TeamGrid--Item:focus .TeamGrid--Item--Image {
-  opacity: 0.5;
+  opacity: 0.6;
+  filter: grayscale(0);
 }

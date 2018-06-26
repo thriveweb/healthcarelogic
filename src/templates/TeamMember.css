@@ -1,0 +1,18 @@
+.TeamMember--Wrap {
+  display: flex;
+  align-items: center;
+}
+
+.TeamMember--Content {
+  margin: 0 5rem 0 0;
+  max-width: 45rem;
+}
+
+.TeamMember--Image {
+  width: 35%;
+  margin-left: auto;
+}
+
+.TeamMember .Link {
+  margin: 2.5rem 0 0 auto;
+}
