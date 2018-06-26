@@ -57,7 +57,11 @@ const BetterViewPage = () => (
         </div>
       </section>
 
-      <section className="section thick" data-scrollToTarget id="personalised">
+      <section
+        className="section thick vh-100"
+        data-scrollToTarget
+        id="personalised"
+      >
         <div className="container skinnier" style={{ marginBottom: '5rem' }}>
           <p>
             By curating information into a set of consistent algorithms, we’ve
@@ -94,7 +98,7 @@ const BetterViewPage = () => (
       </section>
     </div>
 
-    <section className="section light thick" id="shareable">
+    <section className="section light thick vh-100" id="shareable">
       <div className="container">
         <FeatureGallery
           title="Shareable"
@@ -119,7 +123,7 @@ const BetterViewPage = () => (
       </div>
     </section>
 
-    <section className="section dark thick" id="the-coordination-hub">
+    <section className="section dark thick vh-100" id="the-coordination-hub">
       <div className="container">
         <VideoSection videoUrl={'https://vimeo.com/261768328/fb3b2982f2'}>
           <h2>The Coordination Hub</h2>
@@ -132,7 +136,7 @@ const BetterViewPage = () => (
       </div>
     </section>
 
-    <section className="section primary thick" id="more-features">
+    <section className="section primary thick vh-100" id="more-features">
       <BackgroundImage src={bgCirclesWhite} contain />
 
       <div className="container">
@@ -170,7 +174,7 @@ const BetterViewPage = () => (
       </div>
     </section>
 
-    <section className="section light thick vh-90" id="here-to-help">
+    <section className="section light thick vh-100" id="here-to-help">
       <BackgroundImage
         src={bgEmblem}
         contain
