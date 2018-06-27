@@ -13,6 +13,7 @@
 
 .Popup--Wrap .container {
   margin: auto;
+  animation: Popup 0.2s ease;
 }
 
 .Popup {
@@ -22,6 +23,13 @@
   background: white;
   position: relative;
   padding: 7.5rem;
+}
+
+@keyframes Popup {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
 }
 
 .Popup--Overlay {
