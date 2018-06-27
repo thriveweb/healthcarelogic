@@ -42,3 +42,12 @@
   opacity: 0.9;
   color: inherit;
 }
+
+@media (max-width: 777px) {
+  .Popup--Wrap {
+    padding: 5vmin 2.5vmin;
+  }
+  .Popup {
+    padding: 10vmin 5vmin 5vmin;
+  }
+}
