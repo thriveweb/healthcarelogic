@@ -588,8 +588,6 @@ export default class HeroScene extends React.Component {
         }
       })
 
-      console.log(dataLines.length)
-
       renderer.render(scene, camera)
       stats.end()
 
