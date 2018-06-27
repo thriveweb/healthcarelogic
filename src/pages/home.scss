@@ -67,6 +67,8 @@
 }
 
 .Home--TrackRecord {
+  overflow: hidden;
+
   @media (max-width: 800px) {
     .pull-left-skinny {
       margin: auto;
