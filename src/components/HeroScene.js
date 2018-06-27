@@ -565,7 +565,7 @@ export default class HeroScene extends React.Component {
       // particles
       if (delta < 0.0333) {
         // add particles if at least 30fps
-        for (var i = 0; i < 10; i++) {
+        for (var i = 0; i < 1; i++) {
           addVehicle()
         }
       }
