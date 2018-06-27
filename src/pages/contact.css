@@ -1,19 +1,23 @@
 .ContactPage--grid {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 5rem;
+  justify-content: space-between;
 }
 
-@media (min-width: 1000px) {
-  .ContactPage--grid {
-    grid-template-columns: 1fr 1.5fr;
-  }
+.ContactPage--grid > * {
+  width: 100%;
+}
+
+.ContactPage--grid > *:nth-child(1) {
+  margin-right: 5rem;
+}
+
+.ContactPage--grid > * {
+  width: 100%;
 }
 
 @media (min-width: 800px) {
   .ContactPage--grid {
-    grid-template-columns: 1fr 1fr;
+    display: flex;
   }
 }
 

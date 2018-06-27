@@ -1,21 +1,36 @@
 .TeamGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 3.5rem;
-  grid-row-gap: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.TeamGrid--Item {
+  width: calc(33.33% - 2rem);
+  margin-bottom: 4rem;
+
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+}
+
+@supports (display: grid) {
+  .TeamGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3.5rem;
+    grid-row-gap: 5rem;
+  }
+
+  .TeamGrid--Item {
+    margin-bottom: 0;
+    width: auto;
+  }
 }
 
 @media (min-width: 600px) {
   .TeamGrid {
     grid-template-columns: 1fr 1fr 1fr;
   }
-}
-
-.TeamGrid--Item {
-  width: 100%;
-  color: inherit;
-  text-decoration: none;
-  position: relative;
 }
 
 .TeamGrid--Item--Image {

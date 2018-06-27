@@ -19,14 +19,15 @@
 
 @media (min-width: 970px) {
   .IconGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 4rem;
-    grid-row-gap: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .IconGrid--Item {
     margin-bottom: auto;
+    width: calc(50% - 2rem);
+    margin-bottom: 8rem;
   }
 
   .IconGrid--Item--Image {
