@@ -16,7 +16,13 @@ import flag from '../images/flag.svg'
 import data from '../images/data.svg'
 import safe from '../images/safe.svg'
 
-import screens from '../images/screens.png'
+import screen1 from '../images/screens/healthcarelogic_videoscreens-001.jpeg'
+import screen2 from '../images/screens/healthcarelogic_videoscreens-002.jpeg'
+import screen3 from '../images/screens/healthcarelogic_videoscreens-003.jpeg'
+import screen4 from '../images/screens/healthcarelogic_videoscreens-004.jpeg'
+import screen5 from '../images/screens/healthcarelogic_videoscreens-005.jpeg'
+import screen6 from '../images/screens/healthcarelogic_videoscreens-006.jpeg'
+import screen7 from '../images/screens/healthcarelogic_videoscreens-007.jpeg'
 
 const BetterViewPage = () => (
   <main>
@@ -76,21 +82,21 @@ const BetterViewPage = () => (
             items={[
               {
                 title: 'Watch any chart and its automatic updates',
-                image: screens
+                image: screen1
               },
               {
                 title:
                   'Draw improvement trajectories and monitor against them automatically',
-                image: screens
+                image: screen2
               },
               {
                 title: 'Set and automatically monitor personalised standards',
-                image: screens
+                image: screen3
               },
               {
                 title:
                   'Receive push notifications for improvements or standards outside thresholds',
-                image: screens
+                image: screen4
               }
             ]}
           />
@@ -107,16 +113,16 @@ const BetterViewPage = () => (
             {
               title:
                 'Create groups of charts into projects and watch as they automatically update',
-              image: screens
+              image: screen5
             },
             {
               title:
                 'Create discussion groups with colleagues over charts or projects',
-              image: screens
+              image: screen6
             },
             {
               title: 'Export charts automatically into PowerPoint',
-              image: screens
+              image: screen7
             }
           ]}
         />

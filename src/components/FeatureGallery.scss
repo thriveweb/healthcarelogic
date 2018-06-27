@@ -89,12 +89,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-grow: 1;
+  flex-grow: 0;
+  width: 100%;
+  padding: 1rem;
 }
 
 .FeatureGallery--Images--Item {
   display: none;
   animation: FeatureGallery--fade 0.5s ease-out;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.5);
 
   @keyframes FeatureGallery--fade {
     from {
@@ -108,7 +114,9 @@
   }
 
   img {
-    width: 100%;
+    margin: -1px -1px;
+    width: calc(100% + 2px);
     height: auto;
+    display: block;
   }
 }
