@@ -33,27 +33,38 @@ export default class FeatureGallery extends React.Component {
   }
 
   timer = null
+  resumeTimer = null
 
   componentDidMount() {
+    this.startAutoplay()
+  }
+
+  componentWillUnmount() {
+    this.stopAutoplay()
+  }
+
+  startAutoplay = () => {
     if (this.props.autoplay) {
       this.timer = window.setInterval(this.progressSlide, this.props.autoplay)
     }
   }
 
-  componentWillUnmount() {
-    if (this.timer) {
-      window.clearInterval(this.timer)
-    }
+  stopAutoplay = () => {
+    if (this.timer) window.clearInterval(this.timer)
+    if (this.resumeTimer) window.clearTimeout(this.resumeTimer)
   }
 
-  progressSlide = () => {
-    console.log(this.state.selectedSlide)
-    // this.setState(prevState: {})
-  }
+  progressSlide = (increment = 1) =>
+    this.setState({
+      selectedSlide: this.state.selectedSlide + increment
+    })
 
   render() {
     const { title, autoplay, slides, items, flip } = this.props
     const { selectedSlide } = this.state
+
+    const isSelected = index =>
+      selectedSlide % (items || slides).length === index
 
     return (
       <div className={`FeatureGallery ${flip ? 'FeatureGallery-flip' : ''}`}>
@@ -61,8 +72,9 @@ export default class FeatureGallery extends React.Component {
           {title && <h2 className="FeatureGallery--Title">{title}</h2>}
           {(items || slides).map((slide, index) => {
             const className = `FeatureGallery--Sidebar--Button ${
-              selectedSlide === index ? 'active' : ''
+              isSelected(index) ? 'active' : ''
             }`
+
             return (
               <button
                 key={`Button--${index}`}
@@ -78,7 +90,7 @@ export default class FeatureGallery extends React.Component {
         <div className="FeatureGallery--Images">
           {(items || slides).map((slide, index) => {
             const className = `FeatureGallery--Images--Item ${
-              selectedSlide === index ? 'active' : ''
+              isSelected(index) ? 'active' : ''
             }`
             return (
               <div key={`Images--${index}`} className={className}>
