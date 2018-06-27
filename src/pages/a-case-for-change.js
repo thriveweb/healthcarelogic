@@ -276,7 +276,7 @@ class BrokenSystemPage extends React.Component {
     return (
       <main>
         <Helmet>
-          <title>A broken system</title>
+          <title>A case for change</title>
         </Helmet>
 
         <ScrollNav />
@@ -299,7 +299,7 @@ class BrokenSystemPage extends React.Component {
                 }}
               />
               <div className="pull-right-skinny">
-                <h1>A broken system</h1>
+                <h1>A case for change</h1>
                 <p>
                   We all know that we spend vast amounts of money and time
                   collecting and storing data - and not enough time
@@ -320,7 +320,7 @@ class BrokenSystemPage extends React.Component {
             </div>
 
             <Link
-              to="/a-broken-system/"
+              to="/a-case-for-change/"
               strong
               icon="page"
               arrow="down"

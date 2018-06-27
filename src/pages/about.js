@@ -62,7 +62,7 @@ const AboutPage = ({ data }) => {
             </p>
           </div>
           <Link
-            to="/a-broken-system/"
+            to="/a-case-for-change/"
             strong
             icon="page"
             arrow="down"

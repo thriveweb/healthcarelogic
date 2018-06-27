@@ -52,7 +52,7 @@ const BetterViewPage = () => (
           </div>
 
           <Link
-            to="/a-broken-system/"
+            to="/a-case-for-change/"
             strong
             icon="page"
             arrow="down"

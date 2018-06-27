@@ -64,8 +64,8 @@ class HomePage extends React.Component {
                 We thought the answer would be: “Not very much.” It wasn’t.{' '}
                 <strong>The response was: “None”.</strong>
               </p>
-              <Link to="/a-broken-system/" strong icon="page">
-                A broken system
+              <Link to="/a-case-for-change/" strong icon="page">
+                A case for change
               </Link>
             </div>
           </div>
