@@ -24,6 +24,12 @@ class HomePage extends React.Component {
   render() {
     return (
       <main className="Home">
+        <Helmet>
+          <meta
+            name="description"
+            content="Revolutionary technology that empowers clinical and managerial leaders to collaborate with clarity. With our suite of proprietary algorithms visualising consistent, high-frequency, patient-level data, the best decisions can be made for any given level of resource."
+          />
+        </Helmet>
         <section className="section dark thick vh-100">
           {this.state.loaded && <HeroScene />}
           <div className="container">
