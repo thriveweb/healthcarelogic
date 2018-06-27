@@ -10,7 +10,7 @@ export default class Popup extends React.Component {
     return (
       <div className="Popup--Wrap">
         <div className="Popup--Overlay" onClick={onClose} />
-        <div className="container skinnier relative">
+        <div className="container skinny relative">
           <a
             href="#"
             onClick={e => {
