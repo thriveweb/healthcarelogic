@@ -1,4 +1,6 @@
 import React from 'react'
+import Facebook from 'react-feather/dist/icons/facebook'
+import Twitter from 'react-feather/dist/icons/twitter'
 
 import Link from './Link'
 import emblem from '../images/emblem.svg'
@@ -33,6 +35,26 @@ const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
         </div>
         <div className="Footer--Column">
           <h6>Follow Us</h6>
+          <div className="flex">
+            <a
+              className="subtle"
+              style={{ padding: '0.2em' }}
+              href="/"
+              target="_blank"
+              rel="nofollow"
+            >
+              <Facebook />
+            </a>
+            <a
+              className="subtle"
+              style={{ padding: '0.2em' }}
+              href="/"
+              target="_blank"
+              rel="nofollow"
+            >
+              <Twitter />
+            </a>
+          </div>
         </div>
         <div className="Footer--Column">
           <h6>Quick Contact</h6>
