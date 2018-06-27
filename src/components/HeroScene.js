@@ -345,6 +345,11 @@ export default class HeroScene extends React.Component {
       addVehicle()
     }
 
+    function onMouseMove(e) {
+      mouseX = e.clientX - windowHalfX
+      mouseY = e.clientY - windowHalfY
+    }
+
     // grid
     let gridDots = []
     const gridGeometry = new THREE.CircleGeometry(0.015, 60)
@@ -474,52 +479,6 @@ export default class HeroScene extends React.Component {
     // Render
     let cameraLookVector = new THREE.Vector3()
 
-    console.log(this)
-
-    const sceneRender = () => {
-      stats.begin()
-      const delta = clock.getDelta()
-      const r = clock.getElapsedTime()
-
-      // camera
-      const cameraPan = Math.sin(r * 0.4) * 0.1 - 0.025
-      camera.position.x +=
-        (-(mouseX * 0.001) - camera.position.x) * 0.05 + cameraPan
-      camera.position.y +=
-        (mouseY * 0.003 - camera.position.y) * 0.05 + cameraPan
-      camera.position.z += Math.sin(r * 1) / 300
-      cameraLookVector.copy(scene.position)
-
-      camera.lookAt(cameraLookVector)
-      camera.position.z = 11 - window.innerWidth / window.innerHeight / 2
-
-      // particles
-      if (delta < 0.0333) {
-        // add particles if at least 30fps
-        for (var i = 0; i < 10; i++) {
-          addVehicle()
-        }
-      }
-
-      particles.map((particle, index) => {
-        particle.applyBehaviours(particles)
-        particle.update(r, index)
-      })
-
-      // Update LinePos
-      updateSeekVector({ elapsedTime: r })
-      updateLine({ seekVector, delta, elapsedTime: r })
-
-      dataLines.forEach(dataLine => {
-        dataLine.update(r)
-      })
-
-      renderer.render(scene, camera)
-      stats.end()
-
-      this.frameId = requestAnimationFrame(sceneRender)
-    }
-
     const dataLines = []
 
     function addDataLine() {
@@ -586,9 +545,55 @@ export default class HeroScene extends React.Component {
 
     setTimeout(addDataLine, 5000)
 
-    function onMouseMove(e) {
-      mouseX = e.clientX - windowHalfX
-      mouseY = e.clientY - windowHalfY
+    const sceneRender = () => {
+      stats.begin()
+      const delta = clock.getDelta()
+      const r = clock.getElapsedTime()
+
+      // camera
+      const cameraPan = Math.sin(r * 0.4) * 0.1 - 0.025
+      camera.position.x +=
+        (-(mouseX * 0.001) - camera.position.x) * 0.05 + cameraPan
+      camera.position.y +=
+        (mouseY * 0.003 - camera.position.y) * 0.05 + cameraPan
+      camera.position.z += Math.sin(r * 1) / 300
+      cameraLookVector.copy(scene.position)
+
+      camera.lookAt(cameraLookVector)
+      camera.position.z = 11 - window.innerWidth / window.innerHeight / 2
+
+      // particles
+      if (delta < 0.0333) {
+        // add particles if at least 30fps
+        for (var i = 0; i < 10; i++) {
+          addVehicle()
+        }
+      }
+
+      particles.map((particle, index) => {
+        particle.applyBehaviours(particles)
+        particle.update(r, index)
+      })
+
+      // Update LinePos
+      updateSeekVector({ elapsedTime: r })
+      updateLine({ seekVector, delta, elapsedTime: r })
+
+      dataLines.forEach((dataLine, index) => {
+        dataLine.update(r)
+        // remove if too many
+        if (dataLines.length > 3) {
+          dataLines.splice(index, 1)
+          dataLine.parent.remove(dataLine)
+        }
+      })
+
+      console.log(dataLines.length)
+
+      renderer.render(scene, camera)
+      stats.end()
+
+      this.frameId = requestAnimationFrame(sceneRender)
     }
 
     sceneRender()
