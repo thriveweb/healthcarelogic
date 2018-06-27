@@ -1,6 +1,7 @@
 import React from 'react'
-import Link from '../components/Link'
+import Helmet from 'react-helmet'
 
+import Link from '../components/Link'
 import HeroScene from '../components/HeroScene'
 import BackgroundImage from '../components/BackgroundImage'
 import ScrollNav from '../components/ScrollNav'
