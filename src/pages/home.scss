@@ -1,6 +1,17 @@
 .Home {
 }
 
+.Home--Title {
+  animation: Home--Title 3s ease-out;
+}
+
+@keyframes Home--Title {
+  from {
+    opacity: 0;
+    transform: translate(0, 15%);
+  }
+}
+
 .Home--TheProblem {
   .BackgroundImage {
     background-position: right;

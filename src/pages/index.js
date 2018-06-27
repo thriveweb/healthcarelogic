@@ -28,7 +28,7 @@ class HomePage extends React.Component {
           {this.state.loaded && <HeroScene />}
           <div className="container">
             <div className="pull-right">
-              <h1>
+              <h1 className="Home--Title">
                 If we could <span>see</span> the system, what would{' '}
                 <span>change</span>?
               </h1>
