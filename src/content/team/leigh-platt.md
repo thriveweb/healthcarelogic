@@ -1,7 +1,7 @@
 ---
 order: 4
 title: 'Leigh Platt'
-subtitle: 'Junior Web Engineer'
+subtitle: 'Business Manager'
 image: '/images/team/leigh-platt.jpg'
 ---
 
