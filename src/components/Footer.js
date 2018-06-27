@@ -21,6 +21,9 @@ const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
           </Link>
         </div>
         <div className="Footer--Column">
+          <Link className="h6 subtle" to="/">
+            Home
+          </Link>
           <Link className="h6 subtle" to="/privacy-policy/">
             Privacy Policy
           </Link>
