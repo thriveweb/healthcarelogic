@@ -552,10 +552,8 @@ export default class HeroScene extends React.Component {
 
       // camera
       const cameraPan = Math.sin(r * 0.4) * 0.1 - 0.025
-      camera.position.x +=
-        (-(mouseX * 0.001) - camera.position.x) * 0.05 + cameraPan
-      camera.position.y +=
-        (mouseY * 0.003 - camera.position.y) * 0.05 + cameraPan
+      camera.position.x += (-(mouseX * 0.002) - camera.position.x) * 0.1
+      camera.position.y += (mouseY * 0.0005 - camera.position.y) * 0.1
       camera.position.z += Math.sin(r * 1) / 300
       cameraLookVector.copy(scene.position)
 
