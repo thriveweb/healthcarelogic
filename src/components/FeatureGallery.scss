@@ -120,3 +120,45 @@
     display: block;
   }
 }
+
+@media (max-width: 888px) {
+  .FeatureGallery {
+    display: block;
+  }
+
+  .FeatureGallery--Images {
+    display: none;
+  }
+
+  .FeatureGallery--Sidebar {
+    width: 100%;
+    max-width: none;
+
+    .FeatureGallery-flip & {
+      margin: 0;
+    }
+  }
+
+  .FeatureGallery--Sidebar--Button--Wrap {
+    .FeatureGallery--Images--Item {
+      display: block;
+      margin: 4rem auto;
+    }
+  }
+  .FeatureGallery--Sidebar--Button {
+    width: 100%;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.05);
+    outline: none;
+    cursor: none;
+    pointer-events: none;
+
+    &:after {
+      display: none;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+}

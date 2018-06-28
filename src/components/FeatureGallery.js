@@ -76,14 +76,23 @@ export default class FeatureGallery extends React.Component {
             }`
 
             return (
-              <button
-                key={`Button--${index}`}
-                className={className}
-                onClick={() => this.setState({ selectedSlide: index })}
-              >
-                {slide.title}
-                <ChevronRight />
-              </button>
+              <div className="FeatureGallery--Sidebar--Button--Wrap">
+                <button
+                  key={`Button--${index}`}
+                  className={className}
+                  onClick={() => this.setState({ selectedSlide: index })}
+                >
+                  {slide.title}
+                  <ChevronRight />
+                </button>
+                {/* Image for responsive viewports */}
+                <div
+                  key={`Images--${index}`}
+                  className="FeatureGallery--Images--Item"
+                >
+                  <img src={slide.image} alt={slide.title} />
+                </div>
+              </div>
             )
           })}
         </div>
