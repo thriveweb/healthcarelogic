@@ -57,7 +57,7 @@ class HomePage extends React.Component {
           <div className="container skinny relative">
             <BackgroundImage src={bgGraphicHome} contain animate />
             <div className="pull-left-skinny relative">
-              <h2>Sick of flying blind?</h2>
+              <h2>Time to Shine a Light?</h2>
               <div className="statement">
                 <p>
                   We asked a wide array of clinicians the following question:
