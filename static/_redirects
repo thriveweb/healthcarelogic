@@ -1,3 +1,11 @@
 # Redirects from what the browser requests to what we serve
 /our_story/              /about/
 /our_solutions/          /a-better-view/
+
+# Redirect domain aliases to primary domain
+# http://healthcarelogic.com/* http://www.healthcarelogic.com.au/:splat 301!
+# http://www.healthcarelogic.com/* http://www.healthcarelogic.com.au/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://healthcarelogic.netlify.com/* https://www.healthcarelogic.com.au/:splat 301!
+http://healthcarelogic.netlify.com/* https://www.healthcarelogic.com.au/:splat 301!
