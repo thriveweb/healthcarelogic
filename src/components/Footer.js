@@ -33,7 +33,7 @@ const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
             Contact Us
           </Link>
         </div>
-        <div className="Footer--Column">
+        {/* <div className="Footer--Column">
           <h6>Follow Us</h6>
           <div className="flex">
             <a
@@ -55,7 +55,7 @@ const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
               <Twitter />
             </a>
           </div>
-        </div>
+        </div> */}
         <div className="Footer--Column">
           <h6>Quick Contact</h6>
           <a href={`mailto:${siteEmail}`} className="subtle" target="_blank">
@@ -67,6 +67,7 @@ const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
             </a>
           )}
         </div>
+        <div className="Footer--Column" />
       </div>
     </section>
     <section className="section thin white Footer--Lower">
