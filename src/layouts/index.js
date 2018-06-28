@@ -69,6 +69,20 @@ class Layout extends React.Component {
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
           <meta name="msapplication-TileColor" content="#2b5797" />
           <meta name="theme-color" content="#ffffff" />
+
+          {/* Global site tag (gtag.js) - Google Analytics */}
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-112589638-13"
+          />
+          <script>
+            {`
+              // window.dataLayer = window.dataLayer || [];
+              // function gtag(){dataLayer.push(arguments)}
+              // gtag('js', new Date());
+              // gtag('config', 'UA-112589638-13');
+            `}
+          </script>
         </Helmet>
 
         <Menu active={menuOpen} handleMenuToggle={this.handleMenuToggle} />
