@@ -35,6 +35,14 @@ class Layout extends React.Component {
           defaultTitle={data.site.siteMetadata.title}
           titleTemplate={`%s | ${data.site.siteMetadata.title}`}
         >
+          <meta
+            name="msvalidate.01"
+            content="B0112812CA622A13C327AF572E2BA5B5"
+          />
+          <meta
+            name="google-site-verification"
+            content="u7PuEsbocVgyS2ZclTrpzmYZJJB7B_5Ji4wVEK9TMx0"
+          />
           <link
             href="https://fonts.googleapis.com/css?family=Work+Sans:300,400"
             rel="stylesheet"
