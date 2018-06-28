@@ -3,8 +3,8 @@ const postcssPresetEnv = require('postcss-preset-env')
 module.exports = {
   siteMetadata: {
     title: 'Healthcare Logic',
-    email: 'contact@healthcarelogic.com.au',
-    phone: '0414 220 220',
+    email: 'info@healthcarelogic.com.au',
+    phone: '',
     address: '1263 Mission Street, Floor 3, Brisbane 94103'
   },
   plugins: [

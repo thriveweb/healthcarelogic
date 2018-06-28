@@ -35,18 +35,22 @@ const ContactPage = ({ data }) => {
                 <h5>Address</h5>
                 <p>{site.address}</p>
               </div>
-              <div className="ContactPage--item">
-                <h5>Phone</h5>
-                <p>
-                  <a
-                    href={`tel:${site.phone}`}
-                    className="subtle"
-                    target="_blank"
-                  >
-                    {site.phone}
-                  </a>
-                </p>
-              </div>
+
+              {site.phone && (
+                <div className="ContactPage--item">
+                  <h5>Phone</h5>
+                  <p>
+                    <a
+                      href={`tel:${site.phone}`}
+                      className="subtle"
+                      target="_blank"
+                    >
+                      {site.phone}
+                    </a>
+                  </p>
+                </div>
+              )}
+
               <div className="ContactPage--item">
                 <h5>Mail</h5>
                 <p>

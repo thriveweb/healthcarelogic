@@ -26,11 +26,11 @@ const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
           <Link className="h6 subtle" to="/">
             Home
           </Link>
-          <Link className="h6 subtle" to="/privacy-policy/">
-            Privacy Policy
-          </Link>
           <Link className="h6 subtle" to="/about/">
             About Us
+          </Link>
+          <Link className="h6 subtle" to="/contact/">
+            Contact Us
           </Link>
         </div>
         <div className="Footer--Column">
@@ -61,9 +61,11 @@ const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
           <a href={`mailto:${siteEmail}`} className="subtle" target="_blank">
             {siteEmail}
           </a>
-          <a href={`tel:${sitePhone}`} className="subtle" target="_blank">
-            {sitePhone}
-          </a>
+          {sitePhone && (
+            <a href={`tel:${sitePhone}`} className="subtle" target="_blank">
+              {sitePhone}
+            </a>
+          )}
         </div>
       </div>
     </section>
