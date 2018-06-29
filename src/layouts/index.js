@@ -29,7 +29,7 @@ class Layout extends React.Component {
 
     this.updateBodyStyle()
 
-    const absoluteImageUrl = `${data.site.siteMetadata.siteUrl}/card-og.png`
+    const absoluteImageUrl = `${data.site.siteMetadata.siteUrl}/card-og.jpg`
 
     return (
       <div>
