@@ -2,16 +2,16 @@
 /our_story/              /about/
 /our_solutions/          /a-better-view/
 
-# Redirect domain aliases to primary domain https://healthcarelogic.com/
-https://www.healthcarelogic.com/* https://healthcarelogic.com/:splat 301!
-https://www.healthcarelogic.com.au/* https://healthcarelogic.com/:splat 301!
-https://healthcarelogic.com.au/* https://healthcarelogic.com/:splat 301!
+# Redirect domain aliases to primary domain https://www.healthcarelogic.com/
+https://healthcarelogic.com/* https://www.healthcarelogic.com/:splat 301!
+https://healthcarelogic.com.au/* https://www.healthcarelogic.com/:splat 301!
+https://www.healthcarelogic.com.au/* https://www.healthcarelogic.com/:splat 301!
 
 # These extra rules are required because HTTPS is not forced
-http://www.healthcarelogic.com/* https://healthcarelogic.com/:splat 301!
-http://www.healthcarelogic.com.au/* https://healthcarelogic.com/:splat 301!
-http://healthcarelogic.com.au/* https://healthcarelogic.com/:splat 301!
+http://healthcarelogic.com/* https://www.healthcarelogic.com/:splat 301!
+http://healthcarelogic.com.au/* https://www.healthcarelogic.com/:splat 301!
+http://www.healthcarelogic.com.au/* https://www.healthcarelogic.com/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
-https://healthcarelogic.netlify.com/* https://healthcarelogic.com/:splat 301!
-http://healthcarelogic.netlify.com/* https://healthcarelogic.com/:splat 301!
+https://healthcarelogic.netlify.com/* https://www.healthcarelogic.com/:splat 301!
+http://healthcarelogic.netlify.com/* https://www.healthcarelogic.com/:splat 301!
