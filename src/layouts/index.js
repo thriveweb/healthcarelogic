@@ -71,16 +71,17 @@ class Layout extends React.Component {
           <meta name="theme-color" content="#ffffff" />
 
           {/* Global site tag (gtag.js) - Google Analytics */}
+
           <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-112589638-13"
+            src="https://www.googletagmanager.com/gtag/js?id=UA-112612322-2"
           />
           <script>
             {`
-              // window.dataLayer = window.dataLayer || [];
-              // function gtag(){dataLayer.push(arguments)}
-              // gtag('js', new Date());
-              // gtag('config', 'UA-112589638-13');
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'UA-112612322-2');
             `}
           </script>
         </Helmet>
