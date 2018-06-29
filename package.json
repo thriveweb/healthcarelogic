@@ -10,6 +10,7 @@
     "gatsby-plugin-nprogress": "^1.0.14",
     "gatsby-plugin-postcss-sass": "^1.0.22",
     "gatsby-plugin-react-helmet": "^2.0.10",
+    "gatsby-plugin-sitemap": "^1.2.25",
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",
     "in-view": "^0.6.1",

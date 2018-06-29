@@ -2,6 +2,7 @@ const postcssPresetEnv = require('postcss-preset-env')
 
 module.exports = {
   siteMetadata: {
+    siteUrl: 'https://www.healthcarelogic.com.au',
     title: 'Healthcare Logic',
     email: 'info@healthcarelogic.com.au',
     phone: '',
@@ -31,6 +32,7 @@ module.exports = {
         // Disable the loading spinner.
         showSpinner: false
       }
-    }
+    },
+    `gatsby-plugin-sitemap`
   ]
 }
