@@ -120,6 +120,7 @@ export const query = graphql`
   query SiteTitleQuery {
     site {
       siteMetadata {
+        siteUrl
         title
         email
         phone
