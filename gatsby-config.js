@@ -2,7 +2,7 @@ const postcssPresetEnv = require('postcss-preset-env')
 
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://www.healthcarelogic.com.au',
+    siteUrl: 'https://www.healthcarelogic.com',
     title: 'Healthcare Logic',
     email: 'info@healthcarelogic.com.au',
     phone: '',
