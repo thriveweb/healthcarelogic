@@ -6,7 +6,7 @@ module.exports = {
     title: 'Healthcare Logic',
     email: 'info@healthcarelogic.com.au',
     phone: '',
-    address: '1263 Mission Street, Floor 3, Brisbane 94103'
+    address: 'Level 6, 64 Marine Parade, Southport, QLD, 4215'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
