@@ -17,22 +17,22 @@ export default class Testimonials extends React.Component {
     testimonials: [
       {
         content: `I absolutely rely on this system to tell me what I need to keep an eye on.`,
-        title: `Co-ordinator, Children’s Health Queensland Hospital and Health Service`,
+        title: `Co-ordinator`,
         logo: childrensHealth
       },
       {
         content: `This system saves us so much time and replaces a lot of the manual entry we used to do. We now have more time to find solutions.`,
-        title: `A/NUM Specialist Outpatients, Metro South Hospital and Health Service`,
+        title: `A/NUM Specialist Outpatients`,
         logo: metroSouth
       },
       {
         content: `Prior to having access, my role was very frustrating due to the lack of meaningful waiting lists that were regularly updated ... having data on tap has made meaningful inroads into my ability to work with clinical departments as we strive to ensure appropriate service for patients.`,
-        title: `Clinical Director, Gold Coast Hospital and Health Service`,
+        title: `Clinical Director`,
         logo: gchf
       },
       {
         content: `In my personal opinion, this is without doubt the most advanced technology used to inform the delivery of healthcare services.`,
-        title: `Relationship Manager, Queensland Department of Health`,
+        title: `Relationship Manager`,
         logo: qldHealth
       }
     ]
