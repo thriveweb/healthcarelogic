@@ -6336,14 +6336,14 @@ pleeease-filters@^3.0.0:
     onecolor "~2.4.0"
     postcss "^5.0.4"
 
-plyr@3.3.9:
-  version "3.3.9"
-  resolved "https://registry.yarnpkg.com/plyr/-/plyr-3.3.9.tgz#08a0a77b51ca72d429a2246c45ea6a326ef3430b"
+plyr@^3.3:
+  version "3.3.21"
+  resolved "https://registry.yarnpkg.com/plyr/-/plyr-3.3.21.tgz#843c471937ab81b0f0de893066c1158fd7615d55"
   dependencies:
     babel-polyfill "^6.26.0"
     custom-event-polyfill "^0.3.0"
     loadjs "^3.5.4"
-    raven-js "^3.25.2"
+    raven-js "^3.26.3"
     url-polyfill "^1.0.13"
 
 posix-character-classes@^0.1.0:
@@ -7280,7 +7280,7 @@ range-parser@^1.0.3, range-parser@~1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.0.tgz#f49be6b487894ddc40dcc94a322f611092e00d5e"
 
-raven-js@^3.25.2:
+raven-js@^3.26.3:
   version "3.26.3"
   resolved "https://registry.yarnpkg.com/raven-js/-/raven-js-3.26.3.tgz#0efb49969b5b11ab965f7b0d6da4ca102b763cb0"
 
