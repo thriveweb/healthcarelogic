@@ -32,6 +32,7 @@ export default class VideoSection extends React.Component {
             type="vimeo"
             videoId={videoUrl}
             hideControls
+            playsinline
             controls={controls}
             onPlay={() => this.setState({ touched: true })}
           />
