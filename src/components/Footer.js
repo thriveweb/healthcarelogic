@@ -77,7 +77,7 @@ const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
           className="subtle"
           href="https://thriveweb.com.au"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           title="Web Design Gold Coast"
         >
           Website By Thrive
