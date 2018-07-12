@@ -38,6 +38,11 @@ class Layout extends React.Component {
           titleTemplate={`%s | ${data.site.siteMetadata.title}`}
         >
           <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+          />
+
+          <meta
             name="msvalidate.01"
             content="B0112812CA622A13C327AF572E2BA5B5"
           />
