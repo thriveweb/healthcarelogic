@@ -122,9 +122,9 @@ export default class ScrollNav extends React.Component {
 
   render() {
     const { items, visibleItems, active, invertColor } = this.state
-    const Group = ({ layer = 'dark' }) => (
+    return (
       <div
-        className={`ScrollNav layer-${layer} ${active ? 'active' : ''} ${
+        className={`ScrollNav layer-dark ${active ? 'active' : ''} ${
           invertColor ? 'invertColor' : ''
         }`}
       >
@@ -148,7 +148,5 @@ export default class ScrollNav extends React.Component {
         </div>
       </div>
     )
-
-    return <Group layer="dark" />
   }
 }
