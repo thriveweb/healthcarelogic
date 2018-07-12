@@ -7,9 +7,9 @@ import BackgroundImage from '../components/BackgroundImage'
 import ScrollNav from '../components/ScrollNav'
 import Testimonials from '../components/Testimonials'
 import MacBook from '../components/MacBook'
+import BgBrokenSystem from '../components/BgBrokenSystem'
 import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
 import bgCircles from '../images/bg-circles.png'
-import bgGraphicHome from '../images/graphic-home.svg'
 
 import './home.scss'
 
@@ -55,7 +55,8 @@ class HomePage extends React.Component {
           data-scrollToTarget
         >
           <div className="container skinny relative">
-            <BackgroundImage src={bgGraphicHome} contain animate />
+            <BgBrokenSystem />
+            {/* <BackgroundImage src={bgGraphicHome} contain animate /> */}
             <div className="pull-left-skinny relative">
               <h2>Time to Shine a Light?</h2>
               <div className="statement">

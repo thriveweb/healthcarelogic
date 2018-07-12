@@ -13,14 +13,15 @@
 }
 
 .Home--TheProblem {
-  .BackgroundImage {
-    background-position: right;
+  .BgBrokenSystem {
     top: -5rem;
     bottom: -5rem;
+    position: absolute;
+    right: 0;
   }
 
   @media (max-width: 800px) {
-    .BackgroundImage {
+    .BgBrokenSystem {
       position: relative;
       height: 300px;
       width: 100%;

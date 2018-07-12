@@ -5,11 +5,13 @@
 }
 
 .BgBrokenSystem {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 50%;
+  text-align: center;
+}
+
+.BgBrokenSystem svg {
   animation: BgBrokenSystem 1.5s ease-in-out alternate infinite;
+  height: 100%;
+  width: auto;
 }
 
 @keyframes Alert {
@@ -22,7 +24,7 @@
   }
 }
 
-.BgBrokenSystem #Alert {
+.BgBrokenSystem svg #Alert {
   animation: Alert 1s ease-in-out alternate infinite;
 }
 
@@ -31,10 +33,23 @@
     opacity: 1;
   }
   to {
-    opacity: 0.8;
+    opacity: 0.5;
   }
 }
 
-.BgBrokenSystem #Alert-C {
-  animation: Alert-C 0.5s ease-in-out infinite;
+.BgBrokenSystem svg #Alert-C {
+  animation: Alert-C 0.5s ease-in-out alternate infinite;
+}
+
+.BgBrokenSystem svg #Alert-C:nth-of-type(1) {
+  animation-delay: 0s;
+}
+.BgBrokenSystem svg #Alert-C:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+.BgBrokenSystem svg #Alert-C:nth-of-type(3) {
+  animation-delay: 0.4s;
+}
+.BgBrokenSystem svg #Alert-C:nth-of-type(4) {
+  animation-delay: 0.6s;
 }
