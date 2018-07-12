@@ -20,6 +20,11 @@
 
 .Header--Fixed {
   position: fixed;
+  pointer-events: none;
+}
+
+.Header--Fixed .MenuButton {
+  pointer-events: all;
 }
 
 .Header--Fixed .container {
