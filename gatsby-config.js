@@ -33,6 +33,19 @@ module.exports = {
         showSpinner: false
       }
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Healthcare Logic',
+        short_name: 'Healthcare',
+        start_url: '/',
+        background_color: '#47b7e8',
+        theme_color: '#47b7e8',
+        display: 'minimal-ui',
+        icon: 'static/logo.svg' // This path is relative to the root of the site.
+      }
+    },
+    `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`
   ]
 }
