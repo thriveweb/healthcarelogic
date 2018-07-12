@@ -1,4 +1,5 @@
-.Header {
+.Header,
+.Header--Fixed {
   position: absolute;
   background: none;
   top: 0;
@@ -17,8 +18,17 @@
   align-items: center;
 }
 
+.Header--Fixed {
+  position: fixed;
+}
+
+.Header--Fixed .container {
+  justify-content: flex-end;
+}
+
 @media (max-width: 600px) {
-  .Header {
+  .Header,
+  .Header--Fixed {
     padding: 2rem 0;
   }
 
