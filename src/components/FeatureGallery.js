@@ -6,7 +6,7 @@ import './FeatureGallery.scss'
 export default class FeatureGallery extends React.Component {
   static defaultProps = {
     flip: false,
-    autoplay: 4000,
+    autoplay: false,
     slides: [
       {
         title: 'This is a title of a slide',
@@ -76,7 +76,10 @@ export default class FeatureGallery extends React.Component {
             }`
 
             return (
-              <div className="FeatureGallery--Sidebar--Button--Wrap">
+              <div
+                className="FeatureGallery--Sidebar--Button--Wrap"
+                key={`Button-${index}`}
+              >
                 <button
                   key={`Button--${index}`}
                   className={className}
@@ -102,7 +105,11 @@ export default class FeatureGallery extends React.Component {
               isSelected(index) ? 'active' : ''
             }`
             return (
-              <div key={`Images--${index}`} className={className}>
+              <div
+                key={`Images--${index}`}
+                className={className}
+                key={`Slide-${index}`}
+              >
                 <img src={slide.image} alt={slide.title} />
               </div>
             )
