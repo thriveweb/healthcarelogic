@@ -32,7 +32,7 @@ class Layout extends React.Component {
     const absoluteImageUrl = `${data.site.siteMetadata.siteUrl}/card-og.jpg`
 
     return (
-      <div>
+      <div className="Layout">
         <Helmet
           defaultTitle={data.site.siteMetadata.title}
           titleTemplate={`%s | ${data.site.siteMetadata.title}`}
