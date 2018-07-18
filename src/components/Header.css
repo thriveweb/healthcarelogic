@@ -2,11 +2,17 @@
 .Header--Fixed {
   position: absolute;
   background: none;
-  top: env(safe-area-inset-top);
-
   width: 100%;
   padding: 6rem 0;
   z-index: 6;
+  top: 0;
+}
+
+@supports (top: env(safe-area-inset-top)) {
+  .Header,
+  .Header--Fixed {
+    top: calc(0 + env(safe-area-inset-top));
+  }
 }
 
 .Header--Logo {
