@@ -11,7 +11,7 @@
 @supports (top: env(safe-area-inset-top)) {
   .Header,
   .Header--Fixed {
-    top: calc(0 + env(safe-area-inset-top));
+    top: env(safe-area-inset-top);
   }
 }
 
