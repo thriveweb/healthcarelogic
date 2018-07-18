@@ -6,7 +6,8 @@ import './FeatureGallery.scss'
 export default class FeatureGallery extends React.Component {
   static defaultProps = {
     flip: false,
-    autoplay: false,
+    autoplay: 3000,
+    autoplayResume: 3000,
     slides: [
       {
         title: 'This is a title of a slide',
@@ -59,6 +60,17 @@ export default class FeatureGallery extends React.Component {
       selectedSlide: this.state.selectedSlide + increment
     })
 
+  selectSlide = index => this.setState({ selectedSlide: index })
+
+  handleClick = index => {
+    this.stopAutoplay()
+    this.selectSlide(index)
+    this.resumeTimer = window.setTimeout(
+      this.startAutoplay,
+      this.props.autoplayResume
+    )
+  }
+
   render() {
     const { title, autoplay, slides, items, flip } = this.props
     const { selectedSlide } = this.state
@@ -83,7 +95,7 @@ export default class FeatureGallery extends React.Component {
                 <button
                   key={`Button--${index}`}
                   className={className}
-                  onClick={() => this.setState({ selectedSlide: index })}
+                  onClick={() => this.handleClick(index)}
                 >
                   {slide.title}
                   <ChevronRight />
