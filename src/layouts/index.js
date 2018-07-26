@@ -21,7 +21,7 @@ class Layout extends React.Component {
   updateBodyStyle = () => {
     if (typeof window === 'undefined') return false
     // Lock body scroll
-    // document.body.style.position = this.state.menuOpen ? 'fixed' : 'initial'
+    document.body.style.position = this.state.menuOpen ? 'fixed' : 'initial'
   }
 
   render() {
