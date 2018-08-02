@@ -45,7 +45,7 @@ const BetterViewPage = () => (
               hardest job in the world.
             </p>
             <p>
-              We wanted to change this by creating a world were data flows
+              We wanted to change this by creating a world where data flows
               automatically and is beautifully presented and organised according
               to priorities.
             </p>
