@@ -2,65 +2,71 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { MapPin, Smartphone, Mail } from 'react-feather'
 
-import PageHeader from '../components/PageHeader'
-import FormSimpleAjax from '../components/FormSimpleAjax'
-import Content from '../components/Content'
+import Link from '../components/Link'
+import EnquiryFormSimpleAjax from '../components/EnquiryFormSimpleAjax'
+import BackgroundImage from '../components/BackgroundImage'
+import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
 import './ContactPage.css'
 
 // Export Template for use in CMS preview
 export const ContactPageTemplate = ({
   body,
-  title,
-  subtitle,
-  featuredImage,
-  address,
+  email,
   phone,
-  email
+  title,
+  address,
+  subtitle,
+  featuredImage
 }) => (
-  <main className="Contact">
+  <main>
     <Helmet>
-      <title>{title}</title>
+      <title>Contact Us</title>
     </Helmet>
 
-    <PageHeader
-      title={title}
-      subtitle={subtitle}
-      backgroundImage={featuredImage}
-    />
+    <section className="section primary thick vh-100">
+      <BackgroundImage
+        src={bgEmblem3d}
+        contain
+        animate
+        opacity="0.3"
+        style={{ top: '15rem', bottom: '5rem' }}
+      />
+      <div className="container skinny relative">
+        <h1>Contact Us</h1>
+        <div className="ContactPage--grid">
+          <div className="ContactPage--grid--column">
+            <p className="statement">
+              For further information, contact us today
+            </p>
+            <div className="ContactPage--item">
+              <h5>Address</h5>
+              <p>{address}</p>
+            </div>
 
-    <section className="section Contact--Section1">
-      <div className="container Contact--Section1--Container">
-        <div>
-          <Content source={body} />
-
-          <div className="Contact--Details">
-            {address && (
-              <a
-                className="Contact--Details--Item"
-                href={`https://www.google.com.au/maps/search/${encodeURI(
-                  address
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <MapPin /> {address}
-              </a>
-            )}
             {phone && (
-              <a className="Contact--Details--Item" href={`tel:${phone}`}>
-                <Smartphone /> {phone}
-              </a>
+              <div className="ContactPage--item">
+                <h5>Phone</h5>
+                <p>
+                  <a href={`tel:${phone}`} className="subtle" target="_blank">
+                    {phone}
+                  </a>
+                </p>
+              </div>
             )}
-            {email && (
-              <a className="Contact--Details--Item" href={`mailto:${email}`}>
-                <Mail /> {email}
-              </a>
-            )}
-          </div>
-        </div>
 
-        <div>
-          <FormSimpleAjax name="Simple Form Ajax" />
+            <div className="ContactPage--item">
+              <h5>Mail</h5>
+              <p>
+                <a href={`mailto:${email}`} className="subtle" target="_blank">
+                  {email}
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div className="ContactPage--grid--column">
+            <EnquiryFormSimpleAjax name="Contact Form" />
+          </div>
         </div>
       </div>
     </section>
