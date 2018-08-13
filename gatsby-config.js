@@ -2,50 +2,82 @@ const postcssPresetEnv = require('postcss-preset-env')
 
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://www.healthcarelogic.com',
-    title: 'Healthcare Logic',
-    email: 'info@healthcarelogic.com.au',
-    phone: '',
-    address: 'Level 6, 64 Marine Parade, Southport, QLD, 4215'
+    title: 'Gatsbro',
+    siteUrl: 'https://gatsbro.netlify.com'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-transformer-yaml',
+
+    // Add static assets before markdown files
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/content/`,
-        name: `content`
+        path: `${__dirname}/static/images`,
+        name: 'images'
       }
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content`,
+        name: 'pages'
+      }
+    },
+
+    // images
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          // gatsby-remark-relative-images must
+          // go before gatsby-remark-images
+          'gatsby-remark-relative-images',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 800,
+              linkImagesToOriginal: false
+            }
+          },
+          `gatsby-remark-responsive-iframe`
+        ]
+      }
+    },
+
+    // css (replace with gatsby-plugin-sass for v2)
     {
       resolve: `gatsby-plugin-postcss-sass`,
       options: {
-        postCssPlugins: [postcssPresetEnv()]
+        postCssPlugins: [
+          postcssPresetEnv({
+            browsers: '> 0.5%, last 2 versions, ie 11'
+          })
+        ]
       }
     },
+
     {
-      resolve: `gatsby-plugin-nprogress`,
+      resolve: 'gatsby-plugin-nprogress',
       options: {
         // Setting a color is optional.
-        color: `white`,
+        color: 'white',
         // Disable the loading spinner.
         showSpinner: false
       }
     },
+    'gatsby-plugin-sitemap',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-netlify-cms',
       options: {
-        name: 'Healthcare Logic',
-        short_name: 'Healthcare',
-        start_url: '/',
-        background_color: '#47b7e8',
-        theme_color: '#47b7e8',
-        display: 'standalone',
-        icon: 'static/logo.png' // This path is relative to the root of the site.
+        modulePath: `${__dirname}/src/cms/cms.js`,
+        stylesPath: `${__dirname}/src/cms/admin.css`,
+        enableIdentityWidget: true
       }
     },
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-sitemap`
+    'gatsby-plugin-netlify' // make sure to keep it last in the array
   ]
 }
