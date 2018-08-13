@@ -1,13 +1,20 @@
 :root {
-  --primary: rebeccapurple;
-  --secondary: #212121;
+  --primary: #47b7e8;
+  --primary-light: #c9f5ff;
+  --secondary: #ffffff;
+  --tertiary: #d0d0d0;
+  --dark: #001b34;
   --lightGrey: whitesmoke;
   --midGrey: #cacaca;
   --darkGrey: #272727;
   --danger: #ff3d3d;
-  --font-primary: 'Open Sans', sans-serif;
   --font-system: system-ui; /* postcssPresetEnv */
+  --font-primary: 'Work Sans', var(--font-system), sans-serif;
+  --font-secondary: 'aleo', var(--font-system), sans-serif;
   --borderRadius: 3px;
+  --ease-in-cubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  --ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 html {
@@ -18,13 +25,14 @@ html {
 }
 
 body {
-  font-family: var(--font-system);
+  width: 100%;
+  font-family: var(--font-primary);
   min-height: 100%;
   position: relative;
   background: white;
-  color: var(--secondary);
+  color: var(--dark);
   font-size: 1.6em;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.01em;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -32,6 +40,16 @@ body {
 
 a {
   color: var(--primary);
+}
+
+.subtle {
+  text-decoration: none;
+  color: inherit;
+}
+
+.subtle:hover,
+.subtle:focus {
+  text-decoration: underline;
 }
 
 strong {
@@ -44,13 +62,68 @@ p {
 }
 
 h1,
+.h1,
 h2,
+.h2,
 h3,
+.h3,
 h4,
+.h4,
 h5,
-h6 {
+.h5,
+h6,
+.h6 {
   margin: 0;
   margin-bottom: 0.5em;
+  font-weight: 200;
+  font-family: var(--font-secondary);
+  line-height: 1.1;
+}
+
+h1 span,
+.h1 span,
+h2 span,
+.h2 span,
+h3 span,
+.h3 span,
+h4 span,
+.h4 span,
+h5 span,
+.h5 span,
+h6 span,
+.h6 span {
+  color: var(--primary);
+}
+
+h1,
+.h1 {
+  font-size: 4.8rem;
+  font-weight: 600;
+}
+h2,
+.h2 {
+  font-size: 3.8rem;
+}
+h3,
+.h3 {
+  font-size: 3rem;
+}
+h4,
+.h4 {
+  font-size: 2.3rem;
+  font-family: var(--font-primary);
+}
+h5,
+.h5 {
+  font-size: 2rem;
+  font-family: var(--font-primary);
+}
+h6,
+.h6 {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: var(--font-primary);
 }
 
 pre {
@@ -88,24 +161,50 @@ blockquote {
   border-left: 2px solid var(--primary);
 }
 
-/* Utility Classes */
-.light {
-  background-color: var(--lightGrey);
+ul {
+  padding: 0;
 }
+
+li {
+  list-style: none;
+  position: relative;
+  padding-left: 1.25em;
+}
+
+li:before {
+  content: '•';
+  font-size: 1.7em;
+  line-height: 1em;
+  color: var(--primary);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Utility Classes */
 .white {
   background-color: white;
 }
-.dark {
-  background-color: var(--primary);
-  color: white;
+.primary {
+  color: var(--secondary);
+  background: linear-gradient(425deg, hsla(216, 100%, 32%, 1) 0%, #44c6ff 100%);
 }
-.dark h1,
-.dark h2,
-.dark h3,
-.dark h4,
-.dark h5,
-.dark h6 {
-  color: white;
+.dark {
+  color: var(--secondary);
+  background: linear-gradient(65.94deg, #004678 0%, #001b34 100%);
+}
+.light {
+  background: linear-gradient(225.77deg, #fafafa 0%, #a7b0ba 100%);
+}
+.light-reverse {
+  background: linear-gradient(-225.77deg, #fafafa 0%, #c8d2db 100%);
+}
+.lightGrey {
+  background: var(--lightGrey);
+}
+
+.color-primary {
+  color: var(--primary);
 }
 
 .relative {
@@ -128,9 +227,14 @@ blockquote {
   text-align: right;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
+.statement {
+  font-weight: 300;
+  font-size: 2.1rem;
+}
+
+@media (max-width: 800px) {
+  .statement {
+    font-size: 1.8rem;
   }
 }
 
@@ -138,33 +242,62 @@ blockquote {
 
 .section {
   width: 100%;
-  padding: 7.5rem 0;
+  padding: 10rem 0;
+  position: relative;
+  overflow: hidden;
 }
 .section.thick {
-  padding: 10rem 0;
+  padding: 20rem 0;
 }
 .section.thin {
-  padding: 3.5rem 0;
+  padding: 2.5rem 0;
 }
 .section.noPadding {
   padding: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .section {
-    width: 100%;
     padding: 5rem 0;
   }
   .section.thick {
-    padding: 7rem 0;
+    padding: 10rem 0;
   }
-  .section.thin {
-    padding: 1.5rem 0;
+}
+
+.vh-100 {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.vh-90 {
+  min-height: 90vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main .section:first-child .container {
+  animation: mainFade 0.5s ease-out;
+}
+
+@keyframes mainFade {
+  from {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  main .section:first-child {
+    padding-top: 20rem;
   }
 }
 
 .container {
-  max-width: 1111px;
+  max-width: 1300px;
   width: 90%;
   margin: 0 auto;
 }
@@ -172,7 +305,37 @@ blockquote {
   max-width: 888px;
 }
 .container.skinnier {
-  max-width: 555px;
+  max-width: 573px;
+}
+.pull-right {
+  margin-left: auto;
+  max-width: 600px;
+}
+.pull-right-skinny {
+  margin-left: auto;
+  max-width: 400px;
+}
+.pull-left {
+  margin-right: auto;
+  max-width: 600px;
+}
+.pull-left-skinny {
+  margin-right: auto;
+  max-width: 400px;
+}
+
+@media (max-width: 600px) {
+  .pull-left,
+  .pull-right,
+  .pull-left-skinny,
+  .pull-right-skinny {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.flex {
+  display: flex;
 }
 
 /* Buttons */
@@ -194,7 +357,7 @@ blockquote {
 }
 .Button:hover,
 .Button:focus {
-  opacity: 0.95;
+  background: var(--primary-light);
   outline: none;
 }
 .Button[disabled] {
@@ -202,13 +365,22 @@ blockquote {
   pointer-events: none;
   cursor: progress;
 }
-.Button-blank {
-  appearance: none;
-  background: none;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.Button.Button--inverted {
+  background: white;
+  border-color: white;
+  color: var(--primary);
+}
+.Button.Button--inverted:hover,
+.Button.Button--inverted:focus {
+  background: transparent;
+  border-color: currentColor;
+  color: white;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0)),
+    linear-gradient(
+      -32deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.05) 50%,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 0)
+    );
 }
