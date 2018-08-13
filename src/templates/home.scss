@@ -1,0 +1,80 @@
+.Home {
+}
+
+.Home--Title {
+  animation: Home--Title 3s ease-out;
+}
+
+@keyframes Home--Title {
+  from {
+    opacity: 0;
+    transform: translate(0, 15%);
+  }
+}
+
+.Home--TheProblem {
+  .BgBrokenSystem {
+    top: -5rem;
+    bottom: -5rem;
+    position: absolute;
+    right: 0;
+  }
+
+  @media (max-width: 800px) {
+    .BgBrokenSystem {
+      position: relative;
+      height: 300px;
+      width: 100%;
+      background-position: center;
+      top: -5rem;
+      bottom: 0;
+    }
+
+    .pull-left-skinny {
+      margin: auto;
+    }
+  }
+}
+
+.Home--OurSolution {
+  .MacBook {
+    right: calc(52.5% + 1.5rem);
+    left: -10%;
+
+    @media (min-width: 1000px) {
+      transform: translateY(15%);
+    }
+
+    @media (min-width: 1600px) {
+      left: auto;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .MacBook {
+      position: relative;
+      left: auto;
+      right: auto;
+      width: 90%;
+      margin: auto;
+      margin-bottom: -7rem;
+    }
+
+    .pull-right-skinny {
+      margin: auto;
+      text-align: left;
+    }
+  }
+}
+
+.Home--TrackRecord {
+  overflow: hidden;
+
+  @media (max-width: 800px) {
+    .pull-left-skinny {
+      margin: auto;
+      text-align: left;
+      text-align: center;
+    }
+  }
+}
