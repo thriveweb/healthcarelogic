@@ -3,6 +3,7 @@ siteUrl: 'https://whitesmoke.netlify.com'
 siteDescription: A starter project for creating lightning-fast websites with Gatsby Netlify CMS.
 email: info@healthcarelogic.com.au
 phone: ''
+address: Level 6, 64 Marine Parade, Southport, QLD, 4215
 socialMediaCard:
   image: /images/uploads/card-og.png
 headerScripts: <!-- Add your analytics scripts / verification meta here -->

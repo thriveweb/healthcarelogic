@@ -4,6 +4,8 @@ import './cms-utils'
 
 import { HomePageTemplate } from '../templates/HomePage'
 import { AboutPageTemplate } from '../templates/AboutPage'
+import { CaseChangePageTemplate } from '../templates/CaseChangePage'
+import { BetterViewPageTemplate } from '../templates/BetterViewPage'
 import { ContactPageTemplate } from '../templates/ContactPage'
 import { DefaultPageTemplate } from '../templates/DefaultPage'
 import { BlogIndexTemplate } from '../templates/BlogIndex'
