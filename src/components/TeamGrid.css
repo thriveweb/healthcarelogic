@@ -1,0 +1,73 @@
+.TeamGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.TeamGrid--Item {
+  width: calc(33.33% - 2rem);
+  margin-bottom: 4rem;
+
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+}
+
+@supports (display: grid) {
+  .TeamGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3.5rem;
+    grid-row-gap: 5rem;
+  }
+
+  .TeamGrid--Item {
+    margin-bottom: 0;
+    width: auto;
+  }
+}
+
+@media (min-width: 600px) {
+  .TeamGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.TeamGrid--Item--Image {
+  display: block;
+  margin-bottom: 3rem;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: 0.8;
+}
+
+.TeamGrid--Item--Title {
+  margin-bottom: 1rem;
+}
+
+.TeamGrid--Item--Subtitle {
+  font-weight: 600;
+  font-size: 0.8em;
+}
+
+.TeamGrid--Item--Hover {
+  background-position: center;
+  background-repeat: no-repeat;
+  bottom: 20%;
+  opacity: 0;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+
+.TeamGrid--Item:hover .TeamGrid--Item--Hover,
+.TeamGrid--Item:focus .TeamGrid--Item--Hover {
+  opacity: 1;
+}
+
+.TeamGrid--Item:hover .TeamGrid--Item--Image,
+.TeamGrid--Item:focus .TeamGrid--Item--Image {
+  opacity: 0.6;
+  filter: grayscale(0);
+}

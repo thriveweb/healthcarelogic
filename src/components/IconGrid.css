@@ -1,0 +1,36 @@
+.IconGrid {
+}
+
+.IconGrid--Item {
+  display: flex;
+  margin-bottom: 6rem;
+}
+
+.IconGrid--Item--Image {
+  margin-right: 3rem;
+  width: 4rem;
+  flex-shrink: 0;
+}
+
+.IconGrid--Item--Image img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 970px) {
+  .IconGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .IconGrid--Item {
+    margin-bottom: auto;
+    width: calc(50% - 2rem);
+    margin-bottom: 8rem;
+  }
+
+  .IconGrid--Item--Image {
+    width: 8rem;
+  }
+}

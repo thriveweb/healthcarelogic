@@ -1,0 +1,30 @@
+.VideoSection {
+  display: flex;
+  align-items: center;
+}
+
+.VideoSection--Content {
+  max-width: 35rem;
+  margin-right: 5rem;
+}
+
+.VideoSection--Video {
+  flex-grow: 1;
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+.VideoSection--Video {
+}
+
+@media (max-width: 700px) {
+  .VideoSection {
+    display: block;
+  }
+  .VideoSection--Content {
+    margin: 0 auto 3rem;
+  }
+}
+
+.VideoSection--Video:not(.touched) .plyr__controls {
+  opacity: 0;
+}

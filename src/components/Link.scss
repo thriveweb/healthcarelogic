@@ -1,0 +1,48 @@
+.Link {
+  transition: all 0.2s ease-in-out;
+}
+
+.Link-strong {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: inherit;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1.5rem;
+
+  &:hover,
+  &:focus {
+    .Link--arrow {
+      transform: translateX(20%);
+    }
+    .Link--arrow-down {
+      transform: rotate(90deg) translateX(20%);
+    }
+  }
+}
+
+.Link-scrollButton {
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Link--icon {
+  height: 1em;
+  margin-right: 0.7em;
+  color: var(--primary);
+}
+
+.Link--arrow {
+  height: 1em;
+  margin-left: 0.1em;
+  transition: all 0.2s ease-in-out;
+}
+
+.Link--arrow-down {
+  transform: rotate(90deg);
+}

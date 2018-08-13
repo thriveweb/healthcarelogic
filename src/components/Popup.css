@@ -1,0 +1,61 @@
+.Popup--Wrap {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 6;
+  padding: 7.5rem;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+}
+
+.Popup--Wrap .container {
+  margin: auto;
+  animation: Popup 0.2s ease;
+}
+
+.Popup {
+  border-radius: 16px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  background: white;
+  position: relative;
+  padding: 7.5rem;
+}
+
+@keyframes Popup {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+}
+
+.Popup--Overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.Popup--CloseButton {
+  position: absolute;
+  top: 2.5rem;
+  right: 3rem;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.9;
+  color: inherit;
+}
+
+@media (max-width: 777px) {
+  .Popup--Wrap {
+    padding: 5vmin 2.5vmin;
+  }
+  .Popup {
+    padding: 10vmin 5vmin 5vmin;
+  }
+}
