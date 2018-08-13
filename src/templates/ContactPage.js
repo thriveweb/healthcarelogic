@@ -32,7 +32,7 @@ export const ContactPageTemplate = ({
         style={{ top: '15rem', bottom: '5rem' }}
       />
       <div className="container skinny relative">
-        <h1>Contact Us</h1>
+        <h1>Contact us</h1>
         <div className="ContactPage--grid">
           <div className="ContactPage--grid--column">
             <p className="statement">
