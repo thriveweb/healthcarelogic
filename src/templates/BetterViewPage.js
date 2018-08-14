@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import Link from '../components/Link'
+import Content from '../components/Content'
 import ScrollNav from '../components/ScrollNav'
 import BackgroundImage from '../components/BackgroundImage'
 import IconGrid from '../components/IconGrid'
@@ -25,10 +26,18 @@ import screen6 from '../images/screens/healthcarelogic_videoscreens-006.jpeg'
 import screen7 from '../images/screens/healthcarelogic_videoscreens-007.jpeg'
 
 // Export Template for use in CMS preview
-export const BetterViewPageTemplate = ({ title }) => (
+export const BetterViewPageTemplate = ({
+  template,
+  slug,
+  title,
+  section1,
+  section2,
+  iconGrid,
+  section3
+}) => (
   <main>
     <Helmet>
-      <title>A better view</title>
+      <title>{title}</title>
     </Helmet>
 
     <ScrollNav />
@@ -38,18 +47,8 @@ export const BetterViewPageTemplate = ({ title }) => (
         <BackgroundImage src={bgEmblemShape} animate size={'650px'} />
         <div className="container skinny">
           <div className="pull-right-skinny">
-            <h1>A better view</h1>
-            <p>
-              Amid increasing demand and rising political and patient
-              expectations, clinical and managerial leaders have lacked support
-              by not being given the information tools they need to do the
-              hardest job in the world.
-            </p>
-            <p>
-              We wanted to change this by creating a world where data flows
-              automatically and is beautifully presented and organised according
-              to priorities.
-            </p>
+            <h1>{section1.title}</h1>
+            <Content src={section1.content} />
           </div>
 
           <Link
@@ -133,12 +132,8 @@ export const BetterViewPageTemplate = ({ title }) => (
     <section className="section dark thick vh-100" id="the-coordination-hub">
       <div className="container">
         <VideoSection videoUrl={'https://vimeo.com/261768328/fb3b2982f2'}>
-          <h2>The Coordination Hub</h2>
-          <p>
-            The platform allows you to select any set of screens and send them
-            on an ‘always-on’ basis to your screens on the wall – a locally
-            configurable coordination hub in a box.
-          </p>
+          <h2>{section2.title}</h2>
+          <Content src={section2.content} />
         </VideoSection>
       </div>
     </section>
@@ -190,22 +185,11 @@ export const BetterViewPageTemplate = ({ title }) => (
       />
 
       <div className="container skinnier relative">
-        <h2 className="color-primary">We’re here to help</h2>
+        <h2 className="color-primary">{section3.title}</h2>
         <div className="statement">
-          <p>
-            We know that not every hospital has the capacity and capability to
-            develop and implement an absolutely reliable, commercial-grade and
-            automated information environment. Because of this, our commitment
-            to get you up and running includes:
-          </p>
+          <Content src={section3.subtitle} />
         </div>
-        <ul>
-          <li>Helping automate your data to the right specifications</li>
-          <li>Installing the software on your networks</li>
-          <li>Providing staff with onboarding and training</li>
-          <li>Training your tech teams on how to maintain back-end</li>
-          <li>Help desk support</li>
-        </ul>
+        <Content src={section3.content} />
         <Link to="/contact/" icon="page" strong>
           Contact Us
         </Link>
@@ -225,8 +209,27 @@ export const pageQuery = graphql`
     page: markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        title
         template
+        slug
+        title
+        section1 {
+          title
+          content
+        }
+        section2 {
+          title
+          content
+        }
+        iconGrid {
+          title
+          description
+          image
+        }
+        section3 {
+          title
+          subtitle
+          content
+        }
       }
     }
   }
