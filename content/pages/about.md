@@ -1,33 +1,54 @@
 ---
 template: AboutPage
 slug: about
-title: About page title
-featuredImage: /images/uploads/smoke3.jpg
-subtitle: Test subtitle
-section1: >-
-  ## Lorem Ipsum
+title: Our Story
+section1:
+  title: Our Story
+  subtitle: |-
+    Healthcare Logic is committed to developing software that helps clinical and managerial leaders improve the performance of their hospitals.
+  content: |-
+    Having worked in strategic health improvement for almost two decades across five countries and three continents, founder and CEO Martin Connor is driven by the remarkable fact there is no international standard definition of the appropriate data required to operationally manage a hospital.
 
 
-  [Link test](/images/uploads/isabella-juskova.jpg)
+    Our software has changed that and is already being used in more than 50 hospitals where it is optimising performance in areas such as Outpatients, Surgery and Theatres, Endoscopy, Emergency Departments and Inpatient Bed Management.
 
 
-  ### Embed Test
+    Too much hospital reporting is not interesting, let alone important. The question we constantly ask ourselves is - can we get an action out of the data we are producing? If the answer is no, we throw it out. If it is yes, we keep it and get ready to take action.
 
 
-  <iframe width="560" height="315"
-  src="https://www.youtube.com/embed/Js00yn142ic" frameborder="0"
-  allow="autoplay; encrypted-media" allowfullscreen></iframe>
-section2: |-
-  ## This is a Container component
+    In search of a solution to many of the global challenges facing hospitals, we have created a common language that is helping solve the dilemma of capacity, demand and process and showing there is a simpler, cheaper and better way.
 
-  A sem vel nec sodales mi vivamus senectus sed potenti a parturient nascetur
-  tincidunt nisi pulvinar rhoncus a. Risus imperdiet taciti suspendisse facilisi
-  a per metus cubilia varius a nostra adipiscing amet ultrices quisque ac mi a.
-  Dictumst a ultrices mi a dignissim ad fermentum eget a nam et a blandit
-  scelerisque. Taciti lorem tempor quam vestibulum dis habitasse vestibulum diam
-  vel est ut proin dis auctor. Suscipit scelerisque orci magna interdum vel
-  bibendum duis netus a consectetur dui magnis ac aliquet sem posuere tincidunt
-  vestibulum.
-testImage: /images/uploads/paint2.jpg
+team:
+  - title: Andrew Ge-Hall
+    subtitle: Director Software Development
+    image: '/images/uploads/team/andrew-ge-hall.jpg'
+    slug: andrew-ge-hall
+  - title: Andy Hill
+    subtitle: Board Chair and Director
+    image: '/images/team/andy-hill.jpg'
+    slug: andy-hill
+  - title: 'Associate Professor Christopher Ogg'
+    subtitle: 'Director Research and Development'
+    image: '/images/team/christopher-ogg.jpg'
+    slug: christopher-ogg
+  - title: 'Kal Wong'
+    subtitle: 'Senior Web Engineer'
+    image: '/images/team/kal-wong.jpg'
+    slug: kal-wong
+  - title: 'Leigh Platt'
+    subtitle: 'Junior Web Engineer'
+    image: '/images/team/leigh-platt.jpg'
+    slug: leigh-platt
+  - title: 'Professor Martin Connor'
+    subtitle: 'Founder and CEO'
+    image: '/images/team/martin-connor.jpg'
+    slug: martin-connor
+  - title: 'Nikita Nadezhdin'
+    subtitle: 'Senior Data Engineer'
+    image: '/images/team/nikita-nadezhdin.jpg'
+    slug: nikita-nadezhdin
+  - title: 'Suzanne Yeates'
+    subtitle: 'Company Secretary'
+    image: '/images/team/suzanne-yeates.jpg'
+    slug: suzanne-yeates
 ---
-
