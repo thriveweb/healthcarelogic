@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import Link from '../components/Link'
+import Content from '../components/Content'
 import BackgroundImage from '../components/BackgroundImage'
 import IconGrid from '../components/IconGrid'
 import Popup from '../components/Popup'
@@ -270,13 +271,13 @@ class CaseChangePageTemplate extends React.Component {
   openPopup = ({ popupContent }) => this.setState({ popupContent })
 
   render() {
-    let { title, subtitle, featuredImage, body } = this.props
+    let { template, slug, title, section1, iconGrid } = this.props
     const { popupContent } = this.state
     const { iconGridItems } = this.props
     return (
       <main>
         <Helmet>
-          <title>A case for change</title>
+          <title>{title}</title>
         </Helmet>
 
         <ScrollNav />
@@ -299,23 +300,8 @@ class CaseChangePageTemplate extends React.Component {
                 }}
               />
               <div className="pull-right-skinny">
-                <h1>A case for change</h1>
-                <p>
-                  We all know that we spend vast amounts of money and time
-                  collecting and storing data - and not enough time
-                  understanding and acting on it.
-                </p>
-                <p>
-                  Modern EMRs save time and improve quality for clinicians by
-                  making the data most relevant for care intuitive to access and
-                  easy to use. The very best systems use clinical decision
-                  support to provide alerts for situations that require special
-                  attention.
-                </p>
-                <p>
-                  The problem is nobody is doing the same for the hospital as a
-                  whole.
-                </p>
+                <h1>{section1.title}</h1>
+                <Content src={section1.content} />
               </div>
             </div>
 
@@ -384,8 +370,20 @@ export const pageQuery = graphql`
     page: markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        title
         template
+        slug
+        title
+        section1 {
+          title
+          content
+        }
+        iconGrid {
+          title
+          image
+          description
+          linkTo
+          popupContent
+        }
       }
     }
   }
