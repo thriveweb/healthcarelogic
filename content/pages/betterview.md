@@ -1,5 +1,4 @@
 ---
-
 template: BetterViewPage
 slug: a-better-view
 title: A better view
@@ -17,19 +16,19 @@ iconGrid:
   - title: Six clicks or less to actionable insights
     description: |-
       SystemView allows users to drill to patient- and/or doctor-level data in six clicks or less. It’s not about being able to choose anything. Rather, via SystemView’s fixed logic, it’s about being guided to only the actionable information.
-    image: images/uploads/click.svg
+    image: ../images/uploads/click.svg
   - title: Here and now
     description: |-
       We’re calling an end to monthly performance reporting. After all, this is often six weeks out of date anyway. We are committed to delivering only the relevant information at the frequency that the decisions need to be made.
-    image: images/uploads/flag.svg
+    image: ../images/uploads/flag.svg
   - title: Existing data
     description: |-
-      None of our analysis requires new collections of data. Our software collates huge arrays of routinely collected data that every hospital is already sourcing. What we do that no one has ever done is automate the management of the information so no one needs to manually compile it.able to choose anything. Rather, via SystemView’s fixed logic, it’s about being guided to only the actionable information.
-    image: images/uploads/data.svg
+      None of our analysis requires new collections of data. Our software collates huge arrays of routinely collected data that every hospital is already sourcing. What we do that no one has ever done is automate the management of the information so no one needs to manually compile it.
+    image: ../images/uploads/data.svg
   - title: Accessible and safe
     description: |-
       We have created a visualisation framework that any authorised user can log on to. Housed within a hospital’s firewall, it is fully secure.
-    image: images/uploads/safe.svg
+    image: '../images/uploads/safe.svg'
 section3:
   title: We’re here to help
   subtitle: |-

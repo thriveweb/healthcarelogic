@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Link from './Link'
+import Content from './Content'
 import './IconGrid.css'
 
 export default ({ items = [], handleClick, fontSizeSmall }) => (
@@ -14,9 +15,11 @@ export default ({ items = [], handleClick, fontSizeSmall }) => (
           {fontSizeSmall ? <h5>{item.title}</h5> : <h3>{item.title}</h3>}
 
           {fontSizeSmall ? (
-            <p>{item.description}</p>
+            <Content src={item.description} />
           ) : (
-            <p className="statement">{item.description}</p>
+            <div className="statement">
+              <Content src={item.description} />
+            </div>
           )}
 
           {item.linkTo && (

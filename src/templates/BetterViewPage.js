@@ -144,35 +144,7 @@ export const BetterViewPageTemplate = ({
       <div className="container">
         <h2 style={{ marginBottom: '4rem' }}>More features</h2>
 
-        <IconGrid
-          fontSizeSmall
-          items={[
-            {
-              title: 'Six clicks or less to actionable insights',
-              image: click,
-              description:
-                'SystemView allows users to drill to patient- and/or doctor-level data in six clicks or less. It’s not about being able to choose anything. Rather, via SystemView’s fixed logic, it’s about being guided to only the actionable information.'
-            },
-            {
-              title: 'Here and now',
-              image: flag,
-              description:
-                'We’re calling an end to monthly performance reporting. After all, this is often six weeks out of date anyway. We are committed to delivering only the relevant information at the frequency that the decisions need to be made.'
-            },
-            {
-              title: 'Existing data',
-              image: data,
-              description:
-                'None of our analysis requires new collections of data. Our software collates huge arrays of routinely collected data that every hospital is already sourcing. What we do that no one has ever done is automate the management of the information so no one needs to manually compile it.'
-            },
-            {
-              title: 'Accessible and safe',
-              image: safe,
-              description:
-                'We have created a visualisation framework that any authorised user can log on to. Housed within a hospital’s firewall, it is fully secure.'
-            }
-          ]}
-        />
+        <IconGrid fontSizeSmall items={iconGrid} />
       </div>
     </section>
 
