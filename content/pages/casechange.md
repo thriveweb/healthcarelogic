@@ -12,7 +12,7 @@ section1:
     The problem is nobody is doing the same for the hospital as a whole.
 iconGrid:
   - title: Emergency Department
-    image: images/uploads/emergency.svg
+    image: ../images/uploads/emergency.svg
     description: Do you know the length of stay required in each of your treatment areas for the ED system to have flow? And is this updated every five minutes based on today’s variation in demand?
     linkTo: '#'
     popupContent: |-
@@ -24,7 +24,7 @@ iconGrid:
       - Can you see today’s inpatient ward discharges and their impact to ED patient flow?
       - Do you know how long it takes to triage patients that arrive by ambulance and how this impacts POST?
   - title: Beds (admitted patients)
-    image: images/uploads/bed.svg
+    image: ../images/uploads/bed.svg
     description: Can you see every admitted patient in your hospital right now at a glance and which patients are stranded, complex or have waited too long in each ward for the system to have flow?
     linkTo: '#'
     popupContent: |-
@@ -37,7 +37,7 @@ iconGrid:
       - Do you know what lengths of stay each ward needs to make the whole system work?
 
   - title: Surgery
-    image: images/uploads/surgery.svg
+    image: ../images/uploads/surgery.svg
     description: Do you know how long each doctor’s waitlist should be to ensure every patient is treated in clinically recommended times? Do you know which doctors have heavy and light order books and is this recalculated daily?
     linkTo: '#'
     popupContent: |-
@@ -50,7 +50,7 @@ iconGrid:
       - Do you know which doctors have light order books and how many extra new outpatients they could treat without risking NEST?
 
   - title: Outpatients
-    image: images/uploads/patient.svg
+    image: ../images/uploads/patient.svg
     description: Do you know how many outpatient appointments you need each week to see your present demand? And do you use this to set your clinic templates or simply do ‘what we’ve always done’?
     linkTo: '#'
     popupContent: |-
