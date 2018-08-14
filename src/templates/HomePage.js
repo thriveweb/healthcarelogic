@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Link from '../components/Link'
+import Content from '../components/Content'
 import HeroScene from '../components/HeroScene'
 import BackgroundImage from '../components/BackgroundImage'
 import ScrollNav from '../components/ScrollNav'
@@ -22,7 +23,15 @@ class HomePageTemplate extends React.Component {
   }
 
   render() {
-    const { title, subtitle, featuredImage, body } = this.props
+    const {
+      template,
+      slug,
+      title,
+      section1,
+      section2,
+      section3,
+      section4
+    } = this.props
     return (
       <main className="Home">
         <section className="section dark thick vh-100">
@@ -52,20 +61,11 @@ class HomePageTemplate extends React.Component {
             <BgBrokenSystem />
             {/* <BackgroundImage src={bgGraphicHome} contain animate /> */}
             <div className="pull-left-skinny relative">
-              <h2>Time to Shine a Light?</h2>
+              <h2>{section1.title}</h2>
               <div className="statement">
-                <p>
-                  We asked a wide array of clinicians the following question:
-                </p>
-                <p>
-                  “How much automated data do you have available that is
-                  designed to help you improve the work of your team?”
-                </p>
+                <Content src={section1.subtitle} />
               </div>
-              <p>
-                We thought the answer would be: “Not very much.” It wasn’t.{' '}
-                <strong>The response was: “None”.</strong>
-              </p>
+              <Content src={section1.content} />
               <Link to="/a-case-for-change/" strong icon="page">
                 A case for change
               </Link>
@@ -80,24 +80,11 @@ class HomePageTemplate extends React.Component {
           <MacBook />
           <div className="container skinny relative flex">
             <div className="pull-right-skinny">
-              <h2>A new way</h2>
-              <p className="statement">
-                Actionable insights in six clicks or less
-              </p>
-              <p>
-                It’s not a damn dashboard. It’s not about KPIs. It’s
-                revolutionary technology that empowers clinical and managerial
-                leaders to collaborate with clarity. With our suite of
-                proprietary algorithms visualising consistent, high-frequency,
-                patient-level data, the best decisions can be made for any given
-                level of resource.
-              </p>
-              <p>
-                And now we <em>interact</em> with the data in a completely new
-                way including setting personal thresholds for active monitoring,
-                sharing with colleagues and establishing personable discussion
-                groups.
-              </p>
+              <h2>{section2.title}</h2>
+              <div className="statement">
+                <Content src={section2.subtitle} />
+              </div>
+              <Content src={section2.content} />
               <Link to="/a-better-view/" strong icon="page">
                 A better view
               </Link>
@@ -112,12 +99,8 @@ class HomePageTemplate extends React.Component {
           <BackgroundImage src={bgCircles} contain />
           <div className="container skinny">
             <div className="pull-left-skinny">
-              <h2>Proven track record</h2>
-              <p>
-                Our software is currently used in more than 50 hospitals to
-                enhance clinical team engagement and support sustainable
-                performance improvement.
-              </p>
+              <h2>{section3.title}</h2>
+              <Content src={section3.content} />
             </div>
           </div>
           <div className="container skinnier">
@@ -136,17 +119,11 @@ class HomePageTemplate extends React.Component {
             style={{ top: '5rem', bottom: '5rem' }}
           />
           <div className="container skinnier relative">
-            <h2>De-stressing health</h2>
-            <p className="statement">
-              The hardest job in the world is even harder when you don’t have
-              the tools you need to make better decisions.
-            </p>
-            <p>
-              With decades of experience in healthcare, we’ve made it our
-              mission to create a world where you spend no time looking for
-              data, less time stressing and more time improving your clinical
-              system.
-            </p>
+            <h2>{section4.title}</h2>
+            <div className="statement">
+              <Content src={section4.subtitle} />
+            </div>
+            <Content src={section4.content} />
             <Link to="/about/" strong icon="page">
               About us
             </Link>
@@ -172,10 +149,27 @@ export const pageQuery = graphql`
     page: markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
+        template
+        slug
         title
-        subtitle
-        featuredImage {
-          ...FluidImage
+        section1 {
+          title
+          subtitle
+          content
+        }
+        section2 {
+          title
+          subtitle
+          content
+        }
+        section3 {
+          title
+          content
+        }
+        section4 {
+          title
+          subtitle
+          content
         }
       }
     }
