@@ -1,5 +1,4 @@
 ---
-
 template: CaseChangePage
 slug: a-case-for-change
 title: A case for change
@@ -66,3 +65,4 @@ iconGrid:
       - Do you know how many emergency slots you need to plan for in next week’s schedule?
       - Do you know how many patients with a booked review appointment could be safely discharged to a GP?
       - Do you know how many patients are currently booked out of chronological order and the aggregate impact of this?
+---
