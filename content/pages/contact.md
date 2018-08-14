@@ -1,20 +1,9 @@
 ---
 template: ContactPage
 slug: contact
-title: Contact
-featuredImage: /images/uploads/paint2.jpg
-subtitle: Contact Page has a subtitle
-address: '404 James St, Burleigh Heads QLD 4220'
-phone: 0987 123 456
-email: example@example.com
+title: Contact us
+blurb: For further information, contact us today
+address: Level 6, 64 Marine Parade, Southport, QLD, 4215
+phone: ''
+email: info@healthcarelogic.com.au
 ---
-
-# Example contact form
-
-This form is setup to use Netlify's form handling:
-
-- the form action is set to the current absolute url: `action: '/contact/'`
-- a name attribute is sent with the form's data `'form-name': 'Contact'`
-- netlify data attributes are added to the form `data-netlify data-netlify-honeypot`
-
-Find out more in the [Netlify Docs](https://www.netlify.com/docs/form-handling/).

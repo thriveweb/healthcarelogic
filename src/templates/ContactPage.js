@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import { MapPin, Smartphone, Mail } from 'react-feather'
 
 import Link from '../components/Link'
+import Content from '../components/Content'
 import EnquiryFormSimpleAjax from '../components/EnquiryFormSimpleAjax'
 import BackgroundImage from '../components/BackgroundImage'
 import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
@@ -10,17 +11,17 @@ import './ContactPage.css'
 
 // Export Template for use in CMS preview
 export const ContactPageTemplate = ({
-  body,
-  email,
-  phone,
+  template,
+  slug,
   title,
+  blurb,
   address,
-  subtitle,
-  featuredImage
+  phone,
+  email
 }) => (
   <main>
     <Helmet>
-      <title>Contact Us</title>
+      <title>{title}</title>
     </Helmet>
 
     <section className="section primary thick vh-100">
@@ -32,12 +33,12 @@ export const ContactPageTemplate = ({
         style={{ top: '15rem', bottom: '5rem' }}
       />
       <div className="container skinny relative">
-        <h1>Contact us</h1>
+        <h1>{title}</h1>
         <div className="ContactPage--grid">
           <div className="ContactPage--grid--column">
-            <p className="statement">
-              For further information, contact us today
-            </p>
+            <div className="statement">
+              <Content src={blurb} />
+            </div>
             <div className="ContactPage--item">
               <h5>Address</h5>
               <p>{address}</p>
@@ -84,12 +85,10 @@ export const pageQuery = graphql`
     page: markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        title
         template
-        subtitle
-        featuredImage {
-          ...FluidImage
-        }
+        slug
+        title
+        blurb
         address
         phone
         email
