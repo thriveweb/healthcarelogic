@@ -9,7 +9,7 @@ import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
 
 import './AboutPage.css'
 
-class AboutPageTemplate extends React.Component {
+export class AboutPageTemplate extends React.Component {
   render() {
     let { title, section1, team } = this.props
     return (
@@ -18,50 +18,63 @@ class AboutPageTemplate extends React.Component {
           <title>{title}</title>
         </Helmet>
 
-        <section className="section dark thick vh-100">
-          <BackgroundImage
-            src={bgEmblem3d}
-            contain
-            animate
-            opacity={0.4}
-            style={{ top: '20rem', bottom: '20rem' }}
-          />
+        {section1 && (
+          <section className="section dark thick vh-100">
+            <BackgroundImage
+              src={bgEmblem3d}
+              contain
+              animate
+              opacity={0.4}
+              style={{ top: '20rem', bottom: '20rem' }}
+            />
 
-          <div className="container skinny">
-            <h1>{section1.title}</h1>
-            <div className="About--Intro">
-              <p className="statement">{section1.subtitle}</p>
-              <Content src={section1.content} />
+            <div className="container skinny">
+              <h1>{section1.title}</h1>
+              <div className="About--Intro">
+                <p className="statement">{section1.subtitle}</p>
+                <Content src={section1.content} />
+              </div>
+              <Link
+                to="/a-case-for-change/"
+                strong
+                icon="page"
+                arrow="down"
+                scrollButton
+              >
+                See. Change.
+              </Link>
             </div>
-            <Link
-              to="/a-case-for-change/"
-              strong
-              icon="page"
-              arrow="down"
-              scrollButton
-            >
-              See. Change.
-            </Link>
-          </div>
-        </section>
+          </section>
+        )}
 
-        <section
-          className="section primary thick"
-          data-scrollToTarget
-          id="team"
-        >
-          <div className="container skinny">
-            <h2 style={{ marginBottom: '4rem' }}>Team</h2>
-            <TeamGrid team={team} />
-          </div>
-        </section>
+        {team && (
+          <section
+            className="section primary thick"
+            data-scrollToTarget
+            id="team"
+          >
+            <div className="container skinny">
+              <h2 style={{ marginBottom: '4rem' }}>Team</h2>
+              <TeamGrid team={team} />
+            </div>
+          </section>
+        )}
       </main>
     )
   }
 }
 
-const AboutPage = ({ data: { page } }) => (
-  <AboutPageTemplate {...page} {...page.frontmatter} body={page.html} />
+const AboutPage = ({ data: { page, team } }) => (
+  <AboutPageTemplate
+    {...page}
+    {...page.frontmatter}
+    body={page.html}
+    team={team.edges.map(post => ({
+      ...post.node,
+      ...post.node.frontmatter,
+      ...post.node.fields
+    }))}
+  />
 )
 
 export default AboutPage
@@ -77,12 +90,24 @@ export const pageQuery = graphql`
           subtitle
           content
         }
-        team {
-          slug
-          title
-          position
-          image {
-            ...NoBlurImage
+      }
+    }
+    team: allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "team" } } }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+            contentType
+          }
+          frontmatter {
+            title
+            image {
+              ...NoBlurImage
+            }
+            position
+            description
           }
         }
       }

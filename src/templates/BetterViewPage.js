@@ -41,25 +41,27 @@ export const BetterViewPageTemplate = ({
     <ScrollNav />
 
     <div className="section-wrap dark">
-      <section className="section thick vh-100">
-        <BackgroundImage src={bgEmblemShape} animate size={'650px'} />
-        <div className="container skinny">
-          <div className="pull-right-skinny">
-            <h1>{section1.title}</h1>
-            <Content src={section1.content} />
-          </div>
+      {section1 && (
+        <section className="section thick vh-100">
+          <BackgroundImage src={bgEmblemShape} animate size={'650px'} />
+          <div className="container skinny">
+            <div className="pull-right-skinny">
+              <h1>{section1.title}</h1>
+              <Content src={section1.content} />
+            </div>
 
-          <Link
-            to="/a-case-for-change/"
-            strong
-            icon="page"
-            arrow="down"
-            scrollButton
-          >
-            See. Change.
-          </Link>
-        </div>
-      </section>
+            <Link
+              to="/a-case-for-change/"
+              strong
+              icon="page"
+              arrow="down"
+              scrollButton
+            >
+              See. Change.
+            </Link>
+          </div>
+        </section>
+      )}
 
       <section
         className="section thick vh-100"
@@ -127,14 +129,16 @@ export const BetterViewPageTemplate = ({
       </div>
     </section>
 
-    <section className="section dark thick vh-100" id="the-coordination-hub">
-      <div className="container">
-        <VideoSection videoUrl={'https://vimeo.com/261768328/fb3b2982f2'}>
-          <h2>{section2.title}</h2>
-          <Content src={section2.content} />
-        </VideoSection>
-      </div>
-    </section>
+    {section2 && (
+      <section className="section dark thick vh-100" id="the-coordination-hub">
+        <div className="container">
+          <VideoSection videoUrl={'https://vimeo.com/261768328/fb3b2982f2'}>
+            <h2>{section2.title}</h2>
+            <Content src={section2.content} />
+          </VideoSection>
+        </div>
+      </section>
+    )}
 
     <section className="section primary thick vh-100" id="more-features">
       <BackgroundImage src={bgCirclesWhite} contain />
@@ -142,29 +146,31 @@ export const BetterViewPageTemplate = ({
       <div className="container">
         <h2 style={{ marginBottom: '4rem' }}>More features</h2>
 
-        <IconGrid fontSizeSmall items={iconGrid} />
+        {iconGrid && <IconGrid fontSizeSmall items={iconGrid} />}
       </div>
     </section>
 
-    <section className="section light thick vh-100" id="here-to-help">
-      <BackgroundImage
-        src={bgEmblem}
-        contain
-        animate
-        style={{ top: '5rem', bottom: '10vh' }}
-      />
+    {section3 && (
+      <section className="section light thick vh-100" id="here-to-help">
+        <BackgroundImage
+          src={bgEmblem}
+          contain
+          animate
+          style={{ top: '5rem', bottom: '10vh' }}
+        />
 
-      <div className="container skinnier relative">
-        <h2 className="color-primary">{section3.title}</h2>
-        <div className="statement">
-          <Content src={section3.subtitle} />
+        <div className="container skinnier relative">
+          <h2 className="color-primary">{section3.title}</h2>
+          <div className="statement">
+            <Content src={section3.subtitle} />
+          </div>
+          <Content src={section3.content} />
+          <Link to="/contact/" icon="page" strong>
+            Contact Us
+          </Link>
         </div>
-        <Content src={section3.content} />
-        <Link to="/contact/" icon="page" strong>
-          Contact Us
-        </Link>
-      </div>
-    </section>
+      </section>
+    )}
   </main>
 )
 

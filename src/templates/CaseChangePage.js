@@ -15,7 +15,7 @@ import emergency from '../images/emergency.svg'
 import patient from '../images/patient.svg'
 import surgery from '../images/surgery.svg'
 
-class CaseChangePageTemplate extends React.Component {
+export class CaseChangePageTemplate extends React.Component {
   state = {
     popupContent: null
   }
@@ -52,48 +52,52 @@ class CaseChangePageTemplate extends React.Component {
         )}
 
         <div className="dark section-wrap">
-          <section className="section thick vh-100">
-            <div className="container skinny relative">
-              <BackgroundImage
-                src={bgBrokenSystem}
-                contain
-                animate
-                style={{
-                  backgroundPosition: 'left'
-                }}
-              />
-              <div className="pull-right-skinny">
-                <h1>{section1.title}</h1>
-                <Content src={section1.content} />
+          {section1 && (
+            <section className="section thick vh-100">
+              <div className="container skinny relative">
+                <BackgroundImage
+                  src={bgBrokenSystem}
+                  contain
+                  animate
+                  style={{
+                    backgroundPosition: 'left'
+                  }}
+                />
+                <div className="pull-right-skinny">
+                  <h1>{section1.title}</h1>
+                  <Content src={section1.content} />
+                </div>
               </div>
-            </div>
 
-            <Link
-              to="/a-case-for-change/"
-              strong
-              icon="page"
-              arrow="down"
-              scrollButton
+              <Link
+                to="/a-case-for-change/"
+                strong
+                icon="page"
+                arrow="down"
+                scrollButton
+              >
+                See. Change.
+              </Link>
+            </section>
+          )}
+
+          {iconGrid && (
+            <section
+              className="section thick"
+              data-scrollToTarget
+              id="questions-faced"
             >
-              See. Change.
-            </Link>
-          </section>
-
-          <section
-            className="section thick"
-            data-scrollToTarget
-            id="questions-faced"
-          >
-            <div className="container">
-              <IconGrid
-                items={iconGrid}
-                handleClick={({ e, item }) => {
-                  e.preventDefault()
-                  this.openPopup({ popupContent: item.popupContent })
-                }}
-              />
-            </div>
-          </section>
+              <div className="container">
+                <IconGrid
+                  items={iconGrid}
+                  handleClick={({ e, item }) => {
+                    e.preventDefault()
+                    this.openPopup({ popupContent: item.popupContent })
+                  }}
+                />
+              </div>
+            </section>
+          )}
         </div>
 
         <section className="section primary thick vh-100" id="answers-provided">
