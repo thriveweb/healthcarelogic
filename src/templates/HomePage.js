@@ -11,7 +11,7 @@ import BgBrokenSystem from '../components/BgBrokenSystem'
 import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
 import bgCircles from '../images/bg-circles.png'
 
-import './home.scss'
+import './HomePage.scss'
 
 class HomePageTemplate extends React.Component {
   state = {
