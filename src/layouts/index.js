@@ -37,6 +37,8 @@ class Layout extends React.Component {
       headerScripts
     } = data.settingsYaml || {}
 
+    const absoluteImageUrl = `${siteUrl}/card-og.jpg`
+
     return (
       <Fragment>
         <Helmet defaultTitle={siteTitle} titleTemplate={`%s | ${siteTitle}`}>
@@ -84,6 +86,13 @@ class Layout extends React.Component {
           <meta name="msapplication-TileColor" content="#2b5797" />
           <meta name="theme-color" content="#ffffff" />
 
+          {absoluteImageUrl && (
+            <meta name="twitter:card" content="summary_large_image" />
+          )}
+          {absoluteImageUrl && (
+            <meta property="og:image" content={absoluteImageUrl} />
+          )}
+
           {/* Global site tag (gtag.js) - Google Analytics */}
           <script
             async
@@ -121,6 +130,7 @@ export const query = graphql`
   query IndexLayoutQuery {
     settingsYaml {
       siteTitle
+      siteUrl
       siteDescription
       email
       phone
