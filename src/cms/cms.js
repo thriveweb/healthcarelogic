@@ -22,12 +22,9 @@ CMS.registerPreviewTemplate('about-page', ({ entry }) => (
 CMS.registerPreviewTemplate('contact-page', ({ entry }) => (
   <ContactPageTemplate {...entry.toJS().data} />
 ))
-CMS.registerPreviewTemplate('infoPages', ({ entry }) => (
-  <DefaultPageTemplate {...entry.toJS().data} />
+CMS.registerPreviewTemplate('case-change-page', ({ entry }) => (
+  <CaseChangePageTemplate {...entry.toJS().data} />
 ))
-CMS.registerPreviewTemplate('blog-page', ({ entry }) => (
-  <BlogIndexTemplate {...entry.toJS().data} />
-))
-CMS.registerPreviewTemplate('posts', ({ entry }) => (
-  <SinglePostTemplate {...entry.toJS().data} />
+CMS.registerPreviewTemplate('better-view-page', ({ entry }) => (
+  <BetterViewPageTemplate {...entry.toJS().data} />
 ))
