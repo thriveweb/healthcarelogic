@@ -53,13 +53,6 @@ collections: # A list of collections the CMS should be able to edit
                 fields:
                   - {label: Title, name: title, widget: string}
                   - {label: Content, name: content, widget: markdown}
-          - label: Section 3
-            name: section3
-            widget: object
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Subtitle, name: subtitle, widget: string}
-              - {label: Content, name: content, widget: markdown}
 
       - file: "content/pages/betterview.md"
         label: "A Better View"
@@ -106,7 +99,7 @@ collections: # A list of collections the CMS should be able to edit
             name: team
             widget: list
             fields:
-              - {label: Name, name: name, widget: string}
+              - {label: Name, name: title, widget: string}
               - {label: Position, name: position, widget: string}
               - {label: Slug, name: slug, widget: string}
               - {label: Image, name: image, widget: image}
