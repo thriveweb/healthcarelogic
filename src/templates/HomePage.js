@@ -23,15 +23,7 @@ class HomePageTemplate extends React.Component {
   }
 
   render() {
-    const {
-      template,
-      slug,
-      title,
-      section1,
-      section2,
-      section3,
-      section4
-    } = this.props
+    const { title, section1, section2, section3, section4 } = this.props
     return (
       <main className="Home">
         <section className="section dark thick vh-100">
@@ -149,8 +141,6 @@ export const pageQuery = graphql`
     page: markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        template
-        slug
         title
         section1 {
           title

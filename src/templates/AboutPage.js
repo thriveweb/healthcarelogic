@@ -72,7 +72,6 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        template
         section1 {
           title
           subtitle

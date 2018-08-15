@@ -8,14 +8,7 @@ import Image from '../components/Image'
 import './TeamMember.css'
 
 // Export Template for use in CMS preview
-export const TeamMemberTemplate = ({
-  template,
-  slug,
-  title,
-  image,
-  position,
-  description
-}) => (
+export const TeamMemberTemplate = ({ title, image, position, description }) => (
   <main className="TeamMember">
     <Helmet>
       <title>{title}</title>
@@ -59,8 +52,6 @@ export const pageQuery = graphql`
     page: markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        template
-        slug
         title
         image {
           ...NoBlurImage

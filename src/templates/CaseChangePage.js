@@ -23,7 +23,7 @@ class CaseChangePageTemplate extends React.Component {
   openPopup = ({ popupContent }) => this.setState({ popupContent })
 
   render() {
-    let { template, slug, title, section1, iconGrid } = this.props
+    let { title, section1, iconGrid } = this.props
     const { popupContent } = this.state
     return (
       <main>
@@ -133,8 +133,6 @@ export const pageQuery = graphql`
     page: markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        template
-        slug
         title
         section1 {
           title
@@ -145,7 +143,7 @@ export const pageQuery = graphql`
           image
           description
           linkTo
-          popupContent{
+          popupContent {
             title
             content
           }

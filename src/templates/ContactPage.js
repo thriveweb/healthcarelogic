@@ -11,8 +11,6 @@ import './ContactPage.css'
 
 // Export Template for use in CMS preview
 export const ContactPageTemplate = ({
-  template,
-  slug,
   title,
   blurb,
   address,
@@ -85,8 +83,6 @@ export const pageQuery = graphql`
     page: markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        template
-        slug
         title
         blurb
         address

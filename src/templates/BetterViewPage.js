@@ -27,8 +27,6 @@ import screen7 from '../images/screens/healthcarelogic_videoscreens-007.jpeg'
 
 // Export Template for use in CMS preview
 export const BetterViewPageTemplate = ({
-  template,
-  slug,
   title,
   section1,
   section2,
@@ -181,8 +179,6 @@ export const pageQuery = graphql`
     page: markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        template
-        slug
         title
         section1 {
           title
