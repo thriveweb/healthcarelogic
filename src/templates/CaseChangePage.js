@@ -35,8 +35,8 @@ class CaseChangePageTemplate extends React.Component {
 
         {popupContent && (
           <Popup onClose={() => this.setState({ popupContent: null })}>
-            <h3>{iconGrid.title}</h3>
-            <Content src={popupContent} />
+            <h3>{popupContent.title}</h3>
+            <Content src={popupContent.content} />
             <p>
               If you could <strong>see</strong> all this, what would{' '}
               <strong>change</strong>?
@@ -145,7 +145,10 @@ export const pageQuery = graphql`
           image
           description
           linkTo
-          popupContent
+          popupContent{
+            title
+            content
+          }
         }
       }
     }
