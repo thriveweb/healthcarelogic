@@ -25,12 +25,12 @@ export const TeamMemberTemplate = ({
       <div className="container skinny">
         <div className="TeamMember--Wrap">
           <div className="TeamMember--Content">
-            <h1>{name}</h1>
+            <h1>{title}</h1>
             {position && <h4>{position}</h4>}
             <Content src={description} />
           </div>
           <div className="TeamMember--Image">
-            <Image src={image} alt={name} />
+            <Image src={image} alt={title} />
           </div>
         </div>
         <div className="flex">
