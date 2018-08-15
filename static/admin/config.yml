@@ -80,6 +80,13 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Title, name: title, widget: string}
               - {label: Description, name: description, widget: string}
               - {label: Image, name: image, widget: image}
+          - label: Section 3
+            name: section3
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Subtitle, name: subtitle, widget: markdown}
+              - {label: Content, name: content, widget: markdown}
 
       - file: "content/pages/about.md"
         label: "About Page"
@@ -95,14 +102,6 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Title, name: title, widget: string}
               - {label: Subtitle, name: subtitle, widget: string}
               - {label: Content, name: content, widget: markdown}
-          - label: Team
-            name: team
-            widget: list
-            fields:
-              - {label: Name, name: title, widget: string}
-              - {label: Position, name: position, widget: string}
-              - {label: Slug, name: slug, widget: string}
-              - {label: Image, name: image, widget: image}
 
       - file: "content/pages/home.md"
         label: "Home Page"
