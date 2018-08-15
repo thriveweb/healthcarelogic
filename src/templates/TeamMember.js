@@ -18,7 +18,7 @@ export const TeamMemberTemplate = ({
 }) => (
   <main className="TeamMember">
     <Helmet>
-      <title>{name}</title>
+      <title>{title}</title>
     </Helmet>
 
     <section className="section dark thick vh-90">
@@ -61,7 +61,7 @@ export const pageQuery = graphql`
       frontmatter {
         template
         slug
-        name
+        title
         image {
           ...NoBlurImage
         }
