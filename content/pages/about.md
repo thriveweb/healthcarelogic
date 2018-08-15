@@ -19,36 +19,36 @@ section1:
     In search of a solution to many of the global challenges facing hospitals, we have created a common language that is helping solve the dilemma of capacity, demand and process and showing there is a simpler, cheaper and better way.
 
 team:
-  - title: Andrew Ge-Hallakjshf
-    subtitle: Director Software Development
+  - name: Andrew Ge-Hallakjshf
+    position: Director Software Development
     image: '/images/uploads/team/andrew-ge-hall.jpg'
     slug: ../team/andrew-ge-hall
-  - title: Andy Hill
-    subtitle: Board Chair and Director
+  - name: Andy Hill
+    position: Board Chair and Director
     image: '/images/team/andy-hill.jpg'
     slug: ../team/andy-hill
-  - title: 'Associate Professor Christopher Ogg'
-    subtitle: 'Director Research and Development'
+  - name: 'Associate Professor Christopher Ogg'
+    position: 'Director Research and Development'
     image: '/images/team/christopher-ogg.jpg'
     slug: ../team/christopher-ogg
-  - title: 'Kal Wong'
-    subtitle: 'Senior Web Engineer'
+  - name: 'Kal Wong'
+    position: 'Senior Web Engineer'
     image: '/images/team/kal-wong.jpg'
     slug: ../team/kal-wong
-  - title: 'Leigh Platt'
-    subtitle: 'Junior Web Engineer'
+  - name: 'Leigh Platt'
+    position: 'Junior Web Engineer'
     image: '/images/team/leigh-platt.jpg'
     slug: ../team/leigh-platt
-  - title: 'Professor Martin Connor'
-    subtitle: 'Founder and CEO'
+  - name: 'Professor Martin Connor'
+    position: 'Founder and CEO'
     image: '/images/team/martin-connor.jpg'
     slug: ../team/martin-connor
-  - title: 'Nikita Nadezhdin'
-    subtitle: 'Senior Data Engineer'
+  - name: 'Nikita Nadezhdin'
+    position: 'Senior Data Engineer'
     image: '/images/team/nikita-nadezhdin.jpg'
     slug: ../team/nikita-nadezhdin
-  - title: 'Suzanne Yeates'
-    subtitle: 'Company Secretary'
+  - name: 'Suzanne Yeates'
+    position: 'Company Secretary'
     image: '/images/team/suzanne-yeates.jpg'
     slug: ../team/suzanne-yeates
 ---
