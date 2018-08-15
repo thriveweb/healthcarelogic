@@ -11,7 +11,7 @@ import './TeamMember.css'
 export const TeamMemberTemplate = ({
   template,
   slug,
-  name,
+  title,
   image,
   position,
   description
