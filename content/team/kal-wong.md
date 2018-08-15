@@ -1,7 +1,7 @@
 ---
 template: TeamMember
 slug: team/kal-wong
-name: Kal Wong
+title: Kal Wong
 image: /images/team/kal-wong.jpg
 position: Senior Web Engineer
 description: |-

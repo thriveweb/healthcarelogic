@@ -1,7 +1,7 @@
 ---
 template: TeamMember
 slug: team/christopher-ogg
-name: Associate Professor Christopher Ogg
+title: Associate Professor Christopher Ogg
 image: /images/team/christopher-ogg.jpg
 position: Director Research and Development
 description: |-

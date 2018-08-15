@@ -1,7 +1,7 @@
 ---
 template: TeamMember
 slug: team/suzanne-yeates
-name: Suzanne Yeates
+title: Suzanne Yeates
 image: /images/team/suzanne-yeates.jpg
 position: Company Secretary
 description: |-

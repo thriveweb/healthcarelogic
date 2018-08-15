@@ -1,7 +1,7 @@
 ---
 template: TeamMember
 slug: team/andrew-ge-hall
-name: Andrew Ge-Hall
+title: Andrew Ge-Hall
 image: /images/team/andrew-ge-hall.jpg
 position: Director Software Development
 description: |-

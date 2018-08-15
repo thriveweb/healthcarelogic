@@ -1,7 +1,7 @@
 ---
 template: TeamMember
 slug: team/andy-hill
-name: Andy Hill
+title: Andy Hill
 image: /images/team/andy-hill.jpg
 position: Board Chair and Director
 description: |-

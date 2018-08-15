@@ -1,7 +1,7 @@
 ---
 template: TeamMember
 slug: team/leigh-platt
-name: Leigh Platt
+title: Leigh Platt
 image: /images/team/leigh-platt.jpg
 position: Business Manager
 description: |-

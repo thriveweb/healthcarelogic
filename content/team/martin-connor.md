@@ -1,7 +1,7 @@
 ---
 template: TeamMember
 slug: team/martin-connor
-name: Professor Martin Connor
+title: Professor Martin Connor
 image: /images/team/martin-connor.jpg
 position: Founder and CEO
 description: |-

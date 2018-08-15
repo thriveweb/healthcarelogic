@@ -1,7 +1,7 @@
 ---
 template: TeamMember
 slug: team/nikita-nadezhdin
-name: Nikita Nadezhdin
+title: Nikita Nadezhdin
 image: /images/team/nikita-nadezhdin.jpg
 position: Senior Data Engineer
 description: |-

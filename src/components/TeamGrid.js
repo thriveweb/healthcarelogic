@@ -12,14 +12,14 @@ const TeamGrid = ({ props, team }) => (
         <Link
           to={member.slug}
           className="TeamGrid--Item"
-          key={`TeamGrid--${member.name}`}
+          key={`TeamGrid--${member.title}`}
         >
           <Image
             className="TeamGrid--Item--Image"
             src={member.image}
-            alt={member.name}
+            alt={member.title}
           />
-          <h5 className="TeamGrid--Item--Title">{member.name}</h5>
+          <h5 className="TeamGrid--Item--Title">{member.title}</h5>
           <h6 className="TeamGrid--Item--Subtitle">{member.position}</h6>
           <div
             className="TeamGrid--Item--Hover absolute"

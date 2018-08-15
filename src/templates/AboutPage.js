@@ -80,7 +80,7 @@ export const pageQuery = graphql`
         }
         team {
           slug
-          name
+          title
           position
           image {
             ...NoBlurImage
