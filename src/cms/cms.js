@@ -22,7 +22,7 @@ CMS.registerPreviewTemplate('about-page', ({ entry }) => (
 CMS.registerPreviewTemplate('contact-page', ({ entry }) => (
   <ContactPageTemplate {...entry.toJS().data} />
 ))
-CMS.registerPreviewTemplate('case-change-page', ({ entry }) => (
+CMS.registerPreviewTemplate('casechange-page', ({ entry }) => (
   <CaseChangePageTemplate {...entry.toJS().data} />
 ))
 CMS.registerPreviewTemplate('betterview-page', ({ entry }) => (

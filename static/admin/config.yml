@@ -28,7 +28,7 @@ collections: # A list of collections the CMS should be able to edit
 
       - file: "content/pages/casechange.md"
         label: "A Case For Change"
-        name: "case-change-page"
+        name: "casechange-page"
         fields:
           - {label: Template, name: template, widget: hidden, default: CaseChangePage}
           - {label: Slug, name: slug, widget: hidden, default: 'a-case-for-change'}
