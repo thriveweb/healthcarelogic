@@ -25,6 +25,6 @@ CMS.registerPreviewTemplate('contact-page', ({ entry }) => (
 CMS.registerPreviewTemplate('case-change-page', ({ entry }) => (
   <CaseChangePageTemplate {...entry.toJS().data} />
 ))
-CMS.registerPreviewTemplate('better-view-page', ({ entry }) => (
+CMS.registerPreviewTemplate('betterview-page', ({ entry }) => (
   <BetterViewPageTemplate {...entry.toJS().data} />
 ))
