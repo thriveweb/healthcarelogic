@@ -3,87 +3,70 @@ import Helmet from 'react-helmet'
 
 import Link from '../components/Link'
 import Content from '../components/Content'
+import Image from '../components/Image'
+
 import './TeamMember.css'
 
-import './AboutPage.css'
+// Export Template for use in CMS preview
+export const TeamMemberTemplate = ({
+  template,
+  slug,
+  name,
+  image,
+  position,
+  description
+}) => (
+  <main className="TeamMember">
+    <Helmet>
+      <title>{name}</title>
+    </Helmet>
 
-class AboutPageTemplate extends React.Component {
-  render() {
-    let { title, section1, team } = this.props
-    return (
-      <main>
-        <Helmet>
-          <title>{title}</title>
-        </Helmet>
-
-        <section className="section dark thick vh-100">
-          <BackgroundImage
-            src={bgEmblem3d}
-            contain
-            animate
-            opacity={0.4}
-            style={{ top: '20rem', bottom: '20rem' }}
-          />
-
-          <div className="container skinny">
-            <h1>{section1.title}</h1>
-            <div className="About--Intro">
-              <p className="statement">{section1.subtitle}</p>
-              <Content src={section1.content} />
-            </div>
-            <Link
-              to="/a-case-for-change/"
-              strong
-              icon="page"
-              arrow="down"
-              scrollButton
-            >
-              See. Change.
-            </Link>
+    <section className="section dark thick vh-90">
+      <div className="container skinny">
+        <div className="TeamMember--Wrap">
+          <div className="TeamMember--Content">
+            <h1>{name}</h1>
+            {position && <h4>{position}</h4>}
+            <Content src={description} />
           </div>
-        </section>
-
-        <section
-          className="section primary thick"
-          data-scrollToTarget
-          id="team"
-        >
-          <div className="container skinny">
-            <h2 style={{ marginBottom: '4rem' }}>Team</h2>
-            <TeamGrid team={team} />
+          <div className="TeamMember--Image">
+            <Image src={image} alt={name} />
           </div>
-        </section>
-      </main>
-    )
-  }
-}
-
-const AboutPage = ({ data: { page } }) => (
-  <AboutPageTemplate {...page} {...page.frontmatter} body={page.html} />
+        </div>
+        <div className="flex">
+          <Link
+            to={{ pathname: '/about/', hash: '#team' }}
+            strong
+            icon="page"
+            arrow="right"
+          >
+            Back
+          </Link>
+        </div>
+      </div>
+    </section>
+  </main>
 )
 
-export default AboutPage
+const TeamMember = ({ data: { page } }) => (
+  <TeamMemberTemplate {...page.frontmatter} body={page.html} />
+)
+
+export default TeamMember
 
 export const pageQuery = graphql`
-  query AboutPage($id: String!) {
+  query TeamMember($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        title
         template
-        section1 {
-          title
-          subtitle
-          content
+        slug
+        name
+        image {
+          ...NoBlurImage
         }
-        team {
-          slug
-          title
-          subtitle
-          image {
-            ...NoBlurImage
-          }
-        }
+        position
+        description
       }
     }
   }
