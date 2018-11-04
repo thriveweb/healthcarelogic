@@ -3,8 +3,7 @@ template: HomePage
 slug: ''
 title: Healthcare Logic
 featuredImage:
-  - 'https://ucarecdn.com/38d28386-0f45-4cee-9156-656677ba0f09~2/nth/0/'
-  - 'https://ucarecdn.com/38d28386-0f45-4cee-9156-656677ba0f09~2/nth/1/'
+  - 'https://ucarecdn.com/adfe0b3b-2b9f-4751-ad48-06f232bdffd1~1/nth/0/'
 portals:
   - image:
       - 'https://ucarecdn.com/670dea23-7cfb-45f0-921b-59e30696198e~1/nth/0/'
