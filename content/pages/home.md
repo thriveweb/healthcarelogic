@@ -1,9 +1,9 @@
 ---
 template: HomePage
 slug: ''
-title: Healthcare Logic
+title: Synergy Air
 featuredImage:
-  - 'https://ucarecdn.com/adfe0b3b-2b9f-4751-ad48-06f232bdffd1~1/nth/0/'
+  - 'https://ucarecdn.com/44f4a0e0-57e5-416a-830f-8eeecfd5ef7e~1/nth/0/'
 portals:
   - image:
       - 'https://ucarecdn.com/670dea23-7cfb-45f0-921b-59e30696198e~1/nth/0/'
