@@ -63,7 +63,6 @@ export const BlogIndexTemplate = ({
 
 // Export Default BlogIndex for front-end
 const BlogIndex = ({ data }) => {
-  console.log(data.posts)
   return (
     <BlogIndexTemplate
       {...data.page}
