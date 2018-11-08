@@ -68,6 +68,9 @@
 .Menu--Link:nth-of-type(5) {
   animation-delay: 0.4s;
 }
+.Menu--Link:nth-of-type(6) {
+  animation-delay: 0.5s;
+}
 
 .Menu--Link .Link--arrow {
   height: 0.7em;
