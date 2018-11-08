@@ -62,11 +62,11 @@ const BlogIndex = ({ data }) => (
     //   ...post.node.frontmatter,
     //   ...post.node.fields
     // }))}
-    // postCategories={data.postCategories.edges.map(post => ({
-    //   ...post.node,
-    //   ...post.node.frontmatter,
-    //   ...post.node.fields
-    // }))}
+    postCategories={data.postCategories.edges.map(post => ({
+      ...post.node,
+      ...post.node.frontmatter,
+      ...post.node.fields
+    }))}
   />
 )
 
@@ -81,6 +81,21 @@ export const pageQuery = graphql`
     page: markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
+      }
+    }
+    postCategories: allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "postCategories" } } }
+      sort: { order: ASC, fields: [frontmatter___title] }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+          }
+        }
       }
     }
   }
@@ -104,21 +119,6 @@ export const pageQuery = graphql`
 //         featuredImage {
 //           ...SmallImage
 //         }
-//       }
-//     }
-//   }
-// }
-// postCategories: allMarkdownRemark(
-//   filter: { fields: { contentType: { eq: "postCategories" } } }
-//   sort: { order: ASC, fields: [frontmatter___title] }
-// ) {
-//   edges {
-//     node {
-//       fields {
-//         slug
-//       }
-//       frontmatter {
-//         title
 //       }
 //     }
 //   }
