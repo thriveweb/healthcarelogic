@@ -16,6 +16,16 @@ export const BlogIndexTemplate = ({
   postCategories = [],
   contentType
 }) => {
+  const now = Date.now()
+  posts = posts.filter(post => {
+    const date = () => {
+      let myDate = post.date
+      myDate = myDate.split('-')
+      let newDate = myDate[1] + '/' + myDate[0] + '/' + myDate[2]
+      return Date.parse(myDate)
+    }
+    return date() <= now
+  })
   const isCategory = contentType === 'postCategories'
   const byCategory = post =>
     post.categories &&
@@ -98,6 +108,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            date
             categories {
               category
             }
