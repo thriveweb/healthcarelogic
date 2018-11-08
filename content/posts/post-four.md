@@ -3,6 +3,7 @@ template: SinglePost
 title: Post Four
 status: Published
 date: '2018-03-28'
+author: Jaxon
 featuredImage: /images/uploads/vyouw5byhlc.jpeg
 excerpt: This is an excerpt of Post Two
 categories:

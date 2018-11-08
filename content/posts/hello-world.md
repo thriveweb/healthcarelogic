@@ -3,6 +3,7 @@ template: SinglePost
 title: Hello World!
 status: Featured / Published
 date: '2018-03-27'
+author: Rory
 featuredImage: /images/uploads/smoke1.jpg
 excerpt: >-
   Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
