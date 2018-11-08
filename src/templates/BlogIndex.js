@@ -57,16 +57,16 @@ const BlogIndex = ({ data }) => (
     {...data.page}
     {...data.page.fields}
     {...data.page.frontmatter}
-    posts={data.posts.edges.map(post => ({
-      ...post.node,
-      ...post.node.frontmatter,
-      ...post.node.fields
-    }))}
-    postCategories={data.postCategories.edges.map(post => ({
-      ...post.node,
-      ...post.node.frontmatter,
-      ...post.node.fields
-    }))}
+    // posts={data.posts.edges.map(post => ({
+    //   ...post.node,
+    //   ...post.node.frontmatter,
+    //   ...post.node.fields
+    // }))}
+    // postCategories={data.postCategories.edges.map(post => ({
+    //   ...post.node,
+    //   ...post.node.frontmatter,
+    //   ...post.node.fields
+    // }))}
   />
 )
 
@@ -79,55 +79,47 @@ export const pageQuery = graphql`
   ## query name must be unique to this file
   query BlogIndex($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
-      fields {
-        contentType
-      }
       frontmatter {
         title
-        template
-        subtitle
-        featuredImage {
-          ...FluidImage
-        }
-      }
-    }
-
-    posts: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "posts" } } }
-      sort: { order: DESC, fields: [frontmatter___date] }
-    ) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            categories {
-              category
-            }
-            featuredImage {
-              ...SmallImage
-            }
-          }
-        }
-      }
-    }
-    postCategories: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "postCategories" } } }
-      sort: { order: ASC, fields: [frontmatter___title] }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-          }
-        }
       }
     }
   }
 `
+//
+// posts: allMarkdownRemark(
+//   filter: { fields: { contentType: { eq: "posts" } } }
+//   sort: { order: DESC, fields: [frontmatter___date] }
+// ) {
+//   edges {
+//     node {
+//       excerpt
+//       fields {
+//         slug
+//       }
+//       frontmatter {
+//         title
+//         categories {
+//           category
+//         }
+//         featuredImage {
+//           ...SmallImage
+//         }
+//       }
+//     }
+//   }
+// }
+// postCategories: allMarkdownRemark(
+//   filter: { fields: { contentType: { eq: "postCategories" } } }
+//   sort: { order: ASC, fields: [frontmatter___title] }
+// ) {
+//   edges {
+//     node {
+//       fields {
+//         slug
+//       }
+//       frontmatter {
+//         title
+//       }
+//     }
+//   }
+// }
