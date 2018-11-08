@@ -83,6 +83,28 @@ export const pageQuery = graphql`
         title
       }
     }
+    posts: allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "posts" } } }
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            categories {
+              category
+            }
+            featuredImage {
+              ...SmallImage
+            }
+          }
+        }
+      }
+    }
     postCategories: allMarkdownRemark(
       filter: { fields: { contentType: { eq: "postCategories" } } }
       sort: { order: ASC, fields: [frontmatter___title] }
@@ -100,26 +122,3 @@ export const pageQuery = graphql`
     }
   }
 `
-//
-// posts: allMarkdownRemark(
-//   filter: { fields: { contentType: { eq: "posts" } } }
-//   sort: { order: DESC, fields: [frontmatter___date] }
-// ) {
-//   edges {
-//     node {
-//       excerpt
-//       fields {
-//         slug
-//       }
-//       frontmatter {
-//         title
-//         categories {
-//           category
-//         }
-//         featuredImage {
-//           ...SmallImage
-//         }
-//       }
-//     }
-//   }
-// }
