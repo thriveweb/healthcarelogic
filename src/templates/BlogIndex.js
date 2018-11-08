@@ -57,11 +57,11 @@ const BlogIndex = ({ data }) => (
     {...data.page}
     {...data.page.fields}
     {...data.page.frontmatter}
-    // posts={data.posts.edges.map(post => ({
-    //   ...post.node,
-    //   ...post.node.frontmatter,
-    //   ...post.node.fields
-    // }))}
+    posts={data.posts.edges.map(post => ({
+      ...post.node,
+      ...post.node.frontmatter,
+      ...post.node.fields
+    }))}
     postCategories={data.postCategories.edges.map(post => ({
       ...post.node,
       ...post.node.frontmatter,
