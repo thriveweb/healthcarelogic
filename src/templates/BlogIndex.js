@@ -4,6 +4,8 @@ import Helmet from 'react-helmet'
 import PageHeader from '../components/PageHeader'
 import PostSection from '../components/PostSection'
 import PostCategoriesNav from '../components/PostCategoriesNav'
+import BackgroundImage from '../components/BackgroundImage'
+import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
 
 // Export Template for use in CMS preview
 export const BlogIndexTemplate = ({
@@ -26,49 +28,52 @@ export const BlogIndexTemplate = ({
         <title>{title}</title>
       </Helmet>
 
-      <PageHeader
-        title={title}
-        subtitle={subtitle}
-        backgroundImage={featuredImage}
-      />
+      <section className="section dark thick vh-100">
+        <BackgroundImage
+          src={bgEmblem3d}
+          contain
+          animate
+          opacity={0.4}
+          style={{ top: '20rem', bottom: '20rem' }}
+        />
 
-      {!!postCategories.length && (
-        <section className="section thin">
-          <div className="container">
-            <PostCategoriesNav categories={postCategories} />
-          </div>
-        </section>
-      )}
+        <div className="container skinny">
+          <div className="container skinny relative">
+            <h1>{title}</h1>
 
-      {!!posts.length && (
-        <section className="section">
-          <div className="container">
-            <PostSection posts={filteredPosts} />
+            {!!postCategories.length && (
+              <PostCategoriesNav categories={postCategories} />
+            )}
+
+            {!!posts.length && <PostSection posts={filteredPosts} />}
           </div>
-        </section>
-      )}
+        </div>
+      </section>
     </main>
   )
 }
 
 // Export Default BlogIndex for front-end
-const BlogIndex = ({ data }) => (
-  <BlogIndexTemplate
-    {...data.page}
-    {...data.page.fields}
-    {...data.page.frontmatter}
-    posts={data.posts.edges.map(post => ({
-      ...post.node,
-      ...post.node.frontmatter,
-      ...post.node.fields
-    }))}
-    postCategories={data.postCategories.edges.map(post => ({
-      ...post.node,
-      ...post.node.frontmatter,
-      ...post.node.fields
-    }))}
-  />
-)
+const BlogIndex = ({ data }) => {
+  console.log(data.posts)
+  return (
+    <BlogIndexTemplate
+      {...data.page}
+      {...data.page.fields}
+      {...data.page.frontmatter}
+      posts={data.posts.edges.map(post => ({
+        ...post.node,
+        ...post.node.frontmatter,
+        ...post.node.fields
+      }))}
+      postCategories={data.postCategories.edges.map(post => ({
+        ...post.node,
+        ...post.node.frontmatter,
+        ...post.node.fields
+      }))}
+    />
+  )
+}
 
 export default BlogIndex
 
