@@ -37,16 +37,14 @@ export const BlogIndexTemplate = ({
           style={{ top: '20rem', bottom: '20rem' }}
         />
 
-        <div className="container skinny">
-          <div className="container skinny relative">
-            <h1>{title}</h1>
+        <div className="container skinny relative ">
+          <h1>{title}</h1>
 
-            {!!postCategories.length && (
-              <PostCategoriesNav categories={postCategories} />
-            )}
+          {!!postCategories.length && (
+            <PostCategoriesNav categories={postCategories} />
+          )}
 
-            {!!posts.length && <PostSection posts={filteredPosts} />}
-          </div>
+          {!!posts.length && <PostSection posts={filteredPosts} />}
         </div>
       </section>
     </main>
