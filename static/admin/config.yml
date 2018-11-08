@@ -202,6 +202,17 @@ collections: # A list of collections the CMS should be able to edit
       - { label: Image, name: image, widget: image }
       - { label: Description, name: description, widget: markdown }
 
+  - name: postCategories
+    label: Post Category
+    editor:
+      preview: false
+    folder: content/postCategories
+    slug: '{{slug}}'
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - { label: Template, name: template, widget: hidden, default: BlogIndex }
+      - { label: Title, name: title, widget: string }
+
   - name: 'settings'
     label: 'Settings'
     delete: false # Prevent users from deleting documents in this collection
