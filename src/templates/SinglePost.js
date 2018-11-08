@@ -12,6 +12,7 @@ import './SinglePost.css'
 export const SinglePostTemplate = ({
   title,
   date,
+  author,
   featuredImage,
   body,
   nextPostURL,
@@ -47,6 +48,12 @@ export const SinglePostTemplate = ({
               >
                 {_format(date, 'MMMM Do, YYYY')}
               </time>
+            )}
+            {author && (
+              <Fragment>
+                <span>|</span>
+                <span>{author}</span>
+              </Fragment>
             )}
             {categories && (
               <Fragment>
@@ -130,6 +137,7 @@ export const pageQuery = graphql`
         template
         subtitle
         date
+        author
         categories {
           category
         }
