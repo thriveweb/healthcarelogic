@@ -4,8 +4,8 @@ title: Hello World!
 slug: hello-world
 status: Featured / Published
 date: '2018-03-27'
-author: Rory
 featuredImage: /images/uploads/smoke1.jpg
+author: Rory
 excerpt: >-
   Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
   interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque lectus
