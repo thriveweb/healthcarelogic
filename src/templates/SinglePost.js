@@ -135,7 +135,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         template
-        subtitle
         date
         author
         categories {
