@@ -1,6 +1,7 @@
 ---
 template: SinglePost
 title: Hello World!
+slug: hello-world
 status: Featured / Published
 date: '2018-03-27'
 author: Rory

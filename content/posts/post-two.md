@@ -1,6 +1,7 @@
 ---
 template: SinglePost
 title: Post Two
+slug: post-two
 status: Published
 date: '2018-03-28'
 author: Mason
