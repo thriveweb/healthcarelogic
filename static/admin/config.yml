@@ -235,6 +235,7 @@ collections: # A list of collections the CMS should be able to edit
           name: author,
           widget: string,
           default: 'Professor Martin Connor PhD',
+          required: false,
         }
       - { label: Excerpt, name: excerpt, widget: text }
       - { label: Content, name: body, widget: markdown }
