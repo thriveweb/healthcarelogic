@@ -35,7 +35,6 @@
 }
 
 .SinglePost--Content {
-  margin-top: -15rem;
   background: var(--secondary);
   padding: 8rem 8rem 4rem 8rem;
   border-radius: 20px;
