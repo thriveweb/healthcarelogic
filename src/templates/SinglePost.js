@@ -29,14 +29,6 @@ export const SinglePostTemplate = ({
     </Helmet>
 
     <section className="section dark thick vh-100">
-      <div className="container SinglePost--header">
-        <div>
-          {featuredImage && (
-            <Image background src={featuredImage} alt={title} />
-          )}
-        </div>
-      </div>
-
       <div className="container skinny">
         <div className="SinglePost--Content relative">
           <div className="SinglePost--Meta">
