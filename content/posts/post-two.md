@@ -10,7 +10,7 @@ excerpt: >-
   A 25 year snapshot of hospital performance systems and how cultural shifts
   enable are the next wave of evolution.
 categories:
-  - category: Updates
+  - category: Articles
 ---
 
 
