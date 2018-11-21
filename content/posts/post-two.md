@@ -4,14 +4,13 @@ slug: hospital-analytics–fifth-wave
 title: Hospital Analytics – It’s time for the fifth wave
 status: Published
 date: '2018-03-28'
-featuredImage: /images/uploads/blogposts.jpg
-author: Professor Martin Connor
+featuredImage: /images/uploads/hcl-blog-5thwave.jpg
+author: Professor Martin Connor PhD
 excerpt: >-
-  Follow a 25 year snapshot to understand the evolution of hospital performance
-  systems. Explore how information can enable fundamental cultural shifts to
-  positively empower and significantly improve performance.
+  A 25 year snapshot of hospital performance systems and how cultural shifts
+  enable are the next wave of evolution.
 categories:
-  - category: Updates
+  - category: Articles
 ---
 
 
