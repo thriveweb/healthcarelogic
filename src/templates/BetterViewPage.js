@@ -24,6 +24,7 @@ import screen4 from '../images/screens/healthcarelogic_videoscreens-004.jpeg'
 import screen5 from '../images/screens/healthcarelogic_videoscreens-005.jpeg'
 import screen6 from '../images/screens/healthcarelogic_videoscreens-006.jpeg'
 import screen7 from '../images/screens/healthcarelogic_videoscreens-007.jpeg'
+import Meta from '../components/Meta'
 
 // Export Template for use in CMS preview
 export const BetterViewPageTemplate = ({
@@ -31,13 +32,14 @@ export const BetterViewPageTemplate = ({
   section1,
   section2,
   iconGrid,
-  section3
+  section3,
+  meta
 }) => (
   <main>
     <Helmet>
       <title>{title}</title>
     </Helmet>
-
+    <Meta {...meta} />
     <ScrollNav />
 
     <div className="section-wrap dark">
@@ -203,6 +205,12 @@ export const pageQuery = graphql`
           title
           subtitle
           content
+        }
+        meta {
+          title
+          description
+          noindex
+          canonicalLink
         }
       }
     }

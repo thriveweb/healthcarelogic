@@ -14,6 +14,7 @@ import bed from '../images/bed.svg'
 import emergency from '../images/emergency.svg'
 import patient from '../images/patient.svg'
 import surgery from '../images/surgery.svg'
+import Meta from '../components/Meta'
 
 export class CaseChangePageTemplate extends React.Component {
   state = {
@@ -23,13 +24,14 @@ export class CaseChangePageTemplate extends React.Component {
   openPopup = ({ popupContent }) => this.setState({ popupContent })
 
   render() {
-    let { title, section1, iconGrid } = this.props
+    let { title, section1, iconGrid, meta } = this.props
     const { popupContent } = this.state
     return (
       <main>
         <Helmet>
           <title>{title}</title>
         </Helmet>
+        <Meta {...meta} />
 
         <ScrollNav />
 
@@ -151,6 +153,12 @@ export const pageQuery = graphql`
             title
             content
           }
+        }
+        meta {
+          title
+          description
+          noindex
+          canonicalLink
         }
       }
     }

@@ -8,6 +8,7 @@ import EnquiryFormSimpleAjax from '../components/EnquiryFormSimpleAjax'
 import BackgroundImage from '../components/BackgroundImage'
 import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
 import './ContactPage.css'
+import Meta from '../components/Meta'
 
 // Export Template for use in CMS preview
 export const ContactPageTemplate = ({
@@ -15,12 +16,14 @@ export const ContactPageTemplate = ({
   blurb,
   address,
   phone,
-  email
+  email,
+  meta
 }) => (
   <main>
     <Helmet>
       <title>{title}</title>
     </Helmet>
+    <Meta {...meta} />
 
     <section className="section primary thick vh-100">
       <BackgroundImage
@@ -88,6 +91,12 @@ export const pageQuery = graphql`
         address
         phone
         email
+        meta {
+          title
+          description
+          noindex
+          canonicalLink
+        }
       }
     }
   }

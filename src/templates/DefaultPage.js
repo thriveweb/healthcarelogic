@@ -3,18 +3,21 @@ import Helmet from 'react-helmet'
 
 import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
+import Meta from '../components/Meta'
 
 // Export Template for use in CMS preview
 export const DefaultPageTemplate = ({
   title,
   subtitle,
   featuredImage,
-  body
+  body,
+  meta
 }) => (
   <main className="DefaultPage">
     <Helmet>
       <title>{title}</title>
     </Helmet>
+    <Meta {...meta} />
 
     <PageHeader
       title={title}
@@ -43,6 +46,12 @@ export const pageQuery = graphql`
         title
         featuredImage {
           ...FluidImage
+        }
+        meta {
+          title
+          description
+          noindex
+          canonicalLink
         }
       }
     }

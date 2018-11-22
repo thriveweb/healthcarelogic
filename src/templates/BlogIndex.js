@@ -6,6 +6,7 @@ import PostSection from '../components/PostSection'
 import PostCategoriesNav from '../components/PostCategoriesNav'
 import BackgroundImage from '../components/BackgroundImage'
 import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
+import Meta from '../components/Meta'
 
 // Export Template for use in CMS preview
 export const BlogIndexTemplate = ({
@@ -14,7 +15,8 @@ export const BlogIndexTemplate = ({
   featuredImage,
   posts = [],
   postCategories = [],
-  contentType
+  contentType,
+  meta
 }) => {
   const now = Date.now()
   posts = posts.filter(post => {
@@ -37,6 +39,7 @@ export const BlogIndexTemplate = ({
       <Helmet>
         <title>{title}</title>
       </Helmet>
+      <Meta {...meta} />
 
       <section className="section dark thick vh-100">
         <BackgroundImage
@@ -93,6 +96,12 @@ export const pageQuery = graphql`
     page: markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
+        meta {
+          title
+          description
+          noindex
+          canonicalLink
+        }
       }
     }
     posts: allMarkdownRemark(

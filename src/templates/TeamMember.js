@@ -4,15 +4,23 @@ import Helmet from 'react-helmet'
 import Link from '../components/Link'
 import Content from '../components/Content'
 import Image from '../components/Image'
+import Meta from '../components/Meta'
 
 import './TeamMember.css'
 
 // Export Template for use in CMS preview
-export const TeamMemberTemplate = ({ title, image, position, description }) => (
+export const TeamMemberTemplate = ({
+  title,
+  image,
+  position,
+  description,
+  meta
+}) => (
   <main className="TeamMember">
     <Helmet>
       <title>{title}</title>
     </Helmet>
+    <Meta {...meta} />
 
     <section className="section dark thick vh-90">
       <div className="container skinny">
@@ -58,6 +66,12 @@ export const pageQuery = graphql`
         }
         position
         description
+        meta {
+          title
+          description
+          noindex
+          canonicalLink
+        }
       }
     }
   }

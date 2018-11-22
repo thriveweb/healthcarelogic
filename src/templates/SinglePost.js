@@ -8,6 +8,7 @@ import { ChevronLeft } from 'react-feather'
 import Content from '../components/Content'
 import Image from '../components/Image'
 import './SinglePost.css'
+import Meta from '../components/Meta'
 
 export const SinglePostTemplate = ({
   title,
@@ -17,7 +18,8 @@ export const SinglePostTemplate = ({
   body,
   nextPostURL,
   prevPostURL,
-  categories = []
+  categories = [],
+  meta
 }) => (
   <article
     className="SinglePost"
@@ -27,6 +29,7 @@ export const SinglePostTemplate = ({
     <Helmet>
       <title>{title}</title>
     </Helmet>
+    <Meta {...meta} />
 
     <section className="section dark thick vh-100">
       <div className="container skinny">
@@ -134,6 +137,12 @@ export const pageQuery = graphql`
         }
         featuredImage {
           ...FluidImage
+        }
+        meta {
+          title
+          description
+          noindex
+          canonicalLink
         }
       }
     }

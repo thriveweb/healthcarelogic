@@ -6,17 +6,19 @@ import Content from '../components/Content'
 import BackgroundImage from '../components/BackgroundImage'
 import TeamGrid from '../components/TeamGrid'
 import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
+import Meta from '../components/Meta'
 
 import './AboutPage.css'
 
 export class AboutPageTemplate extends React.Component {
   render() {
-    let { title, section1, team } = this.props
+    let { title, section1, team, meta } = this.props
     return (
       <main>
         <Helmet>
           <title>{title}</title>
         </Helmet>
+        <Meta {...meta} />
 
         {section1 && (
           <section className="section dark thick vh-100">
@@ -89,6 +91,12 @@ export const pageQuery = graphql`
           title
           subtitle
           content
+        }
+        meta {
+          title
+          description
+          noindex
+          canonicalLink
         }
       }
     }

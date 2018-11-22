@@ -7,6 +7,7 @@ import BackgroundImage from '../components/BackgroundImage'
 import ScrollNav from '../components/ScrollNav'
 import Testimonials from '../components/Testimonials'
 import MacBook from '../components/MacBook'
+import Meta from '../components/Meta'
 import BgBrokenSystem from '../components/BgBrokenSystem'
 import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
 import bgCircles from '../images/bg-circles.png'
@@ -23,9 +24,10 @@ export class HomePageTemplate extends React.Component {
   }
 
   render() {
-    const { title, section1, section2, section3, section4 } = this.props
+    const { meta, title, section1, section2, section3, section4 } = this.props
     return (
       <main className="Home">
+        <Meta {...meta} />
         <section className="section dark thick vh-100">
           {this.state.loaded && <HeroScene />}
           <div className="container">
@@ -168,6 +170,12 @@ export const pageQuery = graphql`
           title
           subtitle
           content
+        }
+        meta {
+          title
+          description
+          noindex
+          canonicalLink
         }
       }
     }

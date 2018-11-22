@@ -1,4 +1,9 @@
 ---
+meta:
+  canonicalLink: ''
+  description: ''
+  noindex: false
+  title: ''
 featuredImage: /images/logo.svg
 author: ' '
 ---
