@@ -53,6 +53,11 @@ collections: # A list of collections the CMS should be able to edit
               - { label: Title, name: title, widget: string }
               - { label: Subtitle, name: subtitle, widget: string }
               - { label: Content, name: content, widget: markdown }
+          - label: Testimonials
+            name: testimonials
+            widget: list
+            fields:
+              - { label: Content, name: content, widget: string }
           - label: 'Meta'
             required: false
             name: 'meta'

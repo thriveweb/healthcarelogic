@@ -12,34 +12,11 @@ import './Testimonials.css'
 
 export default class Testimonials extends React.Component {
   static defaultProps = {
-    autoplay: 5000,
-    autoplayResume: 3000,
-    testimonials: [
-      {
-        content: `I absolutely rely on this system to tell me what I need to keep an eye on.`,
-        title: `Co-ordinator`,
-        logo: childrensHealth
-      },
-      {
-        content: `This system saves us so much time and replaces a lot of the manual entry we used to do. We now have more time to find solutions.`,
-        title: `A/NUM Specialist Outpatients`,
-        logo: metroSouth
-      },
-      {
-        content: `Prior to having access, my role was very frustrating due to the lack of meaningful waiting lists that were regularly updated ... having data on tap has made meaningful inroads into my ability to work with clinical departments as we strive to ensure appropriate service for patients.`,
-        title: `Clinical Director`,
-        logo: gchf
-      },
-      {
-        content: `In my personal opinion, this is without doubt the most advanced technology used to inform the delivery of healthcare services.`,
-        title: `Relationship Manager`,
-        logo: qldHealth
-      }
-    ]
+    autoplayResume: 3000
   }
 
-  timer = null
-  resumeTimer = null
+  // timer = null
+  // resumeTimer = null
   slideEls = []
 
   state = {
@@ -48,23 +25,23 @@ export default class Testimonials extends React.Component {
 
   componentDidMount() {
     this.calculateHeights()
-    this.startAutoplay()
+    // this.startAutoplay()
   }
+  //
+  // componentWillUnmount() {
+  //   this.stopAutoplay()
+  // }
 
-  componentWillUnmount() {
-    this.stopAutoplay()
-  }
+  // startAutoplay = () => {
+  //   if (this.props.autoplay) {
+  //     this.timer = window.setInterval(this.progressSlide, this.props.autoplay)
+  //   }
+  // }
 
-  startAutoplay = () => {
-    if (this.props.autoplay) {
-      this.timer = window.setInterval(this.progressSlide, this.props.autoplay)
-    }
-  }
-
-  stopAutoplay = () => {
-    if (this.timer) window.clearInterval(this.timer)
-    if (this.resumeTimer) window.clearTimeout(this.resumeTimer)
-  }
+  // stopAutoplay = () => {
+  //   if (this.timer) window.clearInterval(this.timer)
+  //   if (this.resumeTimer) window.clearTimeout(this.resumeTimer)
+  // }
 
   progressSlide = (increment = 1) =>
     this.setState({
@@ -72,12 +49,12 @@ export default class Testimonials extends React.Component {
     })
 
   handleClick = increment => {
-    this.stopAutoplay()
+    // this.stopAutoplay()
     this.progressSlide(increment)
-    this.resumeTimer = window.setTimeout(
-      this.startAutoplay,
-      this.props.autoplayResume
-    )
+    // this.resumeTimer = window.setTimeout(
+    //   this.startAutoplay,
+    //   this.props.autoplayResume
+    // )
   }
 
   calculateHeights = () => {
@@ -119,19 +96,12 @@ export default class Testimonials extends React.Component {
               }}
               style={{ height: slideElHeight || 'auto' }}
             >
-              {testimonial.logo && (
-                <div className="Testimonials--Item--Logo">
-                  <BackgroundImage src={testimonial.logo} contain />
-                </div>
-              )}
-              <div className="Testimonials--Item--Inner">
-                <h6 className="Testimonials--Item--Title">
-                  {testimonial.title}
-                </h6>
-                <div className="Testimonials--Item--Content">
-                  “{testimonial.content}”
-                </div>
-              </div>
+              <iframe
+                src={`https://www.youtube.com/embed/${testimonial.content}`}
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              />
             </div>
           )
         })}

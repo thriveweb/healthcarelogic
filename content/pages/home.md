@@ -21,6 +21,15 @@ section3:
   title: Proven track record
   content: |-
     Our software is currently used in more than 50 hospitals to enhance clinical team engagement and support sustainable performance improvement.
+testimonials:
+  - content: UdnMEHLFYjg
+  - content: ztPs7zRq700
+  - content: ZLAAxhjp5vM
+  - content: cmUJvSnA2PM
+  - content: cceZmDqWnx8
+  - content: KRSh3xrKUQY
+  - content: ow8nifrIcuE
+  - content: RY9Fd08fWa0
 section4:
   title: De-stressing health
   subtitle: The hardest job in the world is even harder when you don’t have the tools you need to make better decisions.
