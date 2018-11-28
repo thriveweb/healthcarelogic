@@ -24,7 +24,15 @@ export class HomePageTemplate extends React.Component {
   }
 
   render() {
-    const { meta, title, section1, section2, section3, section4 } = this.props
+    const {
+      meta,
+      title,
+      section1,
+      section2,
+      section3,
+      testimonials,
+      section4
+    } = this.props
     return (
       <main className="Home">
         <Meta {...meta} />
@@ -103,7 +111,7 @@ export class HomePageTemplate extends React.Component {
               </div>
             </div>
             <div className="container skinnier">
-              <Testimonials />
+              <Testimonials testimonials={testimonials} />
             </div>
           </section>
         )}
@@ -164,6 +172,9 @@ export const pageQuery = graphql`
         }
         section3 {
           title
+          content
+        }
+        testimonials {
           content
         }
         section4 {
