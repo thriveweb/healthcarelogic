@@ -4,7 +4,7 @@ slug: Fixing-access
 title: Fixing access and actionable data
 status: Published
 date: '2018-03-28'
-featuredImage: /images/uploads/hcl-blog-fixing-access.jpg
+featuredImage: /images/uploads/hcl-blog-fixing.jpg
 author: Professor Martin Connor PhD
 excerpt: 'Access problems explained and the true power of actionable data. '
 categories:
