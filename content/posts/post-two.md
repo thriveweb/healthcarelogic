@@ -8,7 +8,7 @@ featuredImage: /images/uploads/hcl-blog-5thwave.jpg
 author: Professor Martin Connor PhD
 excerpt: >-
   A 25 year snapshot of hospital performance systems and how cultural shifts
-  enable are the next wave of evolution.
+  will enable the next wave of evolution.
 categories:
   - category: Articles
 ---
