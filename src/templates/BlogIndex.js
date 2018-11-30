@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import PageHeader from '../components/PageHeader'
-import PostSection from '../components/PostSection'
+import PostsSection from '../components/PostsSection'
 import PostCategoriesNav from '../components/PostCategoriesNav'
 import BackgroundImage from '../components/BackgroundImage'
 import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
@@ -23,9 +23,13 @@ export const BlogIndexTemplate = ({
     const date = () => {
       let myDate = post.date
       myDate = myDate.split('-')
-      let newDate = myDate[1] + '/' + myDate[0] + '/' + myDate[2]
-      return Date.parse(myDate)
+      let newDate = myDate[2] + '-' + myDate[1] + '-' + myDate[0]
+      console.log(newDate)
+      return new Date(myDate[2], myDate[1], myDate[0])
+      // return new Date(Date.parse(myDate))
+      // return Date.parse(myDate)
     }
+    console.log(date())
     return date() <= now
   })
   const isCategory = contentType === 'postCategories'
@@ -33,7 +37,6 @@ export const BlogIndexTemplate = ({
     post.categories &&
     post.categories.filter(cat => cat.category === title).length
   const filteredPosts = isCategory ? posts.filter(byCategory) : posts
-
   return (
     <main className="Blog">
       <Helmet>
@@ -57,7 +60,7 @@ export const BlogIndexTemplate = ({
             <PostCategoriesNav categories={postCategories} />
           )}
 
-          {!!posts.length && <PostSection posts={filteredPosts} />}
+          {!!posts.length && <PostsSection posts={filteredPosts} />}
         </div>
       </section>
     </main>

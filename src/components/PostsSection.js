@@ -3,7 +3,7 @@ import React from 'react'
 import PostCard from '../components/PostCard'
 import './PostSection.css'
 
-class PostSection extends React.Component {
+class PostsSection extends React.Component {
   static defaultProps = {
     posts: [],
     title: '',
@@ -51,4 +51,4 @@ class PostSection extends React.Component {
   }
 }
 
-export default PostSection
+export default PostsSection

@@ -14,7 +14,6 @@ const PostCard = ({
   className = '',
   ...props
 }) => {
-  console.log(featuredImage)
   return (
     <Link to={slug} className={`PostCard ${className}`}>
       {featuredImage && (
