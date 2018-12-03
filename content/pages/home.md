@@ -22,14 +22,46 @@ section3:
   content: |-
     Our software is currently used in more than 50 hospitals to enhance clinical team engagement and support sustainable performance improvement.
 testimonials:
-  - content: UdnMEHLFYjg
-  - content: ztPs7zRq700
-  - content: ZLAAxhjp5vM
-  - content: cmUJvSnA2PM
-  - content: cceZmDqWnx8
-  - content: KRSh3xrKUQY
-  - content: ow8nifrIcuE
-  - content: RY9Fd08fWa0
+  - content: ''
+    title: ''
+    video: UdnMEHLFYjg
+  - content: |-
+      'I absolutely rely on this system to tell me what I need to keep an eye on.'
+    title: 'Co-ordinator'
+    video: ''
+  - content: ''
+    title: ''
+    video: 'ztPs7zRq700'
+  - content: |-
+      'This system saves us so much time and replaces a lot of the manual entry we used to do. We now have more time to find solutions.'
+    title: 'A/NUM Specialist Outpatients'
+    video: ''
+  - content: ''
+    title: ''
+    video: 'ZLAAxhjp5vM'
+  - content: |-
+      'Prior to having access, my role was very frustrating due to the lack of meaningful waiting lists that were regularly updated ... having data on tap has made meaningful inroads into my ability to work with clinical departments as we strive to ensure appropriate service for patients.'
+    title: 'Clinical Director'
+    video: ''
+  - content: ''
+    title: ''
+    video: 'cmUJvSnA2PM'
+  - content: |-
+      'In my personal opinion, this is without doubt the most advanced technology used to inform the delivery of healthcare services.'
+    title: 'Relationship Manager'
+    video: ''
+  - content: ''
+    title: ''
+    video: 'cceZmDqWnx8'
+  - content: ''
+    title: ''
+    video: 'KRSh3xrKUQY'
+  - content: ''
+    title: ''
+    video: 'ow8nifrIcuE'
+  - content: ''
+    title: ''
+    video: 'RY9Fd08fWa0'
 section4:
   title: De-stressing health
   subtitle: The hardest job in the world is even harder when you don’t have the tools you need to make better decisions.

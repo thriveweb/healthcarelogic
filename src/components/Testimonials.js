@@ -12,11 +12,12 @@ import './Testimonials.css'
 
 export default class Testimonials extends React.Component {
   static defaultProps = {
-    autoplayResume: 3000
+    autoplayResume: 3000,
+    autoplay: 5000
   }
 
-  // timer = null
-  // resumeTimer = null
+  timer = null
+  resumeTimer = null
   slideEls = []
 
   state = {
@@ -25,23 +26,23 @@ export default class Testimonials extends React.Component {
 
   componentDidMount() {
     this.calculateHeights()
-    // this.startAutoplay()
+    this.startAutoplay()
   }
-  //
-  // componentWillUnmount() {
-  //   this.stopAutoplay()
-  // }
 
-  // startAutoplay = () => {
-  //   if (this.props.autoplay) {
-  //     this.timer = window.setInterval(this.progressSlide, this.props.autoplay)
-  //   }
-  // }
+  componentWillUnmount() {
+    this.stopAutoplay()
+  }
 
-  // stopAutoplay = () => {
-  //   if (this.timer) window.clearInterval(this.timer)
-  //   if (this.resumeTimer) window.clearTimeout(this.resumeTimer)
-  // }
+  startAutoplay = () => {
+    if (this.props.autoplay) {
+      this.timer = window.setInterval(this.progressSlide, this.props.autoplay)
+    }
+  }
+
+  stopAutoplay = () => {
+    if (this.timer) window.clearInterval(this.timer)
+    if (this.resumeTimer) window.clearTimeout(this.resumeTimer)
+  }
 
   progressSlide = (increment = 1) =>
     this.setState({
@@ -49,12 +50,12 @@ export default class Testimonials extends React.Component {
     })
 
   handleClick = increment => {
-    // this.stopAutoplay()
+    this.stopAutoplay()
     this.progressSlide(increment)
-    // this.resumeTimer = window.setTimeout(
-    //   this.startAutoplay,
-    //   this.props.autoplayResume
-    // )
+    this.resumeTimer = window.setTimeout(
+      this.startAutoplay,
+      this.props.autoplayResume
+    )
   }
 
   calculateHeights = () => {
@@ -96,16 +97,28 @@ export default class Testimonials extends React.Component {
               }}
               style={{ height: slideElHeight || 'auto' }}
             >
-              <iframe
-                src={`https://www.youtube.com/embed/${testimonial.content}`}
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              />
+              {testimonial.content && (
+                <div className="Testimonials--Item--Inner">
+                  <h6 className="Testimonials--Item--Title">
+                    {testimonial.title}
+                  </h6>
+                  <div className="Testimonials--Item--Content">
+                    “{testimonial.content}”
+                  </div>
+                </div>
+              )}
+
+              {testimonial.video && (
+                <iframe
+                  src={`https://www.youtube.com/embed/${testimonial.video}`}
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                />
+              )}
             </div>
           )
         })}
-
         <ChevronRight
           className="Testimonials--Button next"
           onClick={() => this.handleClick(1)}

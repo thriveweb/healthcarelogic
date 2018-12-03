@@ -176,6 +176,8 @@ export const pageQuery = graphql`
         }
         testimonials {
           content
+          video
+          title
         }
         section4 {
           title
