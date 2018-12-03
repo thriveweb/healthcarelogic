@@ -30,7 +30,7 @@
 .Testimonials--Item {
   border-radius: 10px;
   position: relative;
-  padding: 2rem 3rem 3rem;
+  padding: 7rem 3rem;
   width: 100%;
   opacity: 1;
   position: absolute;
@@ -120,10 +120,10 @@
     transform: translateX(0px) scale(0.85);
   }
   .Testimonials--Button.prev {
-    left: -2.5rem;
+    left: -2.8rem;
   }
   .Testimonials--Button.next {
-    right: -2.5rem;
+    right: -2.8rem;
   }
 }
 

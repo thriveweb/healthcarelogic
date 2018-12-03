@@ -7,6 +7,7 @@ import gchf from '../images/logos/gchf.png'
 import qldHealth from '../images/logos/qld-health.jpg'
 import childrensHealth from '../images/logos/childrens-health.png'
 import metroSouth from '../images/logos/metro-south.png'
+import YouTube from 'react-youtube'
 
 import './Testimonials.css'
 
@@ -83,6 +84,10 @@ export default class Testimonials extends React.Component {
           const active = activeSlideBuffer % testimonials.length === index
           const prev = (activeSlideBuffer - 1) % testimonials.length === index
           const next = (activeSlideBuffer + 1) % testimonials.length === index
+          const opts = {
+            height: '100',
+            width: '100%'
+          }
           let className = `Testimonials--Item`
           if (active) className += ' active'
           if (prev) className += ' prev'
@@ -109,11 +114,17 @@ export default class Testimonials extends React.Component {
               )}
 
               {testimonial.video && (
-                <iframe
-                  src={`https://www.youtube.com/embed/${testimonial.video}`}
-                  frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
+                // <iframe
+                //   src={`https://www.youtube.com/embed/${testimonial.video}`}
+                //   frameborder="0"
+                //   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                //   allowfullscreen
+                // />
+
+                <YouTube
+                  videoId={testimonial.video}
+                  onStateChange={() => this.stopAutoplay()}
+                  opts={opts}
                 />
               )}
             </div>
