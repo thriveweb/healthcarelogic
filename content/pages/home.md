@@ -53,15 +53,33 @@ testimonials:
   - content: ''
     title: ''
     video: 'cceZmDqWnx8'
+  - content: |-
+      'There's no limitations on the skill of the user, it's a very easy system to navigate, it brings together all aspects of the hospital so we can easily monitor, review, and plan, and we can all work together to make that happen'
+    title: 'Service Director'
+    video: ''
+  - content: ''
+    title: ''
+    video: 'cceZmDqWnx8'
+  - content: |-
+      'The value this system brings to my role is immeasurable, I truly believe my job would be near impossible without this system'
+    title: 'Service Improvement Director'
+    video: ''
   - content: ''
     title: ''
     video: 'KRSh3xrKUQY'
+  - content: |-
+      'The platform delivers fast hard data that enables us to be agile in allocating resources where they are most needed. This platform could be revolutionary for us in health administration'
+    title: 'Clinical Director'
   - content: ''
     title: ''
     video: 'ow8nifrIcuE'
+  - content: |-
+      'This system enables us to have conversations with clinicians that is far more targeted because all the information is in one place'
+    title: 'Chief Operating Officer'
   - content: ''
     title: ''
     video: 'RY9Fd08fWa0'
+
 section4:
   title: De-stressing health
   subtitle: The hardest job in the world is even harder when you don’t have the tools you need to make better decisions.
