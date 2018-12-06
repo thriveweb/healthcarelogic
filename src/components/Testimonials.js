@@ -13,8 +13,8 @@ import './Testimonials.css'
 
 export default class Testimonials extends React.Component {
   static defaultProps = {
-    autoplayResume: 3000,
-    autoplay: 5000
+    autoplayResume: 4000,
+    autoplay: 6000
   }
 
   timer = null
