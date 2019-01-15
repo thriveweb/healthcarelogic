@@ -23,11 +23,7 @@ export const BlogIndexTemplate = ({
     const date = () => {
       let myDate = post.date
       myDate = myDate.split('-')
-      let newDate = myDate[2] + '-' + myDate[1] + '-' + myDate[0]
-      console.log(newDate)
       return new Date(myDate[2], myDate[1], myDate[0])
-      // return new Date(Date.parse(myDate))
-      // return Date.parse(myDate)
     }
     console.log(date())
     return date() <= now

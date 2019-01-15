@@ -27,7 +27,7 @@
     "in-view": "^0.6.1",
     "lodash": "^4.17.5",
     "modern-normalize": "^0.5.0",
-    "moveto": "^1.7.3",
+    "moveto": "^1.8.0",
     "netlify-cms": "^1.9.3",
     "plyr": "^3.4.0-beta.2",
     "postcss-preset-env": "^5.1.0",
