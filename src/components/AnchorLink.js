@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import MoveTo from 'moveto'
 
 const AnchorLink = ({
   children,
@@ -15,19 +14,25 @@ const AnchorLink = ({
     duration: 800,
     easing: 'easeOutQuart'
   }
+  let MoveTo = false
+  if (typeof window !== `undefined`) {
+    MoveTo = require('moveto')
+  }
 
   const target = href.replace(/^\//, '')
 
   const handleClick = e => {
     e.preventDefault()
-    if (toleranceElement) {
-      defaultOptions.tolerance =
-        document.querySelector(toleranceElement).offsetHeight - 1
-      console.log(defaultOptions.tolerance)
+    if (typeof window !== 'undefined' && MoveTo) {
+      if (toleranceElement) {
+        defaultOptions.tolerance =
+          document.querySelector(toleranceElement).offsetHeight - 1
+        console.log(defaultOptions.tolerance)
+      }
+      const moveTo = new MoveTo(Object.assign(defaultOptions, options))
+      moveTo.move(document.querySelector(target))
+      if (onClick) onClick(e)
     }
-    const moveTo = new MoveTo(Object.assign(defaultOptions, options))
-    moveTo.move(document.querySelector(target))
-    if (onClick) onClick(e)
   }
 
   return (

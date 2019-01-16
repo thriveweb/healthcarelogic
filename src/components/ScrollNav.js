@@ -2,7 +2,6 @@ import React from 'react'
 import _map from 'lodash/map'
 import _startCase from 'lodash/startCase'
 import _throttle from 'lodash/throttle'
-import MoveTo from 'moveto'
 import inView from 'in-view'
 
 import './ScrollNav.css'
@@ -65,9 +64,14 @@ export default class ScrollNav extends React.Component {
     invertColor: false
   }
 
+  MoveTo = false
+
   componentDidMount() {
     this.queryItems()
     this.watchScroll()
+    if (typeof window !== 'undefined') {
+      this.MoveTo = require('moveto')
+    }
   }
 
   componentWillUnmount() {
@@ -110,14 +114,19 @@ export default class ScrollNav extends React.Component {
 
   handleClick = ({ e, targetId }) => {
     e.preventDefault()
-    const moveTo = new MoveTo({
-      tolerance: 0,
-      duration: 800,
-      easing: 'easeOutQuart'
-    })
+    if (typeof window !== `undefined`) {
+      if (this.MoveTo) {
+        console.log(this.MoveTo)
+        const moveTo = new this.MoveTo({
+          tolerance: 0,
+          duration: 800,
+          easing: 'easeOutQuart'
+        })
 
-    const target = document.querySelector(targetId)
-    if (target) moveTo.move(target)
+        const target = document.querySelector(targetId)
+        if (target) moveTo.move(target)
+      }
+    }
   }
 
   render() {

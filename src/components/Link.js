@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import MoveTo from 'moveto'
 
 import './Link.scss'
 
@@ -21,16 +20,23 @@ export default ({
   if (strong) className += ' Link-strong'
   if (scrollButton) className += ' Link-scrollButton'
 
+  let MoveTo = false
+  if (typeof window !== `undefined`) {
+    MoveTo = require('moveto')
+  }
+
   const handleClick = e => {
     if (scrollButton) {
       e.preventDefault()
-      const moveTo = new MoveTo({
-        tolerance: 0,
-        duration: 800,
-        easing: 'easeOutQuart'
-      })
-      const target = document.querySelector('[data-scrollToTarget]')
-      if (target) moveTo.move(target)
+      if (typeof window !== 'undefined' && MoveTo) {
+        const moveTo = new MoveTo({
+          tolerance: 0,
+          duration: 800,
+          easing: 'easeOutQuart'
+        })
+        const target = document.querySelector('[data-scrollToTarget]')
+        if (target) moveTo.move(target)
+      }
     }
   }
 
