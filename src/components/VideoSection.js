@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Plyr from './Plyr'
+//import Plyr from './Plyr'
 import './VideoSection.css'
 
 export default class VideoSection extends React.Component {
@@ -28,13 +28,14 @@ export default class VideoSection extends React.Component {
       <div className="VideoSection">
         <div className="VideoSection--Content">{children}</div>
         <div className={`VideoSection--Video ${touched ? 'touched' : ''}`}>
-          <Plyr
-            type="vimeo"
-            videoId={videoUrl}
-            hideControls
-            playsinline
-            controls={controls}
-            onPlay={() => this.setState({ touched: true })}
+          <iframe
+            src={videoUrl}
+            width="640"
+            height="360"
+            frameborder="0"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen
           />
         </div>
       </div>

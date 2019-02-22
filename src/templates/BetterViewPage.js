@@ -134,7 +134,7 @@ export const BetterViewPageTemplate = ({
     {section2 && (
       <section className="section dark thick vh-100" id="the-coordination-hub">
         <div className="container">
-          <VideoSection videoUrl={'https://vimeo.com/261768328/fb3b2982f2'}>
+          <VideoSection videoUrl={'https://player.vimeo.com/video/261768328'}>
             <h2>{section2.title}</h2>
             <Content src={section2.content} />
           </VideoSection>
