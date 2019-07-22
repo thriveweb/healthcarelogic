@@ -68,8 +68,17 @@ export class HomePageTemplate extends React.Component {
             id="the-problem"
           >
             <div className="container skinny relative">
-              <BgBrokenSystem />
-              {/* <BackgroundImage src={bgGraphicHome} contain animate /> */}
+              {/* <BgBrokenSystem /> */}
+              <BackgroundImage
+                src="/icons.svg"
+                className="pull-right bkg1"
+                contain
+              />
+              <BackgroundImage
+                src="/icons.svg"
+                className="pull-right bkg2"
+                contain
+              />
               <div className="pull-left-skinny relative">
                 <h2>
                   <Content src={section1.title} />

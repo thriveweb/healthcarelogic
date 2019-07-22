@@ -110,6 +110,8 @@ class Layout extends React.Component {
 
         <Header siteTitle={siteTitle} />
 
+        <Menu />
+
         <Fragment>{children()}</Fragment>
 
         <Footer siteTitle={siteTitle} siteEmail={email} sitePhone={phone} />

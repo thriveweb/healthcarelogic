@@ -132,6 +132,13 @@ h6,
   font-family: var(--font-primary);
 }
 
+@media screen and (max-width: 400px) {
+  h1,
+  .h1 {
+    font-size: 3rem;
+  }
+}
+
 pre {
   background: var(--lightGrey);
   line-height: 1.45;

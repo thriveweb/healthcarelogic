@@ -16,6 +16,37 @@
   pointer-events: none;
 }
 
+.BackgroundImage.bkg1 {
+  display: block;
+  width: 400px;
+  right: 0 !important;
+  left: auto !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .BackgroundImage.bkg1 {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .BackgroundImage.bkg1 {
+    display: none;
+  }
+
+  .BackgroundImage.bkg2 {
+    display: block !important;
+    position: relative;
+    height: 300px;
+    max-width: 400px;
+    margin: 0 auto 2rem;
+  }
+}
+
+.BackgroundImage.bkg2 {
+  display: none;
+}
+
 .BackgroundImage-lazy {
   filter: blur(5px);
 }
