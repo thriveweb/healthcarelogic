@@ -56,7 +56,7 @@ const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
             </a>
           </div>
         </div> */}
-        <div className="Footer--Column">
+        {/* <div className="Footer--Column">
           <h6>Quick Contact</h6>
           <a href={`mailto:${siteEmail}`} className="subtle" target="_blank">
             {siteEmail}
@@ -66,7 +66,7 @@ const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
               {sitePhone}
             </a>
           )}
-        </div>
+        </div> */}
         <div className="Footer--Column" />
       </div>
     </section>
