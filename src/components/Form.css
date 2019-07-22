@@ -19,7 +19,8 @@
   position: relative;
 }
 
-.Form--Input {
+.Form--Input,
+.Form--Select {
   font-family: inherit;
   flex-grow: 1;
   box-sizing: border-box;
@@ -35,7 +36,8 @@
 
 .Form--Select {
   background: none;
-  appearance: none;
+  appearance: none !important;
+  background: none;
 }
 
 .Form--Label.has-arrow:after {

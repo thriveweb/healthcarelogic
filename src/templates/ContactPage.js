@@ -56,14 +56,20 @@ export const ContactPageTemplate = ({
               </div>
             )}
 
-            <div className="ContactPage--item">
-              <h5>Mail</h5>
-              <p>
-                <a href={`mailto:${email}`} className="subtle" target="_blank">
-                  {email}
-                </a>
-              </p>
-            </div>
+            {email && (
+              <div className="ContactPage--item">
+                <h5>Mail</h5>
+                <p>
+                  <a
+                    href={`mailto:${email}`}
+                    className="subtle"
+                    target="_blank"
+                  >
+                    {email}
+                  </a>
+                </p>
+              </div>
+            )}
           </div>
 
           <div className="ContactPage--grid--column">

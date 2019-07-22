@@ -5,5 +5,5 @@ title: Contact us
 blurb: For further information, contact us today
 address: Level 6, 64 Marine Parade, Southport, QLD, 4215
 phone: ''
-email: info@healthcarelogic.com.au
+email: ''
 ---

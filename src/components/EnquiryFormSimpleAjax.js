@@ -84,6 +84,7 @@ class Form extends React.Component {
             type="tel"
             placeholder="Phone"
             name="phone"
+            required
           />
         </label>
 
@@ -95,6 +96,17 @@ class Form extends React.Component {
             name="email"
             required
           />
+        </label>
+
+        <label className="EnquiryForm--Label">
+          <select className="EnquiryForm--Select" name="enquirytype" required>
+            <option>Enquiry type</option>
+            <option>Sales enquiry</option>
+            <option>Technical enquiry</option>
+            <option>Support enquiry</option>
+            <option>Media enquiry</option>
+            <option>Other enquiry</option>
+          </select>
         </label>
 
         <label className="EnquiryForm--Label">
