@@ -10,29 +10,17 @@ section1:
   subtitle: ''
   title: 'If we could **see** the system, what would **change?**'
 section2:
-  content: >-
-    It’s not a damn dashboard. It’s not about KPIs. It’s revolutionary
-    technology that empowers clinical and managerial leaders to collaborate with
-    clarity. With our suite of proprietary algorithms visualising consistent,
-    high-frequency, patient-level data, the best decisions can be made for any
-    given level of resource.
-
-
-    And now we interact with the data in a completely new way including setting
-    personal thresholds for active monitoring, sharing with colleagues and
-    establishing personable discussion groups.
-  subtitle: Actionable insights in six clicks or less
-  title: A new way
+  content: "SystemView, is an interactive and user configurable platform offering an enterprise solution across all four performance domains that automates demand and capacity for improved waitlists, flow, process and resourcing.\r\n\n\rAccess to this knowledge enables radical change - improves efficiencies, cultures and empowers teams to proactively manage and meet performance targets.\r\n\nOrganise big data, forget dashboards, redirect analysts’ efforts to truly innovate."
+  subtitle: ''
+  title: Convert data into actionable meaning
 section3:
-  content: >-
-    Our software is currently used in more than 50 hospitals to enhance clinical
-    team engagement and support sustainable performance improvement.
+  content: Our algorithms are operating in over 60 hospitals.
   title: Proven track record
 section4:
   content: >-
     With decades of experience in healthcare, we’ve made it our mission to
-    create a world where you spend no time looking for data, less time stressing
-    and more time improving your clinical system.
+    create a world where you spend no time looking for data and more time
+    improving your clinical system.
   subtitle: >-
     The hardest job in the world is even harder when you don’t have the tools
     you need to make better decisions.
