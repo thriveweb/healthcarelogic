@@ -53,7 +53,7 @@ export const BetterViewPageTemplate = ({
             </div>
 
             <Link
-              to="/a-case-for-change/"
+              to="#personalised"
               strong
               icon="page"
               arrow="down"
@@ -65,11 +65,7 @@ export const BetterViewPageTemplate = ({
         </section>
       )}
 
-      <section
-        className="section thick vh-100"
-        data-scrollToTarget
-        id="personalised"
-      >
+      <section className="section thick vh-100" id="personalised">
         <div className="container skinnier" style={{ marginBottom: '5rem' }}>
           <p>
             By curating information into a set of consistent algorithms, we’ve
@@ -139,6 +135,16 @@ export const BetterViewPageTemplate = ({
             <Content src={section2.content} />
           </VideoSection>
         </div>
+
+        <Link
+          href="#more-features"
+          strong
+          icon="page"
+          arrow="down"
+          scrollButton
+        >
+          SystemView Features
+        </Link>
       </section>
     )}
 
@@ -150,6 +156,10 @@ export const BetterViewPageTemplate = ({
 
         {iconGrid && <IconGrid fontSizeSmall items={iconGrid} />}
       </div>
+
+      <Link to="#here-to-help" strong icon="page" arrow="down" scrollButton>
+        Tech Support
+      </Link>
     </section>
 
     {section3 && (

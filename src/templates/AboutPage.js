@@ -36,25 +36,15 @@ export class AboutPageTemplate extends React.Component {
                 <p className="statement">{section1.subtitle}</p>
                 <Content src={section1.content} />
               </div>
-              <Link
-                to="/a-case-for-change/"
-                strong
-                icon="page"
-                arrow="down"
-                scrollButton
-              >
-                See. Change.
+              <Link to="#team" strong icon="page" arrow="down" scrollButton>
+                Meet the Team
               </Link>
             </div>
           </section>
         )}
 
         {team && (
-          <section
-            className="section primary thick"
-            data-scrollToTarget
-            id="team"
-          >
+          <section className="section primary thick" id="team">
             <div className="container skinny">
               <h2 style={{ marginBottom: '4rem' }}>Team</h2>
               <TeamGrid team={team} />

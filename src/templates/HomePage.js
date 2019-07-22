@@ -47,7 +47,13 @@ export class HomePageTemplate extends React.Component {
                 </span>
               </h1>
 
-              <Link href="#" strong icon="page" arrow="down" scrollButton>
+              <Link
+                href="#the-problem"
+                strong
+                icon="page"
+                arrow="down"
+                scrollButton
+              >
                 See. Change.
               </Link>
             </div>
@@ -60,7 +66,6 @@ export class HomePageTemplate extends React.Component {
           <section
             className="section dark thick vh-100 Home--TheProblem"
             id="the-problem"
-            data-scrollToTarget
           >
             <div className="container skinny relative">
               <BgBrokenSystem />
@@ -78,6 +83,16 @@ export class HomePageTemplate extends React.Component {
                 </Link>
               </div>
             </div>
+
+            <Link
+              href="#our-solution"
+              strong
+              icon="page"
+              arrow="down"
+              scrollButton
+            >
+              Introducing SystemView
+            </Link>
           </section>
         )}
 
@@ -101,6 +116,16 @@ export class HomePageTemplate extends React.Component {
                 </Link>
               </div>
             </div>
+
+            <Link
+              href="#track-record"
+              strong
+              icon="page"
+              arrow="down"
+              scrollButton
+            >
+              What our customers say about us
+            </Link>
           </section>
         )}
 
@@ -121,6 +146,10 @@ export class HomePageTemplate extends React.Component {
             <div className="container skinnier">
               <Testimonials testimonials={testimonials} />
             </div>
+
+            <Link href="#about-us" strong icon="page" arrow="down" scrollButton>
+              A case for change
+            </Link>
           </section>
         )}
 
@@ -141,8 +170,8 @@ export class HomePageTemplate extends React.Component {
                 <Content src={section4.subtitle} />
               </div>
               <Content src={section4.content} />
-              <Link to="/about/" strong icon="page">
-                About us
+              <Link to="/a-case-for-change/" strong icon="page">
+                A case for change
               </Link>
             </div>
           </section>

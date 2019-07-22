@@ -27,7 +27,6 @@ export default ({
 
   const handleClick = e => {
     if (scrollButton) {
-      e.preventDefault()
       if (typeof window !== 'undefined' && MoveTo) {
         const moveTo = new MoveTo({
           tolerance: 0,

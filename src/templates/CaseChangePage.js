@@ -72,7 +72,7 @@ export class CaseChangePageTemplate extends React.Component {
               </div>
 
               <Link
-                to="/a-case-for-change/"
+                to="#questions-faced"
                 strong
                 icon="page"
                 arrow="down"
@@ -84,11 +84,7 @@ export class CaseChangePageTemplate extends React.Component {
           )}
 
           {iconGrid && (
-            <section
-              className="section thick"
-              data-scrollToTarget
-              id="questions-faced"
-            >
+            <section className="section thick" id="questions-faced">
               <div className="container">
                 <IconGrid
                   items={iconGrid}
