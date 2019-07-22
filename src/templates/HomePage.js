@@ -41,8 +41,10 @@ export class HomePageTemplate extends React.Component {
           <div className="container">
             <div className="pull-right">
               <h1 className="Home--Title">
-                If we could <span>see</span> the system, what would{' '}
-                <span>change</span>?
+                Next generation hospital data analytics for{' '}
+                <span>
+                  clinical engagement and sustainable performance improvement.
+                </span>
               </h1>
 
               <Link href="#" strong icon="page" arrow="down" scrollButton>
@@ -64,7 +66,9 @@ export class HomePageTemplate extends React.Component {
               <BgBrokenSystem />
               {/* <BackgroundImage src={bgGraphicHome} contain animate /> */}
               <div className="pull-left-skinny relative">
-                <h2>{section1.title}</h2>
+                <h2>
+                  <Content src={section1.title} />
+                </h2>
                 <div className="statement">
                   <Content src={section1.subtitle} />
                 </div>
@@ -85,7 +89,9 @@ export class HomePageTemplate extends React.Component {
             <MacBook />
             <div className="container skinny relative flex">
               <div className="pull-right-skinny">
-                <h2>{section2.title}</h2>
+                <h2>
+                  <Content src={section2.title} />
+                </h2>
                 <div className="statement">
                   <Content src={section2.subtitle} />
                 </div>
@@ -106,7 +112,9 @@ export class HomePageTemplate extends React.Component {
             <BackgroundImage src={bgCircles} contain />
             <div className="container skinny">
               <div className="pull-left-skinny">
-                <h2>{section3.title}</h2>
+                <h2>
+                  <Content src={section3.title} />
+                </h2>
                 <Content src={section3.content} />
               </div>
             </div>

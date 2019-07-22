@@ -81,23 +81,29 @@ h6,
 }
 
 h1 span,
+h1 strong,
 .h1 span,
 h2 span,
+h2 strong,
 .h2 span,
 h3 span,
+h3 strong,
 .h3 span,
 h4 span,
+h4 strong,
 .h4 span,
 h5 span,
+h5 strong,
 .h5 span,
 h6 span,
+h6 strong,
 .h6 span {
   color: var(--primary);
 }
 
 h1,
 .h1 {
-  font-size: 4.8rem;
+  font-size: 4.5rem;
   font-weight: 600;
 }
 h2,
