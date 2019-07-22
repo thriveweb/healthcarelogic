@@ -57,7 +57,9 @@ collections: # A list of collections the CMS should be able to edit
             name: testimonials
             widget: list
             fields:
+              - { label: Title, name: title, widget: string }
               - { label: Content, name: content, widget: string }
+              - { label: Video, name: video, widget: string }
           - label: 'Meta'
             required: false
             name: 'meta'
