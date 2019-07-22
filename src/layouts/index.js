@@ -108,13 +108,7 @@ class Layout extends React.Component {
           </script>
         </Helmet>
 
-        <Menu active={menuOpen} handleMenuToggle={this.handleMenuToggle} />
-
-        <Header
-          siteTitle={siteTitle}
-          handleMenuToggle={this.handleMenuToggle}
-          menuOpen={menuOpen}
-        />
+        <Header siteTitle={siteTitle} />
 
         <Fragment>{children()}</Fragment>
 
