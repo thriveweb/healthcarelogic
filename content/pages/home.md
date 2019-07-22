@@ -44,7 +44,8 @@ testimonials:
   - content: ''
     title: ''
     video: 'cceZmDqWnx8'
-  - content: 'There's no limitations on the skill of the user, it's a very easy system to navigate, it brings together all aspects of the hospital so we can easily monitor, review, and plan, and we can all work together to make that happen'
+  - content: |-
+      'There's no limitations on the skill of the user, it's a very easy system to navigate, it brings together all aspects of the hospital so we can easily monitor, review, and plan, and we can all work together to make that happen'
     title: 'Service Director'
     video: ''
   - content: 'The value this system brings to my role is immeasurable, I truly believe my job would be near impossible without this system'
