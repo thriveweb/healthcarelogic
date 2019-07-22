@@ -5,7 +5,8 @@ title: Healthcare Logic
 section1:
   title: If we could **see** the system, what would **change?**
   subtitle: ''
-  content: Every large public hospital experiences the same operational challenges relating to access to services across: outpatient clinics, surgery, emergency departments and inpatient beds.
+  content: |-
+    Every large public hospital experiences the same operational challenges relating to access to services across: outpatient clinics, surgery, emergency departments and inpatient beds.
 
 section2:
   title: Convert data into actionable meaning
