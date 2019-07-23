@@ -19,7 +19,7 @@ section2:
 section3:
   title: Proven track record
   content: |-
-    Our algorithms are operating in over 60 hospitals
+    Our algorithms are operating in over 60 hospitals to enhance clinical team engagement and support sustainable performance improvement.
 
 testimonials:
   - content: ''
