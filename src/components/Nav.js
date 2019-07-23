@@ -29,7 +29,7 @@ export default class Nav extends Component {
     )
 
     return (
-      <nav className="Nav">
+      <nav className={`Nav ${active ? 'Nav-active' : ''}`}>
         <div className="Nav--Container container">
           <Link to="/" onClick={this.handleLinkClick}>
             <Logo />
@@ -51,6 +51,12 @@ export default class Nav extends Component {
               Contact
             </NavLink>
           </div>
+          <button
+            className="Button-blank Nav--MenuButton"
+            onClick={this.handleMenuToggle}
+          >
+            {active ? <X /> : <Menu />}
+          </button>
         </div>
       </nav>
     )
