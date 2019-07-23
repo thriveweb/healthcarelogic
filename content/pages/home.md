@@ -58,6 +58,8 @@ testimonials:
 
 section4:
   title: De-stressing health
-  subtitle: ''
-  content: With decades of experience in healthcare, we’ve made it our mission to create a world where you spend no time looking for data and more time improving your clinical system.
+  subtitle: |-
+    The hardest job in the world is even harder when you don’t have the tools you need to make better decisions.
+  content: |-
+    With decades of experience in healthcare, we’ve made it our mission to create a world where you spend no time looking for data and more time improving your clinical system.
 ---

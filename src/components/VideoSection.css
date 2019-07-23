@@ -23,6 +23,11 @@
   .VideoSection--Content {
     margin: 0 auto 3rem;
   }
+
+  .VideoSection--Video iframe {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .VideoSection--Video:not(.touched) .plyr__controls {

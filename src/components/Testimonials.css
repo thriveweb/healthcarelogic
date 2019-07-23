@@ -126,6 +126,26 @@
 }
 
 @media (max-width: 600px) {
+  .Testimonials {
+    height: 260px !important;
+  }
+
+  .Testimonials--Item {
+    height: 250px !important;
+  }
+
+  .Testimonials {
+    padding-top: 3rem;
+  }
+
+  .Testimonials--Item {
+    padding: 2rem;
+  }
+
+  .Testimonials--Item--Inner {
+    padding: 0;
+  }
+
   .Testimonials--Item iframe {
     height: 50vw;
   }
