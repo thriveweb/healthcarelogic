@@ -2,7 +2,6 @@ import React from 'react'
 
 import Link from './Link'
 import MenuButton from './MenuButton'
-import Menu from '../components/Menu'
 import logo from '../images/logo.svg'
 import './Header.css'
 
