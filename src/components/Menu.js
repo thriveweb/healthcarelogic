@@ -18,8 +18,8 @@ export default ({ active, handleMenuToggle }) => {
         <MenuLink to="/">Home</MenuLink>
         <MenuLink to="/a-case-for-change/">A case for change</MenuLink>
         <MenuLink to="/a-better-view/">A better view</MenuLink>
-        <MenuLink to="/about/">About Us</MenuLink>
-        <MenuLink to="/contact/">Contact Us</MenuLink>
+        <MenuLink to="/about/">About us</MenuLink>
+        <MenuLink to="/contact/">Contact us</MenuLink>
       </div>
     </div>
   )

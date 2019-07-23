@@ -17,6 +17,14 @@ const Header = ({ siteTitle, handleMenuToggle, menuOpen }) => {
       <div className="Header--Fixed">
         <div className="container">
           <MenuButton onClick={handleMenuToggle} close={menuOpen} />
+
+          <div className="full-nav">
+            <Link to="/">Home</Link>
+            <Link to="/a-case-for-change/">A case for change</Link>
+            <Link to="/a-better-view/">A better view</Link>
+            <Link to="/about/">About us</Link>
+            <Link to="/contact/">Contact us</Link>
+          </div>
         </div>
       </div>
     </header>
