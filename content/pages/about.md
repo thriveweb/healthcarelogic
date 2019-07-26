@@ -39,4 +39,12 @@ team:
     position: 'Company Secretary'
     image: '/images/team/suzanne-yeates.jpg'
     slug: ../team/suzanne-yeates
+  - title: 'Brett Thebault'
+    position: 'Board Director'
+    image: '/images/team/brett-thebault.jpg'
+    slug: ../team/brett-thebault
+  - title: 'Kate Whylie'
+    position: 'Director of Customer Success'
+    image: '/images/team/kate-whylie.jpg'
+    slug: ../team/kate-whylie
 ---

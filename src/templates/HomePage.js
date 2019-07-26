@@ -14,6 +14,12 @@ import bgCircles from '../images/bg-circles.png'
 
 import './HomePage.scss'
 
+if (typeof window !== 'undefined') {
+  // Make scroll behavior of internal links smooth
+  // eslint-disable-next-line global-require
+  require('smooth-scroll')('a[href*="#"]')
+}
+
 export class HomePageTemplate extends React.Component {
   state = {
     loaded: false
@@ -87,9 +93,6 @@ export class HomePageTemplate extends React.Component {
                   <Content src={section1.subtitle} />
                 </div>
                 <Content src={section1.content} />
-                <Link to="/a-case-for-change/" strong icon="page">
-                  A case for change
-                </Link>
               </div>
             </div>
 
@@ -120,9 +123,6 @@ export class HomePageTemplate extends React.Component {
                   <Content src={section2.subtitle} />
                 </div>
                 <Content src={section2.content} />
-                <Link to="/a-better-view/" strong icon="page">
-                  A better view
-                </Link>
               </div>
             </div>
 
@@ -156,7 +156,13 @@ export class HomePageTemplate extends React.Component {
               <Testimonials testimonials={testimonials} />
             </div>
 
-            <Link href="#about-us" strong icon="page" arrow="down" scrollButton>
+            <Link
+              href="#how-it-works"
+              strong
+              icon="page"
+              arrow="down"
+              scrollButton
+            >
               A case for change
             </Link>
           </section>
@@ -165,7 +171,7 @@ export class HomePageTemplate extends React.Component {
         {section4 && (
           <section
             className="section primary thick vh-100 layer-light"
-            id="about-us"
+            id="how-it-works"
           >
             <BackgroundImage
               src={bgEmblem3d}

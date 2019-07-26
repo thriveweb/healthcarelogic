@@ -11,9 +11,9 @@ section1:
 section2:
   title: The entire patient journey
   content: |-
-    SystemView allows you to select any set of screens and send them on an ‘always-on’ basis to your screens on the wall – a locally configurable coordination hub in a box.
-
     Gold Coast Health’s Coordination Hub tracks the customer journey through its Emergency Department, from Ambulances on route to discharges from the medical decision unit, while also having access to inpatient beds and any scheduled care demand. The visualisation wall is powered by Healthcare Logic’s algorithms.
+
+    SystemView allows you to select any set of screens and send them on an ‘always-on’ basis to your screens on the wall – a locally configurable coordination hub in a box.
 iconGrid:
   - title: Six clicks or less to actionable insights
     description: |-
@@ -34,7 +34,7 @@ iconGrid:
 section3:
   title: We’re here to help
   subtitle: |-
-    We know that not every hospital has the capacity and capability to develop and implement an absolutely reliable, commercial-grade and automated information environment. Because of this, our commitment to get you up and running includes
+    'We know that not every hospital has the capacity and capability to develop and implement an absolutely reliable, commercial-grade and automated information environment. Because of this, our commitment to get you up and running includes:'
   content: |-
     - Helping automate your data to the right specifications
     - Installing the software on your networks

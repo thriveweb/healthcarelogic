@@ -47,9 +47,9 @@ export class CaseChangePageTemplate extends React.Component {
               SystemView provides this information each day – automatically and
               available to everyone.
             </p>
-            <Link to="/a-better-view/" strong icon="page">
+            {/* <Link to="/a-better-view/" strong icon="page">
               A better view
-            </Link>
+            </Link> */}
           </Popup>
         )}
 
@@ -94,6 +94,16 @@ export class CaseChangePageTemplate extends React.Component {
                   }}
                 />
               </div>
+
+              <Link
+                to="#answers-provided"
+                strong
+                icon="page"
+                arrow="down"
+                scrollButton
+              >
+                Questions Answered
+              </Link>
             </section>
           )}
         </div>

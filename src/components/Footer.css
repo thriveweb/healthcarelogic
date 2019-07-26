@@ -22,6 +22,10 @@
   flex-direction: column;
 }
 
+.toTop .Link-strong {
+  align-self: flex-end;
+}
+
 .Footer h6,
 .Footer .h6 {
   margin-bottom: 1.5rem;
@@ -67,10 +71,14 @@
     margin-bottom: 2rem;
   }
 
-  .Footer--Column:not(:first-child, :last-child):after {
+  .toTop .Link-strong {
+    align-self: center;
+  }
+
+  /* .Footer--Column:not(:first-child, :last-child):after {
     content: '';
     border-bottom: 1px solid var(--primary);
     margin: 1rem auto 2.5rem;
     width: 5rem;
-  }
+  } */
 }

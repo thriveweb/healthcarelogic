@@ -9,9 +9,10 @@ class Form extends React.Component {
     name: 'Simple Form Ajax',
     subject: '', // optional subject of the notification email
     action: '',
-    successMessage: 'Thanks for your enquiry, we will get back to you soon',
+    successMessage:
+      'Thank you for your enquiry, we will respond within 24hrs on business days.',
     errorMessage:
-      'There is a problem, your message has not been sent, please try contacting us via email'
+      'There is a problem, your message has not been sent, please try contacting us via email.'
   }
 
   state = {
@@ -100,10 +101,12 @@ class Form extends React.Component {
 
         <label className="EnquiryForm--Label">
           <select className="EnquiryForm--Select" name="enquirytype" required>
-            <option>Enquiry type</option>
+            <option disabled hidden>
+              Enquiry type
+            </option>
             <option>Sales enquiry</option>
             <option>Technical enquiry</option>
-            <option>Support enquiry</option>
+            <option>User Support enquiry</option>
             <option>Media enquiry</option>
             <option>Other enquiry</option>
           </select>

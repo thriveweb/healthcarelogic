@@ -15,7 +15,6 @@ export default ({ active, handleMenuToggle }) => {
   return (
     <div className={`Menu ${active ? 'Menu-active' : ''} dark`}>
       <div className="container skinnier">
-        <MenuLink to="/">Home</MenuLink>
         <MenuLink to="/a-case-for-change/">A case for change</MenuLink>
         <MenuLink to="/a-better-view/">A better view</MenuLink>
         <MenuLink to="/about/">About us</MenuLink>
