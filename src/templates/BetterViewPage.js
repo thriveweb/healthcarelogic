@@ -177,8 +177,8 @@ export const BetterViewPageTemplate = ({
             <Content src={section3.subtitle} />
           </div>
           <Content src={section3.content} />
-          <Link to="/contact/" icon="page" strong>
-            Contact Us
+          <Link to="/about/" icon="page" strong>
+            About Us
           </Link>
         </div>
       </section>

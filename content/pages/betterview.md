@@ -33,8 +33,7 @@ iconGrid:
     image: '../images/uploads/safe.svg'
 section3:
   title: We’re here to help
-  subtitle: |-
-    'We know that not every hospital has the capacity and capability to develop and implement an absolutely reliable, commercial-grade and automated information environment. Because of this, our commitment to get you up and running includes:'
+  subtitle: 'We know that not every hospital has the capacity and capability to develop and implement an absolutely reliable, commercial-grade and automated information environment. Because of this, our commitment to get you up and running includes:'
   content: |-
     - Helping automate your data to the right specifications
     - Installing the software on your networks
