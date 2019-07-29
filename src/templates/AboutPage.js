@@ -49,6 +49,10 @@ export class AboutPageTemplate extends React.Component {
               <h2 style={{ marginBottom: '4rem' }}>Team</h2>
               <TeamGrid team={team} />
             </div>
+
+            <Link to="/contact/" strong icon="page" arrow="right" scrollButton>
+              Contact us
+            </Link>
           </section>
         )}
       </main>
@@ -101,6 +105,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            order
             image {
               ...NoBlurImage
             }

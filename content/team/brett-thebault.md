@@ -1,6 +1,7 @@
 ---
 template: TeamMember
 slug: team/brett-thebault
+order: 2
 title: Brett Thebault
 image: /images/team/brett-thebault.jpg
 position: Board Director

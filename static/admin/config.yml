@@ -357,6 +357,7 @@ collections: # A list of collections the CMS should be able to edit
           default: DefaultPage,
         }
       - { label: Slug, name: slug, widget: string }
+      - { label: Order, name: order, widget: string }
       - { label: Title, name: title, widget: string }
       - { label: Position, name: position, widget: string }
       - { label: Image, name: image, widget: image }

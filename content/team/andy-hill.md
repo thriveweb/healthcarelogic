@@ -1,5 +1,6 @@
 ---
 template: TeamMember
+order: 1
 slug: team/andy-hill
 title: Andy Hill
 image: /images/team/andy-hill.jpg
