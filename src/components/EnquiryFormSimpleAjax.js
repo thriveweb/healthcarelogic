@@ -101,9 +101,7 @@ class Form extends React.Component {
 
         <label className="EnquiryForm--Label">
           <select className="EnquiryForm--Select" name="enquirytype" required>
-            <option disabled hidden>
-              Enquiry type
-            </option>
+            <option hidden>Enquiry type</option>
             <option>Sales enquiry</option>
             <option>Technical enquiry</option>
             <option>User Support enquiry</option>
