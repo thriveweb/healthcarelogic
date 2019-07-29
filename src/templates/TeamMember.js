@@ -34,17 +34,16 @@ export const TeamMemberTemplate = ({
             <Image src={image} alt={title} />
           </div>
         </div>
-        <div className="flex">
-          <Link
-            to={{ pathname: '/about/', hash: '#team' }}
-            strong
-            icon="page"
-            arrow="right"
-          >
-            Back
-          </Link>
-        </div>
       </div>
+
+      <Link
+        to={{ pathname: '/about/', hash: '#team' }}
+        strong
+        arrow="right"
+        scrollButton
+      >
+        Back
+      </Link>
     </section>
   </main>
 )
