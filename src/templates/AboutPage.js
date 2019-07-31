@@ -118,6 +118,7 @@ export const pageQuery = graphql`
             }
             position
             description
+            order
           }
         }
       }
@@ -139,6 +140,7 @@ export const pageQuery = graphql`
             }
             position
             description
+            order
           }
         }
       }

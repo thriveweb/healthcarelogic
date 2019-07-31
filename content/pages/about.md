@@ -37,16 +37,20 @@ leadership:
     position: 'Founder and CEO'
     image: '/images/team/martin-connor.jpg'
     slug: ../team/martin-connor
+    order: 1
   - title: 'Kate Whylie'
     position: 'Director of Customer Success'
     image: '/images/team/kate-whylie.jpg'
     slug: ../team/kate-whylie
+    order: 2
   - title: 'Associate Professor Christopher Ogg'
     position: 'Director Research and Development'
     image: '/images/team/christopher-ogg.jpg'
     slug: ../team/christopher-ogg
+    order: 3
   - title: Andrew Ge-Hall
     position: Director Software Development
     image: '/images/uploads/team/andrew-ge-hall.jpg'
     slug: ../team/andrew-ge-hall
+    order: 4
 ---
