@@ -1,6 +1,6 @@
 ---
 template: TeamMember
-order: 5
+order: 1
 slug: team/martin-connor
 title: Professor Martin Connor
 image: /images/team/martin-connor.jpg

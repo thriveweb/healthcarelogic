@@ -1,6 +1,6 @@
 ---
 template: TeamMember
-order: 7
+order: 3
 slug: team/christopher-ogg
 title: Associate Professor Christopher Ogg
 image: /images/team/christopher-ogg.jpg

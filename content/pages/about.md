@@ -18,33 +18,35 @@ section1:
 
     In search of a solution to many of the global challenges facing hospitals, we have created a common language that is helping solve the dilemma of capacity, demand and process and showing there is a simpler, cheaper and better way.
 
-team:
-  - title: Andrew Ge-Hall
-    position: Director Software Development
-    image: '/images/uploads/team/andrew-ge-hall.jpg'
-    slug: ../team/andrew-ge-hall
+board:
   - title: Andy Hill
     position: Board Chair and Director
     image: '/images/team/andy-hill.jpg'
     slug: ../team/andy-hill
-  - title: 'Associate Professor Christopher Ogg'
-    position: 'Director Research and Development'
-    image: '/images/team/christopher-ogg.jpg'
-    slug: ../team/christopher-ogg
-  - title: 'Professor Martin Connor'
-    position: 'Founder and CEO'
-    image: '/images/team/martin-connor.jpg'
-    slug: ../team/martin-connor
-  - title: 'Suzanne Yeates'
-    position: 'Company Secretary'
-    image: '/images/team/suzanne-yeates.jpg'
-    slug: ../team/suzanne-yeates
   - title: 'Brett Thebault'
     position: 'Board Director'
     image: '/images/team/brett-thebault.jpg'
     slug: ../team/brett-thebault
+  - title: 'Suzanne Yeates'
+    position: 'Company Secretary'
+    image: '/images/team/suzanne-yeates.jpg'
+    slug: ../team/suzanne-yeates
+
+leadership:
+  - title: 'Professor Martin Connor'
+    position: 'Founder and CEO'
+    image: '/images/team/martin-connor.jpg'
+    slug: ../team/martin-connor
   - title: 'Kate Whylie'
     position: 'Director of Customer Success'
     image: '/images/team/kate-whylie.jpg'
     slug: ../team/kate-whylie
+  - title: 'Associate Professor Christopher Ogg'
+    position: 'Director Research and Development'
+    image: '/images/team/christopher-ogg.jpg'
+    slug: ../team/christopher-ogg
+  - title: Andrew Ge-Hall
+    position: Director Software Development
+    image: '/images/uploads/team/andrew-ge-hall.jpg'
+    slug: ../team/andrew-ge-hall
 ---

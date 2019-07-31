@@ -1,6 +1,6 @@
 ---
 template: TeamMember
-order: 6
+order: 2
 slug: team/kate-whylie
 title: Kate Whylie
 image: /images/team/kate-whylie.jpg
