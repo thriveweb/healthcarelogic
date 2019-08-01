@@ -13,6 +13,7 @@ const TeamGrid = ({ props, team }) => (
           to={member.slug}
           className="TeamGrid--Item"
           key={`TeamGrid--${member.title}`}
+          style={{ order: member.order }}
         >
           <Image
             className="TeamGrid--Item--Image"

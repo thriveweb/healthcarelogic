@@ -4,9 +4,9 @@ order: 4
 slug: team/andrew-ge-hall
 title: Andrew Ge-Hall
 image: /images/team/andrew-ge-hall.jpg
-position: Director Software Development
+position: Chief Architect
 description: |-
-  Andrew Ge-Hall is the head of technological design and integration, he leads a brilliant team of data engineers and web developers, and oversees cybersecurity measures.
+  Andrew Ge-Hall is the head of technological design and integration and oversees cybersecurity measures.
 
   SystemView is inspired by the latest development methods and technologies. While the front-end is intuitive and notably uncluttered, its sophisticated system architecture operates seamlessly in complex and data-rich environments. It draws from diverse healthcare source systems, translates daily operations, resource modelling and corporate reporting into a holistic operational performance management tool. It has close to real-time refresh rates and is available to thousands of users per health service, each with personalised preferences, discussion boards and email/SMS reminders.
 
