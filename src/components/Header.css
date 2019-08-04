@@ -19,6 +19,23 @@
   max-height: 6rem;
 }
 
+.Header .container .full-nav .Link {
+  text-decoration: none;
+  color: white;
+  margin-left: 2rem;
+  pointer-events: all;
+}
+
+.Header .container .full-nav .Link:hover {
+  color: var(--primary);
+}
+
+@media screen and (max-width: 1000px) {
+  .Header .container .full-nav {
+    display: none;
+  }
+}
+
 .Header .container {
   display: flex;
   justify-content: space-between;

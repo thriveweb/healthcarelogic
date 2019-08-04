@@ -21,6 +21,10 @@
     .Link--arrow-down {
       transform: rotate(90deg) translateX(20%);
     }
+
+    .Link--arrow-up {
+      transform: rotate(-90deg) translateX(20%);
+    }
   }
 }
 
@@ -29,6 +33,13 @@
   bottom: 5vh;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media screen and (max-width: 800px) {
+  .Link-scrollButton {
+    max-width: 90% !important;
+    width: 400px;
+  }
 }
 
 .Link--icon {
@@ -45,4 +56,8 @@
 
 .Link--arrow-down {
   transform: rotate(90deg);
+}
+
+.Link--arrow-up {
+  transform: rotate(-90deg);
 }

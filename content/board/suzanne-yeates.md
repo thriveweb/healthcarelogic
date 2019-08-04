@@ -1,5 +1,6 @@
 ---
 template: TeamMember
+order: 3
 slug: team/suzanne-yeates
 title: Suzanne Yeates
 image: /images/team/suzanne-yeates.jpg

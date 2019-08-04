@@ -47,9 +47,9 @@ export class CaseChangePageTemplate extends React.Component {
               SystemView provides this information each day – automatically and
               available to everyone.
             </p>
-            <Link to="/a-better-view/" strong icon="page">
+            {/* <Link to="/a-better-view/" strong icon="page">
               A better view
-            </Link>
+            </Link> */}
           </Popup>
         )}
 
@@ -72,7 +72,7 @@ export class CaseChangePageTemplate extends React.Component {
               </div>
 
               <Link
-                to="/a-case-for-change/"
+                to="#questions-faced"
                 strong
                 icon="page"
                 arrow="down"
@@ -84,11 +84,7 @@ export class CaseChangePageTemplate extends React.Component {
           )}
 
           {iconGrid && (
-            <section
-              className="section thick"
-              data-scrollToTarget
-              id="questions-faced"
-            >
+            <section className="section thick" id="questions-faced">
               <div className="container">
                 <IconGrid
                   items={iconGrid}
@@ -98,6 +94,16 @@ export class CaseChangePageTemplate extends React.Component {
                   }}
                 />
               </div>
+
+              <Link
+                to="#answers-provided"
+                strong
+                icon="page"
+                arrow="down"
+                scrollButton
+              >
+                Questions Answered
+              </Link>
             </section>
           )}
         </div>

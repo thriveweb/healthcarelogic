@@ -19,7 +19,8 @@
   position: relative;
 }
 
-.EnquiryForm--Input {
+.EnquiryForm--Input,
+.EnquiryForm--Select {
   font-family: inherit;
   flex-grow: 1;
   box-sizing: border-box;
@@ -38,7 +39,11 @@
 
 .EnquiryForm--Select {
   background: none;
-  appearance: none;
+  appearance: none !important;
+}
+
+.EnquiryForm--Select:focus {
+  outline: none;
 }
 
 .EnquiryForm--Label.has-arrow:after {
@@ -72,7 +77,7 @@
 
 .EnquiryForm--Input::placeholder {
   text-transform: none;
-  color: rgba(255, 255, 255, 0.7);
+  color: white;
 }
 .EnquiryForm--Input:focus::placeholder {
   color: var(--primary);

@@ -1,8 +1,14 @@
 .MenuButton {
   margin: 0;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   color: white;
   padding: 0.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .MenuButton {
+    display: flex;
+  }
 }

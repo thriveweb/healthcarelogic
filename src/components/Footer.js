@@ -3,6 +3,7 @@ import Facebook from 'react-feather/dist/icons/facebook'
 import Twitter from 'react-feather/dist/icons/twitter'
 
 import Link from './Link'
+import ScrollToTop from './ScrollToTop'
 import emblem from '../images/emblem.svg'
 
 import './Footer.css'
@@ -22,7 +23,18 @@ const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
             <img src={emblem} alt={siteTitle} />
           </Link>
         </div>
-        <div className="Footer--Column">
+
+        <div className="Footer--Column" />
+        <div className="Footer--Column" />
+        <div className="Footer--Column" />
+
+        <div className="Footer--Column toTop">
+          <Link href="#" strong arrow="up">
+            To Top
+          </Link>
+        </div>
+
+        {/* <div className="Footer--Column">
           <Link className="h6 subtle" to="/">
             Home
           </Link>
@@ -32,7 +44,7 @@ const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
           <Link className="h6 subtle" to="/contact/">
             Contact Us
           </Link>
-        </div>
+        </div> */}
         {/* <div className="Footer--Column">
           <h6>Follow Us</h6>
           <div className="flex">
@@ -56,7 +68,7 @@ const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
             </a>
           </div>
         </div> */}
-        <div className="Footer--Column">
+        {/* <div className="Footer--Column">
           <h6>Quick Contact</h6>
           <a href={`mailto:${siteEmail}`} className="subtle" target="_blank">
             {siteEmail}
@@ -66,8 +78,7 @@ const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
               {sitePhone}
             </a>
           )}
-        </div>
-        <div className="Footer--Column" />
+        </div> */}
       </div>
     </section>
     <section className="section thin white Footer--Lower">

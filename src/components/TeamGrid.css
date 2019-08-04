@@ -29,18 +29,22 @@
 
 @media (min-width: 600px) {
   .TeamGrid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 .TeamGrid--Item--Image {
   display: block;
+  height: 20rem;
   margin-bottom: 3rem;
   transition: all 0.3s ease-in-out;
   width: 100%;
-  height: auto;
   filter: grayscale(100%);
   opacity: 0.8;
+}
+
+.TeamGrid--Item--Image img {
+  object-position: top !important;
 }
 
 .TeamGrid--Item--Title {
@@ -53,6 +57,7 @@
 }
 
 .TeamGrid--Item--Hover {
+  height: 20rem;
   background-position: center;
   background-repeat: no-repeat;
   bottom: 20%;

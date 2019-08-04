@@ -8,10 +8,10 @@
   margin-right: 5rem;
 }
 
-.VideoSection--Video {
+/* .VideoSection--Video {
   flex-grow: 1;
   box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.3);
-}
+} */
 
 .VideoSection--Video {
 }
@@ -22,6 +22,11 @@
   }
   .VideoSection--Content {
     margin: 0 auto 3rem;
+  }
+
+  .VideoSection--Video iframe {
+    width: 100%;
+    height: auto;
   }
 }
 

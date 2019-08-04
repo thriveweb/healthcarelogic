@@ -14,6 +14,12 @@ import bgCircles from '../images/bg-circles.png'
 
 import './HomePage.scss'
 
+if (typeof window !== 'undefined') {
+  // Make scroll behavior of internal links smooth
+  // eslint-disable-next-line global-require
+  require('smooth-scroll')('a[href*="#"]')
+}
+
 export class HomePageTemplate extends React.Component {
   state = {
     loaded: false
@@ -41,11 +47,19 @@ export class HomePageTemplate extends React.Component {
           <div className="container">
             <div className="pull-right">
               <h1 className="Home--Title">
-                If we could <span>see</span> the system, what would{' '}
-                <span>change</span>?
+                Next generation hospital data analytics for{' '}
+                <span>
+                  clinical engagement and sustainable performance improvement.
+                </span>
               </h1>
 
-              <Link href="#" strong icon="page" arrow="down" scrollButton>
+              <Link
+                href="#the-problem"
+                strong
+                icon="page"
+                arrow="down"
+                scrollButton
+              >
                 See. Change.
               </Link>
             </div>
@@ -58,22 +72,39 @@ export class HomePageTemplate extends React.Component {
           <section
             className="section dark thick vh-100 Home--TheProblem"
             id="the-problem"
-            data-scrollToTarget
           >
             <div className="container skinny relative">
-              <BgBrokenSystem />
-              {/* <BackgroundImage src={bgGraphicHome} contain animate /> */}
+              {/* <BgBrokenSystem /> */}
+              <BackgroundImage
+                src="/icons.svg"
+                className="pull-right bkg1"
+                contain
+              />
+              <BackgroundImage
+                src="/icons.svg"
+                className="pull-right bkg2"
+                contain
+              />
               <div className="pull-left-skinny relative">
-                <h2>{section1.title}</h2>
+                <h2>
+                  <Content src={section1.title} />
+                </h2>
                 <div className="statement">
                   <Content src={section1.subtitle} />
                 </div>
                 <Content src={section1.content} />
-                <Link to="/a-case-for-change/" strong icon="page">
-                  A case for change
-                </Link>
               </div>
             </div>
+
+            <Link
+              href="#our-solution"
+              strong
+              icon="page"
+              arrow="down"
+              scrollButton
+            >
+              Introducing SystemView
+            </Link>
           </section>
         )}
 
@@ -85,16 +116,25 @@ export class HomePageTemplate extends React.Component {
             <MacBook />
             <div className="container skinny relative flex">
               <div className="pull-right-skinny">
-                <h2>{section2.title}</h2>
+                <h2>
+                  <Content src={section2.title} />
+                </h2>
                 <div className="statement">
                   <Content src={section2.subtitle} />
                 </div>
                 <Content src={section2.content} />
-                <Link to="/a-better-view/" strong icon="page">
-                  A better view
-                </Link>
               </div>
             </div>
+
+            <Link
+              href="#track-record"
+              strong
+              icon="page"
+              arrow="down"
+              scrollButton
+            >
+              What our customers say about us
+            </Link>
           </section>
         )}
 
@@ -106,20 +146,32 @@ export class HomePageTemplate extends React.Component {
             <BackgroundImage src={bgCircles} contain />
             <div className="container skinny">
               <div className="pull-left-skinny">
-                <h2>{section3.title}</h2>
+                <h2>
+                  <Content src={section3.title} />
+                </h2>
                 <Content src={section3.content} />
               </div>
             </div>
             <div className="container skinnier">
               <Testimonials testimonials={testimonials} />
             </div>
+
+            <Link
+              href="#how-it-works"
+              strong
+              icon="page"
+              arrow="down"
+              scrollButton
+            >
+              A case for change
+            </Link>
           </section>
         )}
 
         {section4 && (
           <section
             className="section primary thick vh-100 layer-light"
-            id="about-us"
+            id="how-it-works"
           >
             <BackgroundImage
               src={bgEmblem3d}
@@ -133,8 +185,8 @@ export class HomePageTemplate extends React.Component {
                 <Content src={section4.subtitle} />
               </div>
               <Content src={section4.content} />
-              <Link to="/about/" strong icon="page">
-                About us
+              <Link to="/a-case-for-change/" strong icon="page">
+                A case for change
               </Link>
             </div>
           </section>
