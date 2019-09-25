@@ -19,6 +19,7 @@ const Header = ({ siteTitle, handleMenuToggle, menuOpen }) => {
           <MenuButton onClick={handleMenuToggle} close={menuOpen} />
 
           <div className="full-nav">
+            <Link to="/">Home</Link>
             <Link to="/a-case-for-change/">A case for change</Link>
             <Link to="/a-better-view/">A better view</Link>
             <Link to="/about/">About us</Link>
