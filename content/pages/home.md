@@ -88,7 +88,7 @@ testimonials:
       patients - I can see what the situation is and set up alerts to my mobile
       phone or email.   It enables us to have conversations that are far more
       targeted with clinicians - more dynamic data, more timely information, and
-      see if your strategy is giving you an improvement or not."
+      see if your strategy is giving you an improvement or not.
     title: 'Chief Operating Officer '
     video: ''
   - video: z-RhfD9DDso
