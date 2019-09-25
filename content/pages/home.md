@@ -79,6 +79,9 @@ testimonials:
       This system enables us to have conversations with clinicians that is far
       more targeted because all the information is in one place
     title: Chief Operating Officer
+  - content: ''
+    title: ''
+    video: a9QVDL2AwAE
   - content: >-
       SystemView is applicable worldwide. It can be standardised to whatever the
       government KPIs are for a particular area. We worry about long waiting
@@ -87,7 +90,8 @@ testimonials:
       targeted with clinicians - more dynamic data, more timely information, and
       see if your strategy is giving you an improvement or not."
     title: 'Chief Operating Officer '
-    video: a9QVDL2AwAE
+    video: ''
+  - video: z-RhfD9DDso
   - content: >-
       SystemView is applicable worldwide. It can be standardised to whatever the
       government KPIs are for a particular area. We worry about long waiting
@@ -96,6 +100,5 @@ testimonials:
       targeted with clinicians - more dynamic data, more timely information, and
       see if your strategy is giving you an improvement or not.
     title: 'Executive Director Diagnostics & Sub-Specialty Services '
-    video: z-RhfD9DDso
 ---
 
