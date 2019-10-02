@@ -11,7 +11,7 @@ class SubscribeForm extends React.Component {
     subject: '', // optional subject of the notification email
     action: '',
     successMessage: 'Success! You are subscribed.',
-    errorMessage: 'There is a problem, your have not subscribed to our list.'
+    errorMessage: 'There is a problem, you have not subscribed to our list.'
   }
 
   state = {
@@ -67,7 +67,7 @@ class SubscribeForm extends React.Component {
             name={name}
             action={action}
             onSubmit={this.handleSubmit}
-            data-netlify=""
+            data-netlify="true"
             data-netlify-honeypot="confirmEmail"
           >
             {this.state.alert && (
