@@ -75,13 +75,13 @@ class SubscribeForm extends React.Component {
             )}
             <label className="EnquiryForm--Label">
               <input
-                type="First name"
+                type="text"
                 placeholder="First name"
                 name="First name"
                 required
               />
               <input
-                type="Last name"
+                type="text"
                 placeholder="Last name"
                 name="Last name"
                 required
@@ -89,13 +89,13 @@ class SubscribeForm extends React.Component {
               <input type="email" placeholder="Email" name="email" required />
 
               <input
-                type="Organisation"
+                type="text"
                 placeholder="Organisation"
                 name="Organisation"
                 required
               />
               <input
-                type="Role in company"
+                type="text"
                 placeholder="Role in company"
                 name="Role in company"
                 required
