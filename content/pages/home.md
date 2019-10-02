@@ -20,6 +20,7 @@ section2:
     cultures and empowers teams to proactively manage and meet performance
     targets. Organise big data, forget dashboards, redirect analysts’ efforts to
     truly innovate.
+
   subtitle: ''
   title: Convert data into actionable meaning
 section3:
@@ -101,4 +102,3 @@ testimonials:
       see if your strategy is giving you an improvement or not.
     title: 'Executive Director Diagnostics & Sub-Specialty Services '
 ---
-

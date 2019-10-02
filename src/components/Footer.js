@@ -1,6 +1,7 @@
 import React from 'react'
 import Facebook from 'react-feather/dist/icons/facebook'
 import Twitter from 'react-feather/dist/icons/twitter'
+import SubscribeForm from '../components/SubscribeForm'
 
 import Link from './Link'
 import ScrollToTop from './ScrollToTop'
@@ -15,7 +16,7 @@ const Logo = ({ src, href, title }) => (
 )
 
 const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
-  <footer className="Footer">
+  <footer id="bottom" className="Footer">
     <section className="section white">
       <div className="container Footer--Container">
         <div className="Footer--Column">
@@ -24,9 +25,15 @@ const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
           </Link>
         </div>
 
-        <div className="Footer--Column" />
-        <div className="Footer--Column" />
-        <div className="Footer--Column" />
+        <div className="Footer--Column subscribe">
+          <p>
+            Download SystemView unpacked - it's interactive and explains the
+            value behind each component.We promise not to spam you or sell your
+            details to anyone! We will occasionally send you some interesting
+            information about the world of data analytics.
+          </p>
+          <SubscribeForm />
+        </div>
 
         <div className="Footer--Column toTop">
           <Link href="#" strong arrow="up">

@@ -1,0 +1,58 @@
+.SubscribeForm {
+  overflow: hidden;
+
+  margin-top: 35px;
+  position: relative;
+  width: 100%;
+  color: white;
+}
+
+.SubscribeForm .EnquiryForm--Label {
+  margin: 0;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.SubscribeForm input {
+  /* margin: 0; */
+  outline: none;
+  background: whitesmoke;
+  line-height: 17px;
+  font-size: 12.5px;
+  width: 100%;
+  height: 5rem;
+  margin-bottom: 1rem;
+
+  padding-left: 2rem;
+  border-radius: 6px;
+  border: none;
+  width: 49%;
+}
+.SubscribeForm .role-in-company {
+  width: 100%;
+}
+
+.SubscribeForm input::placeholder {
+  color: var(--dark);
+}
+
+.SubscribeForm .Button {
+  background: linear-gradient(425deg, hsla(216, 100%, 32%, 1) 0%, #44c6ff 100%);
+  margin: 0 auto;
+  color: white;
+  cursor: pointer;
+  margin-top: 2%;
+  padding-left: 0;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  width: 100%;
+}
+
+.SubscribeForm .Button:hover {
+  background: linear-gradient(425deg, #44c6ff 0%, hsla(216, 100%, 32%, 1) 100%);
+}
