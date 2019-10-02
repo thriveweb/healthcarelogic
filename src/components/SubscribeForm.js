@@ -67,7 +67,7 @@ class SubscribeForm extends React.Component {
             name={name}
             action={action}
             onSubmit={this.handleSubmit}
-            data-netlify="true"
+            data-netlify=""
             data-netlify-honeypot="confirmEmail"
           >
             {this.state.alert && (
@@ -75,31 +75,11 @@ class SubscribeForm extends React.Component {
             )}
             <label className="EnquiryForm--Label">
               <input
-                type="First name"
-                placeholder="First name"
-                name="First name"
+                className="EnquiryForm--Input"
+                type="email"
+                placeholder="Email"
+                name="email"
                 required
-              />
-              <input
-                type="Last name"
-                placeholder="Last name"
-                name="Last name"
-                required
-              />
-              <input type="email" placeholder="Email" name="email" required />
-
-              <input
-                type="Organisation"
-                placeholder="Organisation"
-                name="Organisation"
-                required
-              />
-              <input
-                type="Role in company"
-                placeholder="Role in company"
-                name="Role in company"
-                required
-                class="role-in-company"
               />
             </label>
             <input
@@ -112,10 +92,9 @@ class SubscribeForm extends React.Component {
             )}
             <input type="hidden" name="form-name" value={name} />
             <input
-              className="Button"
+              className="Button EnquiryForm--SubmitButton"
               type="submit"
-              value="Submit"
-              placeholder="Submit"
+              value="Subscribe"
               disabled={this.state.disabled}
             />
           </form>
