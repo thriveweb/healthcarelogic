@@ -37,6 +37,9 @@
 }
 
 .Home--OurSolution {
+  .subscribe-message {
+    display: none;
+  }
   .MacBook {
     right: calc(52.5% + 1.5rem);
     left: -10%;

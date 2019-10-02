@@ -124,7 +124,7 @@ export class HomePageTemplate extends React.Component {
                 </div>
                 <Content src={section2.content} />
 
-                <p>
+                <p class="subscribe-message">
                   See a snapshot of SystemView unpacked{' '}
                   <a href="/SV-Unpacked-v13.pdf">
                     <strong>here</strong>
