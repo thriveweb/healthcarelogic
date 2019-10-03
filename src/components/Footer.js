@@ -26,7 +26,7 @@ const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
         </div>
 
         <div className="Footer--Column subscribe">
-          <p>
+          <p className="subscribe-text">
             Download SystemView unpacked - it's interactive and explains the
             value behind each component. We promise not to spam you or sell your
             details to anyone! We will occasionally send you some interesting

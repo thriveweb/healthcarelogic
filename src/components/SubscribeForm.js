@@ -10,7 +10,8 @@ class SubscribeForm extends React.Component {
     name: 'Subscribe Form',
     subject: '', // optional subject of the notification email
     action: '',
-    successMessage: 'Success! You are subscribed.',
+    successMessage:
+      'Success! Please check your email to view SystemView Unpacked - Interactive.',
     errorMessage: 'There is a problem, you have not subscribed to our list.'
   }
 
@@ -51,6 +52,10 @@ class SubscribeForm extends React.Component {
           alert: this.props.errorMessage
         })
       })
+
+    const subscribeText = (document.getElementsByClassName(
+      'subscribe-text'
+    )[0].style.display = 'none')
   }
 
   render() {
