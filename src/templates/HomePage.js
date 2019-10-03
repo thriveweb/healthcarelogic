@@ -130,9 +130,9 @@ export class HomePageTemplate extends React.Component {
                     <strong>here</strong>
                   </a>{' '}
                   or download the entire unpacked solution as an interactive pdf{' '}
-                  <a href="#bottom">
-                    <strong>here</strong>
-                  </a>
+                  <Link strong scrollBottom>
+                    here
+                  </Link>
                   .
                 </p>
               </div>

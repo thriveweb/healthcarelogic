@@ -38,7 +38,13 @@
 
 .Home--OurSolution {
   .subscribe-message {
-    // display: none;
+    .Link {
+      text-transform: none;
+      font-size: 1.6rem;
+      padding-top: 0;
+      text-decoration: underline;
+      margin-top: 0;
+    }
   }
   .MacBook {
     right: calc(52.5% + 1.5rem);

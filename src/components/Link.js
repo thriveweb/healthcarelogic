@@ -12,6 +12,7 @@ export default ({
   icon = false,
   strong = false,
   scrollButton = false,
+  scrollBottom = false,
   arrow, // right down
   ...props
 }) => {
@@ -19,6 +20,7 @@ export default ({
   if (!arrow && strong) arrow = 'right'
   if (strong) className += ' Link-strong'
   if (scrollButton) className += ' Link-scrollButton'
+  if (scrollBottom) className += ''
 
   let MoveTo = false
   if (typeof window !== `undefined`) {
@@ -34,6 +36,21 @@ export default ({
           easing: 'easeOutQuart'
         })
         const target = document.querySelector('[data-scrollToTarget]')
+        if (target) moveTo.move(target)
+      }
+    }
+    if (scrollBottom) {
+      if (typeof window !== 'undefined' && MoveTo) {
+        const moveTo = new MoveTo({
+          tolerance: 0,
+          duration: 800,
+          easing: 'easeOutQuart'
+        })
+
+        const target = window.scrollTo({
+          top: 99999,
+          behavior: 'smooth'
+        })
         if (target) moveTo.move(target)
       }
     }
