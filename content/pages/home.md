@@ -101,4 +101,10 @@ testimonials:
       targeted with clinicians - more dynamic data, more timely information, and
       see if your strategy is giving you an improvement or not.
     title: 'Executive Director Diagnostics & Sub-Specialty Services '
+  - content: ''
+    title: ''
+    video: 8iEAUpN5ztg
+  - content: ''
+    title: ''
+    video: 242qn_A20ng
 ---
