@@ -118,7 +118,7 @@ class Layout extends React.Component {
 
         <Fragment>{children()}</Fragment>
 
-        <Footer siteTitle={siteTitle} siteEmail={email} sitePhone={phone} />
+        <Footer siteTitle={siteTitle} />
       </Fragment>
     )
   }
@@ -132,8 +132,6 @@ export const query = graphql`
       siteTitle
       siteUrl
       siteDescription
-      email
-      phone
       headerScripts
       socialMediaCard {
         image
