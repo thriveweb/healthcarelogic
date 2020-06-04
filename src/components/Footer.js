@@ -102,6 +102,7 @@ const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
         </a>
       </div>
     </section>
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7321348.js"></script>
   </footer>
 )
 
