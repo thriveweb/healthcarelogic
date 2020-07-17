@@ -5,6 +5,7 @@ import { MapPin, Smartphone, Mail } from 'react-feather'
 import Link from '../components/Link'
 import Content from '../components/Content'
 import EnquiryFormSimpleAjax from '../components/EnquiryFormSimpleAjax'
+import Hubspot from '../components/Hubspot'
 import BackgroundImage from '../components/BackgroundImage'
 import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
 import './ContactPage.css'
@@ -74,6 +75,7 @@ export const ContactPageTemplate = ({
 
           <div className="ContactPage--grid--column">
             <EnquiryFormSimpleAjax name="Contact Form" />
+            <Hubspot />
           </div>
         </div>
       </div>
