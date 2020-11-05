@@ -7,13 +7,13 @@ section1:
   subtitle: |-
     We are a unique, fully funded research and development company in the Healthcare sector based in the Gold Coast.
   content: |-
-  Our aim is to create hospital analytics solutions working in partnership with various health services and academic institutions. We are a motivated, high-performing team interested in improving access to hospital and health services.
+    Our aim is to create hospital analytics solutions working in partnership with various health services and academic institutions. We are a motivated, high-performing team interested in improving access to hospital and health services.
 
-  Are you inspired to be a part of an exciting team?
-  Do you have the resilience and agility to work in a fast-paced, dynamic environment?
-  Do you want to join a team aiming to become world-class leaders in developing software and implementing data analytics systems?
+    Are you inspired to be a part of an exciting team?
+    Do you have the resilience and agility to work in a fast-paced, dynamic environment?
+    Do you want to join a team aiming to become world-class leaders in developing software and implementing data analytics systems?
 
-  If this sounds like you, check out our current opportunities to join our team…
+    If this sounds like you, check out our current opportunities to join our team…
 
 accordion:
   - title: Data Engineering Manager
@@ -29,7 +29,8 @@ accordion:
     description: |-
       Healthcare Logic is one of Queensland’s fastest growing technology start-ups, and we are aiming for global market leadership within the next five years.  We build software to help hospitals work better.  We are fully funded and currently transacting in five jurisdictions.  Our flagship product is SystemView: a new-to-the-world analytics platform using high-frequency data automation and a proprietary UI to give clinical and executive leaders in hospitals previously unobtainable insights and actionable data. We currently have 32 staff and growing.
 
-      To continue building out our data engineering team, we are now looking for a committed and motivated individual to join us at an exciting time of rapid expansion.  The successful candidate will have technical experience combining both a good working knowledge of database architecture, design, and approaches to integration (with focused knowledge of SQL), and significant devops experience as well as familiarity with version control software such as Git.
+      To continue building out our data engineering team, we are now looking for a committed and motivated individual to join us at an exciting time of rapid expansion.  The successful candidate will have technical experience combining both a good working knowledge of database architecture, design, and approaches to integration (with focused knowledge of SQL), and significant devops experience as well as familiarity with version control software such as Git.  
+
   - title: Data Engineer
     applyLink: https://www.seek.com.au/job/50860549
     description: |-

@@ -68,9 +68,6 @@
   transition: all 0.4s ease;
 }
 
-.AccordionLink:hover {
-  color: lightgrey;
-}
 .AccordionLink:hover svg:last-child {
   position: relative;
   right: -5px;
