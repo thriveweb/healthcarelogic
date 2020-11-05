@@ -23,6 +23,7 @@ const Header = ({ siteTitle, handleMenuToggle, menuOpen }) => {
             <Link to="/a-case-for-change/">A case for change</Link>
             <Link to="/a-better-view/">A better view</Link>
             <Link to="/about/">About us</Link>
+            <Link to="/work-with-us/">Work with us</Link>
             <Link to="/contact/">Contact us</Link>
           </div>
         </div>

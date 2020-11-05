@@ -18,6 +18,7 @@ export default ({ active, handleMenuToggle }) => {
         <MenuLink to="/a-case-for-change/">A case for change</MenuLink>
         <MenuLink to="/a-better-view/">A better view</MenuLink>
         <MenuLink to="/about/">About us</MenuLink>
+        <MenuLink to="/work-with-us/">Work with us</MenuLink>
         <MenuLink to="/contact/">Contact us</MenuLink>
       </div>
     </div>

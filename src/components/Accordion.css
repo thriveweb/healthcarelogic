@@ -1,0 +1,74 @@
+.Accordion {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.Accordion img {
+  position: absolute;
+  top: -15rem;
+  right: -7rem;
+  width: 20rem;
+  height: auto;
+}
+
+.Accordion--item:first-child {
+  border-top: 1px solid white;
+}
+.Accordion--item {
+  position: relative;
+  padding: 3rem 1rem;
+  outline: none;
+  appearance: none;
+  border-bottom: 1px solid white;
+}
+
+.Accordion--item h2 {
+  cursor: pointer;
+  display: block;
+  margin: 0;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02rem;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.Accordion--item h2 .Accordion-title {
+  color: white;
+}
+
+.Accordion--item svg {
+  float: right;
+  transition: ease all 0.3s;
+}
+
+.Accordion--item.active svg {
+  transform: rotate(-180deg);
+}
+
+.Accordion--item .description {
+  padding-top: 0;
+  opacity: 0;
+  transition: ease all 0.3s;
+  max-height: 0;
+}
+
+.Accordion--item.active .description {
+  padding-top: 2rem;
+  opacity: 1;
+  max-height: 50rem;
+}
+
+.AccordionLink svg:last-child {
+  position: relative;
+  right: 0;
+  color: white;
+  transition: all 0.4s ease;
+}
+
+.AccordionLink:hover svg:last-child {
+  position: relative;
+  right: -5px;
+}

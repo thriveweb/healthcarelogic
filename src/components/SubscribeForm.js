@@ -55,7 +55,8 @@ class SubscribeForm extends React.Component {
 
     const subscribeText = (document.getElementsByClassName(
       'subscribe-text'
-    )[0].style.display = 'none')
+    )[0].style.display =
+      'none')
   }
 
   render() {
@@ -104,7 +105,7 @@ class SubscribeForm extends React.Component {
                 placeholder="Role in company"
                 name="Role in company"
                 required
-                class="role-in-company"
+                className="role-in-company"
               />
             </label>
             <input
