@@ -37,14 +37,20 @@ export class WorkPageTemplate extends React.Component {
                 <p className="statement">{section1.subtitle}</p>
                 <Content src={section1.content} />
               </div>
-              <Link to="#team" strong icon="page" arrow="down" scrollButton>
-                Meet the Team
+              <Link
+                to="#opportunities"
+                strong
+                icon="page"
+                arrow="down"
+                scrollButton
+              >
+                View the opportunities
               </Link>
             </div>
           </section>
         )}
 
-        <section className="section primary thick" id="team">
+        <section className="section primary thick" id="opportunities">
           <div className="container skinny">
             <h2 style={{ marginBottom: '4rem' }}>Current opportunities</h2>
             {console.log(accordion)}
