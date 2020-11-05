@@ -1,0 +1,6 @@
+@media (min-width: 800px) {
+  .About--Intro {
+    columns: 2;
+    column-gap: 5rem;
+  }
+}
