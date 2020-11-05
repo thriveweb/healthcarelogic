@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import Link from '../components/Link'
 import Content from '../components/Content'
 import BackgroundImage from '../components/BackgroundImage'
-import TeamGrid from '../components/TeamGrid'
+import Accordion from '../components/Accordion'
 import bgEmblem3d from '../images/bg-emblem-3d-white.svg'
 import Meta from '../components/Meta'
 
@@ -12,7 +12,8 @@ import './WorkPage.css'
 
 export class WorkPageTemplate extends React.Component {
   render() {
-    let { title, section1, board, leadership, meta } = this.props
+    let { title, section1, accordion, meta } = this.props
+
     return (
       <main>
         <Helmet>
@@ -45,39 +46,18 @@ export class WorkPageTemplate extends React.Component {
 
         <section className="section primary thick" id="team">
           <div className="container skinny">
-            <h2 style={{ marginBottom: '4rem' }}>The Board</h2>
-            <TeamGrid team={board} />
-            <br />
-            <br />
-            <h2 style={{ marginBottom: '4rem' }}>Leadership Team</h2>
-            <TeamGrid team={leadership} />
+            <h2 style={{ marginBottom: '4rem' }}>Current opportunities</h2>
+            {console.log(accordion)}
+            <Accordion items={accordion} />
           </div>
-
-          <Link to="/contact/" strong icon="page" arrow="right" scrollButton>
-            Contact us
-          </Link>
         </section>
       </main>
     )
   }
 }
 
-const WorkPage = ({ data: { page, board, leadership } }) => (
-  <WorkPageTemplate
-    {...page}
-    {...page.frontmatter}
-    body={page.html}
-    board={board.edges.map(post => ({
-      ...post.node,
-      ...post.node.frontmatter,
-      ...post.node.fields
-    }))}
-    leadership={leadership.edges.map(post => ({
-      ...post.node,
-      ...post.node.frontmatter,
-      ...post.node.fields
-    }))}
-  />
+const WorkPage = ({ data: { page } }) => (
+  <WorkPageTemplate {...page} {...page.frontmatter} body={page.html} />
 )
 
 export default WorkPage
@@ -93,53 +73,16 @@ export const pageQuery = graphql`
           subtitle
           content
         }
+        accordion {
+          title
+          applyLink
+          description
+        }
         meta {
           title
           description
           noindex
           canonicalLink
-        }
-      }
-    }
-    board: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "board" } } }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-            contentType
-          }
-          frontmatter {
-            title
-            order
-            image {
-              ...NoBlurImage
-            }
-            position
-            description
-          }
-        }
-      }
-    }
-    leadership: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "leadership" } } }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-            contentType
-          }
-          frontmatter {
-            title
-            order
-            image {
-              ...NoBlurImage
-            }
-            position
-            description
-          }
         }
       }
     }
