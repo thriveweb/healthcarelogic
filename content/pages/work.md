@@ -39,8 +39,234 @@ accordion:
     description: "**\rCustomer Success Manager\r**\n\n**About the business and the role\r**\n\nHealthcare Logic is one of Queensland’s fastest growing technology start-ups, and we are aiming for global market leadership within the next five years. We build software to help hospitals work better.  \r\n\nWe are fully funded and currently transacting in five jurisdictions. Our flagship product is SystemView: a new-to-the-world analytics platform using high-frequency data automation and a proprietary UI to give clinical and executive leaders in hospitals previously unobtainable insights and actionable data.  \r\n\nThe main purpose of the Customer Success Manager role is to  raise awareness of HCL and SystemView in our target audience, to surprise and delight customers, drive adoption, turn customers and end users into advocates to yield negative churn, and aim at no installed customers ever wanting to exit the SystemView global hospital network.\r\n\n\n\n**About you\r**\n\n* You are kind, charismatic and a great communicator. You are eager to support others including both your technical colleagues and the end users of Healthcare Logic products. \r\n* You are both organised and agile. While you are able to plan ahead to coordinate upcoming events, they are also able to adapt plans when the unexpected arises.\r\n* You are able to identify and assess risk, manage appropriate escalations and work with those around them to mitigate or resolve the risk.\r\n* You are a great admirer of the clinicians who care for patients and the managerial and administrative leaders who work tirelessly to support them to do so.\r\n* Possibly the most important quality – you value the public health service, its purpose and are eager to understand how the system works and how it can be made better. \r\n* You preferably have undergraduate degree in healthcare or a customer services related industry, experience in either healthcare or software services.\r\n\n\r\n\n**Key responsibilities\r**\n\n**Operational and Professional Excellence:\r**\n\n* Work in partnership with the engineering, product and testing teams to support installation activities including supporting customers through data validation and UAT\r\n* Design and lead customer onboarding and engagement plans that promote and facilitate user adoption\r\n* Conduct customer on-boarding; as well as provide ongoing communication and support to customers regarding new features and releases.\r\n* Produce high quality end user material including documents and mp4’s designed to support end users\r\n\n**Customer Focus:\r**\n\n* Develop trustworthy relationships with key end users and executive stakeholders\r\n* Seek to understand (and build your knowledge base on) end users requirements to identify opportunities for end user driven enhancements, future product development, and maintain a register of this information\r\n* Actively advocate to Healthcare Logic decision makers the end user requirements and ensure that the system is at a minimum compatible with their needs\r\n* Prepare for and attend the weekly Customer Success Ticket meeting to ensure that CST tickets are being delivered in time to meet end user needs \r\n\n**Leadership:\r**\n\n* Act as a champion advocate for all SystemView end users\r\n* Seek to transform every end users into promoters who will advocate for the product\r\n* Provide a mentor relationship to junior staff within the customer success team including assistance with onboarding any new staff when you have experience in the team\r\n\n**Business Excellence:\r**\n\n* Contribute to the development of standardised and scalable engagement processes for every HCL customer by SystemView domain - delivering collateral, capacity and capability to take customers from UAT to adoption, to advocacy and rich hospital network participation over time\r\n* Work with sales and marketing team with the development of sales and marketing material including creation of the HCL thought leadership (blogs), identify marketing events (conferences), and identify opportunities to collect end user testimonials \r\n* Monitor end-user adoption and understand influences that promote or detract utilisation, profile end-user behaviours, and manage Net Promotor Surveys\r\n\n**People and Culture:\r**\n\nValues drive our behaviours and the decisions we make. In addition to the above, we are looking for candidates who share and can demonstrate our core values these being Clearbit’s:\r\n\n* Care. Empathise with customers - take the time to understand their frustrations, needs, and desires\r\n* Craft. Own your craft - never stop learning and improving\r\n* Team. Teamwork makes the dream work - fill gaps, there’s no such thing as “it’s not my job”\r\n* Truth. Be up front and candid - say it like it is, hold yourself and others accountable\r\n* Initiative. Don’t wait for permission - figure it out or figure out who can\r\n* Fun. Don’t take yourself too seriously – life is short\r\n\n**Reporting to:\r**\n\nThe role reports directly to the Director of Customer Success\r\n\n\n\n**Job benefits and perks**\n\n* Employee Share Options awarded for high performance\r\n* Join a team at the cutting edge of Healthcare analytics to improve patient outcomes worldwide\r\n* Full-time – permanent contract (38 hours per week, Mon-Fri)\r\n* Office days are in a modern office space with awesome views (2-3 days per week)\r\n* You can work from home with flexible hours (2-3 days per week)\r\n* Potential to work and collaborate internationally\r\n* Opportunity for promotion as the company grows and your performance exceeds expectations\r\n* Monthly team offsite gathering promoting social interaction, education and training and professional development\r\n\n\n\n**Applicant must be available to travel both interstate and overseas\r**"
     title: Customer Success Manager
   - applyLink: 'https://www.seek.com.au/job/51216534'
-    description: "**Director of Customer Success** \r\n\n**About the business and the role\r**\n\nHealthcare Logic is one of Queensland’s fastest growing technology start-ups, and we are aiming for global market leadership within the next five years. We build software to help hospitals work better.  \r\n\nWe are fully funded and currently transacting in five jurisdictions. Our flagship product is SystemView: a new-to-the-world analytics platform using high-frequency data automation and a proprietary UI to give clinical and executive leaders in hospitals previously unobtainable insights and actionable data.  \r\n\nThe main purpose of the Director of Customer Success role is to raise awareness of HCL and SystemView in our target audience, to surprise and delight customers, drive adoption, turn customers and end users into advocates to yield negative churn, and aim at no installed customers ever wanting to exit the SystemView global hospital network.\r\n\n**About you\r**\n\n* You are kind, charismatic and a great communicator who is eager to support others including those you manage, your technical colleagues and the end users of SystemView\r\n* You are organised and agile and while you are understand the need to plan ahead, you have the ability to adapt plans when the unexpected arises\r\n* You know how to deliver a high standard of excellence when it comes to customer onboarding, success and support. You balance the need for quality with the need for scalability without any compromise\r\n* You are an admirer of clinicians who care for patients and the managerial and administrators who work tirelessly within public hospitals and are passionate about these stakeholders being successful with the product\r\n* \rYou rely on data and trends, observations, insights drawn from working with end users to be able to design and implement plans that will achieve long term success\r\n* You have an undergraduate degree in healthcare or customer services related, experience as a senior manager in either healthcare or software experience / services and at least 5 years- experience leading teams.\r\n\n**Key responsibilities\r**\n\n**Operational and Professional Excellence:\r**\n\n* \rUsing and learning about SystemView to enable you to support your teams and ensure strategies are built upon first-hand knowledge. This includes participating in customer onboarding, training and showcase events\r\n* \rWork closely with the CEO and Chief Clinical Engagement Officer to manage the later ends of the sales cycle as required including support the sales process as required with demos and on-site engagements\r\n* \rContinue the development of standardised and scalable engagement processes for every HCL customer by SystemView domain - delivering collateral, capacity and capability to take customers from UAT to adoption, to advocacy and rich hospital network participation over time\r\n\n**Customer Focus:\r**\n\n* \rProactively meet key customers and end users to form and manage trustworthy relationships including managing escalations from the customer success team and escalating to the chief clinical engagement officer as required\r\n* Lead the development and maintenance of up to date, customer facing content for the platform, working closely with the Director of Hospital Systems Improvements and Director of Engineering to maintain the documents\r\n* Work closely with the Chief Clinical Engagement Officer, Director of Hospital Systems Improvement and Product team to ensure customer-centred prioritisation processes are in place to sequence the commissioned work towards the best balance of current priorities\r\n* Support the planning for and attend the weekly Customer Success Ticket meeting to ensure that CST tickets are being delivered in time to meet end user needs \r\n\n**Leadership:\r**\n\n* Act as a champion advocate for all SystemView end users\r\n* Provide line management to each person in the customer success team, ensuring at least weekly one to one supervision and quarterly performance and development reviews, and ensuring all standard employee documentation is up to date\r\n* Continual design and implementation of a Customer Success organisational structure that allows for and adapts to scale \r\n* Introducing CS performance metrics and then monitoring and measuring account performance and working with the customer success leads and managers to proactively identify risks of customer churn and develop tactics to prevent this from occurring\r\n\n**Business Excellence:\r**\n\n* Contribute to the strategic development of the business and participate fully in the general leadership of the company as part of the Director group\r\n* Contribute to the development of the platform (product), marketing, sales, engineering, PMO and quality teams to help Healthcare logic be a better company and platform and in turn make a bigger impact on our customers\r\n\n**People and Culture:\r**\n\nValues drive our behaviours and the decisions we make. In addition to the above, we are looking for candidates who share and can demonstrate our core values these being Clearbit’s:\r\n\n* Care. Empathise with customers - take the time to understand their frustrations, needs, and desires\r\n* \rCraft. Own your craft - never stop learning and improving\r\n* Team. Teamwork makes the dream work - fill gaps, there’s no such thing as “it’s not my job”\r\n* Truth. Be up front and candid - say it like it is, hold yourself and others accountable\r\n* Initiative. Don’t wait for permission - figure it out or figure out who can\r\n* Fun. Don’t take yourself too seriously – life is short\r\n\n**Reporting to:\r**\n\nThe role reports directly to the Chief Clinical Engagement Officer\r\n\n**Job benefits and perks\r**\n\n* Employee Share Options awarded for high performance\r\n* Join a team at the cutting edge of Healthcare analytics to improve patient outcomes worldwide\r\n* Full-time – permanent contract (38 hours per week, Mon-Fri)\r\n* Office days are in a modern office space with awesome views (1-2 days per week)\r\n* You can work from home with flexible hours (3-4 days per week)\r\n* Potential to work and collaborate internationally\r\n* Opportunity for promotion as the company grows and your performance exceeds expectations\r\n* Monthly team offsite gathering promoting social interaction, education and training and professional development"
+    description: >-
+      **Director of Customer Success** 
+
+
+      **About the business and the role
+
+      **
+
+
+      Healthcare Logic is one of Queensland’s fastest growing technology
+      start-ups, and we are aiming for global market leadership within the next
+      five years. We build software to help hospitals work better.  
+
+
+      We are fully funded and currently transacting in five jurisdictions. Our
+      flagship product is SystemView: a new-to-the-world analytics platform
+      using high-frequency data automation and a proprietary UI to give clinical
+      and executive leaders in hospitals previously unobtainable insights and
+      actionable data.  
+
+
+      The main purpose of the Director of Customer Success role is to raise
+      awareness of HCL and SystemView in our target audience, to surprise and
+      delight customers, drive adoption, turn customers and end users into
+      advocates to yield negative churn, and aim at no installed customers ever
+      wanting to exit the SystemView global hospital network.
+
+
+      **About you
+
+      **
+
+
+      * You are kind, charismatic and a great communicator who is eager to
+      support others including those you manage, your technical colleagues and
+      the end users of SystemView
+
+      * You are organised and agile and while you are understand the need to
+      plan ahead, you have the ability to adapt plans when the unexpected arises
+
+      * You know how to deliver a high standard of excellence when it comes to
+      customer onboarding, success and support. You balance the need for quality
+      with the need for scalability without any compromise
+
+      * You are an admirer of clinicians who care for patients and the
+      managerial and administrators who work tirelessly within public hospitals
+      and are passionate about these stakeholders being successful with the
+      product
+
+      * 
+
+
+      You rely on data and trends, observations, insights drawn from working
+      with end users to be able to design and implement plans that will achieve
+      long term success
+
+
+      * You have an undergraduate degree in healthcare or customer services
+      related, experience as a senior manager in either healthcare or software
+      experience / services and at least 5 years- experience leading teams.
+
+
+      **Key responsibilities
+
+      **
+
+
+      **Operational and Professional Excellence:
+
+      **
+
+
+      * 
+
+
+      Using and learning about SystemView to enable you to support your teams
+      and ensure strategies are built upon first-hand knowledge. This includes
+      participating in customer onboarding, training and showcase events
+
+
+      * 
+
+
+      Work closely with the CEO and Chief Clinical Engagement Officer to manage
+      the later ends of the sales cycle as required including support the sales
+      process as required with demos and on-site engagements
+
+
+      * 
+
+
+      Continue the development of standardised and scalable engagement processes
+      for every HCL customer by SystemView domain - delivering collateral,
+      capacity and capability to take customers from UAT to adoption, to
+      advocacy and rich hospital network participation over time
+
+
+      **Customer Focus:
+
+      **
+
+
+      * 
+
+
+      Proactively meet key customers and end users to form and manage
+      trustworthy relationships including managing escalations from the customer
+      success team and escalating to the chief clinical engagement officer as
+      required
+
+
+      * Lead the development and maintenance of up to date, customer facing
+      content for the platform, working closely with the Director of Hospital
+      Systems Improvements and Director of Engineering to maintain the documents
+
+      * Work closely with the Chief Clinical Engagement Officer, Director of
+      Hospital Systems Improvement and Product team to ensure customer-centred
+      prioritisation processes are in place to sequence the commissioned work
+      towards the best balance of current priorities
+
+      * Support the planning for and attend the weekly Customer Success Ticket
+      meeting to ensure that CST tickets are being delivered in time to meet end
+      user needs 
+
+
+      **Leadership:
+
+      **
+
+
+      * Act as a champion advocate for all SystemView end users
+
+      * Provide line management to each person in the customer success team,
+      ensuring at least weekly one to one supervision and quarterly performance
+      and development reviews, and ensuring all standard employee documentation
+      is up to date
+
+      * Continual design and implementation of a Customer Success organisational
+      structure that allows for and adapts to scale 
+
+      * Introducing CS performance metrics and then monitoring and measuring
+      account performance and working with the customer success leads and
+      managers to proactively identify risks of customer churn and develop
+      tactics to prevent this from occurring
+
+
+      **Business Excellence:
+
+      **
+
+
+      * Contribute to the strategic development of the business and participate
+      fully in the general leadership of the company as part of the Director
+      group
+
+      * Contribute to the development of the platform (product), marketing,
+      sales, engineering, PMO and quality teams to help Healthcare logic be a
+      better company and platform and in turn make a bigger impact on our
+      customers
+
+
+      **People and Culture:
+
+      **
+
+
+      Values drive our behaviours and the decisions we make. In addition to the
+      above, we are looking for candidates who share and can demonstrate our
+      core values these being Clearbit’s:
+
+
+      * Care. Empathise with customers - take the time to understand their
+      frustrations, needs, and desires
+
+      * 
+
+
+      Craft. Own your craft - never stop learning and improving
+
+
+      * Team. Teamwork makes the dream work - fill gaps, there’s no such thing
+      as “it’s not my job”
+
+      * Truth. Be up front and candid - say it like it is, hold yourself and
+      others accountable
+
+      * Initiative. Don’t wait for permission - figure it out or figure out who
+      can
+
+      * Fun. Don’t take yourself too seriously – life is short
+
+
+      **Reporting to:
+
+      **
+
+
+      The role reports directly to the Chief Clinical Engagement Officer
+
+
+      **Job benefits and perks
+
+      **
+
+
+      * Employee Share Options awarded for high performance
+
+      * Join a team at the cutting edge of Healthcare analytics to improve
+      patient outcomes worldwide
+
+      * Full-time – permanent contract (38 hours per week, Mon-Fri)
+
+      * Office days are in a modern office space with awesome views (1-2 days
+      per week)
+
+      * You can work from home with flexible hours (3-4 days per week)
+
+      * Potential to work and collaborate internationally
+
+      * Opportunity for promotion as the company grows and your performance
+      exceeds expectations
+
+      * Monthly team offsite gathering promoting social interaction, education
+      and training and professional development
     title: Director of Customer Success
+  - applyLink: 'https://www.seek.com.au/job/51227121'
+    description: "**Intermediate Web Engineer \r**\n\n**ABOUT US\r**\n\nHealthcare Logic is one of Queensland’s fastest growing technology start-ups, and we are aiming for global market leadership within the next five years.  We build software to help hospitals work better.  We are fully funded and currently transacting in five jurisdictions.  Our flagship product is SystemView: a new-to-the-world analytics platform using high-frequency data automation and a proprietary UI to give clinical and executive leaders in hospitals previously unobtainable insights and actionable data.  \r\n\n**ABOUT THE ROLE\r**\n\nTo continue building out our front-end engineering team, we are now looking for a committed and motivated individual to join us at an exciting time of rapid expansion. If you are a passionate web developer and are hungry for developing a state-of-the-art application using a modern technology stack, this role is for you.\r\n\nYou will be joining a multi-talented and diverse team of Web engineers with responsibilities to include:\r\n\n* Developing and building new component and Web features using JavaScript (ES9+) and utilising modern frameworks such as ReactJS, Redux, GraphQL, TypeScript and ExpressJS/NodeJS.\r\n* Contributing to improve our test framework, i.e. Cypress\r\n* Participating in improving our design and contribute to development of new UI/UX design.\r\n* Providing technical and helpdesk support to other parts of the business, including debugging, troubleshooting of technical issues during an outage or identified bugs.\r\n* Participating in code and peer review process.\r\n* Improving our CI/CD pipelines and maintaining solution on Azure Devops platform.\r\n* Maintain an in-depth understanding of front-end technologies and stay abreast of current industry trends and emerging technologies.\r\n* Improving secure Web development practices and methodologies of the SystemView application.\r\n\n**SKILLS WE ARE LOOKING FOR:\r**\n\nThese skills and experience will help get you onto the shortlist:\r\n\n* A degree in Computer Science or similar, or ability to demonstrate equivalent knowledge in Web application development. A portfolio of your recent projects will be useful to help us understand your ability.\r\n* 3+ years' experience working intimately in JavaScript and exposure to modern JavaScript frameworks such as ReactJS, Redux, GraphQL, NodeJS/ExpressJS, WebSocket/Socket.io, TypeScript, Webpack, NPM, and test framework such as Cypress.\r\n* Experience using Git repository such as Bitbucket, Github, Azure Devops and other PaaS technology.\r\n* Experience in setting up CI/CD pipeline and using tools such as Azure Devops, Bamboo, Travis, Jenkins, as well as other CI/CD tools.\r\n* Experience in database design especially RDBMS and have developed application using one of the database engines such as MySQL, PostgreSQL, SQL Server, and MongoDB.\r\n* Experience and skills in developing application using SPA architecture, build systems, cross browser compatibility and HTML5/CSS layout, including SASS and LESS, UI/UX knowledge and wireframing.\r\n* Prior experience with application or Web development working in fast-paced agile and exposure to modern collaborative tools such as Scrum and Test-Driven Development.\r\n* Good communication, collaboration, and problem-solving skills.\r\n* Experience with Healthcare data preferred but not essential.\r\n* Experience with Amazon AWS or Azure Cloud Platform, in particular App Services and Virtual Machines are highly desirable.\r\n* Experience in setting up CI/CD pipelines will get you shortlisted for this position.\r\n* Experience writing automated tests for front end and back end JavaScript.\r\n* Be a critical thinker with strong analytical and problem-solving skills.\r\n* Be passionate about delivering high quality work and in timely manner.\r\n* Able to work under pressure and with minimum supervision.\r\n\n**Job benefits and perks\r**\n\n* Join a team at the cutting edge of Healthcare analytics to improve patient outcomes worldwide.\r\n* Solve interesting real-world problems in a dynamic environment.\r\n* Attractive salary working in a modern office space with awesome views.\r\n* Potential to work and collaborate internationally.\r\n* Working from home and flexible hours.\r\n* Monthly team offsite gathering promoting social interaction, education and training and professional development."
+    title: Intermediate Web Engineer
 meta:
   description: ''
   title: ''
