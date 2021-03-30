@@ -52,7 +52,7 @@ export const ContactPageTemplate = ({
 
             {ieAddress && (
               <div className="ContactPage--item">
-                <h5>Australia</h5>
+                <h5>Ireland</h5>
                 <p>{ieAddress}</p>
               </div>
             )}
