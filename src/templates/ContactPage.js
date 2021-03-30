@@ -15,7 +15,8 @@ import Meta from '../components/Meta'
 export const ContactPageTemplate = ({
   title,
   blurb,
-  address,
+  auAddress,
+  ieAddress,
   phone,
   email,
   meta
@@ -41,10 +42,20 @@ export const ContactPageTemplate = ({
             <div className="statement">
               <Content src={blurb} />
             </div>
-            <div className="ContactPage--item">
-              <h5>Address</h5>
-              <p>{address}</p>
-            </div>
+
+            {auAddress && (
+              <div className="ContactPage--item">
+                <h5>Australia</h5>
+                <p>{auAddress}</p>
+              </div>
+            )}
+
+            {ieAddress && (
+              <div className="ContactPage--item">
+                <h5>Australia</h5>
+                <p>{ieAddress}</p>
+              </div>
+            )}
 
             {phone && (
               <div className="ContactPage--item">
@@ -96,7 +107,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         blurb
-        address
+        auAddress
+        ieAddress
         phone
         email
         meta {

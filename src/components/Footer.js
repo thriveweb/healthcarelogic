@@ -6,6 +6,7 @@ import SubscribeForm from '../components/SubscribeForm'
 import Link from './Link'
 import ScrollToTop from './ScrollToTop'
 import emblem from '../images/emblem.svg'
+import privacyPolicy from '../images/HCL_Website Privacy Policy.pdf'
 
 import './Footer.css'
 
@@ -91,6 +92,10 @@ const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
     <section className="section thin white Footer--Lower">
       <div className="container">
         &copy; {new Date().getFullYear()} All Rights Reserved |{' '}
+        <a href={privacyPolicy} target="_blank" className="subtle">
+          Privacy Policy
+        </a>{' '}
+        |{' '}
         <a
           className="subtle"
           href="https://thriveweb.com.au"
@@ -102,7 +107,13 @@ const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
         </a>
       </div>
     </section>
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7321348.js"></script>
+    <script
+      type="text/javascript"
+      id="hs-script-loader"
+      async
+      defer
+      src="//js.hs-scripts.com/7321348.js"
+    ></script>
   </footer>
 )
 
