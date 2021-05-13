@@ -30,7 +30,121 @@ accordion:
     description: "Test Analyst\r\n\n\r\n\n**About us**\r\n\nHealthcare Logic is one of Queensland’s fastest growing technology start-ups, and we are aiming for global market leadership within the next five years. We build software to help hospitals work better.  \n\nOur flagship product is SystemView: a new-to-the-world analytics platform using high-frequency data automation and a proprietary UI to give clinical and executive leaders in hospitals previously unobtainable insights and actionable data.  \r\n\n\r\n\n**Role Summary**\r\n\nThe Test Analyst role sits within Healthcare Logic’s Quality team. We are kind, flexible and great communicators eager to support others. We work alongside data engineers, web engineers and the customer success team (who support our end-users).\r\n\nMembers of the Quality team are both organised and agile. While they are great at planning ahead to coordinate upcoming events, they are also able to adapt plans when the unexpected arises. Team members are able to identify and assess risk, manage appropriate escalations and work with those around them to mitigate or resolve the risk.\r\n\nThe Test Analyst will report to the Lead Test Analyst and will work collaboratively and flexibly within a small team.\r\n\n\r\n\n**Desirable Skills and Qualities**\r\n\nThe successful candidate will be a fast learner with the ability to meet deadlines as required. They should have a keen eye for detail and have a challenging and enquiring mind. They will also possess:\r\n\n\r\n\n* A basic knowledge of software testing and the SDLC\r\n* Good analytical skills\r\n* Good communication and teamwork skills\r\n* While not mandatory, an ISTQB foundation level certificate and experience with SQL will be advantageous.\r\n\n\r\r\n\n**Key responsibilities**\r\n\nThe Test Analyst will work on both new feature releases and bug fixes and is responsible for:\r\n\n\r\n\n* Identifying, defining and verifying test items\r\n* Evaluating and reporting the outcome of test cycles\r\n* Monitoring test coverage\r\n* Creating and updating test artifacts such as test scenarios, test plans and test summary reports\r\n* Reporting and following up on defects in JIRA\r\n* Flagging potential product enhancements\r\n* The ideal candidate will be willing to help coordinate release testing and deployments to multiple test- and production environments.\r\n\n\r\n\n\r\n\n**Job benefits and perks**\r\n\n* Join a team at the cutting edge of Healthcare analytics to improve patient outcomes worldwide\r\n* Full-time – permanent contract (38 hours per week, Mon-Fri)\r\n* Office days are in a modern office space with awesome views (2 days per week)\r\n* You can work from home with flexible hours (3 days per week)\r\n* Potential to work and collaborate internationally\r\n* Opportunity for promotion as the company grows and your performance exceeds expectations\r\n* Regular team offsite gatherings promoting social interaction, education and training and professional development"
     title: Test Analyst
   - applyLink: 'https://www.seek.com.au/job/52242227'
-    description: "**About us**\r\n\nHealthcare Logic is one of Queensland’s fastest growing technology start-ups, and we are aiming for global market leadership within the next five years.  We build software to help hospitals work better.  We are fully funded and currently transacting in five jurisdictions.  Our flagship product is SystemView: a new-to-the-world analytics platform using high-frequency data automation and a proprietary UI to give clinical and executive leaders in hospitals previously unobtainable insights and actionable data.  We currently have 29 staff and growing.\r\n\nTo continue building out our data engineering team, we are now looking for a committed and motivated individual to join us at an exciting time of rapid expansion.  The successful candidate will have technical experience combining both a good working knowledge of database architecture, design, and approaches to integration (with focused knowledge of SQL), and significant devops experience as well as familiarity with version control software such as Git.\r\n\n\r\n\n**About the role**\r\n\nYou will be joining a multi-talented and diverse team of data engineer with responsibilities include:\r\n\n* Designing and implementing ETL pipelines across a range of technologies and working with clients to integrate pipelines with their source systems.\r\n* Develop and optimise a next-generation analytics platform that utilises numerous data sources.\r\n* Efficiently extracting and transforming data to support new analyses supported by high-frequency, highly granular data flows.\r\n* Building reusable code and libraries for future use.\r\n* Implementation of security and data protection.\r\n* Design and implementation of data storage solutions\r\n* Maintain an in-depth understanding of technologies and stay abreast of current industry trends and emerging technologies.\r\n\n**Essential skills:**\r\n\nThese skills and experience will help get you onto the shortlist:\r\n\n* Experience working intimately with data in the context of application development, data warehousing, migration, or data analysis\r\n* A high-level of motivation and demonstrable ability to solve complex problems and deliver solutions under tight timelines\r\n* The ability to help develop a suite of databases that will support a cutting-edge web application\r\n* Demonstrated experience with SQL Server Integration Services or other ETL tools\r\n* Exposure to Oracle and SQL Server 2016\r\n* Experience with Healthcare data preferred but not essential\r\n* Experience with Amazon AWS or Azure services desired.\r\n* Experience writing automated tests for data pipelines.\r\n* Demonstrated expertise with one or more database engines, including MySQL, Postgres, MS SQL, etc...\r\n* Be a critical thinker with strong analytical and problem-solving skills.\r\n* Be passionate about delivering high quality work.\r\n* Prior experience with application or web development working in fast-paced agile and exposure to modern technology, frameworks, and tools such as Scrum, Test Driven Development, React, Redgate, NodeJS, CI/CD and Docker are also of interest.\r\n\n**Job benefits and perks**\r\n\n* Join a team at the cutting edge of Healthcare analytics to improve patient outcomes worldwide\r\n* Solve interesting real-world problems in a dynamic environment\r\n* Attractive salary working in a modern office space with awesome views\r\n* Potential to work and collaborate internationally\r\n* Office days are in a modern office space with awesome views (1-2 days per week)\r\n* You can work from home with flexible hours (3-4 days per week)\r\n\nApply now\r\n\n\rTo apply, click the \"Apply for this job\" button, please attach your current resume plus a cover letter briefly describing how you can bring value to this role.\r\n\n\rApplicants from Brisbane and wider regions are encouraged to apply."
+    description: >-
+      **About us**
+
+
+      Healthcare Logic is one of Queensland’s fastest growing technology
+      start-ups, and we are aiming for global market leadership within the next
+      five years.  We build software to help hospitals work better.  We are
+      fully funded and currently transacting in five jurisdictions.  Our
+      flagship product is SystemView: a new-to-the-world analytics platform
+      using high-frequency data automation and a proprietary UI to give clinical
+      and executive leaders in hospitals previously unobtainable insights and
+      actionable data.  We currently have 57 staff and growing.
+
+
+      To continue building out our data engineering team, we are now looking for
+      a committed and motivated individual to join us at an exciting time of
+      rapid expansion.  The successful candidate will have technical experience
+      combining both a good working knowledge of database architecture, design,
+      and approaches to integration (with focused knowledge of SQL), and
+      significant devops experience as well as familiarity with version control
+      software such as Git.
+
+
+      **About the role**
+
+
+      You will be joining a multi-talented and diverse team of data engineer
+      with responsibilities include:
+
+
+      * Designing and implementing ETL pipelines across a range of technologies
+      and working with clients to integrate pipelines with their source systems.
+
+      * Develop and optimise a next-generation analytics platform that utilises
+      numerous data sources.
+
+      * Efficiently extracting and transforming data to support new analyses
+      supported by high-frequency, highly granular data flows.
+
+      * Building reusable code and libraries for future use.
+
+      * Implementation of security and data protection.
+
+      * Design and implementation of data storage solutions
+
+      * Maintain an in-depth understanding of technologies and stay abreast of
+      current industry trends and emerging technologies.
+
+
+      **Essential skills:**
+
+
+      These skills and experience will help get you onto the shortlist:
+
+
+      * Experience working intimately with data in the context of application
+      development, data warehousing, migration, or data analysis
+
+      * A high-level of motivation and demonstrable ability to solve complex
+      problems and deliver solutions under tight timelines
+
+      * The ability to help develop a suite of databases that will support a
+      cutting-edge web application
+
+      * Demonstrated experience with SQL Server Integration Services or other
+      ETL tools
+
+      * Exposure to Oracle and SQL Server 2016
+
+      * Experience with Healthcare data preferred but not essential
+
+      * Experience with Amazon AWS or Azure services desired.
+
+      * Experience writing automated tests for data pipelines.
+
+      * Demonstrated expertise with one or more database engines, including
+      MySQL, Postgres, MS SQL, etc...
+
+      * Be a critical thinker with strong analytical and problem-solving skills.
+
+      * Be passionate about delivering high quality work.
+
+      * Prior experience with application or web development working in
+      fast-paced agile and exposure to modern technology, frameworks, and tools
+      such as Scrum, Test Driven Development, React, Redgate, NodeJS, CI/CD and
+      Docker are also of interest.
+
+
+      **Job benefits and perks**
+
+
+      * Join a team at the cutting edge of Healthcare analytics to improve
+      patient outcomes worldwide
+
+      * Solve interesting real-world problems in a dynamic environment
+
+      * Attractive salary working in a modern office space with awesome views
+
+      * Potential to work and collaborate internationally
+
+      * Office days are in a modern office space with awesome views (1-2 days
+      per week)
+
+      * You can work from home with flexible hours (3-4 days per week)
+
+
+      Apply now
+
+
+      To apply, click the "Apply for this job" button, please attach your
+      current resume plus a cover letter briefly describing how you can bring
+      value to this role.
+
+
+      Applicants from Brisbane and wider regions are encouraged to apply.
     title: Data Engineer
 meta:
   description: ''
