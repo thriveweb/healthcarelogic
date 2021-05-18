@@ -46,11 +46,11 @@ export class AboutPageTemplate extends React.Component {
         <section className="section primary thick" id="team">
           <div className="container skinny">
             <h2 style={{ marginBottom: '4rem' }}>The Board</h2>
-            <TeamGrid team={board} />
+            <TeamGrid team={board || []} />
             <br />
             <br />
             <h2 style={{ marginBottom: '4rem' }}>Leadership Team</h2>
-            <TeamGrid team={leadership} />
+            <TeamGrid team={leadership || []} />
           </div>
 
           <Link to="/contact/" strong icon="page" arrow="right" scrollButton>
