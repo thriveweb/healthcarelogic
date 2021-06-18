@@ -164,7 +164,8 @@ iconGrid:
       scheduled care patients are currently waiting for a Medical Imaging exam?
       And do you know how many patients have waited too long to have their
       Medical Imaging exam performed or reported back to them?
-    image: /images/uploads/imaging.svg
+    image: images/uploads/imaging.svg
+    linkTo: '#'
     popupContent:
       content: >-
         * Can you see how many patients are waiting in a bed each morning for a
