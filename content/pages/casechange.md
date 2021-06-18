@@ -21,7 +21,7 @@ iconGrid:
       Do you know the length of stay required in each of your treatment areas
       for the ED system to have flow? And is this updated every five minutes
       based on today’s variation in demand?
-    image: /images/uploads/emergency.svg
+    image: ../images/uploads/emergency.svg
     linkTo: '#'
     popupContent:
       content: >-
@@ -55,7 +55,7 @@ iconGrid:
       Can you see every admitted patient in your hospital right now at a glance
       and which patients are stranded, complex or have waited too long in each
       ward for the system to have flow?
-    image: /images/uploads/bed.svg
+    image: ../images/uploads/bed.svg
     linkTo: '#'
     popupContent:
       content: >-
@@ -86,7 +86,7 @@ iconGrid:
       Do you know how long each doctor’s waitlist should be to ensure every
       patient is treated in clinically recommended times? Do you know which
       doctors have heavy and light order books and is this recalculated daily?
-    image: /images/uploads/surgery.svg
+    image: ../images/uploads/surgery.svg
     linkTo: '#'
     popupContent:
       content: >-
@@ -118,7 +118,7 @@ iconGrid:
       Do you know how many outpatient appointments you need each week to see
       your present demand? And do you use this to set your clinic templates or
       simply do ‘what we’ve always done’?
-    image: /images/uploads/patient.svg
+    image: ../images/uploads/patient.svg
     linkTo: '#'
     popupContent:
       content: >-
@@ -164,7 +164,7 @@ iconGrid:
       scheduled care patients are currently waiting for a Medical Imaging exam?
       And do you know how many patients have waited too long to have their
       Medical Imaging exam performed or reported back to them?
-    image: images/uploads/imaging.svg
+    image: ../images/uploads/imaging.svg
     linkTo: '#'
     popupContent:
       content: >-
