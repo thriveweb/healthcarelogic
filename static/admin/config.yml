@@ -395,45 +395,45 @@ collections: # A list of collections the CMS should be able to edit
                   required: false,
                 }
 
-  - name: 'team'
-    label: 'Team Bio'
-    editor:
-      preview: true
-    folder: content/team
-    create: true # Allow users to create new documents in this collection
-    fields:
-      - {
-          label: Template,
-          name: template,
-          widget: hidden,
-          default: DefaultPage,
-        }
-      - { label: Slug, name: slug, widget: string }
-      - { label: Order, name: order, widget: string }
-      - { label: Title, name: title, widget: string }
-      - { label: Position, name: position, widget: string }
-      - { label: Image, name: image, widget: image }
-      - { label: Description, name: description, widget: markdown }
-      - label: 'Meta'
-        required: false
-        name: 'meta'
-        widget: 'object'
-        fields:
-          - { label: Title, name: title, widget: string, required: false }
-          - {
-              label: Description,
-              name: description,
-              widget: text,
-              required: false,
-              pattern: ['.{,300}', 'Must not exceed 300 characters'],
-            }
-          - {
-              label: Canonical Link,
-              name: canonicalLink,
-              widget: string,
-              required: false,
-            }
-          - { label: Noindex, name: noindex, widget: boolean, required: false }
+  # - name: 'team'
+  #   label: 'Team Bio'
+  #   editor:
+  #     preview: true
+  #   folder: content/team
+  #   create: true # Allow users to create new documents in this collection
+  #   fields:
+  #     - {
+  #         label: Template,
+  #         name: template,
+  #         widget: hidden,
+  #         default: DefaultPage,
+  #       }
+  #     - { label: Slug, name: slug, widget: string }
+  #     - { label: Order, name: order, widget: string }
+  #     - { label: Title, name: title, widget: string }
+  #     - { label: Position, name: position, widget: string }
+  #     - { label: Image, name: image, widget: image }
+  #     - { label: Description, name: description, widget: markdown }
+  #     - label: 'Meta'
+  #       required: false
+  #       name: 'meta'
+  #       widget: 'object'
+  #       fields:
+  #         - { label: Title, name: title, widget: string, required: false }
+  #         - {
+  #             label: Description,
+  #             name: description,
+  #             widget: text,
+  #             required: false,
+  #             pattern: ['.{,300}', 'Must not exceed 300 characters'],
+  #           }
+  #         - {
+  #             label: Canonical Link,
+  #             name: canonicalLink,
+  #             widget: string,
+  #             required: false,
+  #           }
+  #         - { label: Noindex, name: noindex, widget: boolean, required: false }
 
   - name: posts
     label: Post
