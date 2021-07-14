@@ -4,7 +4,7 @@ order: 2
 slug: team/kate-wylie
 title: Kate Wylie
 image: /images/team/kate-whylie.jpg
-position: Director of Customer Success
+position: Chief Clinical Engagement Officer
 description: |-
   Kate Wylie oversees Healthcare Logic’s complete customer journey including: sales, marketing, communications, quality,  deployment engagement and end user support. Kate leads a gifted customer success and testing team and injects innovative strategies to deliver a standout value-based offering and service.
 
