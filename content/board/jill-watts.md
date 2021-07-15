@@ -1,6 +1,6 @@
 ---
 template: TeamMember
-order: 6
+order: 1
 slug: team/jill-watts
 title: Jill Watts
 image: /images/jill-watts_hcl.jpg
