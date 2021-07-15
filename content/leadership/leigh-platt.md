@@ -1,6 +1,6 @@
 ---
 template: TeamMember
-order: 5
+order: 4
 slug: team/leigh-platt
 title: Leigh Platt
 image: /images/team/Leigh-Platt.jpg
