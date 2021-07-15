@@ -1,6 +1,6 @@
 ---
 template: TeamMember
-order: 
+order: 5
 slug: team/andrew-knox
 title: Andrew Knox
 image: /images/andrew-knox_hcl.jpg
