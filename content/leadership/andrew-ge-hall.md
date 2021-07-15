@@ -1,6 +1,6 @@
 ---
 template: TeamMember
-order: 4
+order: 7
 slug: team/andrew-ge-hall
 title: Andrew Ge-Hall
 image: /images/team/andrew-ge-hall.jpg
