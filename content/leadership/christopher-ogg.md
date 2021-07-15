@@ -1,6 +1,6 @@
 ---
 template: TeamMember
-order: 3
+order: 2
 slug: team/christopher-ogg
 title: Doctor Christopher Ogg
 image: /images/team/christopher-ogg.jpg
