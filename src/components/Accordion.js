@@ -9,6 +9,7 @@ import './Accordion.css'
 export default class Accordion extends React.Component {
   static defaultProps = {
     items: [],
+    buttonText: null,
     className: ''
   }
 
@@ -38,7 +39,7 @@ export default class Accordion extends React.Component {
   }
 
   render() {
-    const { items, className } = this.props
+    const { items, buttonText, className } = this.props
     return (
       <div className={`Accordion ${className}`}>
         {!!items &&
@@ -71,7 +72,7 @@ export default class Accordion extends React.Component {
                       height="14px"
                       viewBox="0 0 14 14"
                       version="1.1"
-                      class="Link--icon"
+                      className="Link--icon"
                     >
                       <g
                         id="Page-1"
@@ -104,7 +105,7 @@ export default class Accordion extends React.Component {
                         </g>
                       </g>
                     </svg>
-                    Apply now
+                    {buttonText || 'Apply now'}
                     <ChevronLeft />
                   </a>
                 )}

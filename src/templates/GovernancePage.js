@@ -54,7 +54,7 @@ export class GovernancePageTemplate extends React.Component {
           <div className="container skinny">
             <h2 style={{ marginBottom: '4rem' }}>{accordiantitle}</h2>
             {console.log(accordion)}
-            <Accordion items={accordion} />
+            <Accordion items={accordion} buttonText="Download Document" />
           </div>
         </section>
       </main>
