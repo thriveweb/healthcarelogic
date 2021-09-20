@@ -5,6 +5,8 @@ import './cms-utils'
 import { HomePageTemplate } from '../templates/HomePage'
 import { AboutPageTemplate } from '../templates/AboutPage'
 import { WorkPageTemplate } from '../templates/WorkPage'
+import { AnnouncementsPageTemplate } from '../templates/AnnouncementsPage'
+import { GovernancePageTemplate } from '../templates/GovernancePage'
 import { CaseChangePageTemplate } from '../templates/CaseChangePage'
 import { BetterViewPageTemplate } from '../templates/BetterViewPage'
 import { ContactPageTemplate } from '../templates/ContactPage'
@@ -22,6 +24,12 @@ CMS.registerPreviewTemplate('about-page', ({ entry }) => (
 ))
 CMS.registerPreviewTemplate('work-page', ({ entry }) => (
   <WorkPageTemplate {...entry.toJS().data} />
+))
+CMS.registerPreviewTemplate('announcements-page', ({ entry }) => (
+  <AnnouncementsPageTemplate {...entry.toJS().data} />
+))
+CMS.registerPreviewTemplate('governance-page', ({ entry }) => (
+  <GovernancePageTemplate {...entry.toJS().data} />
 ))
 CMS.registerPreviewTemplate('contact-page', ({ entry }) => (
   <ContactPageTemplate {...entry.toJS().data} />
