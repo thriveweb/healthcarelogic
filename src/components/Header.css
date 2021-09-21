@@ -55,6 +55,42 @@
   justify-content: flex-end;
 }
 
+.hasChildren {
+  cursor: pointer;
+  position: relative;
+}
+
+.hasChildren .subMenu {
+  position: absolute;
+  margin: 0;
+  top: 100%;
+  right: -20%;
+  background-color: #01172b;  
+  opacity: 0;
+  display: none;
+  max-height: 0;
+  transition: all ease-in-out 0.2s;
+  padding: 1rem 1.5rem;
+  place-content: center;
+  border-radius: 0.5rem;
+}
+
+.hasChildren:hover .subMenu {
+  opacity: 1;
+  display: grid;
+  max-height: 70rem;
+}
+
+.hasChildren .subMenu .Link {
+  margin: 0px !important;
+  padding: 0.5rem;
+  border-top: 1px solid gray;
+}
+
+.hasChildren .subMenu .Link:nth-child(1) {
+  border-top: 0px solid gray;
+}
+
 @media (max-width: 600px) {
   .Header,
   .Header--Fixed {

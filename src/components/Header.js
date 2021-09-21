@@ -24,11 +24,14 @@ const Header = ({ siteTitle, handleMenuToggle, menuOpen }) => {
             <Link to="/a-better-view/">A better view</Link>
             <Link to="/about/">About us</Link>
             <Link to="/work-with-us/">Work with us</Link>
-            <div className="sub-nav" title="Investors hub" id="collasible-nav-dropdown">
-              <Link to="/announcements/">Announcements</Link>
-              <Link to="/governance">Governance</Link>
-              <Link to="/blog/">News</Link>
-            </div>
+            <Link className="hasChildren">
+              <span>Investors hub +</span>
+              <div className="subMenu">
+                <Link to="/announcements/">Announcements</Link>
+                <Link to="/governance/">Governance</Link>
+                <Link to="/blog/">News</Link>
+              </div>
+            </Link>
             <Link to="/contact/">Contact us</Link>
           </div>
         </div>
