@@ -2,7 +2,7 @@ import React from 'react'
 
 import Link from './Link'
 import MenuButton from './MenuButton'
-import logo from '../images/logo.svg'
+import logo from '../images/logo-2.svg'
 import './Header.css'
 
 const Header = ({ siteTitle, handleMenuToggle, menuOpen }) => {
