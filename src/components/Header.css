@@ -24,7 +24,6 @@
   color: white;
   margin-left: 2rem;
   pointer-events: all;
-  padding: 10px 0;
 }
 
 .Header .container .full-nav .Link:hover {
@@ -59,6 +58,7 @@
 .hasChildren {
   cursor: pointer;
   position: relative;
+  padding: 10px 0;
 }
 
 .hasChildren .subMenu {
