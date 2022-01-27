@@ -42,7 +42,7 @@
     "simplex-noise": "^2.4.0",
     "smooth-scroll": "^16.1.0",
     "stats.js": "^0.17.0",
-    "three": "^0.95.0",
+    "three": "^0.137.0",
     "three.meshline": "^1.1.0"
   },
   "keywords": [
