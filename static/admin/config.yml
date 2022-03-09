@@ -329,6 +329,7 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Blurb, name: blurb, widget: string }
           - { label: Australia Address, name: auAddress, widget: string, required: false }
           - { label: Ireland Address, name: ieAddress, widget: string, required: false }
+          - { label: Microsoft Contact, name: microsoftContact, widget: string, required: false }
           - { label: Phone, name: phone, widget: string, required: false }
           - { label: Email, name: email, widget: string, required: false }
           - label: 'Meta'
