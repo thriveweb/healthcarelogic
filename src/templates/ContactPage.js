@@ -17,6 +17,7 @@ export const ContactPageTemplate = ({
   blurb,
   auAddress,
   ieAddress,
+  microsoftContact,
   phone,
   email,
   meta
@@ -54,6 +55,13 @@ export const ContactPageTemplate = ({
               <div className="ContactPage--item">
                 <h5>Ireland</h5>
                 <p>{ieAddress}</p>
+              </div>
+            )}
+            
+            {microsoftContact && (
+              <div className="ContactPage--item">
+                <h5>For Microsoft Azure Customers</h5>
+                <p>{microsoftContact}</p>
               </div>
             )}
 
