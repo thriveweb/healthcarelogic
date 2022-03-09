@@ -117,6 +117,7 @@ export const pageQuery = graphql`
         blurb
         auAddress
         ieAddress
+        microsoftContact
         phone
         email
         meta {
