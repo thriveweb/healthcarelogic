@@ -6,7 +6,7 @@ import SubscribeForm from '../components/SubscribeForm'
 import Link from './Link'
 import ScrollToTop from './ScrollToTop'
 import emblem from '../images/emblem.svg'
-import privacyPolicy from '../images/HCL_Website Privacy Policy.pdf'
+import privacyPolicy from '../../images/uploads/hcl_website-privacy-policy.pdf'
 
 import './Footer.css'
 
