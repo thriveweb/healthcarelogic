@@ -6,7 +6,6 @@ import SubscribeForm from '../components/SubscribeForm'
 import Link from './Link'
 import ScrollToTop from './ScrollToTop'
 import emblem from '../images/emblem.svg'
-import privacyPolicy from 'https://www.healthcarelogic.com/images/uploads/hcl_website-privacy-policy.pdf'
 
 import './Footer.css'
 
@@ -92,7 +91,7 @@ const Footer = ({ siteTitle, siteEmail, sitePhone }) => (
     <section className="section thin white Footer--Lower">
       <div className="container">
         &copy; {new Date().getFullYear()} All Rights Reserved |{' '}
-        <a href={privacyPolicy} target="_blank" className="subtle">
+        <a href="https://www.healthcarelogic.com/images/uploads/hcl_website-privacy-policy.pdf" target="_blank" className="subtle">
           Privacy Policy
         </a>{' '}
         |{' '}
