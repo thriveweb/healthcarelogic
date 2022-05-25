@@ -45,6 +45,7 @@
 
 .TeamGrid--Item--Image img {
   object-position: top !important;
+  background-color: white;
 }
 
 .TeamGrid--Item--Title {

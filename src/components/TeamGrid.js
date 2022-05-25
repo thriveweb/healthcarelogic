@@ -10,7 +10,7 @@ const TeamGrid = ({ props, team }) => (
     {team.map((member, index) => {
       return (
         <Link
-          to={member.slug}
+          to={member.description && member.slug}
           className="TeamGrid--Item"
           key={`TeamGrid--${member.title}`}
           style={{ order: member.order }}
