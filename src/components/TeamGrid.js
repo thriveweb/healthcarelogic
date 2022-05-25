@@ -22,10 +22,12 @@ const TeamGrid = ({ props, team }) => (
           />
           <h5 className="TeamGrid--Item--Title">{member.title}</h5>
           <h6 className="TeamGrid--Item--Subtitle">{member.position}</h6>
-          <div
-            className="TeamGrid--Item--Hover absolute"
-            style={{ backgroundImage: `url(${seeMore})` }}
-          />
+          {member.description && 
+            <div
+              className="TeamGrid--Item--Hover absolute"
+              style={{ backgroundImage: `url(${seeMore})` }}
+            />
+          }
         </Link>
       )
     })}
