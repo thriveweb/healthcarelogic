@@ -1,10 +1,10 @@
 ---
 template: TeamMember
-order: 2
+order: 3
 slug: team/christopher-ogg
 title: Doctor Christopher Ogg
 image: /images/team/christopher-ogg.jpg
-position: Chief Product Officer
+position: Chief Technology Officer
 description: |-
   Associate Professor Christopher Ogg is a co-founder of Healthcare Logic and manages the research and development function as well as the delivery of software. He leads a talented team of mathematicians, business analysts, data scientists, data engineers and web developers.
   Working closely with hospital executives and clinical leaders, Christopher establishes business logic, algorithms and visualisations to support engagement and sustained hospital performance. He has a unique ability to stimulate clinical teams and translate how data needs to be presented in order to create a visceral response from leaders resulting in sustainable improvements in performance. 
