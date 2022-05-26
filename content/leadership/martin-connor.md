@@ -4,7 +4,7 @@ order: 1
 slug: team/martin-connor
 title: Professor Martin Connor
 image: /images/team/martin-connor.jpg
-position: Managing Director & \Chief Executive Officer
+position: Managing Director & \ Chief Executive Officer
 description: |-
   Professor Martin Connor is the founder of Healthcare Logic, the company that developed SystemView - a hospital performance improvement platform deployed in over 60 hospitals. The revolutionary technology automates capacity and demand analysis to help clinical and managerial leaders optimise care processes through high-frequency, patient/doctor-level, web-based analytics. SystemView delivers significant value to health services - it fosters collaboration, empowers teams, and supplies major improvements to patient access and productivity.
 
