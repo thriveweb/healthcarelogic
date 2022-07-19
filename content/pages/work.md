@@ -27,7 +27,186 @@ section1:
   title: Join our team
 accordion:
   - applyLink: ''
-    description: "**Healthcare Logic **\n\n\\*\\* \\*\\*\n\n**Intermediate Data Engineer**\n\n\\*\\* \\*\\*\n\n**ABOUT US**\n\nHealthcare Logic is one of Queensland’s fastest growing technology start-ups, and we are aiming for global market leadership within the next three-five years.  We build software to help hospitals work better.  Come join us and discover a world of opportunity at a time you can be a part of a global network and have a meaningful impact in the healthcare industry.\r\n\nWe are currently transacting in five jurisdictions.  Our flagship product is SystemView: a new-to-the-world analytics platform using high-frequency data automation and a proprietary UI to give clinical and executive leaders in hospitals previously unobtainable insights and actionable data.  We currently have a global headcount of c.90 and growing!\r\n\nTo continue building out our data engineering team, we are looking for committed and motivated individuals to join us at an exciting time of rapid expansion.  The successful candidate will have technical experience combining both a good working knowledge of database architecture, design, and approaches to integration (with focused knowledge of SQL), and significant devops experience as well as familiarity with version control software such as Git and Redgate.\r\n\nNot based in south-east Queensland – no problem – we are set up to operate within a secure remote environment, you’ll be on daily standups with your team and we’ll commit to an annual all expenses paid trip to our head office on the beautiful Gold Coast!  In addition, we’ll cover the costs to set up your home workspace office with our standard employee offering.\r\n\nTell us what you’re looking for and we’ll consider your proposed salary in line with your skills and experience.**\r**\n\n**ABOUT THE ROLE**\n\nYou will be joining a multi-talented and diverse team of data engineer with responsibilities include:\n\n* designing and implementing ETL pipelines across a range of technologies and working with clients to integrate pipelines with their source systems.\n* develop and optimise a next-generation analytics platform that utilises numerous data sources.\n* efficiently extracting and transforming data to support new analyses supported by high-frequency, highly granular data flows. \n* Building reusable code and libraries for future use.\n* Implementation of security and data protection.\n* Design and implementation of data storage solutions\n* Maintain an in-depth understanding of technologies and stay abreast of current industry trends and emerging technologies.\n\n**ESSENTIAL SKILLS**\n\nThese skills and experience will help get you onto the shortlist:\n\n* 5+ years' experience working intimately with data in the context of application development, data warehousing, migration, or data analysis\n* A high-level of motivation and demonstrable ability to solve complex problems and deliver solutions under tight timelines\n* The ability to help develop a suite of databases that will support a cutting-edge web application\n* Demonstrated experience with SQL Server Integration Services or other ETL tools\n* Exposure to Oracle and SQL Server 2016 \n* Experience with Healthcare data preferred but not essential\n* Experience with Amazon AWS or Azure services desired.\n* Experience writing automated tests for data pipelines.\n* Demonstrated expertise with one or more database engines, including MySQL, Postgres, MS SQL, etc...\n* Be a critical thinker with strong analytical and problem-solving skills.\n* Be passionate about delivering high quality work.\n* Prior experience with application or web development working in fast-paced agile and exposure to modern technology, frameworks, and tools such as Scrum, Test Driven Development, React, Redgate, NodeJS, CI/CD and Docker are also of interest.\n\n**GOOD TO HAVE SKILLS**\n\n* Demonstrated expertise with one or more database engines, including MySQL, Postgres, MS SQL, etc.\n* Experience in building Azure Data Factory (ADF) pipelines\n* Be a critical thinker with strong analytical and problem-solving skills\n* Be passionate about delivering high quality work\n* Prior experience with application or web development working in fast-paced agile and exposure to modern technology, frameworks, and tools such as Scrum, Test Driven Development, Redgate and CI/CD are also of interest\n* Development, React, Redgate, NodeJS, CI/CD and Docker are also of interest\n\n**JOB BENEFITS AND PERKS**\n\n* Join a team at the cutting edge of Healthcare analytics to improve patient outcomes worldwide\n* Solve interesting real-world problems in a dynamic environment\n* Attractive salary – make us an offer and we’ll consider it!\n* Work within a global team and collaborate internationally\n* Option of in-office days on the Gold Coast (Brisbane office in the works for 2022) and remote working options available\n* We have a modern office space with awesome ocean views in Southport on the Gold Coast\n* Annual all expenses paid trip to the Gold Coast for anyone recruited outside south-east QLD\n* Join us now for the opportunity to grow and expand with the Company\n\n**APPLY NOW**\n\nTo apply, please email a brief outline of why you would be the best candidate for this role and attach your resume to: \n\n**Email: careers@healthcarelogic.com**\n\nAttn: Melanie Flesser \n\nSubject: Intermediate Data Engineer \n\n\\*\\* \\*\\*\n\nApplicants from ANYWHERE in Australia are encouraged to apply!"
+    description: >-
+      **Healthcare Logic **
+
+
+      \*\* \*\*
+
+
+      **Intermediate Data Engineer**
+
+
+      \*\* \*\*
+
+
+      **ABOUT US**
+
+
+      Healthcare Logic is one of Queensland’s fastest growing technology
+      start-ups, and we are aiming for global market leadership within the next
+      three-five years.  We build software to help hospitals work better.  Come
+      join us and discover a world of opportunity at a time you can be a part of
+      a global network and have a meaningful impact in the healthcare industry.
+
+
+      We are currently transacting in five jurisdictions.  Our flagship product
+      is SystemView: a new-to-the-world analytics platform using high-frequency
+      data automation and a proprietary UI to give clinical and executive
+      leaders in hospitals previously unobtainable insights and actionable
+      data.  We currently have a global headcount of c.90 and growing!
+
+
+      To continue building out our data engineering team, we are looking for
+      committed and motivated individuals to join us at an exciting time of
+      rapid expansion.  The successful candidate will have technical experience
+      combining both a good working knowledge of database architecture, design,
+      and approaches to integration (with focused knowledge of SQL), and
+      significant devops experience as well as familiarity with version control
+      software such as Git and Redgate.
+
+
+      Not based in south-east Queensland – no problem – we are set up to operate
+      within a secure remote environment, you’ll be on daily standups with your
+      team and we’ll commit to an annual all expenses paid trip to our head
+      office on the beautiful Gold Coast!  In addition, we’ll cover the costs to
+      set up your home workspace office with our standard employee offering.
+
+
+      Tell us what you’re looking for and we’ll consider your proposed salary in
+      line with your skills and experience.
+
+
+      **ABOUT THE ROLE**
+
+
+      You will be joining a multi-talented and diverse team of data engineer
+      with responsibilities include:
+
+
+      * designing and implementing ETL pipelines across a range of technologies
+      and working with clients to integrate pipelines with their source systems.
+
+      * develop and optimise a next-generation analytics platform that utilises
+      numerous data sources.
+
+      * efficiently extracting and transforming data to support new analyses
+      supported by high-frequency, highly granular data flows. 
+
+      * Building reusable code and libraries for future use.
+
+      * Implementation of security and data protection.
+
+      * Design and implementation of data storage solutions
+
+      * Maintain an in-depth understanding of technologies and stay abreast of
+      current industry trends and emerging technologies.
+
+
+      **ESSENTIAL SKILLS**
+
+
+      These skills and experience will help get you onto the shortlist:
+
+
+      * 5+ years' experience working intimately with data in the context of
+      application development, data warehousing, migration, or data analysis
+
+      * A high-level of motivation and demonstrable ability to solve complex
+      problems and deliver solutions under tight timelines
+
+      * The ability to help develop a suite of databases that will support a
+      cutting-edge web application
+
+      * Demonstrated experience with SQL Server Integration Services or other
+      ETL tools
+
+      * Exposure to Oracle and SQL Server 2016 
+
+      * Experience with Healthcare data preferred but not essential
+
+      * Experience with Amazon AWS or Azure services desired.
+
+      * Experience writing automated tests for data pipelines.
+
+      * Demonstrated expertise with one or more database engines, including
+      MySQL, Postgres, MS SQL, etc...
+
+      * Be a critical thinker with strong analytical and problem-solving skills.
+
+      * Be passionate about delivering high quality work.
+
+      * Prior experience with application or web development working in
+      fast-paced agile and exposure to modern technology, frameworks, and tools
+      such as Scrum, Test Driven Development, React, Redgate, NodeJS, CI/CD and
+      Docker are also of interest.
+
+
+      **GOOD TO HAVE SKILLS**
+
+
+      * Demonstrated expertise with one or more database engines, including
+      MySQL, Postgres, MS SQL, etc.
+
+      * Experience in building Azure Data Factory (ADF) pipelines
+
+      * Be a critical thinker with strong analytical and problem-solving skills
+
+      * Be passionate about delivering high quality work
+
+      * Prior experience with application or web development working in
+      fast-paced agile and exposure to modern technology, frameworks, and tools
+      such as Scrum, Test Driven Development, Redgate and CI/CD are also of
+      interest
+
+      * Development, React, Redgate, NodeJS, CI/CD and Docker are also of
+      interest
+
+
+      **JOB BENEFITS AND PERKS**
+
+
+      * Join a team at the cutting edge of Healthcare analytics to improve
+      patient outcomes worldwide
+
+      * Solve interesting real-world problems in a dynamic environment
+
+      * Attractive salary – make us an offer and we’ll consider it!
+
+      * Work within a global team and collaborate internationally
+
+      * Option of in-office days on the Gold Coast (Brisbane office in the works
+      for 2022) and remote working options available
+
+      * We have a modern office space with awesome ocean views in Southport on
+      the Gold Coast
+
+      * Annual all expenses paid trip to the Gold Coast for anyone recruited
+      outside south-east QLD
+
+      * Join us now for the opportunity to grow and expand with the Company
+
+
+      **APPLY NOW**
+
+
+      To apply, please email a brief outline of why you would be the best
+      candidate for this role and attach your resume to: 
+
+
+      **Email: careers@healthcarelogic.com**
+
+
+      Attn: Melanie Flesser 
+
+
+      Subject: Intermediate Data Engineer 
+
+
+      \*\* \*\*
+
+
+      Applicants from ANYWHERE in Australia are encouraged to apply!
     title: Intermediate Data Engineer
   - applyLink: ''
     description: >-
